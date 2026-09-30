@@ -75,3 +75,49 @@ img.af-blur.af-blur-done {
 [data-ramka-content][data-zoomed] [data-ramka-media] {
   cursor: zoom-out;
 }
+
+/* Two screenshots one after the other (for example the two setup questions) need clear air between them,
+   not just the 8px each image carries. */
+.mdx-content button + .zoom-image-trigger img {
+  margin-top: 1.25rem;
+}
+
+/* A single card right after a screenshot (the welcome page) needs the same air as the other screenshot gaps. */
+.mdx-content > button + .card {
+  margin-top: 0.75rem;
+}
+
+/* Mintlify gives every table cell a 150px minimum width, so a table with five columns (the plan comparison)
+   is wider than the page column and slides sideways, even on a desktop. Let the columns shrink and wrap. */
+.mdx-content table th,
+.mdx-content table td {
+  min-width: 0;
+}
+
+@media (max-width: 639px) {
+  /* Phone: tables use a slightly smaller type size so they fit next to each other. */
+  .mdx-content table {
+    font-size: 0.8125rem;
+  }
+  .mdx-content table:has(th:nth-child(5)) {
+    font-size: 0.75rem;
+  }
+  .mdx-content table code {
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  /* Phone: cards put the icon beside the text, so a row of cards is about a third shorter. */
+  .mdx-content .card [data-component-part="card-content-container"] {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1rem;
+    padding: 1rem 1.25rem;
+  }
+  .mdx-content .card [data-component-part="card-icon"] {
+    margin-top: 0.125rem;
+  }
+  .mdx-content .card [data-component-part="card-title"] {
+    margin-top: 0;
+  }
+}
