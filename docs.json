@@ -100,8 +100,7 @@
           "messages/email-sequences",
           "messages/team-alerts",
           "messages/email-deliverability",
-          "messages/whatsapp-template",
-          "integrations/calendars"
+          "messages/whatsapp-template"
         ]
       },
       {
@@ -111,6 +110,7 @@
           "integrations/highlevel",
           "integrations/google-sheets",
           "integrations/webhooks",
+          "integrations/calendars",
           "integrations/webhook-reference"
         ]
       },

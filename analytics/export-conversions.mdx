@@ -5,25 +5,32 @@ description: "Download the numbers behind any analytics chart to open in Excel o
 icon: "file-csv"
 ---
 
-Every chart and card on the **Analytics** tab has its own download. Use them to build a report, share results with a client or keep a record of a campaign.
+Download the numbers behind any chart or card on the **Analytics** tab, to build a report, share results with a client or keep a record of a campaign. Every chart and card has its own download.
+
+**Before you start**, you need:
+
+- A role that can open analytics: Global Admin, Workspace Admin or Contacts Manager.
+- A funnel with analytics data. See [Read your funnel analytics](/analytics/funnel-analytics).
 
 ## Download a chart's data
 
 <Steps>
   <Step title="Choose your date range">
-    Open your funnel, click **Analytics** and pick the dates you want, for example **Last 28 days** or a **Custom range**. The file covers the range you have selected. See [Read your funnel analytics](/analytics/funnel-analytics).
+    Open your funnel, click **Analytics** and pick the dates you want, for example **Last 28 days** or a **Custom range**. The file covers the range you have selected.
   </Step>
   <Step title="Click the download icon">
-    Find the chart you want and click the download icon (**Download as CSV**) in the top right corner of its card. The file downloads to your computer right away.
+    Find the chart you want and click the download icon (**Download as CSV**) in the top right corner of its card. The file downloads to your computer right away. The icon appears once a chart has data. If you do not see it, widen the date range.
 
     ![The download icon on the Lead pipeline card, highlighted](/images/analytics/export-conversions/download-icon.png)
   </Step>
   <Step title="Open the file">
-    Open the CSV in Excel, Google Sheets or any other tool.
+    Open the CSV (a simple spreadsheet file) in Excel, Google Sheets or any other tool.
   </Step>
 </Steps>
 
-The icon appears once a chart has data. If you do not see it, widen the date range.
+<Note>
+  These files hold totals, not individual leads. To download names, emails and answers, see [Export your leads](/leads/export-contacts).
+</Note>
 
 ## Which file you get
 
@@ -39,8 +46,15 @@ Each card downloads its own file, and the end of the file name tells you which c
 
 The first few lines of each file say which funnel it is, the date range, that times are in UTC and when the file was created. Delete those lines if a tool you import into needs a clean table.
 
-<Note>
-  These files hold totals, not individual leads. To download names, emails and answers, see [Export your leads](/leads/export-contacts).
-</Note>
+## What to do next
+
+<Columns cols={2}>
+  <Card title="Export your leads" icon="file-export" href="/leads/export-contacts">
+    Download names, emails and answers.
+  </Card>
+  <Card title="See how your funnel performs" icon="chart-line" href="/analytics/funnel-analytics">
+    Visitors, conversions and where people drop off.
+  </Card>
+</Columns>
 
 Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

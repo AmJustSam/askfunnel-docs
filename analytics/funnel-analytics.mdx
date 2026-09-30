@@ -5,16 +5,23 @@ description: "Understand visitors, conversion rate, traffic sources and where pe
 icon: "chart-line"
 ---
 
-Each funnel has an **Analytics** tab that shows how it performs: how many people visit, how many become leads, where they come from and which steps they reach. Use it to decide what to fix, and to check that your ads send the right traffic.
+See how your funnel performs: how many people visit, how many become leads, where they come from and which steps they reach. Each funnel has an **Analytics** tab for this. Use it to decide what to fix, and to check that your ads send the right traffic.
 
-<Note>
-  Global Admins, Workspace Admins and Contacts Managers can open analytics. Content Editors do not have access because analytics summarize lead data.
-</Note>
+**Before you start**, you need:
+
+- A role that can open analytics: Global Admin, Workspace Admin or Contacts Manager. Content Editors do not have access because analytics summarize lead data.
+- A published funnel that has had some visitors. See [Share your funnel](/funnels/share-your-funnel).
+
+## Important to note
+
+<Warning>
+  Dates and hourly totals in analytics use UTC (standard world time), not your local time, so a day here can start at a different moment than a day in your [Leads table](/leads/filter-by-date).
+</Warning>
 
 ## Open your analytics
 
 <Steps>
-  <Step title="Open the funnel and click Analytics">
+  <Step title="Open the funnel's Analytics tab">
     From your **Funnels** page, click the funnel, then click **Analytics** in the tabs at the top of the page.
   </Step>
   <Step title="Choose a date range">
@@ -22,16 +29,26 @@ Each funnel has an **Analytics** tab that shows how it performs: how many people
 
     ![The date range buttons, Compare switch, Copy link and Refresh](/images/analytics/funnel-analytics/date-range.png)
   </Step>
-  <Step title="Compare with the previous period">
+  <Step title="Compare with the previous period (optional)">
     Turn on **Compare** to measure this period against the period of the same length just before it. Every card then shows the change.
   </Step>
 </Steps>
 
 Two more buttons sit in the same bar. **Copy link** copies a link to this exact view (date range, Compare and filters) to share with a teammate. **Refresh** reloads the numbers, and the time next to it shows when they were last updated.
 
-<Warning>
-  Dates and hourly totals in analytics use **UTC**, not your local time, so a day here can start at a different moment than a day in your [Leads table](/leads/filter-by-date).
-</Warning>
+## Find where visitors leave
+
+Open **Step reach** and compare neighboring bars. A big drop between two steps points to a question that is too long, too personal or unclear. Each bar counts how often a step was recorded, so use the chart as a guide rather than an exact headcount.
+
+**Step reach** needs detailed tracking. If it says **No step data yet**, open your funnel's settings, go to **Cookies & Consent** and set **Analytics tracking depth** to a **Detailed** option. See [Cookies and consent](/funnel-settings/cookies-and-consent).
+
+<Tip>
+  If your conversion rate is low, check **Step reach** first, then try removing one or two hard questions or switching answers to image cards, and watch the rate for a week.
+</Tip>
+
+## Mark events on your chart
+
+Global Admins and Workspace Admins can pin a marker for a campaign launch, a release, an incident, an experiment or a note. In **Visitors and conversions**, click the plus icon (**Add chart annotation**), choose a **Date**, a **Type** and a **Label**, then click **"Pin marker"**. The marker shows on the chart so you can see how an event changed your traffic.
 
 ## The five numbers at the top
 
@@ -39,7 +56,7 @@ Two more buttons sit in the same bar. **Copy link** copies a link to this exact 
 
 - **Visitors:** the sum of daily unique visitors. A person who comes back on another day counts again on that day. A line under the number shows how many were returning visitors.
 - **Conversions:** the total number of form submissions in the date range.
-- **Conversion rate:** tracked submissions divided by the sum of daily unique visitors.
+- **Conversion rate:** tracked submissions divided by the sum of daily unique visitors. In plain words, the share of visitors who become leads.
 - **Completion rate:** completed sessions divided by all visits in the range.
 - **Avg time to complete:** the average time from a visitor's first page load to reaching the success page. It is capped at 24 hours so an abandoned tab does not skew it.
 
@@ -65,20 +82,6 @@ The **CVR** column on your **Funnels** page shows each funnel's conversion rate 
 
 An empty CVR (shown as a dash) means there is nothing to divide yet. Leads you imported, or that arrived before tracking began, have no visitor data, so a funnel with only those has no CVR until new traffic arrives.
 
-## Find where visitors leave
-
-Open **Step reach** and compare neighboring bars. A big drop between two steps points to a question that is too long, too personal or unclear. Each bar counts how often a step was recorded, so use the chart as a guide rather than an exact headcount.
-
-**Step reach** needs detailed tracking. If it says **No step data yet**, open your funnel's settings, go to **Cookies & Consent** and set **Analytics tracking depth** to a **Detailed** option. See [Cookies and consent](/funnel-settings/cookies-and-consent).
-
-<Tip>
-  If your conversion rate is low, check **Step reach** first, then try removing one or two hard questions or switching answers to image cards, and watch the rate for a week.
-</Tip>
-
-## Mark events on your chart
-
-Global Admins and Workspace Admins can pin a marker for a campaign launch, a release, an incident, an experiment or a note. In **Visitors and conversions**, click the plus icon (**Add chart annotation**), choose a **Date**, a **Type** and a **Label**, then click **"Pin marker"**. The marker shows on the chart so you can see how an event changed your traffic.
-
 ## Troubleshooting
 
 <AccordionGroup>
@@ -86,11 +89,28 @@ Global Admins and Workspace Admins can pin a marker for a campaign launch, a rel
     Every lead in that range was added before tracking started, so there are no visitors to compare them with. Choose a later date range. A banner that says **Mixed data** means tracking started partway through the range, so the rate only counts the time after it started.
   </Accordion>
   <Accordion title="Top traffic sources is empty">
-    Tag the links you use in ads and emails with UTM parameters, for example **utm_source**, **utm_medium** and **utm_campaign**. Until you do, try **By referrer** or **By country** to see other breakdowns.
+    Tag the links you use in ads and emails with UTM parameters (short tags that show where a visit came from), for example **utm_source**, **utm_medium** and **utm_campaign**. Until you do, try **By referrer** or **By country** to see other breakdowns.
   </Accordion>
   <Accordion title="My numbers are different from the Leads tab">
     Analytics uses UTC days and counts a returning visitor once per day. The Leads table uses your local time and does not include locked leads.
   </Accordion>
 </AccordionGroup>
+
+## What to do next
+
+<Columns cols={2}>
+  <Card title="See where a lead came from" icon="magnifying-glass-chart" href="/analytics/lead-insights">
+    Open a lead's Tracking tab for their source and device.
+  </Card>
+  <Card title="Download your analytics as CSV" icon="file-csv" href="/analytics/export-conversions">
+    Get the numbers behind any chart as a file.
+  </Card>
+  <Card title="Track your ads" icon="bullseye" href="/integrations/meta-pixel">
+    Connect a pixel to see which ads bring leads.
+  </Card>
+  <Card title="Set up cookies and consent" icon="cookie-bite" href="/funnel-settings/cookies-and-consent">
+    Choose how much visitor activity AskFunnel tracks.
+  </Card>
+</Columns>
 
 Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

@@ -9,7 +9,7 @@ icon: "music"
   Available on: **all plans** (Starter, Growth, Scale and Enterprise).
 </Callout>
 
-If you run video ads on TikTok to find clients, you need to know which campaigns work. Connect your TikTok Pixel and AskFunnel tells TikTok who opened your funnel, what they did and who submitted your form.
+Tell TikTok who opened your funnel, what they did and who submitted your form, so you can see which TikTok campaigns work. A pixel is a small piece of code that reports what people do on your funnel back to an ad platform. Connect your TikTok Pixel and AskFunnel sends the events for you.
 
 With the TikTok Pixel integration, you can:
 
@@ -18,13 +18,19 @@ With the TikTok Pixel integration, you can:
 - **Follow every step.** Each funnel page, answer and button click is sent to TikTok as its own event, so you can see where visitors drop off.
 - **Tell TikTok what counts.** Map any step to one of TikTok's standard events. See [Map your funnel steps to standard events](/integrations/event-mapping).
 
+**Before you start**, you need:
+
+- A TikTok Pixel and its Pixel ID. No pixel yet? In TikTok Events Manager, click **Connect data source** and create a web pixel.
+- A funnel to track. See [Launch your first funnel](/getting-started/launch-your-first-funnel).
+
+You do not need to install TikTok's code. AskFunnel adds the pixel to your funnel for you, so you only need the Pixel ID. You can skip TikTok's steps for installing code.
+
 ## Important to note
 
 <Warning>
-  - When your cookie banner is on, the pixel only tracks visitors who accept **marketing** cookies. See [Cookies and consent](/funnel-settings/cookies-and-consent).
+  - When your cookie banner is on, the pixel only tracks visitors who accept marketing cookies. See [Cookies and consent](/funnel-settings/cookies-and-consent).
   - Ad blockers and some privacy browsers block the pixel. Test with your ad blocker turned off.
-  - Each funnel uses **one** TikTok Pixel.
-  - You do not need to install TikTok's code. AskFunnel adds the pixel to your funnel for you, so you only need the **Pixel ID**.
+  - Each funnel uses one TikTok Pixel.
 </Warning>
 
 ## Setup
@@ -46,16 +52,16 @@ With the TikTok Pixel integration, you can:
     {/* IMAGE: TikTok Events Manager, Data sources, a demo pixel with its Pixel ID and copy icon visible (no real pixel ID, business name or account name); ring the Pixel ID */}
     {/* IMAGE: the TikTok Pixel settings with a sample Pixel ID typed in and the "You have unsaved changes" bar visible; ring the Pixel ID field and "Save changes" */}
 
-    <Tip>
-      No pixel yet? In TikTok Events Manager, click **Connect data source** and create a web pixel. You can skip TikTok's steps for installing code. TikTok may keep showing its own setup checklist until your funnel sends its first events. That is normal.
-    </Tip>
+    <Note>
+      TikTok may keep showing its own setup checklist until your funnel sends its first events. That is normal.
+    </Note>
   </Step>
   <Step title="Match your funnel steps to TikTok events (optional)">
     Under **Map events to standard events**, click **"Add entry"**, pick a funnel step on the left and the TikTok event it should send on the right. You can add several entries. Anything you do not map is still sent as a custom event. The full guide is in [Map your funnel steps to standard events](/integrations/event-mapping).
 
     {/* IMAGE: the TikTok "Map events to standard events" section with one entry, "Lead form started (first field typed)" to Contact; ring "Add entry" */}
   </Step>
-  <Step title="Save">
+  <Step title="Save your changes">
     Click **"Save changes"** in the bar at the top. Your TikTok Pixel card now shows **Connected**.
   </Step>
 </Steps>
@@ -71,7 +77,7 @@ With the TikTok Pixel integration, you can:
 ## Troubleshooting
 
 <AccordionGroup>
-  <Accordion title="I don't see any events in TikTok">
+  <Accordion title="I do not see any events in TikTok">
     Check these, in order:
 
     - The card shows **Connected**, not **Paused** or **Not connected**.
@@ -89,10 +95,24 @@ With the TikTok Pixel integration, you can:
   </Accordion>
 </AccordionGroup>
 
-## Managing the integration
+## Manage the integration
 
 - **Pause it:** turn off the switch on the TikTok Pixel card, then click **"Save changes"**. Your Pixel ID and mappings are kept.
 - **Change the pixel:** replace the **Pixel ID** and click **"Save changes"**.
 - **Remove it from the funnel:** clear the **Pixel ID** and click **"Save changes"**. The card goes back to **Not connected**.
+
+## What to do next
+
+<Columns cols={2}>
+  <Card title="Map your funnel steps to standard events" icon="diagram-project" href="/integrations/event-mapping">
+    Tell TikTok which steps count as a lead.
+  </Card>
+  <Card title="Track your Facebook and Instagram ads" icon="bullseye" href="/integrations/meta-pixel">
+    Connect Meta Pixel to see which ads bring leads.
+  </Card>
+  <Card title="See how your funnel performs" icon="chart-line" href="/analytics/funnel-analytics">
+    Visitors, conversions and where people drop off.
+  </Card>
+</Columns>
 
 Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).
