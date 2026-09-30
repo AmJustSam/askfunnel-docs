@@ -1,0 +1,7 @@
+[
+  {
+    "out": "images/getting-started/welcome/hero-builder.png",
+    "src": "source/raw/getting-started/welcome/02-hero-builder-welcome.png",
+    "args": ["--pad", "130", "--radius", "34"]
+  }
+]

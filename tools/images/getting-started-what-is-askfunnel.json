@@ -1,12 +1,12 @@
 [
   {
     "out": "images/getting-started/what-is-askfunnel/funnel-question.png",
-    "src": "source/raw/getting-started/what-is-askfunnel/04-funnel-question-frame063.png",
-    "args": ["--crop", "320,100,630,500"]
+    "src": "source/raw/getting-started/what-is-askfunnel/01-funnel-question.png",
+    "args": ["--crop", "100,0,1190,1400", "--width", "1470"]
   },
   {
     "out": "images/getting-started/what-is-askfunnel/funnel-lead-form.png",
-    "src": "source/raw/getting-started/what-is-askfunnel/05-funnel-lead-form-frame439.png",
-    "args": ["--crop", "320,100,630,390"]
+    "src": "source/raw/getting-started/what-is-askfunnel/02-funnel-lead-form.png",
+    "args": ["--crop", "100,0,1190,1220", "--width", "1470"]
   }
 ]

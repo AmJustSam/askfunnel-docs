@@ -1,12 +1,32 @@
 [
   {
     "out": "images/funnels/layout-blocks/blocks-menu.png",
-    "src": "source/raw/funnels/layout-blocks/03-blocks-popout.png",
-    "args": ["--crop", "0,100,490,565", "--ring", "10,162,233,53", "--ring", "265,166,96,68", "--ring", "265,241,96,68", "--pad", "44", "--radius", "16"]
+    "src": "source/raw/funnels/layout-blocks/01-blocks-popout.png",
+    "args": [
+      "--crop",
+      "0,128,1460,1087",
+      "--ring",
+      "22,308,714,148",
+      "--ring",
+      "784,318,326,447",
+      "--pad",
+      "56",
+      "--radius",
+      "20"
+    ]
   },
   {
     "out": "images/funnels/layout-blocks/block-toolbar.png",
-    "src": "source/raw/funnels/layout-blocks/04-button-selected.png",
-    "args": ["--crop", "0,98,1150,567", "--ring", "1110,205,30,72", "--pad", "56", "--radius", "20"]
+    "src": "source/raw/funnels/layout-blocks/03-button-selected-narrow.png",
+    "args": [
+      "--crop",
+      "0,130,2010,815",
+      "--ring",
+      "1886,723,64,64",
+      "--pad",
+      "56",
+      "--radius",
+      "20"
+    ]
   }
 ]

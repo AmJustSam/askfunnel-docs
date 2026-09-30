@@ -1,12 +1,24 @@
 [
   {
     "out": "images/billing/billing-and-invoices/billing-page.png",
-    "src": "source/raw/billing/billing-and-invoices/01-billing-page-clean.png",
+    "src": "source/raw/billing/billing-and-invoices/01-billing-page.png",
     "args": [
       "--crop",
-      "320,75,1250,490",
+      "360,150,2840,1120",
       "--ring",
-      "340,326,92,34"
+      "372,650,260,88"
+    ]
+  },
+  {
+    "out": "images/billing/billing-and-invoices/profile-menu.png",
+    "src": "source/raw/billing/billing-and-invoices/02-profile-menu.png",
+    "args": [
+      "--crop",
+      "2556,0,620,950",
+      "--ring",
+      "2555,735,593,88",
+      "--width",
+      "1100"
     ]
   }
 ]

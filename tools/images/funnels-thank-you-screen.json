@@ -1,12 +1,28 @@
 [
   {
-    "out": "images/funnels/thank-you-screen/results-list.png",
-    "src": "source/raw/funnels/manage-pages/01-image.png",
-    "args": ["--crop", "0,78,470,520", "--ring", "16,480,434,50", "--pad", "56", "--radius", "20"]
+    "out": "images/funnels/thank-you-screen/default-thank-you.png",
+    "src": "source/raw/funnels/thank-you-screen/02-default-thank-you.png",
+    "args": [
+      "--crop",
+      "1606,251,748,709",
+      "--width",
+      "1470",
+      "--radius",
+      "24"
+    ]
   },
   {
-    "out": "images/funnels/thank-you-screen/default-thank-you.png",
-    "src": "source/raw/funnels/manage-pages/03-image.png",
-    "args": ["--crop", "650,75,990,350", "--radius", "24"]
+    "out": "images/funnels/thank-you-screen/results-list.png",
+    "src": "source/raw/funnels/thank-you-screen/01-result-selected.png",
+    "args": [
+      "--crop",
+      "0,128,760,1180",
+      "--ring",
+      "22,1120,714,101",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
   }
 ]

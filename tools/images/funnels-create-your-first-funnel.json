@@ -1,12 +1,46 @@
 [
   {
+    "out": "images/funnels/create-your-first-funnel/chooser.png",
+    "src": "source/raw/funnels/create-your-first-funnel/01-chooser.png",
+    "args": [
+      "--crop",
+      "800,572,1600,656",
+      "--ring",
+      "836,761,504,406",
+      "--pad",
+      "70",
+      "--radius",
+      "18"
+    ]
+  },
+  {
     "out": "images/funnels/create-your-first-funnel/name-your-funnel.png",
-    "src": "source/raw/funnels/create-your-first-funnel/04-name-step.png",
-    "args": ["--crop", "300,225,555,205", "--ring", "650,341,106,36", "--pad", "40", "--radius", "14"]
+    "src": "source/raw/funnels/create-your-first-funnel/02-name-step.png",
+    "args": [
+      "--crop",
+      "801,720,1598,360",
+      "--ring",
+      "2065,921,299,112",
+      "--pad",
+      "90",
+      "--radius",
+      "30"
+    ]
   },
   {
     "out": "images/funnels/create-your-first-funnel/content-sections.png",
-    "src": "source/raw/funnels/create-your-first-funnel/05-content-tab-hero-variants.png",
-    "args": ["--crop", "0,98,548,500", "--ring", "138,110,124,28", "--ring", "12,274,250,56", "--pad", "44", "--radius", "16"]
+    "src": "source/raw/funnels/create-your-first-funnel/04-hero-designs.png",
+    "args": [
+      "--crop",
+      "0,128,1460,1087",
+      "--ring",
+      "371,150,365,95",
+      "--ring",
+      "22,667,714,148",
+      "--pad",
+      "56",
+      "--radius",
+      "20"
+    ]
   }
 ]

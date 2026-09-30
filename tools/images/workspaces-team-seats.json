@@ -1,22 +1,22 @@
 [
   {
     "out": "images/workspaces/team-seats/seat-count.png",
-    "src": "source/raw/workspaces/give-access/02-members-page-frame000.png",
+    "src": "source/raw/workspaces/give-access/02-members-page.png",
     "args": [
       "--crop",
-      "340,125,810,130",
+      "870,160,1980,300",
       "--ring",
-      "1078,180,68,44"
+      "2636,290,158,123"
     ]
   },
   {
     "out": "images/workspaces/team-seats/counted-and-free.png",
-    "src": "source/raw/workspaces/team-seats/05-seat-table-frame503.png",
+    "src": "source/raw/workspaces/give-access/02-members-page.png",
     "args": [
       "--crop",
-      "524,340,618,206",
+      "900,600,1940,860",
       "--ring",
-      "874,452,56,28"
+      "2200,1147,110,63"
     ]
   }
 ]

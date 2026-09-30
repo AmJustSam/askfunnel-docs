@@ -1,7 +1,38 @@
 [
   {
     "out": "images/funnels/grid-layouts/two-columns.png",
-    "src": "source/raw/funnels/grid-layouts/06-two-columns-breadcrumb.png",
-    "args": ["--crop", "0,106,890,214", "--ring", "6,111,110,16", "--pad", "44", "--radius", "16"]
+    "src": "source/raw/funnels/grid-layouts/04-two-columns-clean.png",
+    "args": [
+      "--crop",
+      "958,252,2043,760",
+      "--radius",
+      "28"
+    ]
+  },
+  {
+    "out": "images/funnels/grid-layouts/drag-add-column.png",
+    "src": "source/raw/funnels/grid-layouts/01-drag-add-column.png",
+    "args": [
+      "--crop",
+      "944,168,2192,880",
+      "--ring",
+      "2902,606,206,58",
+      "--radius",
+      "28"
+    ]
+  },
+  {
+    "out": "images/funnels/grid-layouts/column-settings.png",
+    "src": "source/raw/funnels/grid-layouts/03-column-settings.png",
+    "args": [
+      "--crop",
+      "0,128,760,1172",
+      "--ring",
+      "196,254,104,44",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
   }
 ]

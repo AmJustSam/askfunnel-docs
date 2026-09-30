@@ -1,7 +1,30 @@
 [
   {
     "out": "images/leads/delete-leads/bulk-delete.png",
-    "src": "source/raw/leads/delete-leads/02-bulk-bar-copy.png",
-    "args": ["--crop", "460,828,460,72", "--ring", "766,842,84,44", "--width", "900", "--pad-y", "70"]
+    "src": "source/raw/leads/delete-leads/01-bulk-bar.png",
+    "args": [
+      "--crop",
+      "500,1602,1000,166",
+      "--ring",
+      "1135,1666,195,88",
+      "--width",
+      "1200",
+      "--pad-y",
+      "80"
+    ]
+  },
+  {
+    "out": "images/leads/delete-leads/delete-dialog.png",
+    "src": "source/raw/leads/delete-leads/02-delete-dialog.png",
+    "args": [
+      "--crop",
+      "480,720,1040,360",
+      "--ring",
+      "1302,934,180,96",
+      "--radius",
+      "22",
+      "--width",
+      "1470"
+    ]
   }
 ]

@@ -1,10 +1,12 @@
 [
   {
     "out": "images/workspaces/what-is-a-workspace/workspace-card.png",
-    "src": "source/raw/workspaces/switch-workspaces/01-image.png",
+    "src": "source/raw/workspaces/what-is-a-workspace/01-grid-2col.png",
     "args": [
       "--crop",
-      "704,201,490,455"
+      "43,314,730,693",
+      "--width",
+      "1200"
     ]
   }
 ]

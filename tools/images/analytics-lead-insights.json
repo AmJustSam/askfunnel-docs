@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/analytics/lead-insights/tracking-tab.png",
+    "src": "source/raw/analytics/lead-insights/02-lead-tracking.png",
+    "args": ["--crop", "2004,0,1196,1484", "--ring", "2685,326,144,64", "--width", "1470"]
+  },
+  {
+    "out": "images/analytics/lead-insights/notes-tab.png",
+    "src": "source/raw/analytics/lead-insights/01-lead-notes.png",
+    "args": ["--crop", "2004,0,1196,1600", "--width", "1470"]
+  }
+]

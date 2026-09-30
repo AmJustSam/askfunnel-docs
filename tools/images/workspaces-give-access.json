@@ -1,12 +1,36 @@
 [
   {
+    "out": "images/workspaces/give-access/avatar-menu.png",
+    "src": "source/raw/workspaces/give-access/01-avatar-menu.png",
+    "args": [
+      "--crop",
+      "2556,0,620,950",
+      "--ring",
+      "2555,516,593,88",
+      "--width",
+      "1100"
+    ]
+  },
+  {
     "out": "images/workspaces/give-access/members-page.png",
-    "src": "source/raw/workspaces/give-access/02-members-page-frame000.png",
-    "args": ["--crop", "0,56,1280,300", "--ring", "1012,260,130,32"]
+    "src": "source/raw/workspaces/give-access/02-members-page.png",
+    "args": [
+      "--crop",
+      "900,440,1940,1030",
+      "--ring",
+      "2500,479,330,96"
+    ]
   },
   {
     "out": "images/workspaces/give-access/invite-form.png",
-    "src": "source/raw/workspaces/give-access/03-invite-modal-frame068.png",
-    "args": ["--crop", "423,169,434,382", "--ring", "718,488,119,38"]
+    "src": "source/raw/workspaces/give-access/03-invite-form.png",
+    "args": [
+      "--crop",
+      "1084,659,1032,882",
+      "--radius",
+      "24",
+      "--width",
+      "1470"
+    ]
   }
 ]

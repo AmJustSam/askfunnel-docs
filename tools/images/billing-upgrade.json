@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/billing/upgrade/choose-your-plan.png",
+    "src": "source/raw/billing/upgrade/01-change-plan-trial.png",
+    "args": [
+      "--crop",
+      "0,20,2667,1990",
+      "--ring",
+      "1914,869,681,109"
+    ]
+  }
+]

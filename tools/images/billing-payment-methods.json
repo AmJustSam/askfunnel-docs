@@ -10,16 +10,6 @@
     ]
   },
   {
-    "out": "images/billing/payment-methods/checkout-paypal.png",
-    "src": "source/raw/billing/payment-methods/02-image.png",
-    "args": [
-      "--crop",
-      "385,130,700,504",
-      "--ring",
-      "735,202,311,72"
-    ]
-  },
-  {
     "out": "images/billing/payment-methods/update-payment-method.png",
     "src": "source/raw/billing/payment-methods/03-update-dialog-clean.png",
     "args": [

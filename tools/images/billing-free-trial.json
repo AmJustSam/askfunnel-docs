@@ -1,0 +1,22 @@
+[
+  {
+    "out": "images/billing/free-trial/move-trial.png",
+    "src": "source/raw/billing/free-trial/01-move-trial-starter.png",
+    "args": [
+      "--crop",
+      "0,20,2667,1990",
+      "--ring",
+      "1914,961,681,56"
+    ]
+  },
+  {
+    "out": "images/billing/free-trial/pick-a-plan.png",
+    "src": "source/raw/getting-started/create-account/06-choose-plan.png",
+    "args": [
+      "--crop",
+      "20,30,2360,1850",
+      "--ring",
+      "674,1526,468,100"
+    ]
+  }
+]

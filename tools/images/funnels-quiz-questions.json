@@ -1,12 +1,32 @@
 [
   {
     "out": "images/funnels/quiz-questions/interactions-menu.png",
-    "src": "source/raw/funnels/lead-capture-forms/02-image-clean.png",
-    "args": ["--crop", "0,62,727,420", "--ring", "13,227,347,64", "--ring", "395,163,152,101", "--ring", "558,163,152,101", "--pad", "56", "--radius", "20"]
+    "src": "source/raw/funnels/quiz-questions/01-interactions.png",
+    "args": [
+      "--crop",
+      "0,128,1460,700",
+      "--ring",
+      "22,449,714,146",
+      "--ring",
+      "784,318,656,223",
+      "--pad",
+      "56",
+      "--radius",
+      "20"
+    ]
   },
   {
     "out": "images/funnels/quiz-questions/quiz-settings.png",
-    "src": "source/raw/funnels/quiz-questions/04-media-quiz-settings.png",
-    "args": ["--crop", "0,98,1100,500", "--ring", "12,172,260,70", "--pad", "56", "--radius", "20"]
+    "src": "source/raw/funnels/quiz-questions/02-quiz-selected.png",
+    "args": [
+      "--crop",
+      "0,128,760,880",
+      "--ring",
+      "22,374,714,208",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
   }
 ]

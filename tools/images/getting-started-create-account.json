@@ -1,7 +1,72 @@
 [
   {
+    "out": "images/getting-started/create-account/signup.png",
+    "src": "source/raw/getting-started/create-account/01-signup.png",
+    "args": [
+      "--crop",
+      "260,230,1080,1190",
+      "--ring",
+      "363,1073,872,108",
+      "--width",
+      "1470"
+    ]
+  },
+  {
+    "out": "images/getting-started/create-account/check-email.png",
+    "src": "source/raw/getting-started/create-account/02-check-email.png",
+    "args": [
+      "--crop",
+      "260,520,1080,620",
+      "--width",
+      "1470"
+    ]
+  },
+  {
     "out": "images/getting-started/create-account/setup-location.png",
-    "src": "source/raw/getting-started/create-account/04-onboarding-location-frame057.png",
-    "args": ["--crop", "330,135,620,470"]
+    "src": "source/raw/getting-started/create-account/04-setup-location.png",
+    "args": [
+      "--crop",
+      "980,60,1240,720",
+      "--ring",
+      "1028,622,1144,96",
+      "--width",
+      "1470",
+      "--pad-y",
+      "80"
+    ]
+  },
+  {
+    "out": "images/getting-started/create-account/setup-workspace.png",
+    "src": "source/raw/getting-started/create-account/05-setup-workspace.png",
+    "args": [
+      "--crop",
+      "980,60,1240,780",
+      "--ring",
+      "1028,659,1144,100",
+      "--width",
+      "1470",
+      "--pad-y",
+      "80"
+    ]
+  },
+  {
+    "out": "images/getting-started/create-account/choose-plan.png",
+    "src": "source/raw/getting-started/create-account/06-choose-plan.png",
+    "args": [
+      "--crop",
+      "20,30,2360,1850",
+      "--ring",
+      "674,1526,468,100"
+    ]
+  },
+  {
+    "out": "images/getting-started/create-account/trial-started.png",
+    "src": "source/raw/getting-started/create-account/07-trial-started.png",
+    "args": [
+      "--crop",
+      "0,0,2133,1230",
+      "--ring",
+      "1814,28,188,72"
+    ]
   }
 ]

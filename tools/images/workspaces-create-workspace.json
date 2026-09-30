@@ -1,12 +1,24 @@
 [
   {
     "out": "images/workspaces/create-workspace/create-button.png",
-    "src": "source/raw/workspaces/switch-workspaces/01-image.png",
-    "args": ["--crop", "690,90,1040,580", "--ring", "1491,116,220,48"]
+    "src": "source/raw/workspaces/what-is-a-workspace/01-grid-2col.png",
+    "args": [
+      "--crop",
+      "0,128,1600,910",
+      "--ring",
+      "1198,166,372,96"
+    ]
   },
   {
     "out": "images/workspaces/create-workspace/create-dialog.png",
-    "src": "source/raw/workspaces/create-workspace/03-create-dialog-frame305.png",
-    "args": ["--crop", "423,168,434,382"]
+    "src": "source/raw/workspaces/create-workspace/03-create-dialog.png",
+    "args": [
+      "--crop",
+      "952,441,1296,918",
+      "--radius",
+      "24",
+      "--ring",
+      "1906,1221,300,84"
+    ]
   }
 ]

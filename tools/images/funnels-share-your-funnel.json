@@ -1,7 +1,44 @@
 [
   {
     "out": "images/funnels/share-your-funnel/view-funnel-icon.png",
-    "src": "source/raw/funnels/share-your-funnel/02-image-clean.png",
-    "args": ["--crop", "335,200,1220,365", "--ring", "1121,280,36,34", "--ring", "1068,283,44,30"]
+    "src": "source/raw/funnels/share-your-funnel/01-funnels-list.png",
+    "args": [
+      "--crop",
+      "380,410,1880,570",
+      "--ring",
+      "1962,718,60,56",
+      "--pad",
+      "56",
+      "--radius",
+      "18"
+    ]
+  },
+  {
+    "out": "images/funnels/share-your-funnel/funnel-domains.png",
+    "src": "source/raw/funnels/share-your-funnel/03-funnel-domains.png",
+    "args": [
+      "--crop",
+      "560,160,1600,590",
+      "--ring",
+      "2029,424,62,62",
+      "--pad",
+      "56",
+      "--radius",
+      "18"
+    ]
+  },
+  {
+    "out": "images/funnels/share-your-funnel/row-menu.png",
+    "src": "source/raw/funnels/share-your-funnel/02-row-menu.png",
+    "args": [
+      "--crop",
+      "1827,412,992,820",
+      "--ring",
+      "2170,1028,578,70",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
   }
 ]

@@ -1,7 +1,26 @@
 [
   {
     "out": "images/leads/contact-status/total-leads.png",
-    "src": "source/raw/leads/contact-status/03-toolbar-copy.png",
-    "args": ["--crop", "44,88,1220,50", "--ring", "1103,92,152,40", "--pad", "64", "--pad-y", "64"]
+    "src": "source/raw/leads/contact-status/01-total-leads.png",
+    "args": [
+      "--crop",
+      "1000,160,980,700",
+      "--ring",
+      "1626,182,325,88",
+      "--width",
+      "1470"
+    ]
+  },
+  {
+    "out": "images/leads/contact-status/status-list.png",
+    "src": "source/raw/leads/contact-status/02-status-list.png",
+    "args": [
+      "--crop",
+      "1800,560,1100,900",
+      "--ring",
+      "2275,1305,589,100",
+      "--width",
+      "1470"
+    ]
   }
 ]

@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/leads/crm-contacts/lead-profile.png",
+    "src": "source/raw/leads/crm-contacts/01-lead-profile.png",
+    "args": ["--crop", "2004,0,1196,1600", "--width", "1470"]
+  },
+  {
+    "out": "images/leads/crm-contacts/open-lead-icon.png",
+    "src": "source/raw/leads/crm-contacts/02-open-lead-icon.png",
+    "args": ["--crop", "41,296,1000,444", "--ring", "552,405,72,72", "--width", "1470", "--pad-y", "80"]
+  }
+]

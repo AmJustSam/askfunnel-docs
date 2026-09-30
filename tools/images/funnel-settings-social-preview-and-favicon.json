@@ -1,7 +1,30 @@
 [
   {
     "out": "images/funnel-settings/social-preview-and-favicon/social-preview.png",
-    "src": "source/raw/funnel-settings/social-preview-and-favicon/01-Social-Preview---Favicon.png",
-    "args": ["--crop", "0,0,1290,800", "--ring", "42,62,232,26", "--ring", "311,476,458,238"]
+    "src": "source/raw/funnel-settings/social-preview-and-favicon/07-social-saved.png",
+    "args": [
+      "--crop",
+      "570,150,1600,1732",
+      "--ring",
+      "587,1101,938,501",
+      "--pad",
+      "70",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/funnel-settings/social-preview-and-favicon/favicon.png",
+    "src": "source/raw/funnel-settings/social-preview-and-favicon/02-favicon.png",
+    "args": [
+      "--crop",
+      "560,170,1620,730",
+      "--ring",
+      "636,532,299,299",
+      "--pad",
+      "70",
+      "--radius",
+      "20"
+    ]
   }
 ]

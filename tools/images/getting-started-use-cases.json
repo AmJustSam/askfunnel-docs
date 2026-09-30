@@ -1,0 +1,7 @@
+[
+  {
+    "out": "images/getting-started/use-cases/client-workspaces.png",
+    "src": "source/raw/workspaces/what-is-a-workspace/01-grid-2col.png",
+    "args": ["--crop", "0,128,1600,1670"]
+  }
+]

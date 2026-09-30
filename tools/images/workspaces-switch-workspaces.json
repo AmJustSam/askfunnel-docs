@@ -1,12 +1,22 @@
 [
   {
     "out": "images/workspaces/switch-workspaces/home-icon.png",
-    "src": "source/raw/workspaces/give-access/02-members-page-frame000.png",
-    "args": ["--crop", "0,58,1280,52", "--ring", "54,68,32,30"]
+    "src": "source/raw/workspaces/switch-workspaces/02-funnels-page.png",
+    "args": [
+      "--crop",
+      "0,0,1100,370",
+      "--ring",
+      "38,21,84,84"
+    ]
   },
   {
     "out": "images/workspaces/switch-workspaces/workspace-card.png",
-    "src": "source/raw/workspaces/switch-workspaces/01-image.png",
-    "args": ["--crop", "690,190,520,480", "--ring", "705,203,488,452"]
+    "src": "source/raw/workspaces/what-is-a-workspace/01-grid-2col.png",
+    "args": [
+      "--crop",
+      "0,290,1600,740",
+      "--ring",
+      "31,303,754,715"
+    ]
   }
 ]

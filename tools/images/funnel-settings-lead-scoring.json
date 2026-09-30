@@ -1,44 +1,46 @@
 [
   {
     "out": "images/funnel-settings/lead-scoring/lead-scoring-settings.png",
-    "src": "source/raw/funnel-settings/lead-scoring/01-Lead-Score-Enable.png",
+    "src": "source/raw/funnel-settings/lead-scoring/06-scoring-ranges-filled.png",
     "args": [
       "--crop",
-      "335,62,1235,410",
+      "560,150,1620,950",
       "--ring",
-      "1488,186,52,30",
+      "1990,530,112,66",
       "--ring",
-      "1396,238,126,44",
-      "--ring",
-      "1396,314,126,44"
+      "1812,632,254,246",
+      "--pad",
+      "70",
+      "--radius",
+      "20"
     ]
   },
   {
     "out": "images/funnel-settings/lead-scoring/score-rule.png",
-    "src": "source/raw/funnel-settings/lead-scoring/05-action-flow-rule-score.png",
+    "src": "source/raw/funnel-settings/lead-scoring/09-action-flow-one-rule.png",
     "args": [
       "--crop",
-      "357,190,368,340",
+      "950,300,1300,1200",
       "--ring",
-      "414,394,68,24",
-      "--pad",
-      "40",
+      "1146,1024,246,72",
+      "--width",
+      "1470",
       "--radius",
-      "14"
+      "20"
     ]
   },
   {
     "out": "images/funnel-settings/lead-scoring/leads-score-column.png",
-    "src": "source/raw/funnel-settings/lead-scoring/03-Screenshot-2026-08-09-215536.png",
+    "src": "source/raw/funnel-settings/lead-scoring/10-real-estate-score.png",
     "args": [
       "--crop",
-      "522,155,774,162",
+      "381,309,1700,1043",
       "--ring",
-      "722,158,132,150",
+      "1790,314,284,1033",
       "--pad",
-      "48",
+      "80",
       "--radius",
-      "18"
+      "20"
     ]
   }
 ]

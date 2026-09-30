@@ -1,12 +1,12 @@
 [
   {
     "out": "images/leads/export-contacts/export-menu.png",
-    "src": "source/raw/leads/export-contacts/01-16299321-screenshot-2026-08-10-201610.png",
-    "args": ["--crop", "214,135,301,143", "--ring", "224,143,288,36", "--width", "900", "--pad-y", "70"]
+    "src": "source/raw/leads/export-contacts/01-view-options.png",
+    "args": ["--crop", "41,165,905,480", "--ring", "337,352,580,144", "--width", "1470"]
   },
   {
     "out": "images/leads/export-contacts/bulk-export.png",
-    "src": "source/raw/leads/export-contacts/01-16299321-screenshot-2026-08-10-201610.png",
-    "args": ["--crop", "460,828,460,72", "--ring", "668,842,88,44", "--width", "900", "--pad-y", "70"]
+    "src": "source/raw/leads/delete-leads/01-bulk-bar.png",
+    "args": ["--crop", "500,1602,1000,166", "--ring", "948,1666,195,88", "--width", "1200", "--pad-y", "80"]
   }
 ]
