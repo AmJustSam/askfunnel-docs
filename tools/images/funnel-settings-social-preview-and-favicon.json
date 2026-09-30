@@ -1,0 +1,7 @@
+[
+  {
+    "out": "images/funnel-settings/social-preview-and-favicon/social-preview.png",
+    "src": "source/raw/funnel-settings/social-preview-and-favicon/01-Social-Preview---Favicon.png",
+    "args": ["--crop", "0,0,1290,800", "--ring", "42,62,232,26", "--ring", "311,476,458,238"]
+  }
+]

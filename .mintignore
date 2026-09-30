@@ -5,3 +5,10 @@
 # Draft content
 drafts/
 *.draft.mdx
+
+# Tooling (not pages)
+tools/
+package.json
+package-lock.json
+source/
+.home/

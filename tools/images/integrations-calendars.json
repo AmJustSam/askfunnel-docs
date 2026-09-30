@@ -1,0 +1,14 @@
+[
+  {
+    "out": "images/integrations/calendars/connect-calendar.png",
+    "src": "source/raw/integrations/calendars/01-workspace-calendars.png",
+    "args": [
+      "--crop",
+      "260,85,920,425",
+      "--ring",
+      "272,178,140,34",
+      "--ring",
+      "553,241,600,52"
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "out": "images/integrations/highlevel/connect-card.png",
+    "src": "source/raw/integrations/highlevel/01-funnel-settings-integrations.png",
+    "args": [
+      "--crop",
+      "350,165,1840,530",
+      "--ring",
+      "384,194,270,70",
+      "--ring",
+      "1578,554,174,70"
+    ]
+  },
+  {
+    "out": "images/integrations/highlevel/match-fields.png",
+    "src": "source/raw/integrations/highlevel/02-setup-fields-full.png",
+    "args": [
+      "--crop",
+      "954,300,1292,990",
+      "--pad",
+      "89"
+    ]
+  },
+  {
+    "out": "images/integrations/highlevel/tags-and-note.png",
+    "src": "source/raw/integrations/highlevel/03-setup-tags-note-full.png",
+    "args": [
+      "--crop",
+      "950,880,1300,620"
+    ]
+  },
+  {
+    "out": "images/integrations/highlevel/contact-in-highlevel.png",
+    "src": "source/raw/integrations/highlevel/04-highlevel-contact.png",
+    "args": [
+      "--radius",
+      "38"
+    ]
+  },
+  {
+    "out": "images/integrations/highlevel/delivery-log.png",
+    "src": "source/raw/integrations/highlevel/05-delivery-log.png",
+    "args": []
+  }
+]

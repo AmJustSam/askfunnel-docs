@@ -1,0 +1,125 @@
+---
+title: "Track your traffic with Google Analytics (GA4)"
+sidebarTitle: "Google Analytics"
+description: "See how visitors move through your funnel in your own Google Analytics reports."
+icon: "chart-simple"
+---
+
+<Callout icon="star" color="#155DFC">
+  Available on: **all plans** (Starter, Growth, Scale and Enterprise).
+</Callout>
+
+Google Analytics 4 (GA4) is Google's free tool for seeing where your visitors come from and what they do. Connect it and AskFunnel sends your funnel's page views and steps to your GA4 property automatically.
+
+With the Google Analytics integration, you can:
+
+- **Start in one minute.** Paste your Measurement ID. There is nothing to map, because AskFunnel uses event names GA4 accepts.
+- **See the path through your funnel.** Every page, answer, button click, form start and form submission arrives as its own event.
+- **Count your leads.** Each submitted form is sent as a **generate_lead** event, the event name GA4 uses for leads.
+- **Use your existing reports.** The events show up next to the rest of your GA4 data.
+
+## Important to note
+
+<Warning>
+  - When your cookie banner is on, Google Analytics only tracks visitors who accept **analytics** cookies. See [Cookies and consent](/funnel-settings/cookies-and-consent).
+  - You need a **GA4** property. Its Measurement ID starts with **G-**. Old Universal Analytics IDs that start with UA- do not work.
+  - Ad blockers block Google Analytics. Test with your ad blocker turned off.
+</Warning>
+
+## Setup
+
+<Steps>
+  <Step title="Open the Google Analytics settings">
+    1. From your main dashboard, find the funnel you want to track.
+    2. Click the three small dots (**...**) on that funnel's row, then click **"Funnel Settings"**.
+    3. On the left side menu, click **"Integrations"**.
+    4. Under **Tracking**, on the **Google Analytics** card, click **"Settings"**.
+
+    {/* IMAGE: Funnel Settings, Integrations page with the "Send leads to" and "Tracking" groups; ring "Integrations" in the left menu and "Settings" on the Google Analytics card */}
+  </Step>
+  <Step title="Paste your Measurement ID">
+    1. In Google Analytics, click the gear icon (**Admin**) at the bottom left.
+    2. Under **Data collection and modification**, click **Data streams**, then click your web stream.
+    3. At the top right of the stream details, copy the **Measurement ID**. It looks like G-XXXXXXXXXX.
+    4. Back in AskFunnel, paste it into **Measurement ID**.
+
+    {/* IMAGE: Google Analytics, Admin, Data streams, open web stream with a demo property (no real site name, stream ID or Measurement ID); ring the Measurement ID and its copy icon */}
+    {/* IMAGE: the Google Analytics 4 settings with a sample Measurement ID typed in; ring the Measurement ID field */}
+
+    <Tip>
+      - Copy the **Measurement ID**, not the **Stream ID**. The Stream ID is only numbers.
+      - No GA4 property yet? In Google Analytics, create a property and add a **Web** data stream, using your funnel's address as the website.
+    </Tip>
+  </Step>
+  <Step title="Save and go live">
+    In the bar that appears at the top, click **"Save changes"**. If your funnel is published, AskFunnel shows **Settings saved. Your live funnel is updated.**
+
+    If you see **Expected format: G- followed by letters or digits**, check that you copied the whole Measurement ID.
+
+    {/* IMAGE: the "You have unsaved changes" bar with "Save changes" after a Measurement ID is entered; ring "Save changes" */}
+  </Step>
+</Steps>
+
+## What gets sent to Google Analytics
+
+Google's own tag records a standard **page_view** when your funnel opens. On top of that, AskFunnel sends these events. Each is sent once per visit, so going back to a page does not count it again.
+
+| What the visitor does | GA4 event | funnel_label |
+|---|---|---|
+| Reaches a funnel page | `funnel_page_view` | The page name |
+| Clicks an answer | `answer_click` | The answer text |
+| Clicks a button | `button_click` | The button text |
+| Types in the first field of the lead form | `form_start` | None |
+| Submits the lead form | `generate_lead` | None |
+
+The **funnel_label** is sent as an event parameter. To use it in reports, add it as a custom dimension in GA4.
+
+<Note>
+  Event mapping is not available for Google Analytics, because GA4 only accepts event names made of letters, numbers and underscores. To rename steps for Meta or TikTok, see [Map your funnel steps to standard events](/integrations/event-mapping).
+</Note>
+
+In GA4 you can mark **generate_lead** as a key event, so your leads count as conversions in your reports.
+
+## Tracking where your leads come from
+
+There is nothing to set up. Google Analytics reads the UTM parameters and the referrer from your funnel's address by itself, so your campaigns show up in its acquisition reports. AskFunnel also keeps them with each lead. See [Lead insights](/analytics/lead-insights).
+
+## How do I know it is working?
+
+- The Google Analytics card shows **Connected**, and its switch is on.
+- In Google Analytics, open **Reports**, then **Realtime**. Open your funnel in another tab, accept the cookies and click through it. You should appear within a minute, with events such as **funnel_page_view** and **answer_click**.
+- Standard reports can take a day to update.
+
+{/* IMAGE: Google Analytics Realtime report showing events from a test visit (demo property, no real names) */}
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="I don't see any data in Google Analytics">
+    Check these, in order:
+
+    - The card shows **Connected**, not **Paused** or **Not connected**.
+    - You clicked **"Save changes"** after pasting the Measurement ID.
+    - The Measurement ID belongs to a **GA4** property and matches the web stream for your funnel.
+    - You accepted analytics cookies on the funnel, if your cookie banner is on.
+    - Your ad blocker or browser privacy setting is off for the test.
+    - For standard reports, a day has passed. Use **Realtime** to check right away.
+  </Accordion>
+  <Accordion title="It says Expected format: G- followed by letters or digits">
+    The Measurement ID must start with **G-**. You may have pasted the Stream ID, a UA- ID or a space. Copy the **Measurement ID** again from your web stream.
+  </Accordion>
+  <Accordion title="The card says Paused">
+    The switch on the card is off. Your setup is kept. Turn the switch on and click **"Save changes"**.
+  </Accordion>
+  <Accordion title="Can I rename the events or map them?">
+    No. Google Analytics uses fixed event names, listed above. Meta and TikTok can be mapped. See [Map your funnel steps to standard events](/integrations/event-mapping).
+  </Accordion>
+</AccordionGroup>
+
+## Managing the integration
+
+- **Pause it:** turn off the switch on the Google Analytics card, then click **"Save changes"**. Your Measurement ID is kept.
+- **Change the property:** replace the **Measurement ID** and click **"Save changes"**.
+- **Remove it from the funnel:** clear the **Measurement ID** and click **"Save changes"**. The card goes back to **Not connected**.
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

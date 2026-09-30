@@ -1,0 +1,7 @@
+[
+  {
+    "out": "images/getting-started/create-account/setup-location.png",
+    "src": "source/raw/getting-started/create-account/04-onboarding-location-frame057.png",
+    "args": ["--crop", "330,135,620,470"]
+  }
+]

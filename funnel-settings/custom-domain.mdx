@@ -1,0 +1,144 @@
+---
+title: "Connect your custom domain"
+sidebarTitle: "Custom domain"
+description: "Serve your funnels on your own web address, such as funnel.yourbrand.com, instead of askfunnel.com."
+icon: "globe"
+---
+
+<Callout icon="star" color="#155DFC">
+  Available on: **all plans** (Starter, Growth, Scale and Enterprise).
+</Callout>
+
+Put your funnels on your own web address, such as `funnel.yourbrand.com`, instead of your free AskFunnel address, such as `summit-realty.askfunnel.com`. It looks more trustworthy in ads and messages and keeps your brand in the link. You connect a domain once for your workspace. After that, you choose which funnels use it.
+
+With a custom domain, you can:
+
+- **Use your own brand in every link.** People see your web address, not askfunnel.com.
+- **Keep your main website untouched.** Use a subdomain (a prefix added to your domain, such as `funnel.yourbrand.com`) for your funnels and leave `yourbrand.com` for your website.
+- **Choose per funnel.** Turn a domain on for some funnels and leave others on your AskFunnel address.
+- **Get a secure link.** AskFunnel sets up the security certificate for you.
+
+**Before you start**, you need:
+
+- A Workspace Admin or Global Admin role. Only they can add or remove a domain, because **Workspace Settings** is for admins only. Content Editors can turn a connected domain on or off for a funnel.
+- A domain you own, and access to its DNS settings at the company where you bought it, for example Namecheap, GoDaddy or Cloudflare. DNS settings are where that company stores which address each web name opens.
+- A subdomain to use, such as `funnel.yourbrand.com` or `survey.yourbrand.com`.
+
+## Important to note
+
+<Warning>
+  - Use a subdomain, not a root domain such as `yourbrand.com`. A root domain can conflict with your existing website or email setup.
+  - A domain can be connected to only one workspace, and you cannot connect a domain that belongs to askfunnel.com.
+  - Your default AskFunnel address always keeps working. It cannot be turned off.
+</Warning>
+
+## Setup
+
+<Steps>
+  <Step title="Add your domain in Workspace Settings">
+    1. From your funnel list, click the three dots (**...**) on any funnel's row, then click **"Funnel Settings"**.
+    2. On the left side menu, click **"Domains"**.
+    3. Click **"Manage domains"**. This opens **Workspace Settings** on its **Domains** section.
+    4. Click **"Add domain"**.
+    5. Type your subdomain, for example `funnel.yourbrand.com`, and click **"Add domain"**.
+
+    ![Workspace Settings with the Domains menu item and the Add domain button highlighted](/images/funnel-settings/custom-domain/workspace-domains.png)
+
+    You can also open **Workspace settings** from the menu of your workspace on the **Workspaces** page, then click **"Domains"**.
+
+    If you enter a root domain, AskFunnel suggests a subdomain instead. Type any word before your domain, for example "funnel", and click **"Connect funnel.yourbrand.com"**. Only click **"I understand the risks, use the root domain"** if you are comfortable with DNS settings.
+  </Step>
+  <Step title="Add the DNS record at your domain provider">
+    AskFunnel now shows **Link your domain to AskFunnel** with a record to add. A CNAME record is a DNS entry that points your subdomain to AskFunnel. It has four parts: **Type**, **Host**, **Target** and **TTL**.
+
+    1. Open a new browser tab and sign in to your domain provider.
+    2. Find your **DNS settings** (some providers call it **Advanced DNS**) and add a new record:
+       - **Type:** **CNAME**
+       - **Host:** the first part of your subdomain. For `funnel.yourbrand.com`, enter **funnel**. If your domain ends in two parts, such as `.co.uk`, still enter only the first part of your subdomain.
+       - **Target** (or **Value**): copy it from AskFunnel. It is `funnels.askfunnel.com`.
+       - **TTL:** **Auto**, or leave the default.
+    3. Save the record.
+    4. Go back to AskFunnel and click **"I've added the DNS record"**.
+
+    <Note>
+      Using Cloudflare? Set the record to **DNS only** (the gray cloud), not **Proxied** (the orange cloud).
+    </Note>
+  </Step>
+  <Step title="Wait until the domain is active">
+    AskFunnel checks your record and keeps checking about every 15 seconds while the window is open. You can also click **"Check again now"**, or close the window with **"Finish later"**.
+
+    Changes to DNS can take a few minutes, and sometimes up to 24 hours, to reach the whole internet. Until the security certificate is ready, your link may show a security warning.
+
+    When it works, you see **Your domain is live** and the domain shows a green **Active** label in the list.
+
+    ![The domain list with a domain showing Pending, with the Finish setup button and the menu highlighted](/images/funnel-settings/custom-domain/pending-domain.png)
+  </Step>
+  <Step title="Choose the domain for your funnel">
+    1. Open **"Funnel Settings"** for the funnel you want, then click **"Domains"** on the left side menu.
+    2. Find your domain in the list and turn on the switch next to it. You see **Funnel domains updated**.
+    3. Click the copy icon next to the domain to copy the full link for that funnel.
+
+    The change saves right away and goes live within about a minute. You do not need to click **"Save changes"** or publish again.
+  </Step>
+</Steps>
+
+## How do I know it is working?
+
+- In **Workspace Settings**, then **Domains**, your domain shows a green **Active** label.
+- In **Funnel Settings**, then **Domains**, the switch next to your domain is on and says **People can open this funnel on this address.**
+- Paste the copied link into a private browser window. Your funnel opens on your own domain.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="My domain stays Pending">
+    Open the menu (**...**) next to the domain and click **"Check status"**. AskFunnel tells you what it sees:
+
+    - **DNS record not found yet.** Add the record at your domain provider, then check again. Also check that the **Host** is only the first part of your subdomain, for example **funnel**.
+    - **The record points to another address.** Change the **Target** to `funnels.askfunnel.com`.
+    - **Your DNS record points at Cloudflare.** Turn the orange cloud off so the record is **DNS only**.
+    - **DNS record found. Issuing the certificate now.** Wait a few minutes and check again.
+
+    If you want to see the record again, click **"Finish setup"** on the domain, or open the menu and click **"View DNS instructions"**.
+  </Accordion>
+  <Accordion title="My domain shows Issue">
+    Read the message under the domain name. If it mentions a CAA record, your domain settings block the security certificate. Ask your domain provider to remove the CAA record or to allow certificates for your domain, then click **"Check status"**. If it says the domain no longer points to AskFunnel, add the DNS record again, then remove the domain and add it again.
+  </Accordion>
+  <Accordion title="My browser shows a security warning">
+    The security certificate is not ready yet. Wait a few minutes and reload. It usually clears on its own.
+  </Accordion>
+  <Accordion title="I see This domain is already connected">
+    That domain is already connected to a workspace, maybe yours. Open **Workspace Settings**, then **Domains** to check. If it belongs to another workspace, remove it there first.
+  </Accordion>
+  <Accordion title="I do not see Manage domains or Workspace Settings">
+    Only Workspace Admins and Global Admins can open **Workspace Settings**. Ask an admin to add the domain. After that, you can turn it on for your funnels in **Funnel Settings**.
+  </Accordion>
+  <Accordion title="My pending domain disappeared">
+    A domain that does not get a working DNS record within about 14 days is removed. Add it again and finish the DNS step.
+  </Accordion>
+</AccordionGroup>
+
+## Manage your domains
+
+- **Turn a domain off for one funnel:** in that funnel's **Funnel Settings**, then **Domains**, turn off the switch. The funnel still works on your AskFunnel address.
+- **Remove a domain:** in **Workspace Settings**, then **Domains**, open the menu (**...**) next to the domain and click **"Remove domain"**.
+
+<Warning>
+  When you remove a domain, your funnels stop working on it right away and links you already shared on it stop working. Your funnels stay available on your AskFunnel address.
+</Warning>
+
+## What to do next
+
+<Columns cols={2}>
+  <Card title="Set your social preview and favicon" icon="image" href="/funnel-settings/social-preview-and-favicon">
+    Choose the title and picture people see when they share your link.
+  </Card>
+  <Card title="Set up cookies and consent" icon="cookie-bite" href="/funnel-settings/cookies-and-consent">
+    Ask people for permission before your funnel tracks them.
+  </Card>
+  <Card title="Share your funnel" icon="share-nodes" href="/funnels/share-your-funnel">
+    Use your new link in ads, messages and social posts.
+  </Card>
+</Columns>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

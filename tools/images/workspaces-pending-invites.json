@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/workspaces/pending-invites/pending-tab.png",
+    "src": "source/raw/workspaces/give-access/04-seats-full-frame338.png",
+    "args": ["--crop", "340,125,810,180", "--ring", "440,264,102,26"]
+  },
+  {
+    "out": "images/workspaces/pending-invites/resend-and-cancel.png",
+    "src": "source/raw/workspaces/pending-invites/02-pending-list-frame096.png",
+    "args": ["--crop", "690,315,452,175", "--ring", "992,367,62,32", "--ring", "1058,367,74,32"]
+  }
+]

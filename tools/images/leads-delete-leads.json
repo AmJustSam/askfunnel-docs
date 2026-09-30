@@ -1,0 +1,7 @@
+[
+  {
+    "out": "images/leads/delete-leads/bulk-delete.png",
+    "src": "source/raw/leads/delete-leads/02-bulk-bar-copy.png",
+    "args": ["--crop", "460,828,460,72", "--ring", "766,842,84,44", "--width", "900", "--pad-y", "70"]
+  }
+]

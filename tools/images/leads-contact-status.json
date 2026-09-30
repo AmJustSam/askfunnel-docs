@@ -1,0 +1,7 @@
+[
+  {
+    "out": "images/leads/contact-status/total-leads.png",
+    "src": "source/raw/leads/contact-status/03-toolbar-copy.png",
+    "args": ["--crop", "44,88,1220,50", "--ring", "1103,92,152,40", "--pad", "64", "--pad-y", "64"]
+  }
+]

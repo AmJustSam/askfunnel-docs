@@ -1,0 +1,142 @@
+---
+title: "Set up your lead capture form"
+sidebarTitle: "Lead capture form"
+description: "Add a form to collect names, emails and phone numbers, choose your fields and decide where visitors go next."
+icon: "clipboard-list"
+---
+
+Add a form to your funnel so people can leave their details and become leads you can follow up with. A new **Form** block comes with a heading, a short line of text, **Full name**, **Email** and **Phone** fields and a **Submit** button. You can change all of it.
+
+With the form block, you can:
+
+- **Choose what you ask.** Pick from 15 field types, such as name, email, phone, date, dropdown, country and a consent checkbox.
+- **Set what is required.** Every field is required by default, and you can make any field optional.
+- **Check answers as people type.** Emails, phone numbers, websites, numbers and dates are checked before the form can be sent.
+- **Decide what happens next.** Send people to the next page, to a specific page or result, or to your own website.
+
+**Before you start**, you need:
+
+- A funnel open in the builder. See [Create your first funnel](/funnels/create-your-first-funnel).
+- A page for the form. This is usually the last page before your thank you screen. See [Manage your funnel pages](/funnels/manage-pages).
+
+## Important to note
+
+<Warning>
+  - A lead is saved only when the visitor fills in an **Email** or a **Phone** field. If your form asks only for a name, or the visitor leaves both empty, they still move on but no lead is saved. Keep at least one of them in your form.
+  - Each form saves its own lead when it is submitted. Most funnels need one form, on the last page before the thank you screen.
+</Warning>
+
+## Add and customize your form
+
+<Steps>
+  <Step title="Add the form to a page">
+    1. In the builder, open the page where you want the form.
+    2. Click the **"Content"** tab on the left side menu.
+    3. Click **"Interactions"**, then click **"Form"** under **Forms**. The form is added to your page.
+
+    ![The Content tab with Interactions and the Form block highlighted, and the new form on the canvas](/images/funnels/lead-capture-forms/form-block.png)
+  </Step>
+  <Step title="Write your heading and text">
+    Click the heading at the top of the form and type your own, for example "Get your free home valuation". Click the line under it and explain what happens next, for example "Enter your details and our team will call you within one business day."
+
+    A form holds up to 2 lines of text, such as a heading and a subheading, and one button.
+  </Step>
+  <Step title="Choose your fields">
+    A form holds 1 to 8 fields.
+
+    1. Click a field to select it. A small toolbar appears at its right, and the left panel shows its settings.
+    2. In the dropdown at the top of the left panel, choose the field type: **Full name**, **First name**, **Last name**, **Email**, **Phone**, **Number**, **Custom**, **Message**, **Website**, **Date**, **Time**, **Birthday**, **Dropdown**, **Country** or **Consent**.
+    3. Turn the **Required** switch on or off. Turn it off for details you only want if the person is happy to share them.
+    4. Click the gray text inside the field to change what it says, for example "Your mobile number".
+    5. To add a field, click the **Duplicate** icon on the toolbar and change the copy. To remove a field, click the trash icon. To reorder fields, drag the **=** icon.
+
+    ![A selected form field with the field type list open and the toolbar with delete, reorder and duplicate icons highlighted](/images/funnels/lead-capture-forms/field-settings.png)
+
+    A lead is named after its **Full name**, **First name** or **Last name** field. If the form has none, AskFunnel uses the email or phone number instead. Some field types have extra settings, listed under [Settings for each field type](#settings-for-each-field-type).
+
+    <Tip>
+      Fewer fields usually means more leads. Ask for what you need to follow up, such as a name and a phone number or email, and use your quiz to ask everything else.
+    </Tip>
+  </Step>
+  <Step title="Style your fields and button">
+    1. With a field selected, click the picture under **Icon** to choose a different icon or emoji. Under **Color**, **B** sets the background color of the field.
+    2. Click the **"Submit"** button to select it, then click its text to change the label, for example "Get my valuation".
+    3. Use the color swatch under **Color** to change the button color. Use the other controls to change the text size, make it **Filled** or **Outline**, or stretch it to the full width.
+  </Step>
+  <Step title="Choose where people go after they submit">
+    The **Action Flow** setting decides where people go next.
+
+    1. Click a field, then click **"Form"** in the path at the top of the left panel to select the whole form.
+    2. Find **Action Flow**. While it is off, people go to the next page in your list, which is usually your thank you screen.
+    3. To send them somewhere else, turn **Action Flow** on, click the summary under it, and choose **Always goes to**: **Next Page**, **External URL** (your own website), a specific page or a result. Click **"Save"**.
+
+    <Note>
+      The submit button has no **Action Flow** of its own. The form decides where people go.
+    </Note>
+  </Step>
+  <Step title="Publish your funnel">
+    Click **"Publish Funnel"** at the top right to make your changes live.
+  </Step>
+</Steps>
+
+## How do I know it is working?
+
+Test your form on the live page, not in the builder.
+
+1. Open your live funnel. To get your link, see [Share your funnel](/funnels/share-your-funnel).
+2. Fill in the form with a test name and an email you can check, and click **"Submit"**.
+3. Click your funnel in the **Funnels** list to open its **Leads** tab. The test lead appears with its answers. See [View and manage your leads](/leads/view-and-manage-leads).
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="My form says This is a required field">
+    That field is required and was left empty. Turn off **Required** for details that are optional. A required **Consent** checkbox shows **Please accept to continue.** until it is ticked.
+  </Accordion>
+  <Accordion title="My form says Please use your company email address">
+    **Company emails only** is on for the email field. Turn it off if you also want to accept addresses from providers such as Gmail.
+  </Accordion>
+  <Accordion title="I cannot add another field">
+    A form can have up to 8 fields. Remove one first, or ask the rest of your questions in a [quiz](/funnels/quiz-questions).
+  </Accordion>
+  <Accordion title="People land on the wrong page after they submit">
+    Select the form and check **Action Flow**. If it is off, people go to the next page in your page list. Reorder your pages, or turn **Action Flow** on and choose a page.
+  </Accordion>
+  <Accordion title="My test lead does not show up">
+    Check that you published your funnel and that you submitted the form on the live page, not in the builder. The test must include an email or a phone number, because a form with only a name does not create a lead. Then open the **Leads** tab and refresh it.
+  </Accordion>
+</AccordionGroup>
+
+## Settings for each field type
+
+Some field types have extra settings in the left panel.
+
+- **Phone:** **Country code selector** shows a dial code picker and checks the number format. **Default country** chooses which code shows first. People can still change it.
+- **Email:** **Company emails only** rejects free providers such as Gmail and Yahoo.
+- **Number:** **Minimum** and **Maximum** limit the number a person can enter.
+- **Dropdown** and **Time:** **Choices** holds your options, one per line. **Allow multiple selections** lets a person pick more than one option in a dropdown.
+- **Date:** **Allow past dates** and **Disable weekends** limit the days a person can pick.
+- **Consent:** a checkbox with text you write, for example "I agree to be contacted about my enquiry." Click the text to edit it.
+
+## Book a call after the form
+
+Turn on **Appointment booking** in the form settings to open a Calendly or Cal.com popup after the visitor submits. See [Let visitors book a call](/integrations/calendars).
+
+## What to do next
+
+<Columns cols={2}>
+  <Card title="Customize your thank you screen" icon="circle-check" href="/funnels/thank-you-screen">
+    Tell people what happens after they submit.
+  </Card>
+  <Card title="Share your funnel" icon="share-nodes" href="/funnels/share-your-funnel">
+    Get your funnel link and send people to it.
+  </Card>
+  <Card title="View and manage your leads" icon="users" href="/leads/view-and-manage-leads">
+    See every lead with its answers.
+  </Card>
+  <Card title="Email new leads automatically" icon="paper-plane" href="/messages/automated-emails">
+    Send a welcome email the moment someone submits.
+  </Card>
+</Columns>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

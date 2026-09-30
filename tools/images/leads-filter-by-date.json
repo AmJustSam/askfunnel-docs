@@ -1,0 +1,7 @@
+[
+  {
+    "out": "images/leads/filter-by-date/filter-button.png",
+    "src": "source/raw/leads/filter-by-date/04-toolbar-filter-copy.png",
+    "args": ["--crop", "92,92,1220,46", "--ring", "196,100,108,36", "--pad", "64", "--pad-y", "64"]
+  }
+]

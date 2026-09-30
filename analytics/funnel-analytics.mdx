@@ -1,0 +1,96 @@
+---
+title: "Read your funnel analytics"
+sidebarTitle: "Funnel analytics"
+description: "Understand visitors, conversion rate, traffic sources and where people leave your funnel."
+icon: "chart-line"
+---
+
+Each funnel has an **Analytics** tab that shows how it performs: how many people visit, how many become leads, where they come from and which steps they reach. Use it to decide what to fix, and to check that your ads send the right traffic.
+
+<Note>
+  Global Admins, Workspace Admins and Contacts Managers can open analytics. Content Editors do not have access because analytics summarize lead data.
+</Note>
+
+## Open your analytics
+
+<Steps>
+  <Step title="Open the funnel and click Analytics">
+    From your **Funnels** page, click the funnel, then click **Analytics** in the tabs at the top of the page.
+  </Step>
+  <Step title="Choose a date range">
+    Pick **Today**, **Yesterday**, **Last 7 days**, **Last 28 days** or **Last 90 days**. Click **More...** for **This quarter**, **Year to date** or **Custom range**. With **Custom range**, pick a start and end date (up to about a year). The page opens on **Last 7 days**.
+
+    ![The date range buttons, Compare switch, Copy link and Refresh](/images/analytics/funnel-analytics/date-range.png)
+  </Step>
+  <Step title="Compare with the previous period">
+    Turn on **Compare** to measure this period against the period of the same length just before it. Every card then shows the change.
+  </Step>
+</Steps>
+
+Two more buttons sit in the same bar. **Copy link** copies a link to this exact view (date range, Compare and filters) to share with a teammate. **Refresh** reloads the numbers, and the time next to it shows when they were last updated.
+
+<Warning>
+  Dates and hourly totals in analytics use **UTC**, not your local time, so a day here can start at a different moment than a day in your [Leads table](/leads/filter-by-date).
+</Warning>
+
+## The five numbers at the top
+
+![Smart insights and the five cards: Visitors, Conversions, Conversion rate, Completion rate and Avg time to complete](/images/analytics/funnel-analytics/kpi-cards.png)
+
+- **Visitors:** the sum of daily unique visitors. A person who comes back on another day counts again on that day. A line under the number shows how many were returning visitors.
+- **Conversions:** the total number of form submissions in the date range.
+- **Conversion rate:** tracked submissions divided by the sum of daily unique visitors.
+- **Completion rate:** completed sessions divided by all visits in the range.
+- **Avg time to complete:** the average time from a visitor's first page load to reaching the success page. It is capped at 24 hours so an abandoned tab does not skew it.
+
+Above the cards, **Smart insights** gives short takeaways, such as your top traffic source, your best day or how your conversion rate changed. Click **Hide** to collapse them. Hover over the info icon on a card to read how it is calculated.
+
+## The charts below
+
+- **Visitors and conversions:** daily unique visitors and conversions over your date range.
+- **Step reach:** how many times each step of your funnel was reached, in order, including the contact form and the success page.
+- **Top traffic sources:** where visitors come from, ranked by volume, with the conversion rate for each. Use **Group traffic sources by** to switch between **By source**, **By medium**, **By campaign**, **By referrer**, **By country** and **By browser language**.
+- **Activity by time of day:** when visitors are most active, in UTC hours. Use it to time your launches and ad spend.
+- **Device split:** the share of **Mobile**, **Desktop**, **Tablet** and other devices.
+- **Top step responses:** what people picked on each question.
+- **Lead pipeline:** the current [status](/leads/contact-status) of the leads created in your date range.
+
+Once a chart has data, two small buttons appear in its corner: one to download its data (see [Download your analytics as CSV](/analytics/export-conversions)) and one to view it full screen.
+
+## Your conversion rate on the Funnels page
+
+The **CVR** column on your **Funnels** page shows each funnel's conversion rate over its whole life, for example **12.00%** when 12 of 100 visitors became leads.
+
+![The CVR column on the Funnels page, highlighted](/images/analytics/funnel-analytics/cvr-column.png)
+
+An empty CVR (shown as a dash) means there is nothing to divide yet. Leads you imported, or that arrived before tracking began, have no visitor data, so a funnel with only those has no CVR until new traffic arrives.
+
+## Find where visitors leave
+
+Open **Step reach** and compare neighboring bars. A big drop between two steps points to a question that is too long, too personal or unclear. Each bar counts how often a step was recorded, so use the chart as a guide rather than an exact headcount.
+
+**Step reach** needs detailed tracking. If it says **No step data yet**, open your funnel's settings, go to **Cookies & Consent** and set **Analytics tracking depth** to a **Detailed** option. See [Cookies and consent](/funnel-settings/cookies-and-consent).
+
+<Tip>
+  If your conversion rate is low, check **Step reach** first, then try removing one or two hard questions or switching answers to image cards, and watch the rate for a week.
+</Tip>
+
+## Mark events on your chart
+
+Global Admins and Workspace Admins can pin a marker for a campaign launch, a release, an incident, an experiment or a note. In **Visitors and conversions**, click the plus icon (**Add chart annotation**), choose a **Date**, a **Type** and a **Label**, then click **"Pin marker"**. The marker shows on the chart so you can see how an event changed your traffic.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="The conversion rate is missing and a banner says Historical data only">
+    Every lead in that range was added before tracking started, so there are no visitors to compare them with. Choose a later date range. A banner that says **Mixed data** means tracking started partway through the range, so the rate only counts the time after it started.
+  </Accordion>
+  <Accordion title="Top traffic sources is empty">
+    Tag the links you use in ads and emails with UTM parameters, for example **utm_source**, **utm_medium** and **utm_campaign**. Until you do, try **By referrer** or **By country** to see other breakdowns.
+  </Accordion>
+  <Accordion title="My numbers are different from the Leads tab">
+    Analytics uses UTC days and counts a returning visitor once per day. The Leads table uses your local time and does not include locked leads.
+  </Accordion>
+</AccordionGroup>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

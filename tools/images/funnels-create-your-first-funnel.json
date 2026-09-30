@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/funnels/create-your-first-funnel/name-your-funnel.png",
+    "src": "source/raw/funnels/create-your-first-funnel/04-name-step.png",
+    "args": ["--crop", "300,225,555,205", "--ring", "650,341,106,36", "--pad", "40", "--radius", "14"]
+  },
+  {
+    "out": "images/funnels/create-your-first-funnel/content-sections.png",
+    "src": "source/raw/funnels/create-your-first-funnel/05-content-tab-hero-variants.png",
+    "args": ["--crop", "0,98,548,500", "--ring", "138,110,124,28", "--ring", "12,274,250,56", "--pad", "44", "--radius", "16"]
+  }
+]

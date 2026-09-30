@@ -1,0 +1,130 @@
+---
+title: "Send your leads to HighLevel (GoHighLevel)"
+sidebarTitle: "HighLevel"
+description: "Every new funnel lead becomes a HighLevel contact, with all their answers."
+icon: "address-card"
+---
+
+<Callout icon="star" color="#155DFC">
+  Available on: **all plans** (Starter, Growth, Scale and Enterprise).
+</Callout>
+
+HighLevel is the all-in-one sales and marketing platform many agencies and businesses use to follow up with their leads. Connect AskFunnel with HighLevel and every new lead from your funnel becomes a contact in HighLevel, with their answers, lead score and ad source.
+
+With the HighLevel integration, you can:
+
+- **Send leads straight to HighLevel.** No Zapier, no exports and no API key. You connect with your HighLevel login.
+- **Keep every answer on the contact.** Put answers into standard or custom contact fields, and get a note with every question and answer, the lead score and where the lead came from.
+- **Start your follow-up right away.** Add tags that start your HighLevel workflows. Tags are added after the answers are saved, so the workflow already has everything it needs.
+- **Never lose a lead quietly.** AskFunnel retries automatically (up to 7 times over about 21 hours), shows every lead in a delivery log, and emails you if something needs your attention.
+
+## Important to note
+
+<Warning>
+  - HighLevel keeps contacts inside a sub-account, so each funnel sends its leads to **one sub-account**.
+  - If a contact with the same email or phone already exists, AskFunnel **updates that contact**, and the fields you match replace the values already there. This follows your HighLevel duplicate contact setting.
+  - **Custom fields must exist in HighLevel** before you can choose them. In HighLevel, go to **Settings**, then **Custom Fields**.
+</Warning>
+
+## Setup
+
+<Steps>
+  <Step title="Connect your HighLevel account">
+    1. From your main dashboard, find the funnel you want to connect.
+    2. Click the three small dots (**...**) on that funnel's row, then click **"Funnel Settings"**.
+    3. On the left side menu, click **"Integrations"**.
+    4. On the **GoHighLevel** card, click **"Settings"**.
+    5. Click **"Connect GoHighLevel"**. A HighLevel window opens.
+    6. Sign in to HighLevel if asked, choose the sub-account that should receive your leads, and approve access.
+    7. Back in AskFunnel, the sub-account is selected for you. If you signed in as an agency and approved several sub-accounts, pick the one this funnel should use.
+
+    <Note>
+      HighLevel may first show a message titled **"Install Private App"**. That is expected for AskFunnel's HighLevel app. Click **"Proceed to Install"** to continue.
+    </Note>
+
+    ![The Integrations menu item and the Settings link on the GoHighLevel card, both highlighted](/images/integrations/highlevel/connect-card.png)
+  </Step>
+  <Step title="Match your answers to contact fields">
+    1. Under **Fields**, each row sends a funnel field (left) to a HighLevel field (right). Email, phone and name are matched for you.
+    2. Click **"Add field"** to send more answers, for example your budget question to a custom field.
+    3. Keep at least an email or phone in the list, so HighLevel can find the contact.
+
+    ![The GoHighLevel settings with the sub-account and matched fields](/images/integrations/highlevel/match-fields.png)
+
+    <Tip>
+      - Matching an answer to a HighLevel dropdown, radio or checkbox field? Its options must be written exactly the same in both places. AskFunnel checks this when you save and tells you which answers do not match.
+      - Added a custom field in HighLevel after connecting? Click the refresh icon next to **Fields** to see it.
+    </Tip>
+  </Step>
+  <Step title="Add tags and the answers note">
+    - **Tags (optional):** choose existing tags or type new ones. They are added to the contact, and tags the contact already has are kept.
+    - **Add all answers as a note:** on by default. The contact gets a note with every answer, even ones you did not match to a field, plus the lead score and where the lead came from.
+
+    ![Tags, the answers note option and the Send test button](/images/integrations/highlevel/tags-and-note.png)
+  </Step>
+  <Step title="Test and save">
+    1. Click **"Send test"**. AskFunnel sends a sample lead named **AskFunnel Test** (test@askfunnel.test) to HighLevel. Open HighLevel to check the contact, then delete it if you like.
+    2. Click **"Save"**.
+
+    And that's it: every new lead now arrives in HighLevel. 🚀
+
+    ![A new lead in HighLevel with its tag, contact fields and the answers note](/images/integrations/highlevel/contact-in-highlevel.png)
+  </Step>
+</Steps>
+
+## Tracking where your leads come from
+
+There is nothing to set up. When a visitor lands on your funnel, AskFunnel captures the UTM parameters (source, medium, campaign, term and content) and the referrer automatically.
+
+- They always appear in the answers note.
+- You can also match them to contact fields, for example **UTM source** to HighLevel's **Source** field.
+
+## Start a HighLevel workflow for new leads
+
+1. In HighLevel, go to **Automation**, then **Workflows**, and click **"Create Workflow"**. Choose **"Start from Scratch"**.
+2. Add the **Contact Tag** trigger and set the filter to **Tag Added** with the tag you chose in AskFunnel, for example real-estate-funnel.
+3. Add your follow-up steps, such as a text message, an email or a task for your team, and publish the workflow.
+
+Because AskFunnel adds tags last, the contact already has every answer when the workflow starts, so you can use them in your messages and conditions.
+
+## How do I know it is working?
+
+- The GoHighLevel card shows **Connected** and the name of your sub-account.
+- In the GoHighLevel settings, click **"View delivery log"**. Each lead shows **Delivered**, **Retrying** or **Failed**, and you can open a lead to see every attempt.
+- If HighLevel cannot be reached, AskFunnel retries automatically, up to 7 times over about 21 hours. After that, the lead shows **Failed** and you can send it again with **"Retry"**.
+- If something needs your attention, the card shows **Needs attention**, and the organization owner gets an email.
+
+![The delivery log with five delivered leads](/images/integrations/highlevel/delivery-log.png)
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="I don't see a new contact for my test">
+    If you test with the same email or phone more than once, HighLevel updates the existing contact instead of creating a new one. Search HighLevel for that email, or test with a fresh email address.
+  </Accordion>
+  <Accordion title="A lead shows Failed in the delivery log">
+    Open the lead in the delivery log to see the reason, fix it, then click **"Retry"**, or **"Retry failed"** to send all failed leads again. Common reasons:
+
+    - None of the fields you send has a usable email or phone, for example the field that holds it is not matched, or HighLevel rejects its format. The lead is still saved in AskFunnel. Match the email or phone field, then click **"Retry"**.
+    - A HighLevel field you matched was deleted or renamed. Click the refresh icon next to **Fields** and match it again.
+    - HighLevel access was removed. See the next question.
+  </Accordion>
+  <Accordion title="The card says Needs attention">
+    Open the GoHighLevel settings and click **"Reconnect"**. New leads are sent again right away. Leads that failed while access was broken are listed in the delivery log; click **"Retry failed"** to send them.
+  </Accordion>
+  <Accordion title="I installed AskFunnel from the HighLevel Marketplace">
+    You will see a page that says AskFunnel is installed. To finish, connect from your funnel as described in [Setup](#setup).
+  </Accordion>
+</AccordionGroup>
+
+## Managing the integration
+
+- **Pause it for one funnel:** turn off the switch on the GoHighLevel card. Leads that arrive while it is paused are not sent later.
+- **Remove it from one funnel:** open the GoHighLevel settings and click **"Remove from funnel"**.
+- **Disconnect a HighLevel account:** in the GoHighLevel settings, click **"Manage accounts"**, then **"Remove"** next to the account.
+
+<Warning>
+  When you remove an account, every funnel that uses it stops sending leads to HighLevel, and AskFunnel uninstalls its app from that sub-account. If you connect the same account again later, those funnels start sending again, except any you paused yourself. Contacts already in HighLevel stay there.
+</Warning>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

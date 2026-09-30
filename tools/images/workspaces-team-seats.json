@@ -1,0 +1,22 @@
+[
+  {
+    "out": "images/workspaces/team-seats/seat-count.png",
+    "src": "source/raw/workspaces/give-access/02-members-page-frame000.png",
+    "args": [
+      "--crop",
+      "340,125,810,130",
+      "--ring",
+      "1078,180,68,44"
+    ]
+  },
+  {
+    "out": "images/workspaces/team-seats/counted-and-free.png",
+    "src": "source/raw/workspaces/team-seats/05-seat-table-frame503.png",
+    "args": [
+      "--crop",
+      "524,340,618,206",
+      "--ring",
+      "874,452,56,28"
+    ]
+  }
+]

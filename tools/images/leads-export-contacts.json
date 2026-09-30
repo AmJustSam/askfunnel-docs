@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/leads/export-contacts/export-menu.png",
+    "src": "source/raw/leads/export-contacts/01-16299321-screenshot-2026-08-10-201610.png",
+    "args": ["--crop", "214,135,301,143", "--ring", "224,143,288,36", "--width", "900", "--pad-y", "70"]
+  },
+  {
+    "out": "images/leads/export-contacts/bulk-export.png",
+    "src": "source/raw/leads/export-contacts/01-16299321-screenshot-2026-08-10-201610.png",
+    "args": ["--crop", "460,828,460,72", "--ring", "668,842,88,44", "--width", "900", "--pad-y", "70"]
+  }
+]

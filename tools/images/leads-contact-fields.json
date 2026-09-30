@@ -1,0 +1,32 @@
+[
+  {
+    "out": "images/leads/contact-fields/fields-panel.png",
+    "src": "source/raw/leads/contact-fields/03-fields-panel-copy.png",
+    "args": [
+      "--crop",
+      "30,80,372,488",
+      "--ring",
+      "44,90,88,38",
+      "--ring",
+      "276,260,38,28",
+      "--width",
+      "900",
+      "--pad-y",
+      "70"
+    ]
+  },
+  {
+    "out": "images/leads/contact-fields/column-menu.png",
+    "src": "source/raw/leads/contact-fields/01-16298673-screenshot-2026-08-10-192304.png",
+    "args": [
+      "--crop",
+      "93,153,1220,44",
+      "--ring",
+      "782,164,30,24",
+      "--pad",
+      "64",
+      "--pad-y",
+      "64"
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/billing/discount-codes-and-vat/add-discount-and-vat.png",
+    "src": "source/raw/billing/discount-codes-and-vat/01-checkout-clean.png",
+    "args": [
+      "--crop",
+      "330,60,700,546",
+      "--ring",
+      "336,470,680,128"
+    ]
+  }
+]

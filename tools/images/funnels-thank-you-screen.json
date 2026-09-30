@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/funnels/thank-you-screen/results-list.png",
+    "src": "source/raw/funnels/manage-pages/01-image.png",
+    "args": ["--crop", "0,78,470,520", "--ring", "16,480,434,50", "--pad", "56", "--radius", "20"]
+  },
+  {
+    "out": "images/funnels/thank-you-screen/default-thank-you.png",
+    "src": "source/raw/funnels/manage-pages/03-image.png",
+    "args": ["--crop", "650,75,990,350", "--radius", "24"]
+  }
+]

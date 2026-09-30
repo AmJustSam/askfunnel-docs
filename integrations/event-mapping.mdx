@@ -1,0 +1,135 @@
+---
+title: "Map your funnel steps to standard events"
+sidebarTitle: "Event mapping"
+description: "Choose which standard Meta or TikTok event each funnel step sends, so your ads can optimize for the steps that matter."
+icon: "diagram-project"
+---
+
+<Callout icon="star" color="#155DFC">
+  Available on: **all plans** (Starter, Growth, Scale and Enterprise).
+</Callout>
+
+Your tracking pixels get an event for every step a visitor takes in your funnel. Out of the box, each step is sent as a custom event named after the step, and the form submission is sent as the platform's own lead event. Event mapping lets you pick a standard event, such as **Lead** or **Contact**, for any step, so the ad platform understands what the step means and can use it to optimize your ads.
+
+With event mapping, you can:
+
+- **Choose the event for any step.** Pick a page view, an answer, a button click, or the start or end of your lead form.
+- **Map each platform on its own.** The same step can send **Contact** to Meta and **SubmitForm** to TikTok.
+- **Map only what matters.** Steps you do not map are still sent as custom events, so nothing is lost.
+
+## Important to note
+
+<Warning>
+  - Mapping is available for **Meta Pixel** and **TikTok Pixel**. Google Analytics uses fixed event names. See [Tracking your traffic with Google Analytics](/integrations/google-analytics).
+  - A mapping only works once that platform's **Pixel ID** is saved.
+  - If you use Meta revenue tracking, do not map a step to **Purchase**. Both would send a Purchase, and buyers would be counted twice.
+  - You can have up to 200 mappings in total across Meta and TikTok.
+  - When your cookie banner is on, events are only sent for visitors who accept **marketing** cookies. See [Cookies and consent](/funnel-settings/cookies-and-consent).
+</Warning>
+
+## Connect your tracking pixels first
+
+Each platform has its own page, with the steps and where to find its ID:
+
+- [Meta Pixel](/integrations/meta-pixel) for Facebook and Instagram ads. You need your **Pixel ID**.
+- [TikTok Pixel](/integrations/tiktok-pixel) for TikTok ads. You need your **Pixel ID**.
+- [Google Analytics](/integrations/google-analytics) to see traffic in GA4. You need your **Measurement ID**.
+
+## Setup
+
+<Steps>
+  <Step title="Open the pixel's settings">
+    1. From your main dashboard, find the funnel you want to change.
+    2. Click the three small dots (**...**) on that funnel's row, then click **"Funnel Settings"**.
+    3. On the left side menu, click **"Integrations"**.
+    4. Under **Tracking**, click **"Settings"** on the **Meta Pixel** or **TikTok Pixel** card.
+    5. Scroll down to **Map events to standard events**.
+
+    {/* IMAGE: the Meta Pixel settings scrolled to "Map events to standard events" with no entries yet; ring the "Add entry" button */}
+  </Step>
+  <Step title="Add an entry">
+    1. Click **"Add entry"**.
+    2. In the first dropdown, **Funnel event**, pick the step. You can type to search.
+    3. In the second dropdown, **Standard event**, pick what the platform should call it, for example **Contact** or **Lead**.
+    4. Add more entries for more steps. To remove one, click the **X** at the end of its row.
+
+    {/* IMAGE: the mapping section with two entries filled in for a real estate funnel, for example "Answer: Buy a home [What are you looking to do?]" to Lead and "Lead form started (first field typed)" to Contact; ring the two dropdowns of one entry */}
+  </Step>
+  <Step title="Save">
+    Click **"Save changes"** in the bar at the top. If your funnel is published, AskFunnel shows **Settings saved. Your live funnel is updated.**
+  </Step>
+</Steps>
+
+## The funnel steps you can map
+
+The first dropdown lists the steps of your funnel. Each one is named like this:
+
+- **Page view: Property type.** One entry for each page and result page. A page without a name is called **Untitled page 1**, **Untitled page 2** and so on, by its position.
+- **Answer: Buy a home [What are you looking to do?].** One entry for each answer of a quiz question, followed by its page in square brackets.
+- **Button: Learn more [Welcome].** One entry for each button, followed by its page. Buttons inside your lead form are not listed, because the form has its own two entries below.
+- **Lead form started (first field typed).** The visitor typed in the first field of your lead form.
+- **Lead form submitted (new lead).** The visitor submitted the form and a lead was created.
+
+Mappings follow each step's ID, not its text. If you rename a page, answer or button, the mapping keeps working.
+
+## What each step sends when you do not map it
+
+| Funnel step | Sent to Meta and TikTok as a custom event named |
+|---|---|
+| Page view | Page Viewed: and the page name |
+| Answer | Answered: and the answer text |
+| Button | Button Clicked: and the button text |
+| Lead form started | Form Started |
+| Lead form submitted | Not custom. Meta gets **Lead**, TikTok gets **SubmitForm** |
+
+Event names are cut to 50 characters. Each step is sent once per visit, so going back to a page or clicking the same answer again does not send it twice.
+
+## The standard events you can pick
+
+- **Meta:** Lead, CompleteRegistration, Contact, Schedule, SubmitApplication, StartTrial, Subscribe, ViewContent, Search, AddToCart, AddToWishlist, InitiateCheckout, AddPaymentInfo, Purchase, Donate, CustomizeProduct and FindLocation.
+- **TikTok:** SubmitForm, CompleteRegistration, Contact, Subscribe, ViewContent, ClickButton, Search, AddToWishlist, AddToCart, InitiateCheckout, AddPaymentInfo, CompletePayment, PlaceAnOrder and Download.
+
+For a lead funnel, you might map:
+
+- **Meta:** **Lead form started (first field typed)** to **Contact**, to see who shows intent before they submit. The form submission already sends **Lead** without any mapping.
+- **TikTok:** **Lead form started (first field typed)** to **Contact**. The form submission already sends **SubmitForm** without any mapping.
+- **Either:** an answer that marks a hot lead, such as **Answer: Buy within 3 months**, to **Lead** or **Schedule**.
+
+## How do I know it is working?
+
+- The mapping rows are still there after you save and reopen the settings.
+- Open your funnel in another tab, accept the cookies and click through to the mapped step. In Meta Events Manager or TikTok Events Manager, open your pixel's **Test events** tab. The step arrives under the standard event you chose, not as a custom event.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="My mapped event does not show in Meta or TikTok">
+    Check these, in order:
+
+    - The pixel card shows **Connected**, and a **Pixel ID** is saved. Without one, AskFunnel warns that mappings do not take effect.
+    - Both dropdowns of the entry are filled in. A half-filled entry is ignored.
+    - You clicked **"Save changes"**.
+    - You accepted marketing cookies on the funnel, if your cookie banner is on.
+    - You reached the step in that visit. Each step is sent when the visitor gets there.
+  </Accordion>
+  <Accordion title="The first dropdown shows (removed funnel action)">
+    The page, answer or button that entry pointed to was deleted from your funnel. Click the **X** to remove the entry, or pick another step.
+  </Accordion>
+  <Accordion title="I mapped the same step twice">
+    If two entries use the same step, only the last one is used. Remove the one you do not want.
+  </Accordion>
+  <Accordion title="Can I map Google Analytics events?">
+    No. Google Analytics only accepts event names made of letters, numbers and underscores, so AskFunnel sends fixed names such as **generate_lead** for you. See [Tracking your traffic with Google Analytics](/integrations/google-analytics).
+  </Accordion>
+  <Accordion title="Buyers are counted twice in Meta">
+    You have an entry mapped to **Purchase** and Meta revenue tracking is on, so both send a Purchase. AskFunnel warns you when this happens. Change the entry to another event, such as **Lead** or **InitiateCheckout**. See [Meta Pixel](/integrations/meta-pixel).
+  </Accordion>
+</AccordionGroup>
+
+## Managing the integration
+
+- **Change a mapping:** pick another event in the second dropdown and click **"Save changes"**.
+- **Remove a mapping:** click the **X** at the end of its row and click **"Save changes"**. The step goes back to being sent as a custom event.
+- **Pause tracking:** turn off the switch on the pixel's card. Your mappings are kept.
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

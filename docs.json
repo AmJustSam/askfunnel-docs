@@ -1,54 +1,180 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "AskFunnel Help Center",
+  "description": "Guides for building lead generation funnels with AskFunnel and sending your leads to the tools you use.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#155DFC",
+    "light": "#5B86FF",
+    "dark": "#0F3FD8"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png",
+    "href": "https://askfunnel.com"
+  },
+  "appearance": {
+    "default": "light"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "icon": "message",
+        "href": "mailto:support@askfunnel.com"
+      },
+      {
+        "label": "Log in",
+        "icon": "arrow-right-to-bracket",
+        "href": "https://dash.askfunnel.com/login"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Start free trial",
+      "href": "https://dash.askfunnel.com/signup"
     }
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get started",
+        "icon": "rocket",
+        "pages": [
+          "index",
+          "getting-started/what-is-askfunnel",
+          "getting-started/skills-needed",
+          "getting-started/use-cases",
+          "getting-started/create-account",
+          "getting-started/launch-your-first-funnel",
+          "getting-started/onboarding-call",
+          "getting-started/contact-support"
+        ]
+      },
+      {
+        "group": "Build your funnel",
+        "icon": "layer-group",
+        "pages": [
+          "funnels/create-your-first-funnel",
+          "funnels/manage-pages",
+          "funnels/quiz-questions",
+          "funnels/lead-capture-forms",
+          "funnels/thank-you-screen",
+          "funnels/layout-blocks",
+          "funnels/grid-layouts",
+          "funnels/target-audience"
+        ]
+      },
+      {
+        "group": "Publish and share",
+        "icon": "globe",
+        "pages": [
+          "funnels/share-your-funnel",
+          "funnel-settings/custom-domain",
+          "funnel-settings/social-preview-and-favicon",
+          "funnel-settings/cookies-and-consent"
+        ]
+      },
+      {
+        "group": "Manage your leads",
+        "icon": "users",
+        "pages": [
+          "leads/view-and-manage-leads",
+          "leads/crm-contacts",
+          "leads/contact-status",
+          "funnel-settings/lead-scoring",
+          "leads/filter-by-date",
+          "leads/contact-fields",
+          "leads/custom-contact-fields",
+          "leads/export-contacts",
+          "leads/delete-leads"
+        ]
+      },
+      {
+        "group": "Follow up automatically",
+        "icon": "paper-plane",
+        "pages": [
+          "messages/custom-sender-email",
+          "messages/automated-emails",
+          "messages/email-sequences",
+          "messages/team-alerts",
+          "messages/email-deliverability",
+          "messages/whatsapp-template",
+          "integrations/calendars"
+        ]
+      },
+      {
+        "group": "Connect your tools",
+        "icon": "plug",
+        "pages": [
+          "integrations/highlevel",
+          "integrations/google-sheets",
+          "integrations/webhooks",
+          "integrations/webhook-reference"
+        ]
+      },
+      {
+        "group": "Track your ads",
+        "icon": "bullseye",
+        "pages": [
+          "integrations/meta-pixel",
+          "integrations/google-analytics",
+          "integrations/tiktok-pixel",
+          "integrations/event-mapping"
+        ]
+      },
+      {
+        "group": "Measure results",
+        "icon": "chart-line",
+        "pages": [
+          "analytics/funnel-analytics",
+          "analytics/lead-insights",
+          "analytics/activity-log",
+          "analytics/export-conversions"
+        ]
+      },
+      {
+        "group": "Team and workspaces",
+        "icon": "building",
+        "pages": [
+          "workspaces/what-is-a-workspace",
+          "workspaces/create-workspace",
+          "workspaces/switch-workspaces",
+          "workspaces/give-access",
+          "workspaces/pending-invites",
+          "workspaces/team-seats",
+          "workspaces/contacts-manager"
+        ]
+      },
+      {
+        "group": "Plans and billing",
+        "icon": "credit-card",
+        "pages": [
+          "billing/free-trial",
+          "billing/make-the-most-of-your-trial",
+          "billing/choose-a-plan",
+          "billing/plan-and-usage",
+          {
+            "group": "Change your plan",
+            "pages": [
+              "billing/upgrade",
+              "billing/downgrade",
+              "billing/cancel-or-resume"
+            ]
+          },
+          {
+            "group": "Payments and invoices",
+            "pages": [
+              "billing/billing-and-invoices",
+              "billing/payment-methods",
+              "billing/currency",
+              "billing/discount-codes-and-vat"
+            ]
+          }
+        ]
+      }
+    ]
   },
   "contextual": {
     "options": [
@@ -57,16 +183,19 @@
       "chatgpt",
       "claude",
       "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "mcp"
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "linkedin": "https://www.linkedin.com/company/askfunnel/",
+      "instagram": "https://www.instagram.com/askfunnel/",
+      "facebook": "https://www.facebook.com/askfunnel"
+    }
+  },
+  "seo": {
+    "metatags": {
+      "robots": "noindex, nofollow"
     }
   }
 }

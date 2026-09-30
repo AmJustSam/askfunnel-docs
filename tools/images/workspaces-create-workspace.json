@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/workspaces/create-workspace/create-button.png",
+    "src": "source/raw/workspaces/switch-workspaces/01-image.png",
+    "args": ["--crop", "690,90,1040,580", "--ring", "1491,116,220,48"]
+  },
+  {
+    "out": "images/workspaces/create-workspace/create-dialog.png",
+    "src": "source/raw/workspaces/create-workspace/03-create-dialog-frame305.png",
+    "args": ["--crop", "423,168,434,382"]
+  }
+]

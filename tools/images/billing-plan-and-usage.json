@@ -1,0 +1,22 @@
+[
+  {
+    "out": "images/billing/plan-and-usage/plan-pill-menu.png",
+    "src": "source/raw/billing/plan-and-usage/01-plan-menu-clean.png",
+    "args": [
+      "--crop",
+      "1262,4,342,312",
+      "--ring",
+      "1512,8,90,38",
+      "--width",
+      "980"
+    ]
+  },
+  {
+    "out": "images/billing/plan-and-usage/plan-page.png",
+    "src": "source/raw/billing/plan-and-usage/02-screenshot-2026-08-11-220633.png",
+    "args": [
+      "--crop",
+      "40,70,1240,620"
+    ]
+  }
+]

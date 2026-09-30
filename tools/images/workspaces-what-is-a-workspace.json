@@ -1,0 +1,10 @@
+[
+  {
+    "out": "images/workspaces/what-is-a-workspace/workspace-card.png",
+    "src": "source/raw/workspaces/switch-workspaces/01-image.png",
+    "args": [
+      "--crop",
+      "704,201,490,455"
+    ]
+  }
+]

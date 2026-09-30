@@ -1,0 +1,7 @@
+[
+  {
+    "out": "images/analytics/export-conversions/download-icon.png",
+    "src": "source/raw/analytics/export-conversions/01-16301233-download-analytics.png",
+    "args": ["--crop", "1062,478,498,240", "--ring", "1476,507,30,30"]
+  }
+]

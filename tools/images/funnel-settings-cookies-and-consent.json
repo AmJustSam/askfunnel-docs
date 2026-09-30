@@ -1,0 +1,7 @@
+[
+  {
+    "out": "images/funnel-settings/cookies-and-consent/cookie-banner-options.png",
+    "src": "source/raw/funnel-settings/cookies-and-consent/01-Cookies---Consent-Banner-Style.png",
+    "args": ["--crop", "0,0,980,512", "--ring", "44,139,443,126", "--ring", "500,139,442,126", "--ring", "620,312,324,40"]
+  }
+]

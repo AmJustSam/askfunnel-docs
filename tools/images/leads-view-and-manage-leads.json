@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/leads/view-and-manage-leads/open-funnel.png",
+    "src": "source/raw/leads/view-and-manage-leads/06-funnels-list-frame.png",
+    "args": ["--crop", "227,196,814,134", "--ring", "231,236,806,44", "--pad", "64", "--pad-y", "64"]
+  },
+  {
+    "out": "images/leads/view-and-manage-leads/toolbar.png",
+    "src": "source/raw/leads/view-and-manage-leads/07-toolbar-copy.png",
+    "args": ["--crop", "44,88,1220,50", "--pad", "64", "--pad-y", "64"]
+  }
+]

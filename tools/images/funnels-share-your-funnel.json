@@ -1,0 +1,7 @@
+[
+  {
+    "out": "images/funnels/share-your-funnel/view-funnel-icon.png",
+    "src": "source/raw/funnels/share-your-funnel/02-image-clean.png",
+    "args": ["--crop", "335,200,1220,365", "--ring", "1121,280,36,34", "--ring", "1068,283,44,30"]
+  }
+]

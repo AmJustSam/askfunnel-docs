@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/billing/billing-and-invoices/billing-page.png",
+    "src": "source/raw/billing/billing-and-invoices/01-billing-page-clean.png",
+    "args": [
+      "--crop",
+      "320,75,1250,490",
+      "--ring",
+      "340,326,92,34"
+    ]
+  }
+]

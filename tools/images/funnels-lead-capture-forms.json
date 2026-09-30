@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/funnels/lead-capture-forms/form-block.png",
+    "src": "source/raw/funnels/lead-capture-forms/02-image-clean.png",
+    "args": ["--crop", "0,62,1665,658", "--ring", "13,227,347,64", "--ring", "395,309,152,101"]
+  },
+  {
+    "out": "images/funnels/lead-capture-forms/field-settings.png",
+    "src": "source/raw/funnels/lead-capture-forms/05-field-type-list.png",
+    "args": ["--crop", "0,78,890,452", "--ring", "8,146,188,32", "--ring", "788,204,26,56", "--pad", "56", "--radius", "20"]
+  }
+]

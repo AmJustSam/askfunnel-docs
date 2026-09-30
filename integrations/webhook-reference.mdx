@@ -1,0 +1,250 @@
+---
+title: "Webhook payload and signature"
+sidebarTitle: "Webhook reference"
+description: "The exact request AskFunnel sends to your webhook, how to verify it and how retries work. For developers."
+icon: "code"
+---
+
+This page shows the exact request AskFunnel sends to your webhook, how to check that a request really came from AskFunnel, and how retries work. It is for the person who builds the receiving side of a [webhook](/integrations/webhooks). If that is not you, share this page with your developer.
+
+In short: AskFunnel sends one signed request for each new lead. Answer with a 2xx status (a success code such as 200) and AskFunnel counts the lead as delivered.
+
+**Before you start**, you need:
+
+- A webhook added to a funnel. See [Send your leads to a webhook](/integrations/webhooks).
+- The webhook's signing secret, if your server checks signatures. You find it in **"Edit webhook"**, under **Advanced**.
+
+## The request
+
+AskFunnel sends a POST request with a JSON body. Along with any headers you added, it always includes these:
+
+```http
+content-type: application/json
+user-agent: AskFunnel-Webhooks/1.0 (+https://askfunnel.com)
+webhook-id: evt_q3Zt8mVx1LpR6cYw0aBdNhKs
+webhook-timestamp: 1790865128
+webhook-signature: v1,K8IsC2uUMngvTf26iDGSCfwxusqCe5w675ju4LurUkk=
+idempotency-key: evt_q3Zt8mVx1LpR6cYw0aBdNhKs
+```
+
+- `webhook-id` and `idempotency-key` are the lead's event ID, the same value as `id` in the body. They stay the same on every retry, so use them to ignore repeats.
+- `webhook-timestamp` is the time of this attempt, in seconds since 1970 (Unix time). Each retry has a new timestamp and a new signature.
+- `webhook-signature` is the signature of this attempt. See [Verify the signature](#verify-the-signature).
+- `user-agent` is always `AskFunnel-Webhooks/1.0 (+https://askfunnel.com)` unless you add your own header with that name.
+
+## The JSON body
+
+Here is a sample lead from a funnel called Buyer inquiry. JSON is a standard text format that software reads easily. The body is sent as compact JSON, shown here with line breaks to read it.
+
+```json
+{
+  "id": "evt_q3Zt8mVx1LpR6cYw0aBdNhKs",
+  "type": "lead.submitted",
+  "version": 1,
+  "test": false,
+  "occurredAt": "2026-10-01T14:32:08.000Z",
+  "funnel": {
+    "id": "fun_5d2e91",
+    "name": "Buyer inquiry"
+  },
+  "lead": {
+    "id": "lead_8f3a2c",
+    "submissionId": "sub_1c9d47",
+    "score": 82
+  },
+  "contact": {
+    "name": "Sofia Alvarez",
+    "email": "sofia.alvarez@example.com",
+    "phone": "+12015550142"
+  },
+  "answers": {
+    "Name": "Sofia Alvarez",
+    "Email": "sofia.alvarez@example.com",
+    "Phone": "+12015550142",
+    "What are you looking to do?": "Buy a home",
+    "Property type": "Single family, Townhouse",
+    "Budget": "650000"
+  },
+  "fields": [
+    {
+      "id": "name",
+      "label": "Name",
+      "type": "text",
+      "value": "Sofia Alvarez",
+      "displayValue": "Sofia Alvarez"
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "type": "email",
+      "value": "sofia.alvarez@example.com",
+      "displayValue": "sofia.alvarez@example.com"
+    },
+    {
+      "id": "phone",
+      "label": "Phone",
+      "type": "phone",
+      "value": "+12015550142",
+      "displayValue": "+12015550142"
+    },
+    {
+      "id": "blk_goal",
+      "label": "What are you looking to do?",
+      "type": "singleSelect",
+      "value": "buy",
+      "displayValue": "Buy a home"
+    },
+    {
+      "id": "blk_type",
+      "label": "Property type",
+      "type": "multiSelect",
+      "value": ["single_family", "townhouse"],
+      "displayValue": "Single family, Townhouse",
+      "displayValues": ["Single family", "Townhouse"]
+    },
+    {
+      "id": "blk_budget",
+      "label": "Budget",
+      "type": "number",
+      "value": 650000,
+      "displayValue": "650000"
+    }
+  ],
+  "consent": {
+    "marketing": true,
+    "analytics": "all_granted"
+  },
+  "attribution": {
+    "utm": {
+      "utm_source": "facebook",
+      "utm_medium": "paid_social",
+      "utm_campaign": "spring_buyers"
+    },
+    "referrer": "https://l.facebook.com/",
+    "pageUrl": "https://summit-realty.askfunnel.com/buyer-inquiry",
+    "pageUrlWithUtm": "https://summit-realty.askfunnel.com/buyer-inquiry?utm_source=facebook&utm_medium=paid_social&utm_campaign=spring_buyers"
+  }
+}
+```
+
+| Field | What it holds |
+|---|---|
+| `id` | The event ID. Unique per lead and the same on every retry. |
+| `type` | Always `lead.submitted`. |
+| `version` | The payload format version, currently `1`. |
+| `test` | `true` for a test send, `false` for a real lead. |
+| `occurredAt` | When the lead was submitted, as an ISO 8601 date and time in UTC. |
+| `funnel` | The funnel's `id` and `name`. |
+| `lead` | `id` is AskFunnel's lead ID (`null` in a test), `submissionId` identifies the submission, and `score` is the lead score. |
+| `contact` | `name`, `email` and `phone`. Each is `null` when the lead did not give it. |
+| `answers` | Each question's text with the answer as text. Multiple choice answers are joined with commas. A repeated question text gets a suffix, such as `Budget (2)`. |
+| `fields` | The same answers with detail. `id` stays the same if you rename the question. `type` is the question type. `value` is the raw answer: text, a number, true or false, `null`, or a list of texts for multiple choice. `displayValue` is the answer as text. `displayValues` lists the option labels of a multiple choice answer. |
+| `consent` | `marketing` is whether the visitor accepted marketing cookies. `analytics` is `essential`, `analytics_granted` or `all_granted`. |
+| `attribution` | `utm` holds the UTM parameters that were present (keys such as `utm_source`), or `null`. `referrer` is the page the visitor came from, or `null`. `pageUrl` and `pageUrlWithUtm` are the funnel page address, when available. |
+
+In a test, `test` is `true`, `lead.id` is `null`, `score` is `0`, `consent.marketing` is `false`, and `attribution.utm` and `attribution.referrer` are `null`. The answers are sample text built from your funnel's questions.
+
+<Tip>
+  You can also copy a sample from AskFunnel. Before you add your first webhook, click the info icon next to **What we send**, then **"Copy sample"**.
+</Tip>
+
+## Verify the signature
+
+Each webhook has its own signing secret. AskFunnel signs every request with it, following the [Standard Webhooks](https://www.standardwebhooks.com) `v1` format, so libraries that support that format can verify AskFunnel requests too. To check a request yourself:
+
+1. Read the body exactly as it arrived. Do not parse it and write it out again, because the signature covers the exact bytes.
+2. Build the signed text: the `webhook-id` header, a dot, the `webhook-timestamp` header, a dot, then the body.
+3. Take your signing secret, remove the `whsec_` at the start and decode the rest from base64. That is the key.
+4. Compute an HMAC with SHA-256 over the signed text using that key, and encode the result as base64.
+5. The `webhook-signature` header is `v1,` followed by that value. Compare the two in constant time.
+6. Reject requests with an old timestamp. We suggest 5 minutes.
+
+```js
+import { createHmac, timingSafeEqual } from "node:crypto";
+
+// rawBody is the request body as a string, exactly as received.
+function isFromAskFunnel(rawBody, headers, signingSecret) {
+  const id = headers["webhook-id"];
+  const timestamp = headers["webhook-timestamp"];
+  const header = headers["webhook-signature"];
+
+  if (!id || !timestamp || !header) return false;
+
+  // Reject old requests. Every retry is signed again with a new timestamp.
+  const ageSeconds = Math.abs(Date.now() / 1000 - Number(timestamp));
+  if (!(ageSeconds <= 5 * 60)) return false;
+
+  const key = Buffer.from(signingSecret.replace(/^whsec_/, ""), "base64");
+  const expected = createHmac("sha256", key)
+    .update(`${id}.${timestamp}.${rawBody}`)
+    .digest();
+
+  const [version, signature] = header.split(",");
+  if (version !== "v1" || !signature) return false;
+
+  const received = Buffer.from(signature, "base64");
+  return received.length === expected.length && timingSafeEqual(received, expected);
+}
+```
+
+With Express, keep the raw body for the route that receives AskFunnel:
+
+```js
+import express from "express";
+
+const app = express();
+
+app.post("/askfunnel", express.raw({ type: "application/json" }), (req, res) => {
+  const rawBody = req.body.toString("utf8");
+
+  if (!isFromAskFunnel(rawBody, req.headers, process.env.ASKFUNNEL_SIGNING_SECRET)) {
+    return res.sendStatus(401);
+  }
+
+  const lead = JSON.parse(rawBody);
+  // Ignore repeats: if you already handled lead.id (or the webhook-id header), stop here.
+
+  res.sendStatus(200);
+});
+```
+
+<Warning>
+  - Send your answer within 15 seconds. A 2xx status means the lead was received. A 401 from your own check is treated as a failure and is not retried, so only use it for requests that are really not from AskFunnel.
+  - If you rotate the signing secret, requests signed with the old one fail your check until you update it.
+  - A test sent before the webhook is saved is signed with a temporary secret. To test your check, save the webhook first, copy its signing secret, then click **"Send test"**.
+</Warning>
+
+## Retries and what counts as success
+
+AskFunnel only looks at the status code of your answer. The body of your answer is ignored.
+
+| Your server | What AskFunnel does |
+|---|---|
+| Answers with any 2xx status (200, 201, 202, 204 and so on) | The lead is **Delivered**. |
+| Answers 408, 425, 429 or any 5xx status, does not answer within 15 seconds, or cannot be reached | Tries again later, on the schedule below. |
+| Answers any other 4xx status, for example 400, 401, 403, 404 or 410 | Stops. The lead shows **Failed** and is not retried automatically. A 410 (Gone) stops the same way, because it means the address was removed. |
+| Answers with a redirect (3xx) | Stops. The lead shows **Failed**. AskFunnel does not follow redirects, so use the final URL. |
+
+A lead that can be retried is sent again after 1 minute, then 5 minutes, 30 minutes, 2 hours, 6 hours and 12 hours, each counted from the previous attempt. That is up to 7 attempts in about 21 hours. Each retry sends the same `webhook-id` and the same body, with a new timestamp and signature.
+
+- **429 Too Many Requests** is treated as "slow down", not as an outage. If your answer has a `Retry-After` header, in seconds or as an HTTP date, AskFunnel waits at least that long, up to 24 hours. It never retries sooner than the schedule above. It does not schedule a retry later than 72 hours after the first attempt.
+- After the last attempt fails, the lead shows **Failed** with the last error, the webhook shows **Needs attention**, and the organization owner gets an email.
+- Clicking **"Retry"** in the delivery log starts a new set of up to 7 attempts.
+- Failed leads stay in the delivery log for 30 days.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="My signature check fails">
+    Check these, in order:
+
+    - You are using the raw body, not a parsed and re-written one.
+    - You are using the signing secret of this webhook. Each webhook has its own.
+    - You remove whsec_ and decode the rest from base64 before using it as the key.
+    - You did not rotate the secret without updating your server.
+    - The clock on your server is close to the real time, if you check the timestamp.
+    - You are not testing with an unsaved webhook. A test sent before you save is signed with a temporary secret.
+  </Accordion>
+</AccordionGroup>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

@@ -1,0 +1,44 @@
+[
+  {
+    "out": "images/messages/email-sequences/add-email.png",
+    "src": "source/raw/messages/email-sequences/06-flow-editor-copy.png",
+    "args": [
+      "--crop",
+      "500,290,372,306",
+      "--ring",
+      "568,556,234,34",
+      "--width",
+      "900",
+      "--pad-y",
+      "70"
+    ]
+  },
+  {
+    "out": "images/messages/email-sequences/delay-card.png",
+    "src": "source/raw/messages/email-sequences/04-16300723-screenshot-2026-08-10-224651.png",
+    "args": [
+      "--crop",
+      "100,20,420,136",
+      "--ring",
+      "132,90,352,46",
+      "--width",
+      "900",
+      "--pad-y",
+      "70"
+    ]
+  },
+  {
+    "out": "images/messages/email-sequences/delay-modal.png",
+    "src": "source/raw/messages/email-sequences/05-delay-modal-copy.png",
+    "args": [
+      "--crop",
+      "74,168,646,266",
+      "--ring",
+      "617,367,82,40",
+      "--width",
+      "900",
+      "--pad-y",
+      "70"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "out": "images/billing/payment-methods/checkout-card-and-paypal.png",
+    "src": "source/raw/billing/payment-methods/04-checkout-card-clean.png",
+    "args": [
+      "--crop",
+      "330,60,700,412",
+      "--ring",
+      "366,132,630,76"
+    ]
+  },
+  {
+    "out": "images/billing/payment-methods/checkout-paypal.png",
+    "src": "source/raw/billing/payment-methods/02-image.png",
+    "args": [
+      "--crop",
+      "385,130,700,504",
+      "--ring",
+      "735,202,311,72"
+    ]
+  },
+  {
+    "out": "images/billing/payment-methods/update-payment-method.png",
+    "src": "source/raw/billing/payment-methods/03-update-dialog-clean.png",
+    "args": [
+      "--ring",
+      "18,401,595,56",
+      "--width",
+      "980"
+    ]
+  }
+]

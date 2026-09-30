@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/workspaces/give-access/members-page.png",
+    "src": "source/raw/workspaces/give-access/02-members-page-frame000.png",
+    "args": ["--crop", "0,56,1280,300", "--ring", "1012,260,130,32"]
+  },
+  {
+    "out": "images/workspaces/give-access/invite-form.png",
+    "src": "source/raw/workspaces/give-access/03-invite-modal-frame068.png",
+    "args": ["--crop", "423,169,434,382", "--ring", "718,488,119,38"]
+  }
+]

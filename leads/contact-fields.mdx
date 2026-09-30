@@ -1,0 +1,77 @@
+---
+title: "Show, hide and reorder lead fields"
+sidebarTitle: "Lead fields"
+description: "Choose which fields appear as columns in your Leads table and in what order."
+icon: "table-columns"
+---
+
+Choose which fields appear as columns in your **Leads** table, and in what order. Fields are the columns of the table. AskFunnel builds most of them for you from your funnel, and you decide which ones to show.
+
+**Before you start**, you need:
+
+- A funnel with leads, and a role that can see them: Global Admin, Workspace Admin or Contacts Manager. See [View and manage your leads](/leads/view-and-manage-leads).
+
+## Important to note
+
+<Warning>
+  - Hiding a field only changes your view, in this browser. Teammates keep their own view, and the data is not deleted. A hidden field still appears in a lead's **Profile** tab.
+  - Exports follow your view. Hidden fields are left out of a [CSV or Excel export](/leads/export-contacts), so show a field first if you need it in the file.
+</Warning>
+
+## Show, hide and reorder fields
+
+<Steps>
+  <Step title="Open the Fields panel">
+    Click **Fields** in the toolbar above the table. A panel lists every field. Type in **Search fields** to find one.
+
+    ![The Fields panel with a switch next to every field](/images/leads/contact-fields/fields-panel.png)
+  </Step>
+  <Step title="Turn fields on or off">
+    Use the switch next to a field to show or hide its column. The **Fields** button shows how many fields are hidden. **Name** is pinned to the left and always stays visible.
+  </Step>
+  <Step title="Drag to reorder">
+    Drag a field by the six dots at its left to move its column. You can also drag the fields in a lead's **Profile** tab, and the table columns follow.
+  </Step>
+</Steps>
+
+Click **System fields** at the bottom of the panel to show or hide the built-in fields (**Created**, **Status**, **Score** and **Updated**) in this list. To start over, click **View options** (three vertical dots), then **"Reset view"**.
+
+## Use a column's menu
+
+Hover over a column header and click the small arrow that appears to open the column's menu.
+
+![The arrow that opens a column's menu, highlighted](/images/leads/contact-fields/column-menu.png)
+
+The menu has these options:
+
+- **Sort ascending** and **Sort descending**
+- **Filter by this field:** adds a filter for this field and opens the filter panel.
+- **Group by this field** or **Remove grouping**
+- **Pin to left** or **Unpin from left:** choose which column stays in view on the left. **Name** is pinned by default.
+- **Hide field**
+- **Edit field** and **Delete field:** only for fields you created yourself.
+
+## Fields AskFunnel creates
+
+A lock icon means a field is read only. **Created**, **Score**, **Updated** and **Appointment** are filled in by AskFunnel.
+
+- **Contact fields:** **Name**, **Email** and **Phone**, taken from the matching fields in your lead form. If your form has a time field, you also get **Preferred time**.
+- **One field for every question and form field** in your funnel. The field is named after the question or the form field's placeholder text, and it holds each lead's answer.
+- **Built-in fields:** **Created**, **Status**, **Updated** and, when [lead scoring](/funnel-settings/lead-scoring) is on, **Score**. If a form on your funnel has booking turned on, you also get **Appointment**.
+- **Fields added with your first lead:** **Assigned To**, **Tags** and **Deal Value**. **Deal Value** is what a lead is worth. It is used by Meta revenue tracking, so it cannot be deleted, but you can hide it.
+- **Your own custom fields.** See [Create a custom field](/leads/custom-contact-fields).
+
+If you later remove a question from your funnel, its column stays in the table with an **Archived** label. The answers already collected are kept, and new leads leave the column empty.
+
+## What to do next
+
+<Columns cols={2}>
+  <Card title="Create a custom field" icon="square-plus" href="/leads/custom-contact-fields">
+    Add your own column for notes, budgets or internal IDs.
+  </Card>
+  <Card title="Export your leads" icon="file-export" href="/leads/export-contacts">
+    Download the columns you chose as a file.
+  </Card>
+</Columns>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

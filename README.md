@@ -1,55 +1,12 @@
-# Mintlify Starter Kit
+# AskFunnel Help Center
 
-Use the starter kit to get your docs deployed and ready to customize.
+Source of the AskFunnel customer help center, published with [Mintlify](https://mintlify.com) from the `main` branch.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## Work on it
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+- Preview: `npm install`, then `HOME=$PWD/.home npx mint dev --port 3333` and open http://localhost:3333.
+- Writing rules, page structure and image rules: [AGENTS.md](AGENTS.md). The reference page is `integrations/highlevel.mdx`.
+- Navigation and site settings: `docs.json`. Site-wide style fixes: `style.css`.
+- Screenshots: raw captures go in `source/raw/` (not committed); each framed image is listed in a manifest in `tools/images/` and rebuilt with `node tools/build-images.mjs <filter>` (uses `tools/frame.mjs`).
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
-
-## AI-assisted writing
-
-Set up your AI coding tool to work with Mintlify:
-
-```bash
-npx skills add https://mintlify.com/docs
-```
-
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
-
-See the [AI tools guides](/ai-tools) for tool-specific setup.
-
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
-npm i -g mint
-```
-
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
-mint dev
-```
-
-View your local preview at `http://localhost:3000`.
-
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+Pushing to `main` publishes the site.

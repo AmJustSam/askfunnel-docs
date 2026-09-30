@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/workspaces/switch-workspaces/home-icon.png",
+    "src": "source/raw/workspaces/give-access/02-members-page-frame000.png",
+    "args": ["--crop", "0,58,1280,52", "--ring", "54,68,32,30"]
+  },
+  {
+    "out": "images/workspaces/switch-workspaces/workspace-card.png",
+    "src": "source/raw/workspaces/switch-workspaces/01-image.png",
+    "args": ["--crop", "690,190,520,480", "--ring", "705,203,488,452"]
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "out": "images/messages/automated-emails/flow-editor.png",
+    "src": "source/raw/messages/automated-emails/05-flow-editor-frame.png",
+    "args": ["--crop", "0,52,1152,546", "--ring", "230,60,48,20", "--ring", "934,56,92,28", "--pad", "64", "--pad-y", "64"]
+  },
+  {
+    "out": "images/messages/automated-emails/automation-logic.png",
+    "src": "source/raw/messages/automated-emails/08-automation-logic-copy.png",
+    "args": ["--crop", "252,195,650,516", "--ring", "292,296,570,40", "--ring", "276,498,110,40", "--width", "900", "--pad-y", "70"]
+  },
+  {
+    "out": "images/messages/automated-emails/add-file-block.png",
+    "src": "source/raw/messages/automated-emails/06-blocks-palette-frame.png",
+    "args": ["--crop", "0,88,880,472", "--ring", "114,330,108,68", "--pad", "64", "--pad-y", "64"]
+  },
+  {
+    "out": "images/messages/automated-emails/file-block-settings.png",
+    "src": "source/raw/messages/automated-emails/07-file-block-frame.png",
+    "args": ["--crop", "0,88,880,472", "--ring", "6,184,216,28", "--pad", "64", "--pad-y", "64"]
+  }
+]

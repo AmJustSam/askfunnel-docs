@@ -1,0 +1,18 @@
+[
+  {
+    "out": "images/leads/custom-contact-fields/new-field-button.png",
+    "src": "source/raw/leads/custom-contact-fields/01-16298889-screenshot-2026-08-10-193252.png",
+    "args": [
+      "--crop",
+      "30,80,372,488",
+      "--ring",
+      "44,90,88,38",
+      "--ring",
+      "246,522,92,30",
+      "--width",
+      "900",
+      "--pad-y",
+      "70"
+    ]
+  }
+]

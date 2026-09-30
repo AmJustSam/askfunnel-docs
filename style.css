@@ -1,0 +1,44 @@
+/* AskFunnel help center polish, loaded by Mintlify on every page. */
+
+/* Lists inside callouts: one indent, dots in the callout's text color, first line level with the icon. */
+[data-callout-type] [data-component-part="callout-content"] > ul,
+[data-callout-type] [data-component-part="callout-content"] > ol {
+  margin: 0;
+  padding-left: 0;
+}
+/* Mintlify indents list items by 2em with a layered !important rule, which an unlayered rule cannot
+   beat, so pull each item left instead: the text then starts 1.05rem in, right after the icon gap. */
+[data-callout-type] [data-component-part="callout-content"] li {
+  margin: 0 0 0.5rem calc(1.05rem - 2em);
+}
+[data-callout-type] [data-component-part="callout-content"] li:first-child {
+  margin-top: 0;
+}
+[data-callout-type] [data-component-part="callout-content"] li:last-child {
+  margin-bottom: 0;
+}
+[data-callout-type] [data-component-part="callout-content"] li::before {
+  left: calc(2em - 0.95rem) !important;
+  background-color: currentColor !important;
+  opacity: 0.55;
+}
+[data-callout-type] [data-component-part="callout-content"] {
+  line-height: 1.55;
+}
+
+/* Steps directly under a heading need less air than Mintlify's default 2.5rem. */
+.mdx-content .steps {
+  margin-top: 1.5rem;
+}
+
+/* Step titles stand out from the step's body text. */
+[data-component-part="step-title"] {
+  font-size: 1.0625rem;
+  letter-spacing: -0.005em;
+}
+
+/* Framed screenshots already carry their own padding and shadow; keep the gap around them even. */
+.mdx-content img {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}

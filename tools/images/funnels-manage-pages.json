@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/funnels/manage-pages/pages-list.png",
+    "src": "source/raw/funnels/manage-pages/01-image.png",
+    "args": ["--crop", "0,78,470,520", "--ring", "16,318,434,42", "--ring", "16,537,434,42", "--pad", "56", "--radius", "20"]
+  },
+  {
+    "out": "images/funnels/manage-pages/page-menu.png",
+    "src": "source/raw/funnels/manage-pages/05-row-menu.png",
+    "args": ["--crop", "0,98,290,310", "--ring", "36,233,226,110", "--pad", "40", "--radius", "14"]
+  }
+]

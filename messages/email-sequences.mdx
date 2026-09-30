@@ -1,0 +1,77 @@
+---
+title: "Send a series of follow-up emails"
+sidebarTitle: "Email sequences"
+description: "Add delays and more emails to a flow so leads get a timed series of messages."
+icon: "hourglass-half"
+---
+
+<Callout icon="star" color="#155DFC">
+  Available on: **the Growth plan and above**. On Starter, a flow can send one email. Clicking **"Add email"** on Starter opens an upgrade prompt.
+</Callout>
+
+Send several emails with a wait between them, for example a welcome email now, a reminder after a day and an offer after three days. One email is often not enough. You build a sequence in the same flow editor you use for a single email.
+
+**Before you start**, you need:
+
+- A flow with a trigger and a first email. See [Send automated emails to new leads](/messages/automated-emails).
+- A verified sender. See [Add and verify a sender email](/messages/custom-sender-email).
+
+## Important to note
+
+<Warning>
+  - A lead goes through a flow once. If their status returns to the trigger status later, they do not start again.
+  - Edits to a live flow need a new publish. Click **"Publish Flow"** again. Leads already in the flow finish with the version they started on.
+  - Every email counts toward your monthly allowance, shown in [Send automated emails to new leads](/messages/automated-emails).
+</Warning>
+
+## Build a sequence
+
+<Steps>
+  <Step title="Add the next email">
+    Click **"Add email"** below your last email. AskFunnel adds a **Delay** step and a new email after it.
+
+    ![The Add email button below an email, highlighted](/images/messages/email-sequences/add-email.png)
+  </Step>
+  <Step title="Set the delay">
+    Click the **Delay** card above the new email. It says **Click to add delay** until you set it.
+
+    ![A Delay card before an email, highlighted](/images/messages/email-sequences/delay-card.png)
+
+    1. Under **Delay message by**, enter the wait in **day(s)**, **hour(s)** and **minute(s)**. You can type a number or use the minus and plus buttons.
+    2. Click **"Save"**.
+
+    ![The Add delay window with 3 days entered](/images/messages/email-sequences/delay-modal.png)
+
+    The wait starts when the step before it finishes. So a delay before your first email counts from the moment the lead reaches your trigger status, and a delay before the second email counts from when the first was sent. Leave a delay empty to send straight away. The most you can enter is 365 days, 23 hours and 59 minutes.
+  </Step>
+  <Step title="Write the follow-up">
+    Choose your sender under **From**, add a subject and write the message. Repeat **"Add email"** for each step of the sequence. Use **"Test"** to send yourself a copy of any email.
+  </Step>
+  <Step title="Publish the flow">
+    Click **"Publish Flow"** at the top right. Every new lead who reaches your trigger status now gets the whole sequence.
+  </Step>
+</Steps>
+
+## Manage the steps
+
+- **Reorder or remove an email:** click the three dots at the top right of an email (**Message actions**) and choose **Move up**, **Move down** or **Delete**.
+- **Clear a delay:** open the delay and click **"Clear delay"**.
+- **Stop the sequence when a lead moves on:** click the **Trigger** card, turn on **Remove leads when their status changes** and click **"Save"**. Converted or advanced leads then stop receiving the flow.
+- **Turn the flow off:** this stops it for everyone. Leads waiting for their next email will not get it.
+
+<Tip>
+  Turn on **Remove leads when their status changes** for any sequence that sells or follows up, so a lead you already moved to **MEETING** or **CONVERTED** does not keep getting emails.
+</Tip>
+
+## What to do next
+
+<Columns cols={2}>
+  <Card title="Keep your emails out of spam" icon="shield-check" href="/messages/email-deliverability">
+    Help every email in your sequence reach the inbox.
+  </Card>
+  <Card title="Email your team when a lead arrives" icon="bell" href="/messages/team-alerts">
+    Get an alert the moment a lead submits.
+  </Card>
+</Columns>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).
