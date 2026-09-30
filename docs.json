@@ -192,10 +192,5 @@
       "instagram": "https://www.instagram.com/askfunnel/",
       "facebook": "https://www.facebook.com/askfunnel"
     }
-  },
-  "seo": {
-    "metatags": {
-      "robots": "noindex, nofollow"
-    }
   }
 }
