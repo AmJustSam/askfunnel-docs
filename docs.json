@@ -15,7 +15,8 @@
     "href": "https://askfunnel.com"
   },
   "appearance": {
-    "default": "light"
+    "default": "dark",
+    "strict": false
   },
   "navbar": {
     "links": [
