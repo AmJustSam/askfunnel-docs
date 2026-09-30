@@ -41,13 +41,13 @@ With the Meta Pixel integration, you can:
     3. On the left side menu, click **"Integrations"**.
     4. Under **Tracking**, on the **Meta Pixel** card, click **"Settings"**.
 
-    {/* IMAGE: Funnel Settings, Integrations page with the "Send leads to" and "Tracking" groups; ring "Integrations" in the left menu and "Settings" on the Meta Pixel card */}
+    ![The Integrations menu item and the Settings link on the Meta Pixel card, both highlighted](/images/integrations/meta-pixel/connect-card.png)
   </Step>
   <Step title="Paste your Pixel ID">
     1. Next to **Pixel ID**, paste your number, for example 1234567890.
     2. In the bar that appears at the top, click **"Save changes"**. If your funnel is published, AskFunnel shows **Settings saved. Your live funnel is updated.**
 
-    {/* IMAGE: the Meta (Facebook & Instagram) settings with a sample Pixel ID typed in and the "You have unsaved changes" bar visible; ring the Pixel ID field and "Save changes" */}
+    ![The Meta settings with a Pixel ID typed in and the You have unsaved changes bar showing, with the Pixel ID field and the Save changes button highlighted](/images/integrations/meta-pixel/pixel-id-unsaved.png)
 
     <Tip>
       In Meta Events Manager, open **Data sources**, select your dataset and copy its **ID**. A dataset is Meta's name for a pixel.
@@ -68,7 +68,7 @@ Browsers with ad blockers or strict privacy settings often block the pixel, so t
 4. Optional: to check your setup first, paste the code from Meta's **Test events** tab into **Test events code (optional)**.
 5. Click **"Connect"**. AskFunnel shows **Conversions API connected. Meta verified your token.** This applies right away. You do not need to save or publish.
 
-{/* IMAGE: the "Conversions API (server-side)" section with the Access token field (empty or masked) and the "Connect" button; ring "Connect" */}
+![The Conversions API (server-side) section with the Access token and Test events code fields and the Connect button highlighted](/images/integrations/meta-pixel/conversions-api.png)
 
 <Note>
   AskFunnel sends a **Lead** event from its servers for each new lead, and a custom event named after the new status whenever you change a lead's status, for example Qualified. Only leads who accepted marketing cookies are sent. The Conversions API does not bypass consent choices or Meta's data rules.
@@ -93,8 +93,6 @@ When a lead is in that status and has a value, AskFunnel sends Meta one **Purcha
 - The Meta Pixel card shows **Connected**, and its switch is on.
 - In Meta Events Manager, open your dataset and click **Test events**. Open your funnel in another tab in the same browser and accept the cookies. You see **PageView**, then an event for each page and answer as you click through, then **Lead** when you submit the form.
 - With the Conversions API connected, Meta also shows the events sent from AskFunnel's servers.
-
-{/* IMAGE: Meta Events Manager, Test events tab, showing PageView, a few custom events and Lead received from a test visit (use a demo dataset with no real names or IDs) */}
 
 ## Troubleshooting
 

@@ -1,0 +1,52 @@
+[
+  {
+    "out": "images/getting-started/launch-your-first-funnel/template-library.png",
+    "src": "source/raw/getting-started/launch-your-first-funnel/01-template-library.png",
+    "args": [
+      "--crop",
+      "0,0,2080,1370",
+      "--ring",
+      "1625,5,307,99",
+      "--pad",
+      "40",
+      "--radius",
+      "22"
+    ]
+  },
+  {
+    "out": "images/getting-started/launch-your-first-funnel/builder-pages.png",
+    "src": "source/raw/getting-started/launch-your-first-funnel/05-builder-compact.png",
+    "args": [
+      "--crop",
+      "0,0,2200,1305",
+      "--pad",
+      "90",
+      "--radius",
+      "26"
+    ]
+  },
+  {
+    "out": "images/getting-started/launch-your-first-funnel/publish-menu.png",
+    "src": "source/raw/funnels/share-your-funnel/06-publish-menu.png",
+    "args": [
+      "--crop",
+      "2144,0,1056,381",
+      "--ring",
+      "2400,15,273,96",
+      "--pad",
+      "56",
+      "--radius",
+      "18"
+    ]
+  },
+  {
+    "out": "images/getting-started/launch-your-first-funnel/leads-test-lead.png",
+    "src": "source/raw/getting-started/launch-your-first-funnel/04-leads-test-lead.png",
+    "args": [
+      "--crop",
+      "380,290,2240,822",
+      "--pad",
+      "120"
+    ]
+  }
+]

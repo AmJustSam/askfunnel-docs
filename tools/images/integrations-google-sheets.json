@@ -1,0 +1,62 @@
+[
+  {
+    "out": "images/integrations/google-sheets/connect-card.png",
+    "src": "source/raw/integrations/google-sheets/01-integrations-cards.png",
+    "args": [
+      "--crop",
+      "350,165,2500,540",
+      "--ring",
+      "392,200,256,58",
+      "--ring",
+      "2225,556,166,62",
+      "--pad",
+      "80",
+      "--pad-y",
+      "80",
+      "--max-width",
+      "2080"
+    ]
+  },
+  {
+    "out": "images/integrations/google-sheets/settings-dialog.png",
+    "src": "source/raw/integrations/google-sheets/02-settings-dialog.png",
+    "args": [
+      "--crop",
+      "954,418,1292,964",
+      "--ring",
+      "2030,833,184,86",
+      "--pad",
+      "89"
+    ]
+  },
+  {
+    "out": "images/integrations/google-sheets/test-row-added.png",
+    "src": "source/raw/integrations/google-sheets/03-test-row-added.png",
+    "args": [
+      "--crop",
+      "954,341,1292,1118",
+      "--ring",
+      "2030,1314,184,100",
+      "--pad",
+      "89"
+    ]
+  },
+  {
+    "out": "images/integrations/google-sheets/delivery-log.png",
+    "src": "source/raw/integrations/google-sheets/04-delivery-log.png",
+    "args": [
+      "--crop",
+      "954,304,1292,1192",
+      "--pad",
+      "89"
+    ]
+  },
+  {
+    "out": "images/integrations/google-sheets/spreadsheet-rows.png",
+    "src": "source/raw/integrations/google-sheets/06-spreadsheet.png",
+    "args": [
+      "--crop",
+      "0,0,1752,745"
+    ]
+  }
+]

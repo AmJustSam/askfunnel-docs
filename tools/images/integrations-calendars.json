@@ -1,14 +1,28 @@
 [
   {
     "out": "images/integrations/calendars/connect-calendar.png",
-    "src": "source/raw/integrations/calendars/01-workspace-calendars.png",
+    "src": "source/raw/integrations/calendars/02-workspace-calendars.png",
     "args": [
       "--crop",
-      "260,85,920,425",
+      "350,165,1860,820",
       "--ring",
-      "272,178,140,34",
+      "394,362,224,70",
       "--ring",
-      "553,241,600,52"
+      "942,494,1188,96",
+      "--pad",
+      "90"
+    ]
+  },
+  {
+    "out": "images/integrations/calendars/form-settings.png",
+    "src": "source/raw/integrations/calendars/01-form-settings.png",
+    "args": [
+      "--crop",
+      "0,128,760,565",
+      "--ring",
+      "24,316,712,100",
+      "--width",
+      "1470"
     ]
   }
 ]

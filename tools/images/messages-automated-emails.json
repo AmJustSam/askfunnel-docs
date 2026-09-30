@@ -1,22 +1,54 @@
 [
   {
     "out": "images/messages/automated-emails/flow-editor.png",
-    "src": "source/raw/messages/automated-emails/05-flow-editor-frame.png",
-    "args": ["--crop", "0,52,1152,546", "--ring", "230,60,48,20", "--ring", "934,56,92,28", "--pad", "64", "--pad-y", "64"]
+    "src": "source/raw/messages/automated-emails/01-flow-editor.png",
+    "args": [
+      "--crop",
+      "0,0,2000,1800",
+      "--ring",
+      "34,366,200,72",
+      "--ring",
+      "1234,23,232,80",
+      "--pad",
+      "90"
+    ]
   },
   {
     "out": "images/messages/automated-emails/automation-logic.png",
-    "src": "source/raw/messages/automated-emails/08-automation-logic-copy.png",
-    "args": ["--crop", "252,195,650,516", "--ring", "292,296,570,40", "--ring", "276,498,110,40", "--width", "900", "--pad-y", "70"]
+    "src": "source/raw/messages/automated-emails/02-automation-logic.png",
+    "args": [
+      "--crop",
+      "354,688,1292,758",
+      "--ring",
+      "418,875,1164,100",
+      "--ring",
+      "386,1015,243,100",
+      "--pad",
+      "89"
+    ]
   },
   {
     "out": "images/messages/automated-emails/add-file-block.png",
-    "src": "source/raw/messages/automated-emails/06-blocks-palette-frame.png",
-    "args": ["--crop", "0,88,880,472", "--ring", "114,330,108,68", "--pad", "64", "--pad-y", "64"]
+    "src": "source/raw/messages/automated-emails/03-block-picker.png",
+    "args": [
+      "--crop",
+      "0,128,760,1040",
+      "--ring",
+      "384,930,344,210",
+      "--width",
+      "1470"
+    ]
   },
   {
     "out": "images/messages/automated-emails/file-block-settings.png",
-    "src": "source/raw/messages/automated-emails/07-file-block-frame.png",
-    "args": ["--crop", "0,88,880,472", "--ring", "6,184,216,28", "--pad", "64", "--pad-y", "64"]
+    "src": "source/raw/messages/automated-emails/04-file-block-settings.png",
+    "args": [
+      "--crop",
+      "0,128,760,1090",
+      "--ring",
+      "20,444,716,96",
+      "--width",
+      "1470"
+    ]
   }
 ]

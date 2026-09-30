@@ -1,17 +1,17 @@
 [
   {
     "out": "images/messages/custom-sender-email/senders-tab.png",
-    "src": "source/raw/messages/custom-sender-email/04-senders-empty-frame.png",
-    "args": ["--crop", "196,100,572,248", "--ring", "200,208,80,26", "--ring", "596,306,112,28", "--pad", "64", "--pad-y", "64"]
+    "src": "source/raw/messages/custom-sender-email/01-senders-tab.png",
+    "args": ["--crop", "880,180,1320,1110", "--ring", "904,1145,1264,127", "--pad", "75"]
   },
   {
     "out": "images/messages/custom-sender-email/free-email-error.png",
-    "src": "source/raw/messages/custom-sender-email/02-16290225-screenshot-2026-08-09-225342.png",
-    "args": ["--crop", "70,100,500,140", "--width", "900", "--pad-y", "70"]
+    "src": "source/raw/messages/custom-sender-email/02-free-email-error.png",
+    "args": ["--crop", "954,506,1292,787", "--pad", "89"]
   },
   {
     "out": "images/messages/custom-sender-email/dns-records.png",
-    "src": "source/raw/messages/custom-sender-email/03-16290225-screenshot-2026-08-10-205506.png",
-    "args": ["--crop", "334,157,650,582", "--ring", "810,669,152,42", "--width", "900", "--pad-y", "70"]
+    "src": "source/raw/messages/custom-sender-email/03-dns-records.png",
+    "args": ["--crop", "954,304,1292,1192", "--ring", "1894,1353,320,98", "--pad", "89"]
   }
 ]

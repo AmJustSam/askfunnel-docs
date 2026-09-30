@@ -1,22 +1,16 @@
 ---
 title: "Message a lead on WhatsApp"
 sidebarTitle: "WhatsApp"
-description: "Open a WhatsApp chat with a lead from their profile, and where to save a default message for your funnel."
+description: "Open a WhatsApp chat with a lead from their profile, with your funnel's default message already typed in."
 icon: "message"
 ---
 
-Start a WhatsApp chat with a lead in one click, without saving their number to your phone first. You open the chat from the lead's profile.
+Start a WhatsApp chat with a lead in one click, without saving their number to your phone first. Save a default message for your funnel and it is typed in for you, so you only need to press send.
 
 **Before you start**, you need:
 
 - A funnel that collects phone numbers. See [Set up your lead capture form](/funnels/lead-capture-forms).
 - A role that can see leads: Global Admin, Workspace Admin or Contacts Manager. To save a default message you also need a role that can open **"Funnel Settings"**: Global Admin, Workspace Admin or Content Editor. Contacts Managers can message leads but cannot change the template.
-
-## Important to note
-
-<Warning>
-  The default message you save for a funnel is not added to the chat. The **WhatsApp** button on a lead opens an empty chat, so copy your message into WhatsApp yourself.
-</Warning>
 
 ## Open a WhatsApp chat with a lead
 
@@ -26,9 +20,11 @@ Start a WhatsApp chat with a lead in one click, without saving their number to y
   </Step>
   <Step title="Click the WhatsApp button">
     At the top of the lead's panel, click the **WhatsApp** icon (a chat bubble) next to the email and call icons. It appears when the lead has a phone number.
+
+    ![The top of a lead's panel with the WhatsApp icon highlighted next to the email and call icons](/images/messages/whatsapp-template/lead-panel-whatsapp.png)
   </Step>
-  <Step title="Write your message">
-    WhatsApp Web or the WhatsApp app opens a chat with that number in a new tab. Type your message and send it.
+  <Step title="Send your message">
+    WhatsApp Web or the WhatsApp app opens a chat with that number in a new tab. If your funnel has a default message, it is already typed in. Change it if you like, then send it.
   </Step>
 </Steps>
 
@@ -36,18 +32,23 @@ If the lead has a WhatsApp account on that number, the chat opens straight away.
 
 ## Save a default message for the funnel
 
-Each funnel has a **WhatsApp message template** field for a message you use often.
+Each funnel has a **WhatsApp message template**. Whatever you save there is typed into every chat you open from that funnel's leads.
 
 1. From your main dashboard, click the three small dots (**...**) on the funnel's row, then click **"Funnel Settings"**.
 2. In the left menu, click **"WhatsApp"**.
 3. Type your message in **WhatsApp message template**, for example: "Hi! Thanks for your interest. How can we help you?" You can use up to 500 characters.
 4. Click **"Save changes"** in the bar that appears at the top.
 
+![The WhatsApp section of Funnel Settings with the WhatsApp menu item highlighted and the message template field](/images/messages/whatsapp-template/template-setting.png)
+
 ## Troubleshooting
 
 <AccordionGroup>
   <Accordion title="I do not see a WhatsApp button">
     The button shows only when the lead has a phone number. Open the lead's **Profile** tab and check the **Phone** field. You can edit it there.
+  </Accordion>
+  <Accordion title="My default message does not appear in the chat">
+    Check that you clicked **"Save changes"** after typing the message, then open the lead again from the funnel's **Leads** tab. The message belongs to one funnel, so a lead from another funnel gets that funnel's message, or an empty chat if it has none.
   </Accordion>
   <Accordion title="WhatsApp says the number is not on WhatsApp">
     WhatsApp needs the full international number. Make sure the lead's phone includes the country code, for example +1 for the United States, and that the person uses WhatsApp on that number.

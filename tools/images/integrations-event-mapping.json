@@ -1,0 +1,26 @@
+[
+  {
+    "out": "images/integrations/event-mapping/add-entry.png",
+    "src": "source/raw/integrations/event-mapping/01-mapping-empty.png",
+    "args": [
+      "--crop",
+      "925,640,1865,350",
+      "--ring",
+      "2519,800,230,86",
+      "--pad",
+      "100"
+    ]
+  },
+  {
+    "out": "images/integrations/event-mapping/two-entries.png",
+    "src": "source/raw/integrations/event-mapping/02-two-entries.png",
+    "args": [
+      "--crop",
+      "925,640,1865,500",
+      "--ring",
+      "987,882,1683,100",
+      "--pad",
+      "100"
+    ]
+  }
+]

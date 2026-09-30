@@ -1,0 +1,64 @@
+[
+  {
+    "out": "images/integrations/webhooks/connect-card.png",
+    "src": "source/raw/integrations/webhooks/01-integrations-cards.png",
+    "args": [
+      "--crop",
+      "350,165,2500,540",
+      "--ring",
+      "392,200,256,58",
+      "--ring",
+      "937,556,164,62",
+      "--pad",
+      "80",
+      "--pad-y",
+      "80",
+      "--max-width",
+      "2080"
+    ]
+  },
+  {
+    "out": "images/integrations/webhooks/add-webhook.png",
+    "src": "source/raw/integrations/webhooks/01-add-webhook.png",
+    "args": [
+      "--crop",
+      "954,929,1292,542",
+      "--ring",
+      "1954,1152,260,100",
+      "--pad",
+      "89"
+    ]
+  },
+  {
+    "out": "images/integrations/webhooks/send-test-menu.png",
+    "src": "source/raw/integrations/webhooks/02-row-menu-plain.png",
+    "args": [
+      "--crop",
+      "902,608,1396,653",
+      "--ring",
+      "1590,944,578,70"
+    ]
+  },
+  {
+    "out": "images/integrations/webhooks/edit-advanced.png",
+    "src": "source/raw/integrations/webhooks/04-edit-advanced.png",
+    "args": [
+      "--crop",
+      "954,578,1292,1241",
+      "--ring",
+      "2051,1501,158,88",
+      "--pad",
+      "89"
+    ]
+  },
+  {
+    "out": "images/integrations/webhooks/delivery-log.png",
+    "src": "source/raw/integrations/webhooks/05-delivery-log.png",
+    "args": [
+      "--crop",
+      "954,304,1292,1192",
+      "--pad",
+      "89"
+    ]
+  }
+]

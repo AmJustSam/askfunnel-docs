@@ -1,34 +1,26 @@
 [
   {
     "out": "images/messages/team-alerts/automation-logic.png",
-    "src": "source/raw/messages/team-alerts/01-16300506-screenshot-2026-08-10-221632.png",
+    "src": "source/raw/messages/team-alerts/01-automation-logic.png",
     "args": [
       "--crop",
-      "252,195,650,516",
+      "354,556,1292,1022",
       "--ring",
-      "292,296,570,40",
-      "--ring",
-      "276,498,110,40",
-      "--width",
-      "900",
-      "--pad-y",
-      "70"
+      "386,1147,243,100",
+      "--pad",
+      "89"
     ]
   },
   {
     "out": "images/messages/team-alerts/workspace-members.png",
-    "src": "source/raw/messages/team-alerts/02-16300506-screenshot-2026-08-10-223121.png",
+    "src": "source/raw/messages/team-alerts/02-workspace-members.png",
     "args": [
       "--crop",
-      "14,32,602,244",
+      "790,780,1180,950",
       "--ring",
-      "178,150,154,40",
-      "--ring",
-      "108,193,492,44",
-      "--width",
-      "900",
-      "--pad-y",
-      "70"
+      "987,1087,938,98",
+      "--pad",
+      "145"
     ]
   }
 ]

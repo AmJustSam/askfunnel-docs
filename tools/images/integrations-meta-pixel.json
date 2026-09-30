@@ -1,0 +1,44 @@
+[
+  {
+    "out": "images/integrations/meta-pixel/connect-card.png",
+    "src": "source/raw/integrations/meta-pixel/01-integrations-cards.png",
+    "args": [
+      "--crop",
+      "350,165,2500,1040",
+      "--ring",
+      "392,200,256,58",
+      "--ring",
+      "937,1069,164,62",
+      "--pad",
+      "80",
+      "--pad-y",
+      "80",
+      "--max-width",
+      "2080"
+    ]
+  },
+  {
+    "out": "images/integrations/meta-pixel/pixel-id-unsaved.png",
+    "src": "source/raw/integrations/meta-pixel/02-pixel-id-unsaved.png",
+    "args": [
+      "--crop",
+      "895,175,1950,585",
+      "--ring",
+      "2279,635,504,99",
+      "--ring",
+      "2491,197,312,100",
+      "--pad",
+      "100"
+    ]
+  },
+  {
+    "out": "images/integrations/meta-pixel/conversions-api.png",
+    "src": "source/raw/integrations/meta-pixel/03-capi-ready.png",
+    "args": [
+      "--crop",
+      "933,1160,1300,576",
+      "--ring",
+      "953,1609,195,100"
+    ]
+  }
+]
