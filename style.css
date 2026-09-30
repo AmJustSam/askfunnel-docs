@@ -121,3 +121,9 @@ img.af-blur.af-blur-done {
     margin-top: 0;
   }
 }
+
+/* Footer: hide the "Powered by Mintlify" link (its wrapper too, so no empty gap is left). */
+div:has(> a[href*="utm_campaign=poweredBy"]),
+a[href*="utm_campaign=poweredBy"] {
+  display: none !important;
+}
