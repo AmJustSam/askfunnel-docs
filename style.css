@@ -42,3 +42,36 @@
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
+/* Screenshots carry width and height so their space is kept while they load; scale them with the column. */
+.mdx-content img[src^="/images/"],
+.mdx-content img[data-path^="images/"] {
+  height: auto;
+}
+
+/* Blur-up while a screenshot loads (lazy-images.js), the same effect as askfunnel.com. */
+img.af-blur {
+  background-position: center;
+  background-size: cover;
+  filter: blur(14px);
+  transition: filter 450ms ease;
+}
+img.af-blur.af-blur-done {
+  filter: blur(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  img.af-blur {
+    transition: none;
+  }
+}
+
+/* Image lightbox (lightbox.js): the zoom cursor only over the image, zoom out once zoomed, a normal cursor around it. */
+[data-ramka-content] [data-ramka-zoom] {
+  cursor: default;
+}
+[data-ramka-content] [data-ramka-media] {
+  cursor: zoom-in;
+}
+[data-ramka-content][data-zoomed] [data-ramka-media] {
+  cursor: zoom-out;
+}

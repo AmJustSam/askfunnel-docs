@@ -4,8 +4,9 @@
   "type": "module",
   "scripts": {
     "dev": "mint dev --port 3333",
+    "images": "node tools/build-images.mjs && node tools/embed-images.mjs",
     "frame": "node tools/frame.mjs",
-    "check": "mint broken-links"
+    "check": "node tools/embed-images.mjs --check && mint broken-links"
   },
   "devDependencies": {
     "mint": "4.2.952",
