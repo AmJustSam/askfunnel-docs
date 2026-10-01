@@ -1,0 +1,136 @@
+---
+title: "Send leads to Zapier"
+sidebarTitle: "Zapier"
+description: "Start a Zap for every new funnel lead, with all their answers, so they reach the apps you already use."
+icon: "bolt"
+---
+
+<Callout icon="star" color="#155DFC">
+  Available on: **the Growth plan and above**.
+</Callout>
+
+Zapier connects thousands of apps. Send every new AskFunnel lead to Zapier and it can add the lead to your CRM, write a row in a spreadsheet, post in Slack, send an email or start anything else you set up. A Zap is Zapier's name for one automation. Each new lead starts your Zap the moment it arrives, with the contact details, every answer and where the lead came from.
+
+You do this with a webhook, which is a web address that receives each new lead. AskFunnel has no separate Zapier connection to install. The steps are below, and [Send your leads to a webhook](/integrations/webhooks) explains the webhook settings in detail.
+
+With Zapier, you can:
+
+- **Connect apps AskFunnel does not connect to directly.** For example Mailchimp, Notion, Slack or your CRM.
+- **Use every answer.** Pick the contact's email, phone and each answer in any step of your Zap.
+- **Stay in control.** AskFunnel retries automatically and shows every lead in a delivery log.
+
+**Before you start**, you need:
+
+- The Growth plan or above. See [Upgrade your plan](/billing/upgrade).
+- A Workspace Admin or Global Admin role. Only they can manage webhooks.
+- A Zapier account. Zapier decides which of its plans include **Webhooks by Zapier**, and may ask you to upgrade if yours does not. Check your Zapier plan if you cannot find the app.
+- A funnel with a form. See [Set up your lead capture form](/funnels/lead-capture-forms).
+
+## Important to note
+
+<Warning>
+  - Only new leads are sent. Leads that arrived before you added the webhook are not.
+  - Keep your Zap turned on. When a Zap is off or deleted, Zapier answers that the address was not found. AskFunnel then marks the lead **Failed** and does not try again by itself. After you turn the Zap on, click **"Retry failed"** in the delivery log.
+  - Treat the Zapier webhook address like a password. Anyone who has it can start your Zap.
+  - If your plan drops below Growth, your webhook is kept, but new leads are no longer sent to it.
+</Warning>
+
+## Set up the connection
+
+<Steps>
+  <Step title="Create a Zap that waits for a webhook">
+    In Zapier, create a new Zap, then:
+
+    1. Click the **Trigger** step and search for **Webhooks by Zapier**.
+    2. In the **Event** list, choose **Catch Hook**. Do not choose **Catch Raw Hook**.
+    3. Click **Continue**. Leave **Pick Off A Child Key** empty and click **Continue** again.
+    4. On the **Test** tab, Zapier shows your webhook address, which starts with https://hooks.zapier.com. Click **Copy**.
+
+    Keep this tab open. Zapier is now waiting for a lead.
+  </Step>
+  <Step title="Add the address to your funnel in AskFunnel">
+    1. From your main dashboard, find the funnel you want to connect.
+    2. Click the three small dots (**...**) on that funnel's row, then click **"Funnel Settings"**.
+    3. On the left side menu, click **"Integrations"**.
+    4. Under **Send leads to**, on the **Webhooks** card, click **"Settings"**.
+    5. Paste the address into **Webhook URL** and click **"Add webhook"**.
+
+    You see **Webhook added. New leads will be sent to it.**
+
+    {/* SCREENSHOT: images/integrations/zapier/add-webhook.png | The Webhooks window in AskFunnel with the Webhook URL field filled with a Zapier address such as https://hooks.zapier.com/hooks/catch/4827153/3xq9kz/ and the Add webhook button. Highlight: the Webhook URL field and the Add webhook button. */}
+  </Step>
+  <Step title="Send a test lead">
+    1. In AskFunnel, click the three dots (**...**) on the webhook's row, then **"Send test"**.
+    2. You see **Test delivered**, for example **Test delivered (200 OK)**. The sample lead is named **AskFunnel Test**.
+    3. Back in Zapier, click **Test trigger**. Zapier shows the sample lead and splits it into separate fields that you can use in the next steps.
+
+    If Zapier finds nothing, send the test again and click **Test trigger** again.
+
+    {/* SCREENSHOT: images/integrations/zapier/send-test.png | The webhook's three dots menu open with Send test highlighted, and the green notice Test delivered (200 OK) visible. Highlight: the Send test menu item. */}
+  </Step>
+  <Step title="Add what should happen next">
+    Add an action step for the app you want, for example **Google Sheets**, **Slack** or your CRM, and fill its fields with values from the sample lead. The lead's name, email and phone are listed under the contact details, and each answer is listed under the answers, named after your question. The full list is in [What AskFunnel sends](/integrations/webhook-reference).
+
+    <Tip>
+      - The sample has `test` set to true. To keep test leads out of your CRM, add a **Filter** step and only continue when `test` is false.
+      - Answers are named after your questions. If you rename a question later, its name in Zapier changes too, and you need to pick it again.
+    </Tip>
+  </Step>
+  <Step title="Publish your Zap">
+    Publish your Zap in Zapier so that it is on. A Zap that is off does not receive leads.
+  </Step>
+  <Step title="Try it with a real lead">
+    Open your live funnel, fill in the form and submit it. The Zap runs within moments. Delete the test lead in your other app afterward if you like.
+  </Step>
+</Steps>
+
+## How do I know it is working?
+
+- The **Webhooks** card in AskFunnel shows **Connected** and the address, for example hooks.zapier.com.
+- In AskFunnel, click the three dots (**...**) on the webhook, then **"Delivery log"**. Each lead shows **Delivered**, **Retrying** or **Failed**. Tests are listed as **Test**.
+- In Zapier, your Zap's run history shows a run for each lead.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="My test fails with The endpoint was not found">
+    Zapier answered that the address does not exist. Check that you pasted the whole address from the **Test** tab, with no spaces, and that the Zap still exists and is turned on. Then send the test again. Other test messages are explained in [Send your leads to a webhook](/integrations/webhooks#troubleshooting).
+  </Accordion>
+  <Accordion title="The test says Test delivered, but Zapier shows nothing">
+    Open the Zap's **Test** tab and click **Test trigger** after you send the test. If the address was copied from a different Zap, create the webhook again and paste the right address into AskFunnel.
+  </Accordion>
+  <Accordion title="Leads show Failed in the delivery log">
+    Open a lead to see the reason. If it says the endpoint was not found, the Zap was off or deleted when the lead arrived. Turn the Zap on, then click **"Retry failed"** in the delivery log.
+  </Accordion>
+  <Accordion title="The same lead started my Zap twice">
+    AskFunnel delivers each lead at least once. If Zapier was slow and AskFunnel retried, or you clicked **"Retry"**, the same lead arrives again with the same ID. See [The same lead arrived twice](/integrations/webhooks#troubleshooting).
+  </Accordion>
+  <Accordion title="The Webhooks card says Growth and above">
+    Webhooks are available on the Growth plan and above. Click **"Upgrade to Growth"** in the Webhooks settings, or see [Upgrade your plan](/billing/upgrade).
+  </Accordion>
+  <Accordion title="I cannot find Webhooks by Zapier">
+    Search for it in the **Trigger** step. If Zapier asks you to upgrade, your Zapier plan does not include it. That is decided by Zapier, not AskFunnel.
+  </Accordion>
+</AccordionGroup>
+
+## Manage the connection
+
+- **Send to Zapier and other tools:** add up to 10 webhooks to a funnel. Click **"Add webhook"** in the Webhooks settings.
+- **Pause it:** turn off the switch on the webhook's row. Leads that arrive while it is paused are not sent later.
+- **Remove it:** click **"Delete webhook"** in **"Edit webhook"**. Turn off or delete the Zap in Zapier too.
+
+## What to do next
+
+<Columns cols={3}>
+  <Card title="Send leads to Make" icon="diagram-project" href="/integrations/make">
+    Connect Make instead, with a scenario.
+  </Card>
+  <Card title="Send your leads to a webhook" icon="plug" href="/integrations/webhooks">
+    Headers, signing and the delivery log.
+  </Card>
+  <Card title="What AskFunnel sends" icon="code" href="/integrations/webhook-reference">
+    Every field of a lead, for your Zap.
+  </Card>
+</Columns>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

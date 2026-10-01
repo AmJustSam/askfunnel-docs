@@ -1,0 +1,124 @@
+---
+title: "What happens when you reach your monthly lead limit"
+sidebarTitle: "Monthly lead limit"
+description: "Leads over your limit are saved but locked. See what you can and cannot see, and how to unlock them."
+icon: "lock"
+---
+
+Every plan includes a number of leads each month. When you reach it, AskFunnel does not turn your funnels off and does not lose anyone. Visitors can still fill in your form as usual. The extra leads are saved, but **locked**: they stay hidden until you add capacity. This page explains what that means, so a lead that seems to be missing does not worry you.
+
+Your monthly limit depends on your plan:
+
+| | Starter | Growth | Scale | Enterprise |
+|---|---|---|---|---|
+| **Leads per month** | 100 | 300 | 1,000 | 5,000+ |
+
+You can also buy extra leads without changing plan. See [Choose the right plan](/billing/choose-a-plan).
+
+**Before you start**, you need:
+
+- For reading this page, nothing.
+- To unlock leads, a Global Admin role (the organization owner, or anyone they gave that role to). Only a Global Admin can change the plan or add capacity.
+
+## Important to note
+
+<Warning>
+  - A locked lead is saved in full, but it is hidden from your **Leads** table and from exports.
+  - A locked lead is not sent anywhere. It does not reach your webhook, Google Sheets, HighLevel or Meta server events, it does not trigger team alerts, and it does not start automated emails.
+  - Deleting leads does not unlock others. Only more capacity does.
+  - Your visitors notice nothing. They still see your thank you screen.
+</Warning>
+
+## How the limit works
+
+- **What counts as a lead.** Every form submission is one lead.
+- **Your whole organization shares the limit.** Leads from all of your workspaces and funnels are added together.
+- **The count resets on the first day of each calendar month** in UTC (standard world time), not on your billing date.
+- **The first leads of the month are visible.** With a limit of 100, leads 1 to 100 show in your table. From lead 101 on, new leads are locked until the month ends or you add capacity.
+- **Leads you add capacity for come back oldest first.** A new month does not bring back leads that were locked in an earlier month. Only more capacity does.
+
+## What you see in AskFunnel
+
+- **At 80% of your limit,** a banner appears above the **Leads** table. It says **You've used 240 of 300 monthly leads this month.** (with your own numbers) and **New leads lock once you reach your monthly limit.** A Global Admin also sees an **"Add capacity"** button.
+- **Once leads are locked,** a warning banner says **12 leads are locked.** (with your own number) and **They're saved but hidden until you add capacity.** A Global Admin also sees an **"Upgrade plan"** button. Everyone else sees **Ask a Global Admin to upgrade the plan or add a leads add-on.**
+- **In the plan badge** in the top right corner, the **Leads / month** row shows how many you have used, for example **240/300**. See [Check your plan and usage](/billing/plan-and-usage).
+
+{/* SCREENSHOT: images/billing/monthly-lead-limit/locked-banner.png | A funnel's Leads tab on a Growth plan with the warning banner above the table that says a number of leads are locked, saved but hidden until you add capacity, and the Upgrade plan button. Highlight: the banner and the Upgrade plan button. */}
+
+{/* SCREENSHOT: images/billing/monthly-lead-limit/approaching-banner.png | A funnel's Leads tab with the banner above the table that says You've used 240 of 300 monthly leads this month and New leads lock once you reach your monthly limit, with the Add capacity button. Highlight: the banner and the Add capacity button. */}
+
+## Unlock your leads
+
+<Steps>
+  <Step title="Open the plan page">
+    1. Click your profile picture in the top right corner.
+    2. Under **Subscription**, click **"Plan"**.
+    3. Click **"Change plan"**.
+
+    You can also click **"Upgrade plan"** or **"Add capacity"** in the banner.
+  </Step>
+  <Step title="Add leads or move to a bigger plan">
+    1. To stay on your plan, open the **Leads** drop-down list on the right. Each option shows **Included** or its extra monthly price.
+    2. Pick a larger amount. Or click **"Select"** under a bigger plan.
+    3. Click **"Review changes"**, then **"Confirm & pay"**.
+
+    {/* SCREENSHOT: images/billing/monthly-lead-limit/leads-dropdown.png | The Choose your plan page with the Leads drop-down list open on a Growth plan, showing options such as 300 leads with Included and larger amounts with their extra monthly price. Highlight: the Leads drop-down list. */}
+
+    The full steps, including what you are charged, are in [Upgrade your plan](/billing/upgrade).
+  </Step>
+  <Step title="Check your Leads table">
+    Open your funnel's **Leads** tab. Locked leads come back **oldest first**, as far as your new capacity allows. Allow a few minutes. The number in the banner gets smaller as leads unlock, and the banner goes away when none are left.
+  </Step>
+</Steps>
+
+## If your trial or subscription has ended
+
+When a free trial or a paid plan ends, new leads are still saved, but they are locked until you subscribe again. When you subscribe, they unlock, oldest first, as far as your plan allows. See [Upgrade your plan](/billing/upgrade).
+
+## How do I know it is working?
+
+- The warning banner is gone, or shows a smaller number.
+- **Total Leads** above the table goes up.
+- New leads show in the table as soon as they arrive.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="A lead is missing from my Leads table">
+    Look for the warning banner above the table. If it says leads are locked, the lead is saved but hidden, and it comes back when you add capacity. If there is no banner, check your filters, search and date range. See [View and manage your leads](/leads/view-and-manage-leads).
+  </Accordion>
+  <Accordion title="I deleted leads but the banner is still there">
+    Deleting leads does not free up room. Your monthly count only goes up, so you cannot delete your way under the limit. Add capacity instead.
+  </Accordion>
+  <Accordion title="I upgraded, but some leads are still locked">
+    Leads unlock as far as your new capacity allows, oldest first. If you have more locked leads than the new room, the rest stay locked until you add more, for example a bigger leads amount. Also allow a few minutes. If the banner is still there after that, email support.
+  </Accordion>
+  <Accordion title="It is a new month but my old locked leads did not come back">
+    A new month gives you a fresh count for new leads. It does not release leads that were locked earlier. Add capacity to unlock them.
+  </Accordion>
+  <Accordion title="Locked leads never reached my Google Sheet, webhook or HighLevel">
+    Locked leads are not sent to your connected tools, and they are not sent automatically after they unlock. Once a lead shows in your table, you can [export your leads](/leads/export-contacts) and add them to your tool yourself.
+  </Accordion>
+  <Accordion title="The numbers in Analytics are higher than my Leads table">
+    Analytics counts every form submission, including locked leads. The **Leads** table hides them. See [Why your lead and analytics numbers differ](/analytics/why-numbers-differ).
+  </Accordion>
+  <Accordion title="I do not see the Upgrade plan button">
+    Only Global Admins can change the plan. If you are not one, ask your organization owner or another Global Admin to add capacity.
+  </Accordion>
+</AccordionGroup>
+
+## What to do next
+
+<Columns cols={3}>
+  <Card title="Upgrade your plan" icon="arrow-up" href="/billing/upgrade">
+    Add leads or move to a bigger plan.
+  </Card>
+  <Card title="Check your plan and usage" icon="gauge-high" href="/billing/plan-and-usage">
+    See how much of each limit you have used.
+  </Card>
+  <Card title="Export your leads" icon="file-csv" href="/leads/export-contacts">
+    Download your leads as a file.
+  </Card>
+</Columns>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

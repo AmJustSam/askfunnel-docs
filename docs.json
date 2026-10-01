@@ -58,12 +58,15 @@
         "icon": "layer-group",
         "pages": [
           "funnels/create-your-first-funnel",
+          "funnels/create-funnel-with-ai",
           "funnels/manage-pages",
           "funnels/quiz-questions",
+          "funnels/branch-by-answer",
           "funnels/lead-capture-forms",
           "funnels/thank-you-screen",
           "funnels/layout-blocks",
           "funnels/grid-layouts",
+          "funnels/brand-your-funnel",
           "funnels/target-audience"
         ]
       },
@@ -71,10 +74,13 @@
         "group": "Publish and share",
         "icon": "globe",
         "pages": [
+          "funnels/publish-and-restore",
           "funnels/share-your-funnel",
           "funnel-settings/custom-domain",
+          "funnel-settings/fix-custom-domain",
           "funnel-settings/social-preview-and-favicon",
-          "funnel-settings/cookies-and-consent"
+          "funnel-settings/cookies-and-consent",
+          "funnel-settings/privacy-policy-and-terms"
         ]
       },
       {
@@ -111,6 +117,8 @@
           "integrations/highlevel",
           "integrations/google-sheets",
           "integrations/webhooks",
+          "integrations/zapier",
+          "integrations/make",
           "integrations/calendars",
           "integrations/webhook-reference"
         ]
@@ -130,6 +138,8 @@
         "icon": "chart-line",
         "pages": [
           "analytics/funnel-analytics",
+          "analytics/utm-tracking",
+          "analytics/why-numbers-differ",
           "analytics/lead-insights",
           "analytics/activity-log",
           "analytics/export-conversions"
@@ -156,6 +166,8 @@
           "billing/make-the-most-of-your-trial",
           "billing/choose-a-plan",
           "billing/plan-and-usage",
+          "billing/ai-credits",
+          "billing/monthly-lead-limit",
           {
             "group": "Change your plan",
             "pages": [

@@ -1,0 +1,132 @@
+---
+title: "Why your lead and analytics numbers differ"
+sidebarTitle: "Why numbers differ"
+description: "Find out why your Leads table, your analytics and Meta Ads Manager show different numbers, and which one to trust."
+icon: "scale-balanced"
+---
+
+You open your **Leads** tab and see 42 leads. You open **Analytics** and see 47 conversions. In Meta Ads Manager you see 35. Nothing is broken. Each place counts something slightly different, over slightly different days. This page explains each difference, so you can tell a real problem from a normal gap.
+
+**Before you start**, you need:
+
+- A role that can see leads and analytics: Global Admin, Workspace Admin or Contacts Manager.
+- A funnel with some leads and visitors. See [Read your funnel analytics](/analytics/funnel-analytics).
+
+## What each number counts
+
+| Where you look | What it counts |
+|---|---|
+| **Leads** tab, **Total Leads** | The leads saved in AskFunnel that you can see. Locked leads are hidden, deleted leads are gone, and any filter or search you set narrows it. |
+| **Funnels** list, **Leads** | The total number of submissions recorded for that funnel since it started, including leads that were imported. |
+| **Analytics**, **Conversions** | Form submissions in the dates you picked. Locked leads still count, because the form was submitted. Deleted leads can still count too. |
+| **Analytics**, **Visitors** | The sum of daily unique visitors. Someone who comes back on another day counts again on that day. |
+| **Analytics**, **Lead pipeline** | The current status of the saved leads you can see that were created in the dates you picked. |
+| **Meta Ads Manager** | Only what Meta itself receives and credits to your ads. See [Meta Ads Manager](#meta-ads-manager). |
+
+## Important to note
+
+<Warning>
+  - Analytics uses UTC (standard world time) for its days and hours. The **Leads** table filters by your browser's local day. Leads near midnight can land on different days.
+  - **Conversions** counts form submissions. It is not the number of leads you marked **Converted**.
+  - Locked leads, leads over your plan limit, are hidden from the **Leads** table but still counted in **Conversions**. See [What happens when you reach your monthly lead limit](/billing/monthly-lead-limit).
+</Warning>
+
+## Compare your numbers step by step
+
+<Steps>
+  <Step title="Start with the same funnel and clean filters">
+    In your funnel's **Leads** tab, clear the search and every filter, then note **Total Leads**. If a banner above the table says leads are locked, note that number too.
+  </Step>
+  <Step title="Open Analytics for the same dates">
+    Open the **Analytics** tab of the same funnel and pick the dates you want to compare. Click **Refresh** and wait for the numbers to settle. Under the date buttons, the note **Dates and hourly buckets use UTC.** reminds you that analytics days follow UTC.
+
+    {/* SCREENSHOT: images/analytics/why-numbers-differ/utc-note.png | The top of a funnel's Analytics tab showing the date range buttons with Last 7 days selected, the Compare switch, Copy link, Refresh, and the small note Dates and hourly buckets use UTC below them. Highlight: the UTC note and the Refresh button. */}
+  </Step>
+  <Step title="Read what Visitors and Conversions mean">
+    Point at the information icon on each card. **Visitors** adds up daily unique visitors. **Conversions** is the total number of form submissions in the dates.
+
+    {/* SCREENSHOT: images/analytics/why-numbers-differ/kpi-tooltip.png | The row of KPI cards in Analytics with the information tooltip open on the Visitors card that says it is the sum of daily unique visitors. Highlight: the Visitors card and its tooltip. */}
+  </Step>
+  <Step title="Check the rates">
+    **Conversion rate** is tracked submissions divided by the sum of daily unique visitors. **Completion rate** is completed sessions divided by visits. They use different bottoms, so they are never equal.
+  </Step>
+  <Step title="Compare with Lead pipeline">
+    Scroll to **Lead pipeline**. Its **Total leads** can differ from **Conversions** after leads are deleted or imported, or while reporting catches up. Check your dates and filters before you treat a gap as a problem.
+  </Step>
+</Steps>
+
+## The most common reasons
+
+- **Different days.** Someone in New York who submits your form at 9 pm on 30 September has already reached 1 October in UTC. Analytics counts that submission on 1 October. A **Created** filter in your **Leads** table, which follows your browser's time zone, counts it on 30 September. See [Filter leads by date](/leads/filter-by-date).
+- **Locked leads.** **Conversions** includes them. The **Leads** table does not. Add capacity to unlock them.
+- **Deleted leads.** A deleted lead leaves the **Leads** table, but its submission can still be part of your **Conversions** for that period.
+- **Imported leads.** Imported leads appear in your **Leads** table, but no visit happened behind them, so they can make **Leads** higher than **Conversions**. A funnel with only imported leads has no conversion rate.
+- **Returning visitors.** **Visitors** counts a returning visitor once for each day they come, so it can be higher than the number of different people.
+- **The Converted status.** **Conversions** is not linked to the **Converted** status on a lead.
+- **Very large funnels.** The **Leads** table loads up to 3,000 leads, newest first. A notice above the table says so when it applies.
+- **Reporting catching up.** New numbers can take a moment to appear. Click **Refresh** in **Analytics**.
+
+## Meta Ads Manager
+
+Meta Ads Manager and AskFunnel rarely match, and they should not. AskFunnel counts every form submission from every source: ads, emails, your bio link and direct visits. Meta counts only the leads it can connect to your ads.
+
+On the AskFunnel side, Meta can miss leads for these reasons:
+
+- **Cookie choices.** With a cookie banner, the Meta Pixel only tracks visitors who accept marketing cookies. See [Cookies and consent](/funnel-settings/cookies-and-consent).
+- **Blockers.** Ad blockers and some privacy browsers block the pixel.
+- **Global Privacy Control.** If a visitor's browser sends this signal, AskFunnel keeps marketing scripts off for them.
+- **The Conversions API.** On the Growth plan and above, AskFunnel also sends each new lead from its servers, but only for visitors who accepted marketing cookies, and not for locked leads.
+- **Test mode.** Events sent with a test events code never reach your ads. Turn **Test mode** off once your setup works. See [Track your Facebook and Instagram ads with Meta Pixel](/integrations/meta-pixel).
+
+On the Meta side, the gap can also come from how Meta reports. Meta credits a lead to an ad using its own attribution setting, it reports days in the time zone of your ad account, and it can take time to show recent results. Check these settings in Meta Ads Manager.
+
+To compare fairly:
+
+1. Pick the same dates in both tools, and remember the time zone difference.
+2. In AskFunnel, open **Analytics** and use **Group traffic sources by** to look at leads from your Facebook or Instagram campaign only. This needs tagged links. See [Track campaigns with UTM links](/analytics/utm-tracking).
+3. In Meta Events Manager, open **Test events** and submit a test lead to check that the **Lead** event arrives.
+
+## Which number should I use?
+
+- **To follow up with people:** the **Leads** tab. It holds the leads you can work with.
+- **To see how your funnel performs over time:** **Analytics**.
+- **To judge your ad spend:** Meta Ads Manager, read together with your AskFunnel leads for the same campaign.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Analytics shows more conversions than I have leads">
+    Some submissions are locked, deleted or from outside the dates of your filter. Look for a locked leads banner in the **Leads** tab, and clear your filters.
+  </Accordion>
+  <Accordion title="My Leads table has more leads than Analytics shows">
+    You may have imported leads, or some leads arrived before tracking started. Both appear in your table but have no visit to count.
+  </Accordion>
+  <Accordion title="The conversion rate is missing and a banner says Historical data only">
+    Every lead in that range arrived before tracking started, so there are no visitors to compare them with. Choose a later date range.
+  </Accordion>
+  <Accordion title="A lead appears on a different day in Analytics than in my Leads table">
+    Analytics uses UTC days, and the **Leads** table uses your browser's local day. Both are correct for their own clock.
+  </Accordion>
+  <Accordion title="The Leads column on my Funnels page is different from the Leads tab">
+    The **Funnels** list shows the total number of submissions recorded for the funnel. The **Leads** tab shows only the saved leads you can see, after your filters.
+  </Accordion>
+</AccordionGroup>
+
+## What to do next
+
+<Columns cols={2}>
+  <Card title="Read your funnel analytics" icon="chart-line" href="/analytics/funnel-analytics">
+    Visitors, conversions and where people drop off.
+  </Card>
+  <Card title="Track campaigns with UTM links" icon="link" href="/analytics/utm-tracking">
+    See which campaign brought each lead.
+  </Card>
+  <Card title="Filter leads by date" icon="calendar-days" href="/leads/filter-by-date">
+    Find the leads from a day, week or month.
+  </Card>
+  <Card title="Track your Facebook and Instagram ads" icon="bullseye" href="/integrations/meta-pixel">
+    Connect Meta Pixel and the Conversions API.
+  </Card>
+</Columns>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

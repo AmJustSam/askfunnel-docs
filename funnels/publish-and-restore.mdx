@@ -1,0 +1,167 @@
+---
+title: "Publish, unpublish and restore an earlier version of your funnel"
+sidebarTitle: "Publish and versions"
+description: "Put your changes live, take a funnel offline and go back to an earlier version."
+icon: "clock-rotate-left"
+---
+
+Your funnel has two versions at any time: the **draft** you are editing, and the **live version** your visitors see. AskFunnel saves your edits to the draft as you work, but visitors only see them after you publish. This page shows you how to publish, how to take a funnel offline, and how to go back to an earlier version if a change goes wrong.
+
+With publishing, you can:
+
+- **Put your edits live.** Click **"Publish Funnel"** and visitors see the new version within about a minute.
+- **Take a funnel offline.** Stop visitors from opening it without losing your work.
+- **Throw away edits you do not want.** Go back to what is live.
+- **Restore an earlier version.** Every publish saves a backup, and you can publish any of the last 20 again.
+
+**Before you start**, you need:
+
+- A role that can edit funnels: Global Admin, Workspace Admin or Content Editor.
+- A verified email address. If yours is not verified, AskFunnel shows **Verify your email before publishing this funnel.**
+- An active plan. During your free trial, publishing works as usual.
+
+## Important to note
+
+<Warning>
+  - There is no private preview link for a draft. To test a change, publish it, then open the live funnel with **"View live"**.
+  - Restoring an earlier version throws away your unpublished edits. It also brings back the settings that were saved with that version, such as your pixel settings.
+  - AskFunnel keeps the last 20 backups of each funnel. Older ones are removed.
+  - Your plan sets how many funnels can be live at once. See [Choose the right plan](/billing/choose-a-plan).
+</Warning>
+
+## What the status next to Publish Funnel tells you
+
+In the builder, the status sits to the left of the **"Publish Funnel"** button. A green dot means the funnel is live.
+
+- **Draft:** you have never published this funnel.
+- **Edited 2h ago:** you have changes that are not published yet. The time changes, for example **Edited 5m ago**.
+- **Live:** the live version is the same as your draft.
+- **Offline:** the funnel was published before, but it is taken offline now.
+- **Previewing:** you are looking at an earlier version and cannot edit it.
+
+In your funnel list, the **Status** column shows **Live** or **Draft**. An offline funnel shows **Draft** there. A **Live** funnel with an orange dot has changes that are not published yet.
+
+## Publish your changes
+
+<Steps>
+  <Step title="Check that you have something to publish">
+    Open your funnel in the builder. If the status says **Edited**, you have unpublished changes. If the **"Publish Funnel"** button is grayed out, point at it to see why. See [the troubleshooting section](#troubleshooting).
+  </Step>
+  <Step title="Click Publish Funnel">
+    Click **"Publish Funnel"** at the top right. You see **Your funnel is live.** and the status changes to **Live**.
+
+    You can also publish from your funnel list: click the three dots (**...**) on the funnel's row, then click **"Publish Funnel"**.
+
+    {/* SCREENSHOT: images/funnels/publish-and-restore/publish-control.png | The funnel builder top right, with the status Edited 2h ago, the Publish Funnel button and the small arrow next to it, funnel not yet republished. Highlight: the status text and the Publish Funnel button. */}
+  </Step>
+  <Step title="Check that it is live">
+    Click the small arrow next to **"Publish Funnel"**, then click **"View live"**. Your live funnel opens in a new tab. This is exactly what your visitors see, so use it to test your change. To get your link, see [Find and share your funnel link](/funnels/share-your-funnel).
+  </Step>
+</Steps>
+
+## Take your funnel offline
+
+Take a funnel offline when you want to stop collecting leads for a while, for example after a campaign ends.
+
+<Steps>
+  <Step title="Open the Unpublish option">
+    In the builder, click the small arrow next to **"Publish Funnel"**, then click **"Unpublish"**. Or click the three dots (**...**) on the funnel's row in your funnel list, then click **"Unpublish Funnel"**.
+  </Step>
+  <Step title="Confirm">
+    A window asks **Take this funnel offline?** and explains that visitors will not see it until you publish again. Click **"Take offline"**. You see **Your funnel is now offline.**
+  </Step>
+</Steps>
+
+Your backups are kept, and your leads stay in AskFunnel. To bring the funnel back, click **"Publish Funnel"** again. You do not need to change anything first.
+
+## Discard changes you have not published
+
+If you edited a live funnel and want to go back to what is live:
+
+1. Click the small arrow next to **"Publish Funnel"**.
+2. Click **"Discard changes"**. This item only shows when you have unpublished edits.
+3. In the window **Discard your edits?**, click **"Discard edits"**.
+
+The builder reloads with the live version. The edits are gone and cannot be brought back.
+
+## Restore an earlier version
+
+Every time you publish, AskFunnel saves a backup of that version. You can look at any backup and publish it again.
+
+<Steps>
+  <Step title="Open Version history">
+    Click the small arrow next to **"Publish Funnel"**, then click **"Version history"**. The window lists your backups, newest first, each with the date and time it was published. The one that is live now has a green **Live** tag.
+
+    {/* SCREENSHOT: images/funnels/publish-and-restore/version-history.png | The Version history window with about five backups listed with dates and times, the newest one tagged Live, and Preview and Publish buttons on the older rows. Highlight: the Preview and Publish buttons on one older row. */}
+  </Step>
+  <Step title="Preview the version (optional)">
+    Click **"Preview"** next to a backup. The builder opens that version read-only. A bar at the top says **Viewing a backup** with its date, and you cannot change anything. Click **"Exit preview"** to go back to your draft.
+
+    {/* SCREENSHOT: images/funnels/publish-and-restore/backup-preview-bar.png | The builder while previewing an older version, with the bar at the top that says Viewing a backup from a date, read-only, and the Exit preview button. Highlight: the bar and the Exit preview button. */}
+  </Step>
+  <Step title="Publish the version">
+    Click **"Publish"** next to the backup you want. If you have unpublished edits, a window asks **Publish this backup?** and warns that your edits will be discarded. Click **"Publish"** again. You see **This backup is now live.**
+
+    The restored version becomes your newest backup and your new live version.
+  </Step>
+</Steps>
+
+## How do I know it is working?
+
+- The status shows **Live**, and your funnel list shows **Live** with no orange dot.
+- Open **"View live"** and you see the version you expect. If you still see the old one, wait a minute and refresh the page.
+- After a restore, the builder shows the restored version.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="My changes are not showing on my live funnel">
+    Changes only go live when you publish. If the status says **Edited**, click **"Publish Funnel"**. Then wait about a minute and refresh the live page. A browser can also keep showing the old page for a moment, so try a private window.
+  </Accordion>
+  <Accordion title="The Publish Funnel button is grayed out">
+    Point at the button to see why:
+
+    - **Make a change, then publish to go live.** The funnel has no changes yet.
+    - **No new changes to publish.** The live funnel already matches your draft.
+    - **Exit preview to make changes.** You are looking at an earlier version. Click **"Exit preview"**.
+
+    In your funnel list, **"Publish Funnel"** is grayed out until your email is verified.
+  </Accordion>
+  <Accordion title="I see Verify your email before publishing this funnel">
+    Publishing needs a verified email address. Open the verification email we sent you and click its link, then publish again.
+  </Accordion>
+  <Accordion title="I see You've reached your plan limit">
+    Your plan sets how many funnels can be live at once. Take another funnel offline, or click **"Upgrade plan"**. If you moved to a smaller plan and are over its limit, your live funnels keep running, but you cannot publish changes until you are under the limit. See [Upgrade your plan](/billing/upgrade).
+  </Accordion>
+  <Accordion title="I see Your trial has ended or Your subscription is inactive">
+    Publishing needs an active plan. A Global Admin can subscribe or resubscribe. See [Upgrade your plan](/billing/upgrade).
+  </Accordion>
+  <Accordion title="My funnel went offline and I did not do it">
+    When a free trial or a subscription ends, AskFunnel takes your live funnels offline after a grace period, and emails you before it does. When you subscribe again, the funnels we took offline are turned back on, oldest first, up to your plan's live funnel limit. See [Cancel or resume your plan](/billing/cancel-or-resume).
+  </Accordion>
+  <Accordion title="The version I want is not in Version history">
+    AskFunnel keeps the 20 most recent backups of a funnel. Older ones are removed. If the window says there are no backups yet, publish your funnel to create the first one.
+  </Accordion>
+  <Accordion title="Can I change my funnel after it is live?">
+    Yes. Edit it in the builder, then click **"Publish Funnel"**. Leads you already collected are kept, and your link does not change.
+  </Accordion>
+</AccordionGroup>
+
+## What to do next
+
+<Columns cols={2}>
+  <Card title="Find and share your funnel link" icon="share-nodes" href="/funnels/share-your-funnel">
+    Copy your link and use it in ads, messages and social posts.
+  </Card>
+  <Card title="Connect your custom domain" icon="globe" href="/funnel-settings/custom-domain">
+    Put your funnel on your own web address.
+  </Card>
+  <Card title="Manage your funnel pages" icon="copy" href="/funnels/manage-pages">
+    Add, reorder and delete the pages and results of your funnel.
+  </Card>
+  <Card title="Check your plan and usage" icon="gauge-high" href="/billing/plan-and-usage">
+    See how many live funnels your plan includes.
+  </Card>
+</Columns>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).
