@@ -1,0 +1,28 @@
+[
+  {
+    "out": "images/funnels/funnels-list/page-overview.png",
+    "src": "source/raw/funnels/funnels-list/01-page-overview.png",
+    "args": [
+      "--crop",
+      "340,160,2520,960",
+      "--ring",
+      "2566,178,264,96",
+      "--ring",
+      "564,290,205,63"
+    ]
+  },
+  {
+    "out": "images/funnels/funnels-list/unpublished-dot.png",
+    "src": "source/raw/funnels/funnels-list/02-unpublished-dot.png",
+    "args": [
+      "--crop",
+      "340,380,2520,330",
+      "--ring",
+      "1706,398,524,170",
+      "--ring",
+      "1946,576,48,44",
+      "--radius",
+      "20"
+    ]
+  }
+]

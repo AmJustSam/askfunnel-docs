@@ -1,0 +1,26 @@
+[
+  {
+    "out": "images/funnels/loading-screen/loader-settings.png",
+    "src": "source/raw/funnels/loading-screen/02-loader-settings.png",
+    "args": [
+      "--crop",
+      "0,130,758,1126",
+      "--ring",
+      "22,479,714,148",
+      "--ring",
+      "22,670,714,192",
+      "--width",
+      "1100"
+    ]
+  },
+  {
+    "out": "images/funnels/loading-screen/loader-on-canvas.png",
+    "src": "source/raw/funnels/loading-screen/01-loader-on-canvas.png",
+    "args": [
+      "--crop",
+      "0,128,2420,1310",
+      "--ring",
+      "1728,518,504,300"
+    ]
+  }
+]

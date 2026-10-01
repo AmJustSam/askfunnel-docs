@@ -1,0 +1,26 @@
+[
+  {
+    "out": "images/funnels/personalize-with-variables/variable-list.png",
+    "src": "source/raw/funnels/personalize-with-variables/01-variable-list.png",
+    "args": [
+      "--crop",
+      "1340,170,1320,860",
+      "--ring",
+      "1876,396,533,598",
+      "--width",
+      "1600"
+    ]
+  },
+  {
+    "out": "images/funnels/personalize-with-variables/fallback-box.png",
+    "src": "source/raw/funnels/personalize-with-variables/02-fallback-box.png",
+    "args": [
+      "--crop",
+      "1340,340,1180,380",
+      "--ring",
+      "1878,396,566,300",
+      "--width",
+      "1600"
+    ]
+  }
+]

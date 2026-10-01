@@ -1,0 +1,34 @@
+[
+  {
+    "out": "images/funnel-settings/domain-for-several-funnels/funnel-domains.png",
+    "src": "source/raw/funnel-settings/domain-for-several-funnels/01-funnel-domains.png",
+    "args": [
+      "--crop",
+      "880,314,1990,716",
+      "--ring",
+      "2594,572,200,80"
+    ]
+  },
+  {
+    "out": "images/funnel-settings/domain-for-several-funnels/remove-domain.png",
+    "src": "source/raw/funnel-settings/domain-for-several-funnels/02-remove-domain.png",
+    "args": [
+      "--crop",
+      "880,340,1620,870",
+      "--ring",
+      "1797,1061,597,92"
+    ]
+  },
+  {
+    "out": "images/funnel-settings/domain-for-several-funnels/remove-domain-confirm.png",
+    "src": "source/raw/funnel-settings/domain-for-several-funnels/03-remove-domain-confirm.png",
+    "args": [
+      "--crop",
+      "1020,640,1160,520",
+      "--ring",
+      "1900,954,184,100",
+      "--width",
+      "1500"
+    ]
+  }
+]

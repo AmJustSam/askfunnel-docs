@@ -1,0 +1,28 @@
+[
+  {
+    "out": "images/funnels/start-from-template/chooser.png",
+    "src": "source/raw/funnels/start-from-template/01-chooser.png",
+    "args": [
+      "--crop",
+      "800,572,1600,657",
+      "--ring",
+      "1350,762,500,405",
+      "--radius",
+      "16"
+    ]
+  },
+  {
+    "out": "images/funnels/start-from-template/gallery.png",
+    "src": "source/raw/funnels/start-from-template/02-gallery.png",
+    "args": [
+      "--crop",
+      "100,150,2120,700",
+      "--ring",
+      "108,284,2104,530",
+      "--radius",
+      "20",
+      "--max-width",
+      "1700"
+    ]
+  }
+]

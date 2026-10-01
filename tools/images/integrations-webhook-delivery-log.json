@@ -1,0 +1,50 @@
+[
+  {
+    "out": "images/integrations/webhook-delivery-log/open-log.png",
+    "src": "source/raw/integrations/webhook-delivery-log/01-open-log.png",
+    "args": [
+      "--crop",
+      "880,590,1500,690",
+      "--ring",
+      "1581,1011,593,88"
+    ]
+  },
+  {
+    "out": "images/integrations/webhook-delivery-log/log-rows.png",
+    "src": "source/raw/integrations/webhook-delivery-log/02-log-rows.png",
+    "args": [
+      "--crop",
+      "930,415,1340,970",
+      "--ring",
+      "1855,665,136,57",
+      "--ring",
+      "1793,787,192,57",
+      "--ring",
+      "1742,947,91,57",
+      "--ring",
+      "1877,1107,136,57",
+      "--ring",
+      "1927,533,285,82"
+    ]
+  },
+  {
+    "out": "images/integrations/webhook-delivery-log/attempts.png",
+    "src": "source/raw/integrations/webhook-delivery-log/03-attempts.png",
+    "args": [
+      "--crop",
+      "930,285,1340,1240",
+      "--ring",
+      "1087,729,1106,308"
+    ]
+  },
+  {
+    "out": "images/integrations/webhook-delivery-log/retry-failed.png",
+    "src": "source/raw/integrations/webhook-delivery-log/04-retry-failed.png",
+    "args": [
+      "--crop",
+      "930,280,1340,1010",
+      "--ring",
+      "1927,396,285,86"
+    ]
+  }
+]

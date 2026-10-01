@@ -1,0 +1,78 @@
+[
+  {
+    "out": "images/funnels/images-video-icons/add-image-tile.png",
+    "src": "source/raw/funnels/images-video-icons/01-add-image-tile.png",
+    "args": [
+      "--crop",
+      "0,128,2460,820",
+      "--ring",
+      "24,324,710,196"
+    ]
+  },
+  {
+    "out": "images/funnels/images-video-icons/media-gallery-tabs.png",
+    "src": "source/raw/funnels/images-video-icons/02-media-gallery-tabs.png",
+    "args": [
+      "--crop",
+      "920,280,1340,1230",
+      "--ring",
+      "976,420,458,96",
+      "--width",
+      "1500"
+    ]
+  },
+  {
+    "out": "images/funnels/images-video-icons/ai-image-tab.png",
+    "src": "source/raw/funnels/images-video-icons/03-ai-image-tab.png",
+    "args": [
+      "--crop",
+      "920,280,1360,820",
+      "--ring",
+      "984,730,364,72",
+      "--ring",
+      "1922,718,292,100",
+      "--width",
+      "1500"
+    ]
+  },
+  {
+    "out": "images/funnels/images-video-icons/image-controls.png",
+    "src": "source/raw/funnels/images-video-icons/04-image-controls.png",
+    "args": [
+      "--crop",
+      "0,128,2460,1130",
+      "--ring",
+      "22,466,588,98",
+      "--ring",
+      "22,1120,714,92"
+    ]
+  },
+  {
+    "out": "images/funnels/images-video-icons/video-window.png",
+    "src": "source/raw/funnels/images-video-icons/05-video-window.png",
+    "args": [
+      "--crop",
+      "920,290,1380,450",
+      "--ring",
+      "984,404,1230,106",
+      "--ring",
+      "984,540,1226,96",
+      "--width",
+      "1560"
+    ]
+  },
+  {
+    "out": "images/funnels/images-video-icons/icon-tab.png",
+    "src": "source/raw/funnels/images-video-icons/06-icon-tab.png",
+    "args": [
+      "--crop",
+      "920,290,1380,330",
+      "--ring",
+      "984,402,1170,78",
+      "--ring",
+      "984,488,1224,96",
+      "--width",
+      "1560"
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "out": "images/getting-started/learn-tab/learn-button.png",
+    "src": "source/raw/getting-started/learn-tab/01-learn-button.png",
+    "args": [
+      "--crop",
+      "2300,0,900,160",
+      "--ring",
+      "2646,20,193,87",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/getting-started/learn-tab/lesson-library.png",
+    "src": "source/raw/getting-started/learn-tab/02-lesson-library.png",
+    "args": [
+      "--crop",
+      "340,160,2520,1130",
+      "--ring",
+      "370,332,1182,102",
+      "--ring",
+      "2267,337,563,92"
+    ]
+  },
+  {
+    "out": "images/getting-started/learn-tab/lesson-page.png",
+    "src": "source/raw/getting-started/learn-tab/03-lesson-page.png",
+    "args": [
+      "--crop",
+      "330,490,1920,1210",
+      "--ring",
+      "372,525,1832,565",
+      "--ring",
+      "372,1122,1832,538"
+    ]
+  }
+]

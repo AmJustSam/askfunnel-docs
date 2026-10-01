@@ -1,0 +1,24 @@
+[
+  {
+    "out": "images/funnel-settings/remove-branding/footer-branding-switch.png",
+    "src": "source/raw/funnel-settings/remove-branding/01-footer-branding-switch.png",
+    "args": [
+      "--crop",
+      "0,128,2460,1330",
+      "--ring",
+      "22,544,714,100"
+    ]
+  },
+  {
+    "out": "images/funnel-settings/remove-branding/email-footer-panel.png",
+    "src": "source/raw/funnel-settings/remove-branding/02-email-footer-panel.png",
+    "args": [
+      "--crop",
+      "0,128,760,400",
+      "--ring",
+      "24,298,704,90",
+      "--width",
+      "1100"
+    ]
+  }
+]

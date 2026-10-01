@@ -1,0 +1,14 @@
+[
+  {
+    "out": "images/integrations/how-integrations-work/integrations-menu.png",
+    "src": "source/raw/integrations/how-integrations-work/01-integrations-menu.png",
+    "args": [
+      "--crop",
+      "340,120,2520,1060",
+      "--ring",
+      "902,176,294,72",
+      "--ring",
+      "902,682,214,72"
+    ]
+  }
+]

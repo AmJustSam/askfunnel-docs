@@ -1,0 +1,26 @@
+[
+  {
+    "out": "images/workspaces/delete-workspace/card-menu.png",
+    "src": "source/raw/workspaces/delete-workspace/01-card-menu.png",
+    "args": [
+      "--crop",
+      "1140,300,940,1040",
+      "--ring",
+      "1361,1213,593,88",
+      "--width",
+      "1400"
+    ]
+  },
+  {
+    "out": "images/workspaces/delete-workspace/confirm-window.png",
+    "src": "source/raw/workspaces/delete-workspace/02-confirm-window.png",
+    "args": [
+      "--crop",
+      "940,620,1320,560",
+      "--ring",
+      "1773,934,309,96",
+      "--width",
+      "1500"
+    ]
+  }
+]

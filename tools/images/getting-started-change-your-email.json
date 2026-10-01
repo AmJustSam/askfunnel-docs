@@ -1,0 +1,14 @@
+[
+  {
+    "out": "images/getting-started/change-your-email/profile-email.png",
+    "src": "source/raw/getting-started/change-your-email/01-profile-email.png",
+    "args": [
+      "--crop",
+      "930,872,1900,304",
+      "--ring",
+      "952,930,1832,100",
+      "--ring",
+      "955,1084,212,76"
+    ]
+  }
+]

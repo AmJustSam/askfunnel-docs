@@ -1,0 +1,26 @@
+[
+  {
+    "out": "images/funnels/form-fields-and-validation/phone-settings.png",
+    "src": "source/raw/funnels/form-fields-and-validation/02-phone-settings.png",
+    "args": [
+      "--crop",
+      "0,128,2460,1000",
+      "--ring",
+      "388,478,338,84",
+      "--ring",
+      "24,620,710,100"
+    ]
+  },
+  {
+    "out": "images/funnels/form-fields-and-validation/field-types.png",
+    "src": "source/raw/funnels/form-fields-and-validation/01-field-types.png",
+    "args": [
+      "--crop",
+      "0,128,760,900",
+      "--ring",
+      "26,460,612,552",
+      "--width",
+      "1100"
+    ]
+  }
+]

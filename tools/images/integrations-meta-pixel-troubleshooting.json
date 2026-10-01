@@ -1,0 +1,22 @@
+[
+  {
+    "out": "images/integrations/meta-pixel-troubleshooting/card-status.png",
+    "src": "source/raw/integrations/meta-pixel-troubleshooting/01-card-status.png",
+    "args": [
+      "--crop",
+      "880,660,1990,540",
+      "--ring",
+      "1310,820,200,72"
+    ]
+  },
+  {
+    "out": "images/integrations/meta-pixel-troubleshooting/test-mode-chip.png",
+    "src": "source/raw/integrations/meta-pixel-troubleshooting/02-test-mode-chip.png",
+    "args": [
+      "--crop",
+      "930,1020,1700,340",
+      "--ring",
+      "953,1241,544,80"
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "out": "images/messages/email-delivery-stats/stats-line.png",
+    "src": "source/raw/messages/email-delivery-stats/01-stats-line.png",
+    "args": [
+      "--crop",
+      "1330,830,1330,260",
+      "--ring",
+      "1400,966,670,60",
+      "--width",
+      "1560"
+    ]
+  },
+  {
+    "out": "images/messages/email-delivery-stats/flow-summary.png",
+    "src": "source/raw/messages/email-delivery-stats/02-flow-summary.png",
+    "args": [
+      "--crop",
+      "1400,128,1020,400",
+      "--ring",
+      "1750,182,460,56",
+      "--width",
+      "1400"
+    ]
+  },
+  {
+    "out": "images/messages/email-delivery-stats/lead-email-flows.png",
+    "src": "source/raw/messages/email-delivery-stats/03-lead-email-flows.png",
+    "args": [
+      "--crop",
+      "2020,1330,1160,470",
+      "--ring",
+      "2036,1352,1132,418",
+      "--width",
+      "1500"
+    ]
+  }
+]

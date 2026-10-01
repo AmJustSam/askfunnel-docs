@@ -1,0 +1,14 @@
+[
+  {
+    "out": "images/funnels/forward-url-parameters/forward-rows.png",
+    "src": "source/raw/funnels/forward-url-parameters/01-forward-rows.png",
+    "args": [
+      "--crop",
+      "920,411,1360,980",
+      "--ring",
+      "984,806,1236,306",
+      "--width",
+      "1560"
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "out": "images/funnel-settings/funnel-settings-overview/delete-window.png",
+    "src": "source/raw/funnel-settings/funnel-settings-overview/02-delete-window.png",
+    "args": [
+      "--crop",
+      "1080,698,1040,404",
+      "--ring",
+      "1902,956,180,96",
+      "--width",
+      "1470",
+      "--radius",
+      "16"
+    ]
+  },
+  {
+    "out": "images/funnel-settings/funnel-settings-overview/settings-tabs.png",
+    "src": "source/raw/funnel-settings/funnel-settings-overview/01-settings-tabs.png",
+    "args": [
+      "--crop",
+      "340,120,2520,970",
+      "--ring",
+      "366,176,500,742",
+      "--ring",
+      "904,176,1928,143"
+    ]
+  }
+]

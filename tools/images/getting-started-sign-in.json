@@ -1,0 +1,44 @@
+[
+  {
+    "out": "images/getting-started/sign-in/login-page.png",
+    "src": "source/raw/getting-started/sign-in/01-login-page.png",
+    "args": [
+      "--crop",
+      "300,330,1000,1140",
+      "--ring",
+      "363,717,872,108",
+      "--ring",
+      "363,1109,872,108",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/getting-started/sign-in/confirm-email.png",
+    "src": "source/raw/getting-started/sign-in/02-confirm-email.png",
+    "args": [
+      "--crop",
+      "1200,560,800,680",
+      "--ring",
+      "1243,986,713,206",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/getting-started/sign-in/log-out-menu.png",
+    "src": "source/raw/getting-started/sign-in/03-log-out-menu.png",
+    "args": [
+      "--crop",
+      "2240,0,960,1000",
+      "--ring",
+      "2551,843,601,92",
+      "--width",
+      "1470"
+    ]
+  }
+]

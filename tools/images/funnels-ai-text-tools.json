@@ -1,0 +1,16 @@
+[
+  {
+    "out": "images/funnels/ai-text-tools/ai-edit-menu.png",
+    "src": "source/raw/funnels/ai-text-tools/01-ai-edit-menu.png",
+    "args": [
+      "--crop",
+      "1330,176,1330,520",
+      "--ring",
+      "1377,252,174,78",
+      "--ring",
+      "1379,321,619,328",
+      "--width",
+      "1700"
+    ]
+  }
+]

@@ -44,7 +44,7 @@ With this routine, you can:
     3. It must say **Connected**. **Paused** means the switch is off, and **Not connected** means no Pixel ID is saved.
     4. Click **"Settings"** and compare **Pixel ID** with the ID of your pixel in Meta Events Manager, under **Data sources**. They must be the same, with no spaces. If you changed it, click **"Save changes"**.
 
-    {/* SCREENSHOT: images/integrations/meta-pixel-troubleshooting/card-status.png | The Integrations page under Tracking showing the Meta Pixel card with the Connected chip and its switch on, next to the Google Analytics and TikTok Pixel cards. Highlight: the Connected chip on the Meta Pixel card. */}
+    <img src="/images/integrations/meta-pixel-troubleshooting/card-status.png" alt="The Tracking part of the Integrations page with the Meta Pixel card showing the Connected chip and its switch on, next to the Google Analytics and TikTok Pixel cards that say Not connected, with the Connected chip of the Meta Pixel card highlighted" width="2000" height="687" />
   </Step>
   <Step title="Watch the browser events in Test events">
     1. In Meta Events Manager, open your pixel and click **Test events**.
@@ -63,9 +63,9 @@ With this routine, you can:
     3. Click **"Replace token"**. You see **Conversions API connected. Meta verified your token.**
     4. Submit a test lead on your live funnel with marketing cookies accepted. A **Lead** event arrives from AskFunnel's servers.
 
-    Next to **Connected**, the chip **Test mode** now shows your code. Meta counts the browser copy and the server copy of the same Lead as one, because they share one event ID.
+    Under **Connected**, the chip **Test mode** now shows your code, with a **"Turn off"** button next to it. Meta counts the browser copy and the server copy of the same Lead as one, because they share one event ID.
 
-    {/* SCREENSHOT: images/integrations/meta-pixel-troubleshooting/test-mode-chip.png | The Conversions API (server-side) section with the Connected chip, the Replace token and Disconnect buttons, and the Test mode chip with the code TEST12345 and its Turn off button. Highlight: the Test mode chip and the Turn off button. */}
+    <img src="/images/integrations/meta-pixel-troubleshooting/test-mode-chip.png" alt="The Conversions API (server-side) section of the Meta settings with the Connected chip and the Replace token and Disconnect buttons, and under them the Test mode chip with the code TEST12345 and its Turn off button, the Test mode chip and the Turn off button highlighted" width="1922" height="540" loading="lazy" />
   </Step>
   <Step title="Turn off test mode">
     When your events look right, click **"Turn off"** next to **Test mode**. You see **Test mode turned off. Events now reach your ads.** Until you do this, server events are excluded from your ads.
@@ -84,7 +84,7 @@ The Conversions API sends a **Lead** for a new lead only when everything on this
 | A working token | **Connected** shows without the red message **Meta rejected the saved token.** If it shows, click **"Reconnect"** and paste a new token. |
 | Marketing cookies accepted | The visitor accepted marketing cookies, or your cookie banner is off, and their browser does not send the Global Privacy Control signal. |
 | A lead that counts | The lead is new, and not locked because you reached your monthly lead limit. See [What happens when you reach your monthly lead limit](/billing/monthly-lead-limit). |
-| Test mode off | **Test mode** is not shown next to **Connected**, so events reach your ads. |
+| Test mode off | **Test mode** is not shown under **Connected**, so events reach your ads. |
 
 Leads that arrived before you connected the Conversions API, or while one of these was missing, are not sent later.
 
