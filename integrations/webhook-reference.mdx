@@ -140,7 +140,7 @@ Here is a sample lead from a funnel called Buyer inquiry. JSON is a standard tex
 | `answers` | Each question's text with the answer as text. Multiple choice answers are joined with commas. A repeated question text gets a suffix, such as `Budget (2)`. |
 | `fields` | The same answers with detail. `id` stays the same if you rename the question. `type` is the question type. `value` is the raw answer: text, a number, true or false, `null`, or a list of texts for multiple choice. `displayValue` is the answer as text. `displayValues` lists the option labels of a multiple choice answer. |
 | `consent` | `marketing` is whether the visitor accepted marketing cookies. `analytics` is `essential`, `analytics_granted` or `all_granted`. |
-| `attribution` | `utm` holds the UTM parameters that were present (keys such as `utm_source`), or `null`. `referrer` is the page the visitor came from, or `null`. `pageUrl` and `pageUrlWithUtm` are the funnel page address, when available. |
+| `attribution` | `utm` holds the UTM parameters that were present (keys such as `utm_source`), or `null`, which is also the case when the visitor declined analytics cookies. `referrer` is the page the visitor came from, or `null`. `pageUrl` and `pageUrlWithUtm` are the funnel page address, when available. |
 
 In a test, `test` is `true`, `lead.id` is `null`, `score` is `0`, `consent.marketing` is `false`, and `attribution.utm` and `attribution.referrer` are `null`. The answers are sample text built from your funnel's questions.
 
