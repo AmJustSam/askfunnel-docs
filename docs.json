@@ -48,6 +48,7 @@
           "getting-started/skills-needed",
           "getting-started/use-cases",
           "getting-started/create-account",
+          "getting-started/change-your-email",
           "getting-started/launch-your-first-funnel",
           "getting-started/onboarding-call",
           "getting-started/contact-support"
@@ -59,14 +60,22 @@
         "pages": [
           "funnels/create-your-first-funnel",
           "funnels/create-funnel-with-ai",
+          "funnels/start-from-template",
           "funnels/manage-pages",
           "funnels/quiz-questions",
           "funnels/branch-by-answer",
           "funnels/lead-capture-forms",
+          "funnels/form-fields-and-validation",
           "funnels/thank-you-screen",
           "funnels/layout-blocks",
           "funnels/grid-layouts",
           "funnels/brand-your-funnel",
+          "funnels/images-video-icons",
+          "funnels/link-buttons-and-images",
+          "funnels/loading-screen",
+          "funnels/personalize-with-variables",
+          "funnels/forward-url-parameters",
+          "funnels/ai-text-tools",
           "funnels/target-audience"
         ]
       },
@@ -78,9 +87,11 @@
           "funnels/share-your-funnel",
           "funnel-settings/custom-domain",
           "funnel-settings/fix-custom-domain",
+          "funnel-settings/domain-for-several-funnels",
           "funnel-settings/social-preview-and-favicon",
           "funnel-settings/cookies-and-consent",
-          "funnel-settings/privacy-policy-and-terms"
+          "funnel-settings/privacy-policy-and-terms",
+          "funnel-settings/remove-branding"
         ]
       },
       {
@@ -105,6 +116,7 @@
           "messages/custom-sender-email",
           "messages/automated-emails",
           "messages/email-sequences",
+          "messages/email-delivery-stats",
           "messages/team-alerts",
           "messages/email-deliverability",
           "messages/whatsapp-template"
@@ -114,9 +126,11 @@
         "group": "Connect your tools",
         "icon": "plug",
         "pages": [
+          "integrations/how-integrations-work",
           "integrations/highlevel",
           "integrations/google-sheets",
           "integrations/webhooks",
+          "integrations/webhook-delivery-log",
           "integrations/zapier",
           "integrations/make",
           "integrations/calendars",
@@ -128,6 +142,7 @@
         "icon": "bullseye",
         "pages": [
           "integrations/meta-pixel",
+          "integrations/meta-pixel-troubleshooting",
           "integrations/google-analytics",
           "integrations/tiktok-pixel",
           "integrations/event-mapping"
