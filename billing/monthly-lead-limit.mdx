@@ -24,7 +24,8 @@ You can also buy extra leads without changing plan. See [Choose the right plan](
 
 <Warning>
   - A locked lead is saved in full, but it is hidden from your **Leads** table and from exports.
-  - A locked lead is not sent anywhere. It does not reach your webhook, Google Sheets, HighLevel or Meta server events, it does not trigger team alerts, and it does not start automated emails.
+  - While a lead is locked, it is not sent anywhere. It does not reach your webhook, Google Sheets, HighLevel or Meta server events, it does not trigger team alerts, and it does not start automated emails.
+  - When a lead unlocks, it is sent to your webhook, Google Sheets and HighLevel automatically, oldest first. Meta server events, team alerts and automated emails are not sent for it.
   - Deleting leads does not unlock others. Only more capacity does.
   - Your visitors notice nothing. They still see your thank you screen.
 </Warning>
@@ -96,8 +97,8 @@ When a free trial or a paid plan ends, new leads are still saved, but they are l
   <Accordion title="It is a new month but my old locked leads did not come back">
     A new month gives you a fresh count for new leads. It does not release leads that were locked earlier. Add capacity to unlock them.
   </Accordion>
-  <Accordion title="Locked leads never reached my Google Sheet, webhook or HighLevel">
-    Locked leads are not sent to your connected tools, and they are not sent automatically after they unlock. Once a lead shows in your table, you can [export your leads](/leads/export-contacts) and add them to your tool yourself.
+  <Accordion title="My locked leads have not reached my Google Sheet, webhook or HighLevel">
+    Locked leads are not sent while they are locked. Add capacity and they unlock, then they are sent to your connected tools automatically, oldest first, within about 15 minutes. If a lead still does not arrive, open the destination's **"Delivery log"** to see why.
   </Accordion>
   <Accordion title="The numbers in Analytics are higher than my Leads table">
     Analytics counts every form submission, including locked leads. The **Leads** table hides them. See [Why your lead and analytics numbers differ](/analytics/why-numbers-differ).
