@@ -49,7 +49,9 @@ const missingPreviews = [];
 async function writePreview(src) {
   const png = `.${src}`;
   const preview = png.replace(/\.png$/, ".blur.webp");
-  if (existsSync(preview) && statSync(preview).mtimeMs >= statSync(png).mtimeMs) return;
+  // A fresh clone gives files arbitrary modified times, so --check only asks that the
+  // preview exists; a normal run still refreshes previews of images edited since.
+  if (existsSync(preview) && (check || statSync(preview).mtimeMs >= statSync(png).mtimeMs)) return;
   missingPreviews.push(preview);
   if (!check) await sharp(png).resize({ width: 24 }).webp({ quality: 40, alphaQuality: 40 }).toFile(preview);
 }
