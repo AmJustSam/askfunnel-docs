@@ -48,7 +48,9 @@
           "getting-started/skills-needed",
           "getting-started/use-cases",
           "getting-started/create-account",
+          "getting-started/sign-in",
           "getting-started/launch-your-first-funnel",
+          "getting-started/learn-tab",
           "getting-started/onboarding-call",
           "getting-started/contact-support"
         ]
@@ -57,14 +59,17 @@
         "group": "Build your funnel",
         "icon": "layer-group",
         "pages": [
+          "funnels/funnels-list",
           "funnels/create-your-first-funnel",
           "funnels/create-funnel-with-ai",
+          "funnels/choose-format-and-goal",
           "funnels/manage-pages",
           "funnels/quiz-questions",
           "funnels/branch-by-answer",
           "funnels/lead-capture-forms",
           "funnels/thank-you-screen",
           "funnels/layout-blocks",
+          "funnels/faq-and-social-proof-blocks",
           "funnels/grid-layouts",
           "funnels/brand-your-funnel",
           "funnels/target-audience"
@@ -75,10 +80,13 @@
         "icon": "globe",
         "pages": [
           "funnels/publish-and-restore",
+          "funnels/test-your-funnel",
           "funnels/share-your-funnel",
+          "funnel-settings/funnel-settings-overview",
           "funnel-settings/custom-domain",
           "funnel-settings/fix-custom-domain",
           "funnel-settings/social-preview-and-favicon",
+          "funnel-settings/search-engines-and-link-previews",
           "funnel-settings/cookies-and-consent",
           "funnel-settings/privacy-policy-and-terms"
         ]
@@ -152,6 +160,7 @@
           "workspaces/what-is-a-workspace",
           "workspaces/create-workspace",
           "workspaces/switch-workspaces",
+          "workspaces/delete-workspace",
           "workspaces/give-access",
           "workspaces/pending-invites",
           "workspaces/team-seats",
