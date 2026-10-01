@@ -230,7 +230,7 @@ A lead that can be retried is sent again after 1 minute, then 5 minutes, 30 minu
 - **429 Too Many Requests** is treated as "slow down", not as an outage. If your answer has a `Retry-After` header, in seconds or as an HTTP date, AskFunnel waits at least that long, up to 24 hours. It never retries sooner than the schedule above. It does not schedule a retry later than 72 hours after the first attempt.
 - After the last attempt fails, the lead shows **Failed** with the last error, the webhook shows **Needs attention**, and the organization owner gets an email.
 - Clicking **"Retry"** in the delivery log starts a new set of up to 7 attempts.
-- Failed leads stay in the delivery log for 30 days.
+- Failed leads stay in the delivery log for 30 days. See [Read your webhook delivery log and send failed leads again](/integrations/webhook-delivery-log).
 
 ## Troubleshooting
 

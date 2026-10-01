@@ -1,0 +1,113 @@
+---
+title: 'Remove the "Made with AskFunnel" branding'
+sidebarTitle: "Remove branding"
+description: "Hide the AskFunnel branding from your funnel footer and from your automated emails on the Growth plan and above."
+icon: "eye-slash"
+---
+
+<Callout icon="star" color="#155DFC">
+  Available on: **the Growth plan and above**.
+</Callout>
+
+By default, every funnel ends with a small **Made with AskFunnel** line in its footer, and every automated email carries a small **AskFunnel** badge above its footer lines. On the Growth plan and above, you can hide both so your funnel and your emails look like they are fully yours.
+
+With branding off, you can:
+
+- **Keep your pages clean.** The footer shows only your own links, such as **Terms of use**, **Privacy policy** and **Manage Cookies**.
+- **Remove the badge from emails.** Your follow up emails no longer show the AskFunnel badge.
+- **Choose per funnel and per flow.** The switch is on each funnel's footer and on each email flow's footer.
+
+**Before you start**, you need:
+
+- The Growth plan or above. See [Upgrade your plan](/billing/upgrade).
+- A role that can edit funnels: Global Admin, Workspace Admin or Content Editor.
+
+## Important to note
+
+<Warning>
+  - Below the Growth plan, the **Branding** switch is locked on. Point at it to see **Available on Growth plans and above**.
+  - Hiding the branding is checked when you publish. A funnel published on a plan without this feature always shows the branding, even if the switch was off in the builder.
+  - If your plan drops below Growth, the branding comes back on your live funnels and in your emails on its own. You do not have to do anything. If you scheduled a downgrade, you keep the switch until the new plan starts.
+  - In emails, the two lines "You signed up to receive emails via this funnel" and "If you no longer want to receive emails, unsubscribe here" are required by email rules. They always stay.
+  - Your changes only go live when you publish the funnel or the flow.
+</Warning>
+
+## Remove the branding from your funnel
+
+<Steps>
+  <Step title="Open the footer">
+    1. Open your funnel in the builder.
+    2. Scroll to the bottom of a page and click the footer, the bar with the links. The left panel shows rows for **Terms of use**, **Privacy policy**, **Branding** and **Cookie banner**.
+
+    {/* SCREENSHOT: images/funnel-settings/remove-branding/footer-branding-switch.png | The funnel builder with the footer selected at the bottom of the canvas, showing the Made with AskFunnel line, and the left panel with the Branding row and its switch turned on. Highlight: the Branding switch. */}
+  </Step>
+  <Step title="Turn off Branding">
+    Turn off the switch on the **Branding** row. On the canvas, the **Made with AskFunnel** line disappears. The footer is shared by all pages of the funnel, so you only do this once.
+  </Step>
+  <Step title="Publish your funnel">
+    Click **"Publish Funnel"** at the top right. Then open the arrow next to it and click **"View live"** and scroll to the bottom of a page to check. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
+  </Step>
+</Steps>
+
+## Remove the badge from your emails
+
+<Steps>
+  <Step title="Open the footer of an email">
+    1. From your funnel list, click the three dots (**...**) on the funnel's row, then click **"Edit Funnel"**.
+    2. At the top, next to the funnel name, click the **Funnel** button and choose **"Flows"**, then open your flow.
+    3. At the bottom of any email, click the footer, the part with the **AskFunnel** badge and the two lines of small print. The left panel switches to **Footer**.
+  </Step>
+  <Step title="Turn off Branding">
+    Turn off the switch next to **Branding**. The badge disappears from the footer. The two lines of small print stay, because they are required.
+
+    {/* SCREENSHOT: images/funnel-settings/remove-branding/email-footer-panel.png | The email flow editor with the footer of an email selected and the left panel titled Footer showing the Branding switch and the small print that says the signup and unsubscribe lines always appear. Highlight: the Branding switch. */}
+  </Step>
+  <Step title="Publish the flow">
+    Click **"Publish Flow"** at the top right so the change reaches the emails you send from now on. See [Send automated emails to new leads](/messages/automated-emails).
+  </Step>
+</Steps>
+
+## How do I know it is working?
+
+- In the builder, the **Made with AskFunnel** line is gone from the footer.
+- On your live funnel, the bottom of each page shows only your links.
+- In a test email from the flow, there is no **AskFunnel** badge above the small print. Use **"Test"** on the email to send yourself a copy.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="The Branding switch is grayed out and on">
+    Your plan does not include this feature. Hiding the branding is available on the Growth plan and above. Click your plan badge at the top right, or see [Upgrade your plan](/billing/upgrade).
+  </Accordion>
+  <Accordion title="I upgraded, but my live funnel still shows Made with AskFunnel">
+    A funnel keeps the branding it was published with. Open the funnel, turn off **Branding** in the footer and click **"Publish Funnel"** again.
+  </Accordion>
+  <Accordion title="I turned the switch off but the branding is still on my live funnel">
+    Check that you clicked **"Publish Funnel"** after the change and give it a minute. Also check that your subscription is on the Growth plan or above. If your plan is lower, the branding is always shown.
+  </Accordion>
+  <Accordion title="The badge is still in my emails">
+    Click **"Publish Flow"** after you turn off **Branding**, because a live flow only changes when you publish it again. Emails that were already sent do not change.
+  </Accordion>
+  <Accordion title="The branding came back after I changed my plan">
+    Your new plan does not include removing the branding, so AskFunnel puts it back on your live funnels and your emails. Upgrade to the Growth plan or above, turn **Branding** off again and publish.
+  </Accordion>
+  <Accordion title="Can I remove the small print in my emails?">
+    No. The signup line and the unsubscribe line are required for email, so they always appear.
+  </Accordion>
+</AccordionGroup>
+
+## What to do next
+
+<Columns cols={3}>
+  <Card title="Set up your privacy policy and terms links" icon="shield-halved" href="/funnel-settings/privacy-policy-and-terms">
+    Add your own links to the same footer.
+  </Card>
+  <Card title="Send automated emails to new leads" icon="envelope" href="/messages/automated-emails">
+    Build the emails that carry your footer.
+  </Card>
+  <Card title="Choose the right plan" icon="credit-card" href="/billing/choose-a-plan">
+    See what each plan includes.
+  </Card>
+</Columns>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

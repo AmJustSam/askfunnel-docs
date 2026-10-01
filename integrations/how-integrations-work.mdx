@@ -1,0 +1,144 @@
+---
+title: "How integrations work: where leads go and what gets tracked"
+sidebarTitle: "How integrations work"
+description: "A short map of the Integrations menu: the tools that receive your leads, the tools that track your visitors, and where to set each one up."
+icon: "diagram-project"
+---
+
+The **Integrations** menu of a funnel has two parts, and they do different jobs. Under **Send leads to**, AskFunnel hands each new lead to another tool, such as your CRM or a spreadsheet. Under **Tracking**, AskFunnel tells an ad or analytics tool what visitors do on your funnel, so you can see which ads work. This page explains the difference and points you to the right guide.
+
+With integrations, you can:
+
+- **Send every new lead to the tool you work in.** A HighLevel contact, a Google Sheets row, or a message to Zapier, Make, n8n or your own server.
+- **Track your ads.** See which Facebook, Instagram, TikTok or Google visits turn into leads.
+- **Connect any tool.** If a tool is not listed, a webhook can reach it through Zapier or Make.
+
+**Before you start**, you need:
+
+- A funnel.
+- A role that can open **Funnel Settings**: Global Admin, Workspace Admin or Content Editor. Only Global Admins and Workspace Admins can change where leads are sent. Others see **Admins only** on those cards.
+
+## Important to note
+
+<Warning>
+  - Integrations belong to one funnel. To use a tool on another funnel, set it up there too.
+  - Only new leads are sent to a tool. Leads that arrived before you connected it are not sent later.
+  - Webhooks need the Growth plan or above. Google Sheets, HighLevel and the three tracking tools work on every plan, and the Meta Conversions API needs Growth and above.
+  - Tracking follows your cookie banner. When it is on, visitors must accept cookies before tracking starts. See [Cookies and consent](/funnel-settings/cookies-and-consent).
+</Warning>
+
+## The two kinds of integration
+
+| | Send leads to | Tracking |
+|---|---|---|
+| **What it does** | Sends each new lead, with their answers, to another tool. | Reports what visitors do, such as page views, answers and form submissions, to an ad or analytics tool. |
+| **Tools** | **Webhooks**, **GoHighLevel** and **Google Sheets**. | **Meta Pixel**, **Google Analytics** and **TikTok Pixel**. |
+| **When** | Right after a visitor submits your form. | While visitors move through your funnel. |
+| **Who can change it** | Global Admin and Workspace Admin. | Global Admin, Workspace Admin and Content Editor. |
+| **How it saves** | Each card saves on its own, with no **Save changes** bar. | Click **"Save changes"** after you change a setting. |
+| **If something goes wrong** | AskFunnel retries automatically and emails the organization owner if a tool keeps failing. | Check the card and test in the ad tool. |
+
+## Find your integrations
+
+<Steps>
+  <Step title="Open the Integrations menu">
+    1. From your main dashboard, find the funnel.
+    2. Click the three small dots (**...**) on that funnel's row, then click **"Funnel Settings"**.
+    3. On the left side menu, click **"Integrations"**.
+
+    {/* SCREENSHOT: images/integrations/how-integrations-work/integrations-menu.png | The Integrations page of Funnel Settings with the heading Send leads to over three cards, Webhooks, GoHighLevel and Google Sheets, and the heading Tracking over three cards, Meta Pixel, Google Analytics and TikTok Pixel, each with a status chip. Highlight: the two headings Send leads to and Tracking. */}
+  </Step>
+  <Step title="Pick the card you need">
+    Click **"Settings"** on the card you want, and follow its guide. The table under these steps helps you choose.
+  </Step>
+  <Step title="Connect it and test it">
+    Each guide ends with a test you can run. For lead destinations, use **Send test** from the card's three dots menu. For tracking tools, check the ad tool's test view.
+  </Step>
+</Steps>
+
+## Which card should I use?
+
+| You want to | Use | Guide |
+|---|---|---|
+| Create or update a contact in HighLevel for every lead | **GoHighLevel** | [Send your leads to HighLevel](/integrations/highlevel) |
+| Add a row to a spreadsheet for every lead | **Google Sheets** | [Send your leads to Google Sheets](/integrations/google-sheets) |
+| Start a Zap in Zapier | **Webhooks** | [Send leads to Zapier](/integrations/zapier) |
+| Start a scenario in Make | **Webhooks** | [Send leads to Make](/integrations/make) |
+| Send leads to n8n or your own server | **Webhooks** | [Send your leads to a webhook](/integrations/webhooks) |
+| See which Facebook and Instagram ads bring leads | **Meta Pixel** | [Track your Facebook and Instagram ads with Meta Pixel](/integrations/meta-pixel) |
+| Measure your traffic and funnel steps | **Google Analytics** | [Track your traffic with Google Analytics (GA4)](/integrations/google-analytics) |
+| See which TikTok ads bring leads | **TikTok Pixel** | [Track your TikTok ads with TikTok Pixel](/integrations/tiktok-pixel) |
+| Tell ad platforms which steps matter | **Meta Pixel** or **TikTok Pixel** | [Map your funnel steps to standard events](/integrations/event-mapping) |
+
+<Note>
+  A booking calendar, such as Calendly or Cal.com, is not on this page. It is turned on in your lead form. See [Let visitors book a call with Calendly or Cal.com](/integrations/calendars).
+</Note>
+
+## What the card status means
+
+Each card has a status chip.
+
+- **Not connected:** nothing is set up yet.
+- **Connected:** it is on and working.
+- **Paused:** you turned the switch off. Your setup is kept. Leads that arrive while a lead destination is paused are not sent to it later.
+- **Needs attention:** the last lead could not be sent. The card says why. Open the delivery log to send failed leads again.
+- **Not sending:** a webhook that is on, but your plan no longer includes webhooks.
+- **Growth and above:** webhooks are not included in your plan.
+- **Admins only:** you can see the card but only an admin can change it.
+
+## How do I know it is working?
+
+- The card shows **Connected**.
+- A test shows in the other tool: a **Test delivered** message and a sample lead for a lead destination, or events in the ad tool's test view for a tracking tool.
+- After a real lead, a contact, a row or an automation run shows in your other tool.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="The card says Admins only">
+    Your role cannot change where leads are sent. Ask a Workspace Admin or Global Admin to set it up. See [Invite a teammate or client to a workspace](/workspaces/give-access).
+  </Accordion>
+  <Accordion title="The Webhooks card says Growth and above">
+    Webhooks are available on the Growth plan and above. See [Upgrade your plan](/billing/upgrade). Google Sheets and GoHighLevel are available on every plan.
+  </Accordion>
+  <Accordion title="A card says Not available yet">
+    That integration cannot be connected yet. Try again later, or email support.
+  </Accordion>
+  <Accordion title="The card says Needs attention">
+    Open the card's three dots menu and click **"Delivery log"**, read the reason, fix it and send the failed leads again. For webhooks, see [Read your webhook delivery log](/integrations/webhook-delivery-log).
+  </Accordion>
+  <Accordion title="My tool is not in the list">
+    Connect it with a webhook through Zapier or Make. Both can reach thousands of apps. See [Send leads to Zapier](/integrations/zapier) and [Send leads to Make](/integrations/make).
+  </Accordion>
+  <Accordion title="My tracking setup does not show events">
+    Check that you clicked **"Save changes"**, that the card is not **Paused**, and that visitors accepted cookies if your banner is on. See [Check that your Meta Pixel and Conversions API are working](/integrations/meta-pixel-troubleshooting).
+  </Accordion>
+  <Accordion title="Do I have to set this up for each funnel?">
+    Yes. Each funnel has its own lead destinations and its own tracking IDs.
+  </Accordion>
+</AccordionGroup>
+
+## What to do next
+
+<Columns cols={3}>
+  <Card title="Send your leads to HighLevel" icon="address-card" href="/integrations/highlevel">
+    Every new lead becomes a contact.
+  </Card>
+  <Card title="Send your leads to a webhook" icon="bolt" href="/integrations/webhooks">
+    Zapier, Make, n8n or your own server.
+  </Card>
+  <Card title="Send leads to Google Sheets" icon="table" href="/integrations/google-sheets">
+    Every new lead becomes a row.
+  </Card>
+  <Card title="Track your Facebook and Instagram ads" icon="bullseye" href="/integrations/meta-pixel">
+    See which ads bring leads.
+  </Card>
+  <Card title="Track your traffic with Google Analytics" icon="chart-simple" href="/integrations/google-analytics">
+    See how visitors move through your funnel.
+  </Card>
+  <Card title="Track your TikTok ads" icon="bullseye" href="/integrations/tiktok-pixel">
+    See which TikTok ads bring leads.
+  </Card>
+</Columns>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

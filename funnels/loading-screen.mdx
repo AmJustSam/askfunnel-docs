@@ -1,0 +1,107 @@
+---
+title: "Show a loading screen and redirect automatically"
+sidebarTitle: "Loading screen"
+description: "Add a loading screen with rotating messages that moves visitors to the next page or to a web address after a few seconds."
+icon: "spinner"
+---
+
+A loading screen is a full page with a spinning ring and a short message such as "Analyzing your answers". After a few seconds it moves the visitor on by itself, to the next page, to a page you choose or to a web address. Many funnels put one between the last question and the result, so the wait feels like something is happening and the result feels earned.
+
+With the **Loader** block, you can:
+
+- **Show rotating messages.** Write one line per message, for example "Analyzing your answers" and "Matching you with the best option".
+- **Choose how long it shows.** From 2 to 30 seconds.
+- **Move visitors on automatically.** To the next page, a page or result you pick, or an address on another website.
+- **Match your look.** Pick the size and the color of the spinner.
+
+**Before you start**, you need:
+
+- A funnel open in the builder. See [Launch your first funnel](/getting-started/launch-your-first-funnel).
+- A role that can edit funnels: Global Admin, Workspace Admin or Content Editor.
+- A page for the loading screen, placed after the page that leads to it. See [Manage your funnel pages](/funnels/manage-pages).
+
+## Important to note
+
+<Warning>
+  - Give the loading screen its own page. It fills a tall area of the screen and moves on by itself, so visitors cannot read anything else on that page.
+  - Put the loader on a normal page, not on a result page. Visitors need a page after it to go to, unless you send them to a web address.
+  - The loader does not do any real work. It shows your messages for the time you choose and then moves on, so only write messages you are comfortable with.
+  - The loader never moves on while you edit in the builder. It only redirects on your live funnel.
+</Warning>
+
+## Add a loading screen
+
+<Steps>
+  <Step title="Add the Loader to its own page">
+    1. Open or add the page where the loading screen should appear. Place it in your page list after the page that leads to it, for example after your last question.
+    2. On the left side menu, click the **"Content"** tab, then **"Blocks"**.
+    3. Under **Core Components**, click **"Loader"**.
+
+    The spinner and its first message appear on the canvas and keep moving, so you can see how it will look.
+
+    {/* SCREENSHOT: images/funnels/loading-screen/loader-on-canvas.png | The builder with a page that has only a Loader block, showing a blue spinning ring and the text Analyzing your answers, with the page list on the left showing this page between a question page and a result. Highlight: the Loader block on the canvas. */}
+  </Step>
+  <Step title="Set the size, time and messages">
+    Click the loader. In the left panel:
+
+    1. Under **Size**, choose **S**, **M**, **L** or **XL**. It changes the ring, the text and the height of the page area.
+    2. Under **Show for**, choose how long visitors wait: **2s**, **5s**, **7s**, **10s**, **15s** or **30s**.
+    3. Under **Choices**, type one message per line. They show one after the other, and each one gets an equal share of the time. For 3 messages over 6 seconds, each shows for 2 seconds. One message stays on screen the whole time.
+    4. Use the **F** swatch in the **Color** section to change the color of the spinner.
+
+    {/* SCREENSHOT: images/funnels/loading-screen/loader-settings.png | The left panel for a selected Loader showing Size with S M L XL, Show for with 2s 5s 7s 10s 15s 30s and 7s selected, the Choices box with three lines of messages, and the Action Flow section below. Highlight: Show for and the Choices box. */}
+  </Step>
+  <Step title="Choose where visitors go next">
+    Under **Action Flow**, click the row to open the **Action Flow** window. A loader starts with **Next Page**. Open **Always goes to** to choose a different page or result, or **External URL** to send visitors to a web address. To keep your campaign tags in that address, see [Pass UTM and custom URL parameters on to another page](/funnels/forward-url-parameters). Click **"Save"**.
+
+    If you turn **Action Flow** off, the loader still moves on to the next page, so a visitor never gets stuck.
+  </Step>
+  <Step title="Publish and test it">
+    Click **"Publish Funnel"**, then open the arrow next to it and click **"View live"**. Go through your funnel until the loading screen. After the time you chose, you land on the right page. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
+  </Step>
+</Steps>
+
+## How do I know it is working?
+
+- On your live funnel, the loading screen shows the spinner and your first message, then the next ones.
+- When the time you chose is over, the visitor lands on the page or address you picked.
+- In the builder, the spinner and messages keep moving but the page never changes. That is normal.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="The loader does not redirect in the builder">
+    This is on purpose, so you do not get thrown off the page while you edit. Open your live funnel with **"View live"** to test it.
+  </Accordion>
+  <Accordion title="The loader sends visitors to the wrong page">
+    Click the loader and open **Action Flow**. **Next Page** means the page after the loader in your page list, so reordering pages changes it. Choose the page you want under **Always goes to**. If the page you chose was deleted, visitors go to the next page instead.
+  </Accordion>
+  <Accordion title="My messages do not change">
+    The loader needs at least two lines in **Choices** to rotate. Each line is a separate message. With a short time and many messages, each one shows only briefly, so choose a longer time under **Show for**.
+  </Accordion>
+  <Accordion title="I still see Loading your content…">
+    These are the starting messages, "Loading your content…" and "Loading your offer…". Replace them in **Choices**.
+  </Accordion>
+  <Accordion title="I cannot choose Scroll to Block">
+    A loader only moves visitors to another page or address, so **Scroll to Block** is not offered.
+  </Accordion>
+  <Accordion title="The page feels too tall or too short">
+    Change **Size**. The loader reserves a block of space that grows from **S** to **XL**. Check **Mobile** with the device icon at the right edge of the canvas.
+  </Accordion>
+</AccordionGroup>
+
+## What to do next
+
+<Columns cols={3}>
+  <Card title="Send visitors to different pages by answer" icon="code-branch" href="/funnels/branch-by-answer">
+    Route visitors before or after the loading screen.
+  </Card>
+  <Card title="Customize your thank you screen" icon="circle-check" href="/funnels/thank-you-screen">
+    Design the page visitors land on.
+  </Card>
+  <Card title="Link buttons and images" icon="arrow-pointer" href="/funnels/link-buttons-and-images">
+    More ways to send visitors on.
+  </Card>
+</Columns>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

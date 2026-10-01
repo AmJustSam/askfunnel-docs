@@ -1,0 +1,149 @@
+---
+title: "Use one custom domain for several funnels, or remove a domain"
+sidebarTitle: "Domains for several funnels"
+description: "Serve many funnels on the same custom domain, choose which address each funnel uses and remove a domain safely."
+icon: "sitemap"
+---
+
+<Callout icon="star" color="#155DFC">
+  Available on: **all plans** (Starter, Growth, Scale and Enterprise).
+</Callout>
+
+You connect a custom domain once, and then every funnel in your workspace can use it. Each funnel gets its own link on that domain, so one domain such as `funnel.summitrealtygroup.com` can serve your home valuation funnel, your buyer guide and your open house funnel at the same time. This page shows how to put several funnels on one domain, how to pick which address a funnel uses, and what happens when you remove a domain.
+
+If you have not connected a domain yet, start with [Connect your custom domain](/funnel-settings/custom-domain).
+
+With one domain for many funnels, you can:
+
+- **Keep one brand in every link.** All your funnels share your domain, and only the end of the link differs.
+- **Choose per funnel.** Turn a domain on for some funnels and leave the others on your AskFunnel address.
+- **Use several domains for one funnel.** For example one for ads and one for emails.
+- **Remove a domain when you no longer need it.** Your funnels stay available on your AskFunnel address.
+
+**Before you start**, you need:
+
+- A domain that shows **Active** in **Workspace Settings**, under **Domains**. See [Connect your custom domain](/funnel-settings/custom-domain).
+- To switch a domain on for a funnel, a role that can open **Funnel Settings**: Global Admin, Workspace Admin or Content Editor.
+- To add or remove a domain, a Workspace Admin or Global Admin role.
+
+## Important to note
+
+<Warning>
+  - A funnel's link is your domain, a slash and the funnel's own ending, for example `https://funnel.summitrealtygroup.com/home-valuation-x7k2m9p4qa`. The ending is made when the funnel is created and does not change when you rename the funnel.
+  - The domain on its own has no page. A visitor who opens only `https://funnel.summitrealtygroup.com` is sent to the main part of your domain, `summitrealtygroup.com`. If the domain you connected has no subdomain in front of it, visitors are sent to askfunnel.com instead. Always share the full link of a funnel.
+  - A domain belongs to one workspace. Funnels of other workspaces cannot use it.
+  - Your AskFunnel address, such as `summit-realty.askfunnel.com`, always works for every funnel. It cannot be removed or turned off.
+  - A funnel is only visible on a domain after you publish it. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
+</Warning>
+
+## Put several funnels on one domain
+
+<Steps>
+  <Step title="Check that the domain is Active">
+    In **Workspace Settings**, under **Domains**, your domain must show a green **Active** label. If it shows **Pending** or **Issue**, fix it first. See [Fix a custom domain that stays Pending or shows an Issue](/funnel-settings/fix-custom-domain).
+  </Step>
+  <Step title="Turn the domain on for your first funnel">
+    1. From your funnel list, click the three dots (**...**) on the funnel's row, then click **"Funnel Settings"**.
+    2. On the left side menu, click **"Domains"**.
+    3. Find your domain in the list and turn on the switch next to it. You see **Funnel domains updated**, and the row says **People can open this funnel on this address.**
+
+    The change saves right away and goes live within about a minute. You do not need to click **"Save changes"** or publish again.
+
+    {/* SCREENSHOT: images/funnel-settings/domain-for-several-funnels/funnel-domains.png | The Domains settings of a funnel with the always on row summit-realty.askfunnel.com showing Always on, and the row funnel.summitrealtygroup.com with its switch turned on, the copy icon next to it and the text People can open this funnel on this address. Highlight: the switch and the copy icon of the custom domain row. */}
+  </Step>
+  <Step title="Repeat for your other funnels">
+    Open **Funnel Settings**, then **Domains**, for each funnel that should use the domain, and turn on the same switch. Every funnel now has its own link on your domain, as in the table below these steps.
+  </Step>
+  <Step title="Copy each funnel's link and test it">
+    Click the copy icon next to the domain to copy the full link of that funnel. You see **Copied**. Paste it into a private browser window to check that the funnel opens on your domain.
+  </Step>
+</Steps>
+
+For example, three funnels on one domain have these links:
+
+| Funnel | Link |
+|---|---|
+| Home valuation | `https://funnel.summitrealtygroup.com/home-valuation-x7k2m9p4qa` |
+| Buyer guide | `https://funnel.summitrealtygroup.com/buyer-guide-m4q8z2k7ab` |
+| Open house | `https://funnel.summitrealtygroup.com/open-house-t9w3c6d1xe` |
+
+## Choose which address a funnel uses
+
+A funnel can be on your AskFunnel address and on several of your domains at the same time. Each domain has its own switch in **Funnel Settings**, under **Domains**. Turn a switch off to stop using that domain for this funnel. The funnel still works on the other addresses.
+
+The **View live** button in the builder, the eye icon and **View Funnel** in your funnel list open the first custom domain you switched on. If none is on, they open your AskFunnel address. To share a different address, copy it with the copy icon.
+
+## Remove a domain
+
+Remove a domain when you stop using it, or to connect it to a different workspace.
+
+<Steps>
+  <Step title="Plan the move">
+    Removing a domain stops every funnel from being served on it, and links you already shared on it stop working. If your funnels should keep a custom address, first connect another domain, switch your funnels to it and update the links in your ads, emails and bio.
+  </Step>
+  <Step title="Remove the domain">
+    1. Click the three dots (**...**) on any funnel's row, then **"Funnel Settings"**, then **"Domains"**, then **"Manage domains"**. This opens **Workspace Settings** on its **Domains** section.
+    2. Open the menu (**...**) next to the domain and click **"Remove domain"**.
+    3. A window asks **Remove** followed by your domain and a question mark. It explains that funnels stop serving on the domain right away. Click **"Delete"** to confirm. You see **Domain removed**.
+
+    {/* SCREENSHOT: images/funnel-settings/domain-for-several-funnels/remove-domain.png | The Workspace Settings Domains section with the three dots menu of funnel.summitrealtygroup.com open and Remove domain highlighted in red, and the confirmation window that says Funnels stop serving on this domain right away. Highlight: the Remove domain menu item. */}
+  </Step>
+  <Step title="Clean up at your domain provider">
+    AskFunnel does not change your DNS settings. At the company that manages your domain, delete the record that points to `funnels.askfunnel.com` if you no longer need it.
+  </Step>
+</Steps>
+
+<Warning>
+  Your funnels stay available on your AskFunnel address, but they lose the removed domain from their settings. If you add the domain again later, switch it on again for each funnel.
+</Warning>
+
+## How do I know it is working?
+
+- In **Funnel Settings**, under **Domains**, the switch next to your domain is on for each funnel that should use it.
+- Each funnel's own link opens that funnel in a private browser window.
+- After a removal, the domain is gone from **Workspace Settings**, and its link no longer opens your funnel.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="My visitors land on my main website instead of my funnel">
+    They opened the domain without the funnel's ending. A domain has no page of its own, so AskFunnel sends them to the main part of your domain, or to askfunnel.com when the domain has no subdomain in front of it. Share the full link of the funnel, which you can copy with the copy icon under **Domains** in **Funnel Settings**.
+  </Accordion>
+  <Accordion title="The switch next to my domain is grayed out">
+    If the row says **Setup is not finished. Complete it in Workspace Settings.**, the domain is not **Active** yet. Click **"Manage domains"** and finish the setup. See [Fix a custom domain that stays Pending or shows an Issue](/funnel-settings/fix-custom-domain).
+  </Accordion>
+  <Accordion title="The funnel does not open on my domain">
+    Check that the switch is on, that the funnel is published and shows **Live**, and wait about a minute. Test the full link in a private browser window.
+  </Accordion>
+  <Accordion title="I do not see Manage domains or Remove domain">
+    Only Workspace Admins and Global Admins can open **Workspace Settings** and add or remove domains. Ask an admin. You can still switch a domain on or off for a funnel in **Funnel Settings**.
+  </Accordion>
+  <Accordion title="I see This domain is already connected when I add it">
+    The domain is connected to a workspace already, maybe another one of yours. Open **Workspace Settings**, then **Domains** in that workspace and remove it there first. A domain can only be connected to one workspace.
+  </Accordion>
+  <Accordion title="I removed the wrong domain">
+    Add it again in **Workspace Settings**, finish the DNS step if AskFunnel asks for it, and switch it back on for each funnel in **Funnel Settings**, under **Domains**.
+  </Accordion>
+  <Accordion title="Can I change the ending of a funnel's link?">
+    No. The ending is set when the funnel is created, and renaming the funnel does not change it. A funnel's link stays the same for as long as the funnel exists.
+  </Accordion>
+  <Accordion title="Can I remove my AskFunnel address?">
+    No. It is marked **Default**, and every funnel always works on it.
+  </Accordion>
+</AccordionGroup>
+
+## What to do next
+
+<Columns cols={3}>
+  <Card title="Connect your custom domain" icon="globe" href="/funnel-settings/custom-domain">
+    Add and verify a new domain.
+  </Card>
+  <Card title="Share your funnel" icon="share-nodes" href="/funnels/share-your-funnel">
+    Use your links in ads, messages and social posts.
+  </Card>
+  <Card title="Track campaigns with UTM links" icon="link" href="/analytics/utm-tracking">
+    Add tags to your funnel links.
+  </Card>
+</Columns>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).
