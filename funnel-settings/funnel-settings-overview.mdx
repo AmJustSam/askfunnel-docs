@@ -1,0 +1,141 @@
+---
+title: "Funnel settings overview and deleting a funnel"
+sidebarTitle: "Funnel settings"
+description: "See what each tab of your funnel's settings does, which changes need Save changes and how to delete a funnel."
+icon: "gear"
+---
+
+**Funnel Settings** is the one place for everything that belongs to a single funnel but is not part of its pages: where its leads go, which tracking it uses, how its link looks when shared, its cookie banner, its lead scoring and its web addresses. This page is a map of the tabs. It also shows which changes need **"Save changes"** and how to delete a funnel.
+
+| Tab | What you do there | Guide |
+|---|---|---|
+| **Integrations** | Under **Send leads to**, connect webhooks, GoHighLevel and Google Sheets. Under **Tracking**, connect Meta Pixel, Google Analytics and TikTok Pixel. | [Webhooks](/integrations/webhooks), [HighLevel](/integrations/highlevel), [Google Sheets](/integrations/google-sheets), [Meta Pixel](/integrations/meta-pixel), [Google Analytics](/integrations/google-analytics), [TikTok Pixel](/integrations/tiktok-pixel) |
+| **Social Preview** | Set the title, description and picture people see when they share your link. | [Social preview and favicon](/funnel-settings/social-preview-and-favicon) |
+| **Favicon** | Set the small icon in the browser tab. | [Social preview and favicon](/funnel-settings/social-preview-and-favicon) |
+| **Cookies & Consent** | Turn the cookie banner on or off and choose how much visitor activity is tracked. | [Cookies and consent](/funnel-settings/cookies-and-consent) |
+| **Lead Scoring** | Set the score ranges that label leads Cold, Warm or Hot. | [Lead scoring](/funnel-settings/lead-scoring) |
+| **WhatsApp** | Write the message that is typed in for you when you open a WhatsApp chat with a lead. | [Message a lead on WhatsApp](/messages/whatsapp-template) |
+| **Domains** | Choose which web addresses open this funnel. | [Custom domain](/funnel-settings/custom-domain) |
+| **Delete funnel** | Remove the funnel. Only Global Admins and Workspace Admins see this tab. | [Delete a funnel](#delete-a-funnel) |
+
+**Before you start**, you need:
+
+- A funnel, and a role that can open **"Funnel Settings"**: Global Admin, Workspace Admin or Content Editor. Contacts Managers see **You don't have access to funnel settings**.
+- To delete a funnel, a Global Admin or Workspace Admin role.
+
+## Important to note
+
+<Warning>
+  - Most changes need **"Save changes"**. Switching to another tab before you save asks you to discard your edits first.
+  - Saved changes go live right away. You do not need to publish the funnel again. When the funnel is live, you see **Settings saved. Your live funnel is updated.**
+  - Under **Send leads to**, only Workspace Admins and Global Admins can make changes. Content Editors see the cards marked **Admins only**.
+  - Deleting a funnel cannot be undone from the app.
+</Warning>
+
+## Open Funnel Settings
+
+<Steps>
+  <Step title="Open the settings of your funnel">
+    - **From your funnels list:** click the three dots (**...**) on the funnel's row, then click **"Funnel Settings"**.
+    - **From the builder:** click the gear icon at the top right.
+
+    <img src="/images/funnels/share-your-funnel/row-menu.png" alt="The three dots menu of a funnel row with Funnel Settings highlighted" width="1470" height="1000" />
+  </Step>
+  <Step title="Pick a tab">
+    The page is titled **Funnel Settings**, with your funnel's name under it. Click a tab on the left side menu. The page opens on **Integrations**.
+
+    {/* SCREENSHOT: images/funnel-settings/funnel-settings-overview/settings-tabs.png | The Funnel Settings page of the funnel Home valuation quiz with the left menu showing Integrations, Social Preview, Favicon, Cookies & Consent, Lead Scoring, WhatsApp, Domains and, after a divider, the red Delete funnel, and the dark bar You have unsaved changes with Discard and Save changes at the top of the content. Highlight: the left menu and the unsaved changes bar. */}
+  </Step>
+</Steps>
+
+## Which changes need Save changes
+
+When you change something that needs saving, a bar with **You have unsaved changes** appears at the top, with **"Discard"** and **"Save changes"**. Click **"Save changes"** to keep your edits. If a value is not valid, AskFunnel shows **Fix the highlighted fields before saving.**
+
+These changes need **"Save changes"**:
+
+- The settings of Meta Pixel, Google Analytics and TikTok Pixel under **Integrations**.
+- **Social Preview** and **Favicon**.
+- The cookie banner in **Cookies & Consent**.
+- **Lead Scoring** and **WhatsApp**.
+
+These changes save right away:
+
+- **Analytics tracking depth** in **Cookies & Consent**. You see **Analytics tracking depth updated**.
+- Webhooks, GoHighLevel and Google Sheets under **Send leads to**.
+- Choosing which domains a funnel uses in **Domains**. You see **Funnel domains updated**.
+
+## Delete a funnel
+
+Delete a funnel you will never use again, such as a finished campaign or a test. If you may want it back, take it offline instead. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
+
+<Steps>
+  <Step title="Export the leads you need">
+    You can no longer open the funnel's leads in the dashboard after you delete it. [Export your leads](/leads/export-contacts) first.
+  </Step>
+  <Step title="Start the delete">
+    - **From your funnels list:** click the three dots (**...**) on the funnel's row, then click **"Delete Funnel"**. It is the red item at the bottom.
+    - **From Funnel Settings:** click **"Delete funnel"** at the bottom of the left side menu, then click the red **"Delete funnel"** button.
+  </Step>
+  <Step title="Confirm">
+    A window titled **Delete this funnel?** explains what happens. From your funnels list, it also shows how many leads and notes are linked to the funnel, if there are any. Click **"Delete"** to confirm, or **"Cancel"** to keep the funnel. From **Funnel Settings**, you see **Funnel deleted** and go back to your funnels list. From the list, the funnel's row disappears.
+
+    {/* SCREENSHOT: images/funnel-settings/funnel-settings-overview/delete-window.png | The Delete this funnel window opened from the funnels list for the funnel Old webinar signup, with the sentence that names the funnel, the number of leads, the warning that its public page goes offline immediately and the Cancel and red Delete buttons. Highlight: the Delete button. */}
+  </Step>
+</Steps>
+
+<Warning>
+  - A live funnel goes offline immediately, and visitors can no longer open its link.
+  - The funnel and its leads disappear from the dashboard, and there is no undo button. If you delete a funnel by mistake, email support right away.
+  - Leads you already sent to other tools stay there.
+</Warning>
+
+## How do I know it is working?
+
+- After a save, the **You have unsaved changes** bar disappears and you see **Settings saved**.
+- After a delete, the funnel is gone from your list. From **Funnel Settings**, you also see **Funnel deleted**.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="I see You don't have access to funnel settings">
+    Your role cannot open funnel settings. Contacts Managers work with leads, not with funnel settings. Ask a Global Admin or Workspace Admin to change your role. See [What a Contacts Manager can see and do](/workspaces/contacts-manager).
+  </Accordion>
+  <Accordion title="I do not see the Delete funnel tab or Delete Funnel">
+    Only Global Admins and Workspace Admins can delete funnels. Content Editors can edit a funnel and its settings, but not delete it.
+  </Accordion>
+  <Accordion title="The window says my funnel has more than the 400-lead safe delete limit">
+    From your funnels list, a funnel with more than 400 leads cannot be deleted. Export the leads first, then email support to archive the funnel. See [Export your leads](/leads/export-contacts).
+  </Accordion>
+  <Accordion title="I see Your role doesn't permit deleting funnels in this workspace">
+    Deleting needs a Global Admin or Workspace Admin role in this workspace. Ask one of them to delete the funnel.
+  </Accordion>
+  <Accordion title="I see Couldn't save funnel settings">
+    Try again in a minute. If it keeps happening, check that your plan is active, then email support. See [Check your plan and usage](/billing/plan-and-usage).
+  </Accordion>
+  <Accordion title="I deleted a funnel by mistake">
+    There is no undo button. Email support right away and tell us the name of the funnel and its workspace. We cannot promise it can be restored.
+  </Accordion>
+  <Accordion title="Does a deleted funnel still count toward my live funnel limit?">
+    No. A deleted funnel is taken offline, so it no longer uses one of your live funnels.
+  </Accordion>
+</AccordionGroup>
+
+## What to do next
+
+<Columns cols={2}>
+  <Card title="Set your social preview and favicon" icon="image" href="/funnel-settings/social-preview-and-favicon">
+    Choose the title, picture and icon people see.
+  </Card>
+  <Card title="Set up cookies and consent" icon="cookie-bite" href="/funnel-settings/cookies-and-consent">
+    Decide whether visitors see a cookie banner.
+  </Card>
+  <Card title="Connect your custom domain" icon="globe" href="/funnel-settings/custom-domain">
+    Put your funnels on your own web address.
+  </Card>
+  <Card title="Read your funnels list" icon="table-list" href="/funnels/funnels-list">
+    Understand every column and menu of your funnels list.
+  </Card>
+</Columns>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).
