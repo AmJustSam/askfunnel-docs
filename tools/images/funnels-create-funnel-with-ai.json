@@ -1,0 +1,54 @@
+[
+  {
+    "out": "images/funnels/create-funnel-with-ai/chooser.png",
+    "src": "source/raw/funnels/create-funnel-with-ai/01-chooser.png",
+    "args": [
+      "--crop",
+      "800,572,1600,657",
+      "--ring",
+      "1862,762,500,405",
+      "--radius",
+      "16"
+    ]
+  },
+  {
+    "out": "images/funnels/create-funnel-with-ai/format-step.png",
+    "src": "source/raw/funnels/create-funnel-with-ai/02-format-step.png",
+    "args": [
+      "--crop",
+      "950,367,1300,1065",
+      "--ring",
+      "988,678,1224,168",
+      "--ring",
+      "1935,1273,277,109",
+      "--radius",
+      "16"
+    ]
+  },
+  {
+    "out": "images/funnels/create-funnel-with-ai/source-step.png",
+    "src": "source/raw/funnels/create-funnel-with-ai/03-source-step.png",
+    "args": [
+      "--crop",
+      "950,367,1300,1065",
+      "--ring",
+      "988,678,1224,157",
+      "--ring",
+      "988,920,1224,102",
+      "--radius",
+      "16"
+    ]
+  },
+  {
+    "out": "images/funnels/create-funnel-with-ai/goal-step.png",
+    "src": "source/raw/funnels/create-funnel-with-ai/04-goal-step.png",
+    "args": [
+      "--crop",
+      "950,367,1300,1065",
+      "--ring",
+      "1819,1277,389,101",
+      "--radius",
+      "16"
+    ]
+  }
+]

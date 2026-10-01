@@ -1,0 +1,32 @@
+[
+  {
+    "out": "images/analytics/utm-tracking/lead-tracking-tab.png",
+    "src": "source/raw/analytics/utm-tracking/01-lead-tracking-tab.png",
+    "args": [
+      "--crop",
+      "2000,0,1200,1500",
+      "--ring",
+      "2072,480,1056,256",
+      "--ring",
+      "2072,1056,1056,422",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/analytics/utm-tracking/top-traffic-sources.png",
+    "src": "source/raw/analytics/utm-tracking/02-top-traffic-sources.png",
+    "args": [
+      "--crop",
+      "1822,316,998,981",
+      "--ring",
+      "2223,375,380,84",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
+  }
+]

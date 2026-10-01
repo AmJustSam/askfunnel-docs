@@ -1,0 +1,62 @@
+[
+  {
+    "out": "images/funnels/publish-and-restore/publish-control.png",
+    "src": "source/raw/funnels/publish-and-restore/01-publish-control.png",
+    "args": [
+      "--crop",
+      "2060,0,1140,170",
+      "--ring",
+      "2218,16,562,94",
+      "--radius",
+      "16"
+    ]
+  },
+  {
+    "out": "images/funnels/publish-and-restore/publish-menu.png",
+    "src": "source/raw/funnels/publish-and-restore/02-publish-menu.png",
+    "args": [
+      "--crop",
+      "2100,0,660,500",
+      "--ring",
+      "2653,17,92,92",
+      "--ring",
+      "2146,116,580,76",
+      "--width",
+      "1470",
+      "--radius",
+      "16"
+    ]
+  },
+  {
+    "out": "images/funnels/publish-and-restore/version-history.png",
+    "src": "source/raw/funnels/publish-and-restore/03-version-history.png",
+    "args": [
+      "--crop",
+      "1080,463,1040,874",
+      "--ring",
+      "1719,907,331,82",
+      "--width",
+      "1470",
+      "--radius",
+      "16"
+    ]
+  },
+  {
+    "out": "images/funnels/publish-and-restore/backup-preview-bar.png",
+    "src": "source/raw/funnels/publish-and-restore/04-backup-preview-bar.png",
+    "args": [
+      "--crop",
+      "0,0,1653,232",
+      "--ring",
+      "12,138,680,82",
+      "--ring",
+      "1385,136,250,86",
+      "--width",
+      "1830",
+      "--pad-y",
+      "80",
+      "--radius",
+      "20"
+    ]
+  }
+]

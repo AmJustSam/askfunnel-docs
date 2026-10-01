@@ -1,0 +1,48 @@
+[
+  {
+    "out": "images/funnel-settings/fix-custom-domain/check-status-menu.png",
+    "src": "source/raw/funnel-settings/fix-custom-domain/01-check-status-menu.png",
+    "args": [
+      "--crop",
+      "880,360,1600,640",
+      "--ring",
+      "1805,688,582,86",
+      "--pad",
+      "80",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/funnel-settings/fix-custom-domain/dns-hint.png",
+    "src": "source/raw/funnel-settings/fix-custom-domain/02-dns-hint.png",
+    "args": [
+      "--crop",
+      "953,752,1294,1048",
+      "--ring",
+      "1486,1084,404,74",
+      "--ring",
+      "1140,1384,904,138",
+      "--width",
+      "1470",
+      "--radius",
+      "16"
+    ]
+  },
+  {
+    "out": "images/funnel-settings/fix-custom-domain/issue-status.png",
+    "src": "source/raw/funnel-settings/fix-custom-domain/03-issue-status.png",
+    "args": [
+      "--crop",
+      "895,360,1560,670",
+      "--ring",
+      "2166,838,160,80",
+      "--ring",
+      "1050,880,1104,100",
+      "--pad",
+      "80",
+      "--radius",
+      "20"
+    ]
+  }
+]

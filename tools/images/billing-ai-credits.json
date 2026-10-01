@@ -1,0 +1,42 @@
+[
+  {
+    "out": "images/billing/ai-credits/plan-badge-credits.png",
+    "src": "source/raw/billing/ai-credits/01-plan-badge-credits.png",
+    "args": [
+      "--crop",
+      "2390,0,810,660",
+      "--ring",
+      "2420,438,634,66",
+      "--width",
+      "1470"
+    ]
+  },
+  {
+    "out": "images/billing/ai-credits/image-tab-cost.png",
+    "src": "source/raw/billing/ai-credits/02-image-tab-cost.png",
+    "args": [
+      "--crop",
+      "950,304,1300,540",
+      "--ring",
+      "990,732,328,70",
+      "--width",
+      "1470",
+      "--radius",
+      "16"
+    ]
+  },
+  {
+    "out": "images/billing/ai-credits/ai-credits-dropdown.png",
+    "src": "source/raw/billing/ai-credits/03-ai-credits-dropdown.png",
+    "args": [
+      "--crop",
+      "2260,390,800,1030",
+      "--ring",
+      "2316,852,685,392",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
+  }
+]

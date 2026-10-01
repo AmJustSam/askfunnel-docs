@@ -1,0 +1,44 @@
+[
+  {
+    "out": "images/billing/monthly-lead-limit/locked-banner.png",
+    "src": "source/raw/billing/monthly-lead-limit/01-locked-banner.png",
+    "args": [
+      "--crop",
+      "0,0,1600,440",
+      "--ring",
+      "28,164,1544,146",
+      "--pad",
+      "90",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/billing/monthly-lead-limit/approaching-banner.png",
+    "src": "source/raw/billing/monthly-lead-limit/02-approaching-banner.png",
+    "args": [
+      "--crop",
+      "0,0,1600,440",
+      "--ring",
+      "28,164,1544,146",
+      "--pad",
+      "90",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/billing/monthly-lead-limit/leads-dropdown.png",
+    "src": "source/raw/billing/monthly-lead-limit/03-leads-dropdown.png",
+    "args": [
+      "--crop",
+      "2260,390,800,1030",
+      "--ring",
+      "2316,760,685,507",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "out": "images/analytics/why-numbers-differ/utc-note.png",
+    "src": "source/raw/analytics/why-numbers-differ/01-utc-note.png",
+    "args": [
+      "--crop",
+      "0,196,1300,248",
+      "--ring",
+      "28,382,396,50",
+      "--ring",
+      "749,308,216,82",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/analytics/why-numbers-differ/kpi-tooltip.png",
+    "src": "source/raw/analytics/why-numbers-differ/02-kpi-tooltip.png",
+    "args": [
+      "--crop",
+      "340,370,1560,620",
+      "--ring",
+      "366,394,594,574",
+      "--radius",
+      "20"
+    ]
+  }
+]

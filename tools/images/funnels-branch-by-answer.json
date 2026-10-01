@@ -1,0 +1,40 @@
+[
+  {
+    "out": "images/funnels/branch-by-answer/action-flow-summary.png",
+    "src": "source/raw/funnels/branch-by-answer/01-action-flow-summary.png",
+    "args": [
+      "--crop",
+      "0,128,760,880",
+      "--ring",
+      "22,872,714,92",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/funnels/branch-by-answer/rule-card.png",
+    "src": "source/raw/funnels/branch-by-answer/02-rule-card.png",
+    "args": [
+      "--crop",
+      "950,600,1300,1200",
+      "--ring",
+      "988,705,1228,622",
+      "--radius",
+      "16"
+    ]
+  },
+  {
+    "out": "images/funnels/branch-by-answer/destination-list.png",
+    "src": "source/raw/funnels/branch-by-answer/03-destination-list.png",
+    "args": [
+      "--crop",
+      "950,600,1300,1200",
+      "--ring",
+      "1150,1224,618,553",
+      "--radius",
+      "16"
+    ]
+  }
+]

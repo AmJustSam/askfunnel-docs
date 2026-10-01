@@ -1,0 +1,48 @@
+[
+  {
+    "out": "images/funnel-settings/privacy-policy-and-terms/footer-panel.png",
+    "src": "source/raw/funnel-settings/privacy-policy-and-terms/01-footer-panel.png",
+    "args": [
+      "--crop",
+      "0,128,1670,1440",
+      "--ring",
+      "627,446,84,84",
+      "--pad",
+      "90",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/funnel-settings/privacy-policy-and-terms/privacy-link-dialog.png",
+    "src": "source/raw/funnel-settings/privacy-policy-and-terms/02-privacy-dialog.png",
+    "args": [
+      "--crop",
+      "380,541,1040,519",
+      "--ring",
+      "904,813,476,91",
+      "--ring",
+      "1204,915,176,92",
+      "--width",
+      "1470",
+      "--radius",
+      "16"
+    ]
+  },
+  {
+    "out": "images/funnel-settings/privacy-policy-and-terms/consent-field.png",
+    "src": "source/raw/funnel-settings/privacy-policy-and-terms/03-consent-field.png",
+    "args": [
+      "--crop",
+      "0,128,1686,1068",
+      "--ring",
+      "28,370,715,210",
+      "--ring",
+      "948,966,664,94",
+      "--pad",
+      "90",
+      "--radius",
+      "20"
+    ]
+  }
+]

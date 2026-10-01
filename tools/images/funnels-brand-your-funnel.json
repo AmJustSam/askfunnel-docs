@@ -1,0 +1,64 @@
+[
+  {
+    "out": "images/funnels/brand-your-funnel/text-toolbar.png",
+    "src": "source/raw/funnels/brand-your-funnel/01-text-toolbar.png",
+    "args": [
+      "--crop",
+      "1300,790,1360,250",
+      "--ring",
+      "1585,851,140,64",
+      "--ring",
+      "1938,849,72,72",
+      "--width",
+      "1470",
+      "--radius",
+      "16"
+    ]
+  },
+  {
+    "out": "images/funnels/brand-your-funnel/color-picker.png",
+    "src": "source/raw/funnels/brand-your-funnel/02-color-picker.png",
+    "args": [
+      "--crop",
+      "0,130,1100,1120",
+      "--ring",
+      "22,316,716,112",
+      "--ring",
+      "468,438,568,92",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/funnels/brand-your-funnel/header-logo.png",
+    "src": "source/raw/funnels/brand-your-funnel/03-header-logo.png",
+    "args": [
+      "--crop",
+      "0,128,760,660",
+      "--ring",
+      "22,374,704,92",
+      "--ring",
+      "22,480,418,285",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/funnels/brand-your-funnel/header-style.png",
+    "src": "source/raw/funnels/brand-your-funnel/04-header-style.png",
+    "args": [
+      "--crop",
+      "0,128,760,430",
+      "--ring",
+      "26,320,708,194",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
+  }
+]

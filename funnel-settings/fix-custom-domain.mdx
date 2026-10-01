@@ -40,7 +40,7 @@ Each domain in **Workspace Settings**, under **Domains**, shows one of three lab
     2. On the left side menu, click **"Domains"**, then click **"Manage domains"**. This opens **Workspace Settings** on its **Domains** section.
     3. Open the menu (**...**) next to your domain and click **"Check status"**. The label briefly shows **Checking**, then AskFunnel shows a message about your DNS record.
 
-    {/* SCREENSHOT: images/funnel-settings/fix-custom-domain/check-status-menu.png | Workspace Settings, Domains section, one domain (for example offers.summitrealtygroup.com) showing Pending with the three dots menu open and its items Check status, View DNS instructions and Remove domain visible. Highlight: the Check status menu item. */}
+    <img src="/images/funnel-settings/fix-custom-domain/check-status-menu.png" alt="The Domains section of Workspace Settings with the menu open on a Pending domain and the Check status item highlighted" width="1760" height="784" />
   </Step>
   <Step title="Match the message to a fix">
     The message tells you what to change.
@@ -53,7 +53,7 @@ Each domain in **Workspace Settings**, under **Domains**, shows one of three lab
 
     You can see the same messages in the setup window. Click **"Finish setup"** next to the domain, or open the menu and click **"View DNS instructions"**.
 
-    {/* SCREENSHOT: images/funnel-settings/fix-custom-domain/dns-hint.png | The Link your domain to AskFunnel window for a Pending domain after clicking Check again now, with the CNAME record table (Type, Host, Target, TTL) and a status line below it that says the record points to another address instead of funnels.askfunnel.com. Highlight: the status line and the Target cell. */}
+    <img src="/images/funnel-settings/fix-custom-domain/dns-hint.png" alt="The Link your domain to AskFunnel window with the CNAME record table and the message that says the DNS record was not found yet, with the Target and the message highlighted" width="1470" height="1228" loading="lazy" />
   </Step>
   <Step title="Correct the record at your domain provider">
     Open a new tab and sign in where your domain's DNS is managed. Find the record for your domain and make it look like this:
@@ -85,7 +85,7 @@ The reason is written under the domain name. The two you are most likely to see:
 - **A CAA record blocks the certificate.** A CAA record is a DNS entry that lists which companies may create security certificates for your domain. If yours does not allow AskFunnel's certificate, the domain shows **Issue**. Ask your domain provider to remove the CAA record or to allow certificates for your domain, then click **"Check status"**.
 - **The domain no longer points to AskFunnel.** AskFunnel checks connected domains about once a day. If your record was deleted or changed, the domain shows **Issue** and your funnels stop opening on it. Add the DNS record again, then remove the domain and add it again. To remove it, open the menu (**...**) next to it and click **"Remove domain"**.
 
-{/* SCREENSHOT: images/funnel-settings/fix-custom-domain/issue-status.png | Workspace Settings, Domains section, a domain card showing the red Issue label and a reason written under the domain name (for example the domain no longer points to AskFunnel). Highlight: the Issue label and the reason text. */}
+<img src="/images/funnel-settings/fix-custom-domain/issue-status.png" alt="A domain with the red Issue label and the reason written under its name, both highlighted" width="1720" height="814" loading="lazy" />
 
 ## Root domains and provider notes
 
