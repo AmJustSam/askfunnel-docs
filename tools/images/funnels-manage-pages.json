@@ -20,9 +20,9 @@
     "src": "source/raw/funnels/manage-pages/02-page-menu.png",
     "args": [
       "--crop",
-      "0,300,760,760",
+      "0,300,760,770",
       "--ring",
-      "86,659,620,300",
+      "56,658,650,376",
       "--width",
       "1470",
       "--radius",
