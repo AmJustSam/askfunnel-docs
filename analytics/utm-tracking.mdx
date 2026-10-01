@@ -61,7 +61,7 @@ Start with `utm_source`, `utm_medium` and `utm_campaign`. Add the other two only
     1. Open the tagged link in a private browser window.
     2. Go through your funnel and submit the form with details you will recognize.
     3. In the dashboard, open your funnel's **Leads** tab and open your test lead.
-    4. Click the **Tracking** tab. Check that **Source** shows what you typed after `utm_source`, and that **UTM parameters** lists your tags.
+    4. Click the **Tracking** tab. Check that **Source** shows the source you typed after `utm_source`, and that **UTM parameters** lists your tags. AskFunnel may show a known source with a capital letter, so `facebook` appears as **Facebook**.
 
     <img src="/images/analytics/utm-tracking/lead-tracking-tab.png" alt="A lead's Tracking tab with the Source card showing Facebook, paid_social and the campaign spring_buyers, and the UTM parameters card listing Source, Medium and Campaign, both highlighted" width="1470" height="1680" />
   </Step>
@@ -69,8 +69,8 @@ Start with `utm_source`, `utm_medium` and `utm_campaign`. Add the other two only
 
 ## Where you see the results
 
-- **On every lead.** Open a lead and click **Tracking**. **Source** shows the `utm_source`, with the medium and campaign next to it. **UTM parameters** lists every tag. With no `utm_source`, AskFunnel shows the website the visitor came from, or **Direct / Unknown**. See [See where a lead came from](/analytics/lead-insights).
-- **In your funnel analytics.** **Top traffic sources** ranks your sources by visitors, with the conversion rate of each. Use **Group traffic sources by** to switch between **By source**, **By medium**, **By campaign** and **By referrer**. See [Read your funnel analytics](/analytics/funnel-analytics).
+- **On every lead.** Open a lead and click **Tracking**. **Source** shows the `utm_source`, with the medium and campaign next to it. **UTM parameters** lists every tag. Sources AskFunnel knows, such as Facebook, Google and Instagram, show with their brand name, and other values show as you typed them. The medium next to the source can start with a capital letter, for example **Paid_social**, while **UTM parameters** shows it as you typed it. With no `utm_source`, AskFunnel shows the website the visitor came from, or **Direct / Unknown**. See [See where a lead came from](/analytics/lead-insights).
+- **In your funnel analytics.** **Top traffic sources** ranks your sources by visitors, with the conversion rate of each. The card names your four biggest sources and groups the rest in one row, such as **3 other sources**. Open the card full screen to see every source. Use **Group traffic sources by** to switch between **By source**, **By medium**, **By campaign**, **By referrer**, **By country** and **By browser language**. See [Read your funnel analytics](/analytics/funnel-analytics).
 - **In Google Sheets.** Keep **Include UTM parameters and referrer** on in the Google Sheets settings to add them to each row. See [Send leads to Google Sheets](/integrations/google-sheets).
 - **In HighLevel.** Match a tag, such as **UTM source**, to a HighLevel field. See [Send your leads to HighLevel](/integrations/highlevel).
 - **In a webhook.** The tags arrive in the `attribution` part of each lead. See [What AskFunnel sends](/integrations/webhook-reference).
@@ -80,7 +80,7 @@ Start with `utm_source`, `utm_medium` and `utm_campaign`. Add the other two only
 ## How do I know it is working?
 
 - Your test lead shows the source, medium and campaign you typed.
-- In **Analytics**, **Top traffic sources** shows your campaign after a few visits, instead of **No campaign attribution yet**.
+- In **Analytics**, **Top traffic sources** shows your campaign after a few visits, instead of **No data for this dimension**.
 
 ## Troubleshooting
 
@@ -88,8 +88,8 @@ Start with `utm_source`, `utm_medium` and `utm_campaign`. Add the other two only
   <Accordion title="The lead's source says Direct / Unknown">
     The visitor arrived without tags and without a known referrer (the website that sent them). Check that the link you shared has the tags, and open it yourself to test. Link shorteners, redirects and some apps drop the part after the question mark, so test the exact link you use in your ad or message.
   </Accordion>
-  <Accordion title="Top traffic sources says No campaign attribution yet">
-    No visitor has arrived with a `utm_source` yet, or the visitors did not accept analytics cookies on a funnel with a cookie banner. Tag your links, test them, and give it a little time. Until then, try **By referrer** to see where visitors come from.
+  <Accordion title="Top traffic sources says No data for this dimension">
+    The card also says **Tag your campaign URLs with UTM parameters to see attribution here.** No visitor has arrived with a `utm_source` yet, or the visitors did not accept analytics cookies on a funnel with a cookie banner. Tag your links, test them, and give it a little time. Until then, try **By referrer** to see where visitors come from.
   </Accordion>
   <Accordion title="One source shows up twice">
     The tags are saved exactly as you typed them, so `Facebook` and `facebook` can look like two sources. Write your tags the same way every time.
