@@ -1,0 +1,121 @@
+---
+title: "See which ad each lead came from"
+sidebarTitle: "Ad tracking links"
+description: "Add AskFunnel's tracking links to your Facebook, Instagram, Google and TikTok ads, then see the campaign, ad set and ad of every lead."
+icon: "bullseye"
+---
+
+When you run ads, you want to know which campaign and which ad brought each lead, so you can spend more on the ads that work. AskFunnel gives you a short piece of text for each ad platform. You paste it into your ads once, and from then on every lead shows the exact campaign, ad set and ad it came from on its **Tracking** tab.
+
+The text uses the ad platform's own placeholders. When someone clicks your ad, Meta, Google or TikTok fills them in with the real IDs, and AskFunnel saves them with the lead.
+
+**What you can do:**
+
+- **See the ad behind every lead:** the campaign ID, ad set ID and ad ID, where the ad was shown (for example **Instagram stories**) and how long before submitting the person clicked.
+- **Copy an ID in one click** and find that ad in your ads manager.
+- **See the ad that first brought someone in**, when they come back later from another ad or by typing your link.
+- **Check a link before you spend money**, with **"Test a link"**.
+
+**Before you start**, you need:
+
+- A published funnel. See [Publish, unpublish and restore your funnel](/funnels/publish-and-restore).
+- Access to your ads in Meta Ads Manager, Google Ads or TikTok Ads Manager.
+- To read the results, a role that can see leads: Global Admin, Workspace Admin or Contacts Manager.
+
+## Important to note
+
+<Warning>
+  - Only clicks on ads that carry the tracking text get ad IDs. Add it to every ad you want to track. Leads from before you added it show their UTM tags only, if they had any.
+  - In Meta, changing the URL parameters of an ad that is already running can restart its ad set's learning phase. Add the text when you create an ad when you can.
+  - Campaign, ad set and ad IDs are always saved. The platform's click ID (such as `fbclid` or `gclid`) is saved only when the visitor accepts marketing cookies, or when your funnel shows no cookie banner. See [Set up cookies and visitor consent](/funnel-settings/cookies-and-consent).
+  - The text adds UTM tags too, so you do not need separate UTM tags on these ads. See [Track campaigns with UTM links](/analytics/utm-tracking).
+</Warning>
+
+## Add tracking links to your ads
+
+<Steps>
+  <Step title="Open Tracking links">
+    1. In the dashboard, open your funnel and click **"Funnel Settings"**.
+    2. In **Integrations**, find the **Tracking links** card under **Tracking** and click **"Get links"**.
+
+    <img src="/images/integrations/ad-tracking-links/tracking-links-card.png" alt="The Tracking group in Funnel Settings, Integrations, with the Tracking links card and its Get links button highlighted" width="2000" height="1001" />
+
+    The text is the same for every funnel, so you only need to set it up once per ad account.
+  </Step>
+  <Step title="Facebook and Instagram (Meta)">
+    1. On the **Meta** tab, click **"Copy"**.
+    2. In Meta Ads Manager, open your ad and scroll to **Tracking**.
+    3. Paste the text into **URL parameters**. Do not add it to the website URL.
+    4. Publish the ad.
+
+    <img src="/images/integrations/ad-tracking-links/meta-url-parameters.png" alt="The Tracking links panel on the Meta tab, with the URL parameters text and the Copy button highlighted" width="1470" height="1048" loading="lazy" />
+
+    Meta adds its own click ID (`fbclid`) to every click, so it is not part of the text.
+  </Step>
+  <Step title="Google Ads">
+    1. On the **Google** tab, click **"Copy"**.
+    2. In Google Ads, open **Admin**, then **Account settings**, and open **Tracking template**.
+    3. Paste the text into **Final URL suffix** and save. You can also set it on one campaign, ad group or ad instead of the whole account.
+
+    <img src="/images/integrations/ad-tracking-links/google-final-url-suffix.png" alt="The Tracking links panel on the Google tab, with the Final URL suffix text and the Copy button highlighted" width="1470" height="1048" loading="lazy" />
+
+    Use **Final URL suffix**, not **Tracking template**. Google loads the tracking template in the background, so anything in it never reaches your funnel. Keep auto tagging on, so Google adds its own click ID.
+  </Step>
+  <Step title="TikTok">
+    1. On the **TikTok** tab, click **"Copy"**.
+    2. In TikTok Ads Manager, open your ad and go to **Ad details**.
+    3. Add the text to the end of your **Destination URL**, after a question mark (**?**). If your URL already has a question mark, add the text after an ampersand (**&**) instead.
+
+    In upgraded Smart+ campaigns, replace `__CID__` with `__ADID_V2__` and `__CID_NAME__` with `__ADID_V2_NAME__`, so AskFunnel gets the ad and not one creative. TikTok adds its own click ID (`ttclid`).
+  </Step>
+  <Step title="Test a link">
+    1. Open your ad's preview in the ads manager and copy the link it opens.
+    2. In **Tracking links**, click **"Test a link"**, paste the link and click **"Check link"**.
+    3. Check that **Campaign ID**, **Ad set ID** (or **Ad group ID**) and **Ad ID** show numbers.
+
+    <img src="/images/integrations/ad-tracking-links/test-a-link.png" alt="The Test a link tab with a checked Facebook ad link: a green message, the platform Meta, the campaign, ad set and ad IDs and the placement" width="1470" height="1248" loading="lazy" />
+
+    If a value still shows a placeholder, such as `{{ad.id}}`, the platform did not fill it in. Test again with the link from the ad preview. A preview link may not have a click ID, because the platform only adds it to real clicks.
+  </Step>
+</Steps>
+
+## See the ad on each lead
+
+1. Open your funnel's **Leads** tab and click a lead.
+2. Click the **Tracking** tab.
+
+The **Ad details** card shows:
+
+- **Campaign ID**, **Ad set ID** (**Ad group ID** for Google and TikTok) and **Ad ID**, each with a copy button.
+- **Placement:** where the ad was shown, when the platform sends it.
+- **Clicked the ad:** how long before submitting the person clicked.
+- **First visit:** the ad or source that first brought the person in, when it is different from the last one.
+
+Click **"Show advanced"** to see which platforms sent a click ID.
+
+<img src="/images/integrations/ad-tracking-links/lead-ad-details.png" alt="A lead's Tracking tab with the Source card showing Facebook and the campaign Spring buyers Austin, and the Ad details card highlighted with the campaign, ad set and ad IDs, the placement Instagram stories and the time the person clicked" width="1470" height="1920" loading="lazy" />
+
+If a lead clicked an ad that does not carry the tracking text, the card says the platform but not the ad: **"This lead clicked a Meta ad, but we don't know which one."** Click **"Open tracking links"** in that message to set up your ads.
+
+## How do I know it is working?
+
+Run your ad, or open its preview, and submit your funnel with details you will recognize. Open that lead's **Tracking** tab. The **Ad details** card shows the campaign, ad set and ad IDs of the ad you clicked.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Test a link says a value still shows a placeholder">
+    The ad platform did not replace that placeholder. Make sure you pasted the text exactly as copied, in the right field (**URL parameters** for Meta, **Final URL suffix** for Google, the end of the **Destination URL** for TikTok), and test with the link from the ad preview, not with the text itself.
+  </Accordion>
+  <Accordion title="A lead says the ad is unknown">
+    The lead clicked an ad that does not carry the tracking text, or the text was added after the click. Add it to that ad. Leads that arrive after that show their ad IDs.
+  </Accordion>
+  <Accordion title="Click IDs say Not saved">
+    The visitor did not accept marketing cookies, so AskFunnel kept the campaign, ad set and ad IDs but not the platform's click ID. This is expected. See [Set up cookies and visitor consent](/funnel-settings/cookies-and-consent).
+  </Accordion>
+  <Accordion title="Google leads show IDs where I expected names">
+    Google has no placeholder for campaign or ad names, so the text sends the campaign ID and the ad ID in the UTM tags too. Use the IDs to find the campaign and the ad in Google Ads.
+  </Accordion>
+</AccordionGroup>
+
+Need help? Email [support@askfunnel.com](mailto:support@askfunnel.com).

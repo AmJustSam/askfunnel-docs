@@ -153,6 +153,7 @@
           "integrations/meta-pixel-troubleshooting",
           "integrations/google-analytics",
           "integrations/tiktok-pixel",
+          "integrations/ad-tracking-links",
           "integrations/event-mapping"
         ]
       },
