@@ -11,7 +11,7 @@ icon: "diagram-project"
 
 Choose which standard Meta or TikTok event each funnel step sends, so the ad platform understands what the step means and can use it to optimize your ads.
 
-Your tracking pixels (small pieces of code that report what people do on your funnel to an ad platform) get an event for every step a visitor takes in your funnel. Out of the box, each step is sent as a custom event named after the step, and the form submission is sent as the platform's own lead event. A standard event is one of the platform's fixed event names, such as **Lead** or **Contact**.
+Your tracking pixels (small pieces of code that report what people do on your funnel to an ad platform) get an event for every step a visitor takes in your funnel. Out of the box, each step is sent as a custom event with a fixed name, such as **Page Viewed** or **Answer Selected**, and the page name, answer or button text is sent with the event as a detail. The form submission is sent as the platform's own lead event. A standard event is one of the platform's fixed event names, such as **Lead** or **Contact**.
 
 With event mapping, you can:
 
@@ -108,15 +108,19 @@ Mappings follow each step's ID, not its text. If you rename a page, answer or bu
 
 ## What each step sends when you do not map it
 
-| Funnel step | Sent to Meta and TikTok as a custom event named |
-|---|---|
-| Page view | Page Viewed: and the page name |
-| Answer | Answered: and the answer text |
-| Button | Button Clicked: and the button text |
-| Lead form started | Form Started |
-| Lead form submitted | Not custom. Meta gets **Lead**, TikTok gets **SubmitForm** |
+| Funnel step | Sent to Meta and TikTok as a custom event named | Detail sent with it |
+|---|---|---|
+| Page view | Page Viewed | The page name |
+| Answer | Answer Selected | The answer text |
+| Button | Button Clicked | The button text |
+| Lead form started | Form Started | None |
+| Lead form submitted | Not custom. Meta gets **Lead**, TikTok gets **SubmitForm** | None |
 
-Event names are cut to 50 characters. Each step is sent once per visit, so going back to a page or clicking the same answer again does not send it twice.
+The event name never changes, so your Events Manager shows the same few custom events however many pages, answers and buttons your funnel has. The detail travels with the event instead: Meta gets it as **funnel_label** and TikTok gets it as **content_name**. Long text is cut to 100 characters.
+
+If Meta applies its data restrictions to your pixel, as it does for some businesses such as health or finance, it may remove the detail. The event itself still arrives.
+
+Each step is sent once per visit, so going back to a page or clicking the same answer again does not send it twice.
 
 ## The standard events you can pick
 
