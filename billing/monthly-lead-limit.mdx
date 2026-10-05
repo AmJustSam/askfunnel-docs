@@ -5,7 +5,7 @@ description: "Leads over your limit are saved but locked. See what you can and c
 icon: "lock"
 ---
 
-Every plan includes a number of leads each month. When you reach it, AskFunnel does not turn your funnels off and does not lose anyone. Visitors can still fill in your form as usual. The extra leads are saved, but **locked**: they stay hidden until you add capacity. This page explains what that means, so a lead that seems to be missing does not worry you.
+Every plan includes a number of leads each month. When you reach it, AskFunnel does not turn your funnels off and does not lose anyone. Visitors can still fill in your form as usual. The extra leads are saved, but **locked**: they stay hidden until you add capacity. Your count starts again on your billing date. This page explains what that means, so a lead that seems to be missing does not worry you.
 
 Your monthly limit depends on your plan:
 
@@ -34,15 +34,15 @@ You can also buy extra leads without changing plan. See [Choose the right plan](
 
 - **What counts as a lead.** Every form submission is one lead.
 - **Your whole organization shares the limit.** Leads from all of your workspaces and funnels are added together.
-- **The count resets on the first day of each calendar month** in UTC (standard world time), not on your billing date.
-- **The first leads of the month are visible.** With a limit of 100, leads 1 to 100 show in your table. From lead 101 on, new leads are locked until the month ends or you add capacity.
-- **Leads you add capacity for come back oldest first.** A new month does not bring back leads that were locked in an earlier month. Only more capacity does.
+- **The count resets on your billing date.** Each month, on the day your billing period starts, your count goes back to zero. The **Plan** page says the date, for example **Resets on October 14**. On a yearly plan it resets every month on that day of the month, or on the last day of a shorter month that does not have it. During a free trial it resets every month from the day the trial started.
+- **The first leads of each period are visible.** With a limit of 100, leads 1 to 100 show in your table. From lead 101 on, new leads are locked until your count resets or you add capacity.
+- **Leads you add capacity for come back oldest first.** Your count starting again does not bring back leads that were locked before it. Only more capacity does.
 
 ## What you see in AskFunnel
 
-- **At 80% of your limit,** a banner appears above the **Leads** table. It says **You've used 240 of 300 monthly leads this month.** (with your own numbers) and **New leads lock once you reach your monthly limit.** A Global Admin also sees an **"Add capacity"** button.
+- **At 80% of your limit,** a banner appears above the **Leads** table. It says **You've used 240 of 300 monthly leads.** (with your own numbers), **New leads lock once you reach your monthly limit.** and **Leads reset on October 14.** (with your own date). A Global Admin also sees an **"Add capacity"** button.
 - **Once leads are locked,** a warning banner says **12 leads are locked.** (with your own number) and **They're saved but hidden until you add capacity.** A Global Admin also sees an **"Upgrade plan"** button. Everyone else sees **Ask a Global Admin to upgrade the plan or add a leads add-on.**
-- **In the plan badge** in the top right corner, the **Leads / month** row shows how many you have used, for example **240/300**. See [Check your plan and usage](/billing/plan-and-usage).
+- **In the plan badge** in the top right corner, the **Leads / month** row shows how many you have used, for example **240/300**, and a line under it says **Resets on October 14**. See [Check your plan and usage](/billing/plan-and-usage).
 
 <img src="/images/billing/monthly-lead-limit/locked-banner.png" alt="The Leads tab with the warning banner that says 12 leads are locked and the Upgrade plan button, highlighted" width="1780" height="602" />
 
@@ -89,13 +89,16 @@ When a free trial or a paid plan ends, new leads are still saved, but they are l
     Look for the warning banner above the table. If it says leads are locked, the lead is saved but hidden, and it comes back when you add capacity. If there is no banner, check your filters, search and date range. See [View and manage your leads](/leads/view-and-manage-leads).
   </Accordion>
   <Accordion title="I deleted leads but the banner is still there">
-    Deleting leads does not free up room. Your monthly count only goes up, so you cannot delete your way under the limit. Add capacity instead.
+    Deleting leads does not free up room. Your count only goes up until it resets on your billing date, so you cannot delete your way under the limit. Add capacity instead.
   </Accordion>
   <Accordion title="I upgraded, but some leads are still locked">
     Leads unlock as far as your new capacity allows, oldest first. If you have more locked leads than the new room, the rest stay locked until you add more, for example a bigger leads amount. Also allow a few minutes. If the banner is still there after that, email support.
   </Accordion>
-  <Accordion title="It is a new month but my old locked leads did not come back">
-    A new month gives you a fresh count for new leads. It does not release leads that were locked earlier. Add capacity to unlock them.
+  <Accordion title="My count reset but my old locked leads did not come back">
+    When your count resets on your billing date, you get a fresh count for new leads. It does not release leads that were locked earlier. Add capacity to unlock them.
+  </Accordion>
+  <Accordion title="My count did not reset on the first of the month">
+    Counts reset on your billing date, not on the first day of the month. The **Plan** page shows the date under **Leads / month**, for example **Resets on October 14**.
   </Accordion>
   <Accordion title="My locked leads have not reached my Google Sheet, webhook or HighLevel">
     Locked leads are not sent while they are locked. Add capacity and they unlock, then they are sent to your connected tools automatically, oldest first, within about 15 minutes. If a lead still does not arrive, open the destination's **"Delivery log"** to see why.

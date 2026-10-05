@@ -18,7 +18,7 @@ The plan badge sits in the top right corner of the dashboard, next to your profi
 
 <img src="/images/billing/plan-and-usage/plan-pill-menu.png" alt="The plan badge in the top bar, showing 14d left, and the menu that opens with the Growth plan, its usage and an Upgrade plan button" width="1470" height="880" />
 
-The menu shows the plan name, its status (**Active subscription**, **N days left in trial** or **Grace period, upgrade now**) and one row for each limit.
+The menu shows the plan name, its status (**Active subscription**, **N days left in trial** or **Grace period, upgrade now**) and one row for each limit. Under **Leads / month** and **AI credits / month**, a line says when that count starts again, for example **Resets on October 14**.
 
 ## Full view on the Plan page
 
@@ -30,7 +30,7 @@ The menu shows the plan name, its status (**Active subscription**, **N days left
     <img src="/images/billing/plan-and-usage/profile-menu.png" alt="The menu under your profile picture with Plan highlighted" width="1100" height="1130" loading="lazy" />
   </Step>
   <Step title="Read your plan and usage">
-    At the top you see your plan name, **Billed monthly** or **Billed yearly**, a status label and a date. Under **Usage this period**, each limit has a bar that fills as you use it. The bar turns orange when you have used 90% or more.
+    At the top you see your plan name, **Billed monthly** or **Billed yearly**, a status label and a date. Under **Usage this period**, each limit has a bar that fills as you use it. The bar turns orange when you have used 90% or more. Under **Leads / month** and **AI credits / month**, a line says when that count starts again, for example **Resets on October 14**.
 
     If you bought extra capacity, it is listed under **Add-ons**, for example **+200 leads/mo**.
 
@@ -42,21 +42,21 @@ The menu shows the plan name, its status (**Active subscription**, **N days left
 
 - **Leads.** At 80% of your monthly leads, a banner on the **Leads** page warns you that new leads lock when you reach the limit. Past the limit, a banner says how many leads are locked. Locked leads are saved but hidden, and they are not sent to your integrations or notifications. When they unlock, they are sent to your integrations automatically. See [What happens when you reach your monthly lead limit](/billing/monthly-lead-limit).
 - **Live funnels and team seats.** A window titled **You've reached your [plan] plan limit** appears with **"Upgrade plan"** and **"Not now"**. Funnels you already published keep running, but you cannot publish a new funnel or publish changes until you are under the limit. The same goes for adding team members.
-- **AI credits.** AI features pause once your credits run out, until the next month or until you add capacity. See [How AI credits work](/billing/ai-credits).
+- **AI credits.** AI features pause once your credits run out, until your credits reset or until you add capacity. See [How AI credits work](/billing/ai-credits).
 
 To add capacity, click **"Change plan"**, then see [Upgrade your plan](/billing/upgrade).
 
 <Tip>
-  Locked leads unlock when your capacity goes up, for example after an upgrade or a leads add-on, oldest first. Deleting leads does not unlock others, and a new month does not unlock leads from earlier months.
+  Locked leads unlock when your capacity goes up, for example after an upgrade or a leads add-on, oldest first. Deleting leads does not unlock others, and your count starting again does not unlock leads that were locked before it.
 </Tip>
 
 ## What the numbers mean
 
 - **Workspaces:** how many you have. Every plan includes unlimited workspaces, so this reads like **2 used · Unlimited**.
 - **Live funnels:** funnels that are published, counted across all your workspaces.
-- **Leads / month:** funnel submissions received this month. The count resets on the first day of each calendar month (UTC, standard world time), not on your billing date.
+- **Leads / month:** funnel submissions received since your count last started. The count resets on your billing date, and the **Plan** page says the date, for example **Resets on October 14**. On a yearly plan it resets every month on that day of the month, or on the last day of a shorter month that does not have it. During a free trial it resets every month from the day the trial started.
 - **Team seats:** people in your organization who use a seat. See [Team seats](/workspaces/team-seats).
-- **AI credits / month:** credits used by AI features such as building or editing a funnel with AI and creating images. They reset each calendar month (UTC). During a free trial you can use 100 a month, even if the **Plan** page lists more. Point at the number in the plan badge menu to see why.
+- **AI credits / month:** credits used by AI features such as building or editing a funnel with AI and creating images. They reset on your billing date, like leads. During a free trial you can use 100 a month, even if the **Plan** page lists more, and they reset on the first day of each calendar month (UTC, standard world time). Point at the number in the plan badge menu to see why.
 
 Usage is counted for your whole organization, not for one workspace.
 
@@ -73,8 +73,11 @@ The status label at the top shows where you are:
   <Accordion title="I do not see Plan or Billing in my menu">
     Only Global Admins can see **Plan** and **Billing**. Ask your organization owner or another Global Admin, or ask them to give you the role.
   </Accordion>
+  <Accordion title="My leads counter did not reset on the first of the month">
+    Counts reset on your billing date, not on the first day of the month. The **Plan** page shows the date under **Leads / month** and **AI credits / month**, for example **Resets on October 14**. On a free trial, leads reset every month from the day the trial started, and AI credits on the first day of each calendar month (UTC).
+  </Accordion>
   <Accordion title="My leads counter reset even though I have not renewed">
-    Usage resets on the first day of each calendar month (UTC), so it can differ from your billing date.
+    A yearly plan renews once a year, but its leads and AI credits still reset every month, on the same day of the month as your billing date.
   </Accordion>
   <Accordion title="My AI credits show 100 but my plan includes more">
     During a free trial, AI credits are limited to 100 per month, whichever plan you picked. The plan badge menu shows this limit, while the **Plan** page may list your plan's full amount. The full allowance applies once you subscribe.
