@@ -60,6 +60,8 @@ The text uses the ad platform's own placeholders. When someone clicks your ad, M
     <img src="/images/integrations/ad-tracking-links/google-final-url-suffix.png" alt="The Tracking links panel on the Google tab, with the Final URL suffix text and the Copy button highlighted" width="1470" height="1048" loading="lazy" />
 
     Use **Final URL suffix**, not **Tracking template**. Google loads the tracking template in the background, so anything in it never reaches your funnel. Keep auto tagging on, so Google adds its own click ID.
+
+    In **Performance Max** campaigns, Google only sends the campaign ID, so those leads show the campaign but not the ad group or ad.
   </Step>
   <Step title="TikTok">
     1. On the **TikTok** tab, click **"Copy"**.
@@ -109,6 +111,9 @@ Run your ad, or open its preview, and submit your funnel with details you will r
   </Accordion>
   <Accordion title="A lead says the ad is unknown">
     The lead clicked an ad that does not carry the tracking text, or the text was added after the click. Add it to that ad. Leads that arrive after that show their ad IDs.
+  </Accordion>
+  <Accordion title="Google leads show the campaign but not the ad group or ad">
+    This is expected for **Performance Max** campaigns. Google only fills in the campaign ID there, and it does not send the ad group or the ad. On a lead, the **Ad details** card shows the **Campaign ID** and no ad group or ad. In **Test a link**, a missing **Ad group ID** and **Ad ID** is normal for these campaigns. For other campaign types, check that the text is in **Final URL suffix**.
   </Accordion>
   <Accordion title="Click IDs say Not saved">
     The visitor did not accept marketing cookies, so AskFunnel kept the campaign, ad set and ad IDs but not the platform's click ID. This is expected. See [Set up cookies and visitor consent](/funnel-settings/cookies-and-consent).
