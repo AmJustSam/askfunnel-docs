@@ -21,7 +21,8 @@ Build a flow that emails your leads on its own. A flow is a set of emails that s
 <Warning>
   - A flow only starts for leads who reach its trigger status after it is live. Leads that already have that status when you publish are not added, and each lead goes through a flow once.
   - Every email has a footer you cannot remove. It includes the lines "You signed up to receive emails via this funnel" and "If you no longer want to receive emails, unsubscribe here". Growth and above can turn off the AskFunnel branding: click the footer and switch off **Branding**.
-  - Each plan has a monthly email allowance: 1,000 on Starter, 3,000 on Growth, 6,000 on Scale and 20,000 on Enterprise. The allowance starts again on your billing date, and if you reach it, emails wait and go out then. During a free trial it starts again on the first day of each calendar month (UTC).
+  - Each plan has a monthly email allowance: 1,000 on Starter, 3,000 on Growth, 6,000 on Scale and 20,000 on Enterprise. It starts again on your billing date. If you reach it, your sequences pause and the emails wait. They are not lost. See [Email limits and paused sequences](#email-limits-and-paused-sequences).
+  - A free trial has two limits instead: 300 emails in total and 100 emails a day. See [Free trial email limits](#free-trial-email-limits).
 </Warning>
 
 ## Create a flow
@@ -80,6 +81,60 @@ Build a flow that emails your leads on its own. A flow is a set of emails that s
 
 Clicks and opens are counted only when you turn on click or open tracking for your sender's domain. See [Add and verify a sender email](/messages/custom-sender-email). To read each number, see [See whether your automated emails are delivered, opened and clicked](/messages/email-delivery-stats).
 
+## Email limits and paused sequences
+
+When a limit is reached, your sequences **pause** and the emails **wait**. Nothing fails and nothing is lost. The emails go out when the limit lifts.
+
+### Free trial email limits
+
+A free trial can send up to **300 emails in total** and up to **100 emails a day**. Team alerts count too, one for each person who gets the alert.
+
+- **At 100 emails in a day,** your sequences pause until midnight UTC (standard world time). They continue by themselves the next day.
+- **At 300 emails in total,** your sequences pause until you subscribe. They continue within a day of subscribing. See [Upgrade your plan](/billing/upgrade).
+
+### Monthly limit on a paid plan
+
+If you reach your plan's monthly email limit, your sequences pause until your billing date, when the count starts again. They also continue within a day of an upgrade that gives you more room. See [Check your plan and usage](/billing/plan-and-usage).
+
+### Where to see your usage and the warnings
+
+- **The plan badge.** Click it to see **Automated emails / month**, or **Trial emails** and **Trial emails today** on a free trial. A dot on the badge is orange from 80% of a limit and red when it is reached. See [Check your plan and usage](/billing/plan-and-usage).
+- **Warning emails.** The organization owner and every Global Admin get an email at 80% of the limit and another when it is reached, once for each period.
+- **The email flows page.** When emails wait for a limit, a banner appears above your flows. It says what is paused, how many emails wait and when they send. The button names the plan that has enough room. Only Global Admins see it.
+
+<img src="/images/messages/automated-emails/sequences-paused.png" alt="The email flows page of a paid plan, with a banner that says Email sequences are paused, how many emails will send and when, and an Upgrade to Scale button" width="1470" height="552" loading="lazy" />
+
+The banner reads:
+
+- **Email sequences are paused.** You reached the monthly limit. The button is **"Upgrade to Scale"**, or the plan that fits.
+- **Your free trial has sent its 300 emails.** Sequences are paused until you subscribe. The button is **"Subscribe to Growth"**, or the plan you are trying.
+- **Your free trial sent 100 emails today.** The waiting emails send tomorrow. There is no button, because it clears by itself.
+- **Emails are waiting to send.** The limit has lifted, for example after an upgrade, and the waiting emails go out within a day.
+
+On a free trial, a line above your flows also shows how many emails are left and the daily limit, for example **Free trial: 150 of 300 emails left, up to 100 a day.**
+
+<img src="/images/messages/automated-emails/trial-emails-line.png" alt="The email flows page of a free trial with the banner Your free trial sent 100 emails today and, under Email flows, the line Free trial: 150 of 300 emails left, up to 100 a day" width="1100" height="628" loading="lazy" />
+
+### Emails that wait more than 3 days
+
+If an email waits more than 3 days for a limit or a pause to end, AskFunnel skips it and the flow moves on to its next step. This way a lead never gets a follow-up that is days out of date. A skipped email does not count toward your limit. Team alerts are not skipped, they send late.
+
+### What a lead's timeline says
+
+Open a lead and look at **Email flows** in the **Profile** tab. A flow that waits for a limit or a pause shows **Paused** and the reason:
+
+- **Paused. Your free trial can send 100 emails a day. Sending continues tomorrow.**
+- **Paused. Your free trial has sent its 300 emails. Subscribe to keep your sequences running.**
+- **Paused. You reached this month's email limit. Sending continues on October 26, or within a day of an upgrade.**
+- **Paused. Your subscription is inactive. Sequences continue when you subscribe again.**
+- **Paused to protect your email reputation. Too many emails bounced. Contact support@askfunnel.com to start sending again.** It can also say **Too many emails were marked as spam.** See [Keep your emails out of spam](/messages/email-deliverability).
+
+<img src="/images/messages/automated-emails/lead-paused.png" alt="A lead's Email flows section with the flow Welcome sequence in the Paused state and the line Paused. Your free trial can send 100 emails a day. Sending continues tomorrow." width="1400" height="380" loading="lazy" />
+
+An email that waited more than 3 days shows **Skipped. It was more than 3 days late.** The next email sends as normal.
+
+<img src="/images/messages/automated-emails/lead-skipped.png" alt="A lead's Email flows section with the line Skipped. It was more than 3 days late., then Email sent and Delivered for the next email" width="1400" height="452" loading="lazy" />
+
 ## Edit or turn off a flow
 
 - **Edit a live flow:** a status of **Changes available** means you edited a live flow. Click **"Publish Flow"** again to send the changes live. Leads already in the flow finish with the version they started on.
@@ -101,7 +156,7 @@ Clicks and opens are counted only when you turn on click or open tracking for yo
     Click **"Add new sender"** in the list and finish verification. See [Add and verify a sender email](/messages/custom-sender-email).
   </Accordion>
   <Accordion title="A lead did not get the email">
-    Open the lead and check **Email flows** in **Profile**. People who unsubscribe are skipped automatically, and so are addresses that bounced or marked a message as spam. Other common reasons: the lead has no email address, the lead reached the status before the flow went live, the flow is off, your monthly allowance is used up, or sending was paused to protect deliverability (whether your emails reach the inbox). See [Keep your emails out of spam](/messages/email-deliverability).
+    Open the lead and check **Email flows** in **Profile**. People who unsubscribe are skipped automatically, and so are addresses that bounced or marked a message as spam. Other common reasons: the lead has no email address, the lead reached the status before the flow went live, the flow is off, your monthly allowance or your free trial's limit is used up (the lead's **Email flows** says **Paused** and why), the email waited more than 3 days and was skipped, or sending was paused to protect deliverability (whether your emails reach the inbox). See [Keep your emails out of spam](/messages/email-deliverability).
   </Accordion>
   <Accordion title="My test email shows a different name">
     Test emails use sample details. The lead's name appears as Alex Example and other **@** fields show their fallback text.

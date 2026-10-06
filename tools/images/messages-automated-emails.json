@@ -50,5 +50,53 @@
       "--width",
       "1470"
     ]
+  },
+  {
+    "out": "images/messages/automated-emails/sequences-paused.png",
+    "src": "source/raw/messages/automated-emails/05-sequences-paused-paid.png",
+    "args": [
+      "--crop",
+      "0,98,1152,372",
+      "--width",
+      "1470",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/messages/automated-emails/trial-emails-line.png",
+    "src": "source/raw/messages/automated-emails/06-sequences-trial-daily-cap.png",
+    "args": [
+      "--crop",
+      "0,98,600,448",
+      "--width",
+      "1100",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/messages/automated-emails/lead-paused.png",
+    "src": "source/raw/messages/automated-emails/03-lead-paused-daily-cap.png",
+    "args": [
+      "--crop",
+      "0,0,888,200",
+      "--width",
+      "1400",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/messages/automated-emails/lead-skipped.png",
+    "src": "source/raw/messages/automated-emails/04-lead-skipped-late.png",
+    "args": [
+      "--crop",
+      "0,0,888,272",
+      "--width",
+      "1400",
+      "--radius",
+      "20"
+    ]
   }
 ]
