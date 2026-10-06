@@ -53,6 +53,26 @@ On a free trial, a full day of emails (100) shows an orange dot, not a red one. 
   </Step>
 </Steps>
 
+## See what each client used
+
+If you manage several clients, you probably keep one workspace for each of them. When your organization has more than one workspace, the **Plan** page has a **Usage by client** card under **Usage this period**. It shows how many leads, automated emails and AI credits each workspace used, so you can see where the usage of your plan went. Only Global Admins see it, like the rest of the **Plan** page.
+
+Each row is a workspace, with three numbers:
+
+- **Leads:** the leads the workspace received in the period. Leads that are locked because you reached your limit are not counted, like the **Leads / month** bar.
+- **Emails:** the automated emails the workspace sent in the period.
+- **AI credits:** the AI credits used in the workspace, such as a funnel build or an image.
+
+The last row, **Total**, adds the rows up. Two more rows appear when they are needed, so the AI credits add up to your bar: **Whole account** for credits used by your organization itself rather than in a workspace (a dictated note, for example), and **Deleted workspaces** for credits used in workspaces you have deleted since.
+
+A line above the table says which days it counts, for example **From September 25 until October 26**. It is the same period as the usage bars above it. During a free trial it says **Leads this month. Emails and AI credits for the whole trial.**
+
+<Note>
+  - Click **Last period** (next to **This period**) to see the month before. The switch only appears when there is something to show: a free trial has no earlier period, and neither does an organization that used nothing then.
+  - If you have more than 200 workspaces, the table lists the first 200 by name and says so under the table.
+  - The **Usage by client** card is not shown when you have one workspace, because there is nothing to split. A card that says **Nothing used yet this period** means no workspace has used anything yet.
+</Note>
+
 ## What happens when you reach a limit
 
 - **Leads.** At 80% of your monthly leads, a banner on the **Leads** page warns you that new leads lock when you reach the limit. Past the limit, a banner says how many leads are locked. Locked leads are saved but hidden, and they are not sent to your integrations or notifications. When they unlock, they are sent to your integrations automatically. See [What happens when you reach your monthly lead limit](/billing/monthly-lead-limit).
@@ -126,6 +146,15 @@ The status label at the top shows where you are:
   </Accordion>
   <Accordion title="I see a banner but no button">
     Only Global Admins can change the plan, so only they see the button. Everyone else sees **Ask a Global Admin to upgrade the plan.** (**Ask a Global Admin to subscribe.** on a free trial). Ask your organization owner or another Global Admin.
+  </Accordion>
+  <Accordion title="I do not see Usage by client">
+    The card shows for Global Admins when your organization has more than one workspace. Ask your organization owner or another Global Admin if you do not see **Plan** at all.
+  </Accordion>
+  <Accordion title="The totals are a little different from the bars above">
+    The bars count your whole organization as it stands now. The table adds up the workspaces, so a number can differ slightly: the AI credits bar includes credits held for a funnel build that is still running, and emails are counted by whole days, so the hours of the first day before your billing time are in the period.
+  </Accordion>
+  <Accordion title="I do not see Last period">
+    **Last period** only appears when there is something to show. A free trial has no earlier period, and a month in which nothing was used is not offered.
   </Accordion>
   <Accordion title="The numbers look higher than I expected">
     Limits include any add-ons you bought, and usage counts every workspace in your organization.
