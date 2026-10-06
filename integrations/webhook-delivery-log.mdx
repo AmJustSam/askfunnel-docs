@@ -127,6 +127,9 @@ When a lead fails for good, the webhook shows **Needs attention** with the reaso
   <Accordion title="A lead stays on Retrying">
     AskFunnel is waiting for the next planned try. Open the lead to read the reason and the time of **Next retry**. If you have already fixed the cause, you do not need to wait: click **"Retry"** once the lead shows **Failed**.
   </Accordion>
+  <Accordion title="A lead shows Failed with Your plan does not include this destination">
+    Your plan changed to one without webhooks after the lead was queued, so AskFunnel did not send it. Upgrade to Growth or above, then click **"Retry"** on the lead, or **"Retry failed"** for all of them.
+  </Accordion>
   <Accordion title="The Retry buttons are grayed out">
     Sending leads again needs the Growth plan or above. Point at the button to see **Upgrade to Growth to send these leads again.** Test rows have no **Retry** button.
   </Accordion>
