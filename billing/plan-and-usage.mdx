@@ -5,20 +5,35 @@ description: "See your plan, renewal date and how much of each limit you have us
 icon: "gauge-high"
 ---
 
-See how much room you have left for leads, live funnels, team seats and AI credits, so nothing stops you by surprise. You can check your plan and usage from the plan badge in the dashboard, or from the full **Plan** page.
+See how much room you have left for leads, live funnels, team seats, AI credits and automated emails, so nothing stops you by surprise. You can check your plan and usage from the plan badge in the dashboard, or from the full **Plan** page. AskFunnel also warns you before a limit is reached.
 
 **Before you start**, you need:
 
-- For a quick look, nothing. Anyone on your team can open the plan badge.
-- For the full **Plan** page and to change the plan, a Global Admin role (the organization owner, or anyone they gave that role to).
+- For a quick look, nothing. Anyone on your team can open the plan badge and see the warnings.
+- For the full **Plan** page and to change the plan, a Global Admin role (the organization owner, or anyone they gave that role to). Only Global Admins see the upgrade buttons.
 
 ## Quick view
 
 The plan badge sits in the top right corner of the dashboard, next to your profile picture. It shows your plan name, or the days left in your trial, for example **14d left**. Click it to see your plan and usage.
 
-<img src="/images/billing/plan-and-usage/plan-pill-menu.png" alt="The plan badge in the top bar, showing 14d left, and the menu that opens with the Growth plan, its usage and an Upgrade plan button" width="1470" height="880" />
+<img src="/images/billing/plan-and-usage/plan-pill-menu.png" alt="The plan badge in the top bar, highlighted, and the menu that opens with the Growth plan, one row for each limit including Automated emails, the day the counts start again and a Change plan button" width="1470" height="820" />
 
-The menu shows the plan name, its status (**Active subscription**, **N days left in trial** or **Grace period, upgrade now**) and one row for each limit. Under **Leads / month** and **AI credits / month**, a line says when that count starts again, for example **Resets on October 14**.
+The menu shows the plan name, its status (**Active subscription**, **N days left in trial** or **Grace period, upgrade now**) and one row for each limit, including **Automated emails / month**. A line at the bottom says when your counts start again, once for all of them, for example **Usage resets on October 14**. When the counts start on different days, as they do during a free trial, each row shows its own date, for example **Resets on October 14**.
+
+## Warnings before a limit is reached
+
+A small dot on the plan badge tells you when a limit needs attention, even while the menu is closed.
+
+- **Orange dot:** leads, AI credits or automated emails have used 80% or more of their limit.
+- **Red dot:** a limit is reached, or your email sequences are paused.
+
+Click the badge to see which row it is. A row that needs attention changes color and says what happens at the limit, for example **Close to the limit. Sequences pause at 3,000 emails.** Once the limit is reached it says **Limit reached. Sequences are paused.**
+
+<img src="/images/billing/plan-and-usage/usage-dot.png" alt="The plan badge with an orange dot and its menu open, where the Leads, AI credits and Automated emails rows are orange and each says what happens at the limit, the badge highlighted" width="1470" height="900" loading="lazy" />
+
+For automated emails, AskFunnel also emails the organization owner and every Global Admin when you reach 80% of the limit, and again when you reach it. Each email is sent once for the period. The subjects are **You have used 80% of this month's automated emails**, **Your email sequences are paused** and, on a free trial, **Your free trial has used 80% of its emails**.
+
+On a free trial, a full day of emails (100) shows an orange dot, not a red one. It clears by itself at midnight UTC and needs nothing from you.
 
 ## Full view on the Plan page
 
@@ -30,11 +45,11 @@ The menu shows the plan name, its status (**Active subscription**, **N days left
     <img src="/images/billing/plan-and-usage/profile-menu.png" alt="The menu under your profile picture with Plan highlighted" width="1100" height="1130" loading="lazy" />
   </Step>
   <Step title="Read your plan and usage">
-    At the top you see your plan name, **Billed monthly** or **Billed yearly**, a status label and a date. Under **Usage this period**, each limit has a bar that fills as you use it. The bar turns orange when you have used 90% or more. Under **Leads / month** and **AI credits / month**, a line says when that count starts again, for example **Resets on October 14**.
+    At the top you see your plan name, **Billed monthly** or **Billed yearly**, a status label and a date. Under **Usage this period**, each limit has a bar that fills as you use it. The bar turns orange when you have used 80% or more, and red when the limit is reached. Under **Leads / month**, **AI credits / month** and **Automated emails / month**, a line says when that count starts again, for example **Resets on October 14**. The **Automated emails / month** row also says what happens at the limit once you are close to it.
 
     If you bought extra capacity, it is listed under **Add-ons**, for example **+200 leads/mo**.
 
-    <img src="/images/billing/plan-and-usage/plan-page.png" alt="The Plan page on a free trial, with the Growth plan, the date the trial ends and usage bars for live funnels, leads, team seats and AI credits" width="2000" height="1315" loading="lazy" />
+    <img src="/images/billing/plan-and-usage/plan-page.png" alt="The Plan page on a paid plan, with the Growth plan, its renewal date and usage bars for workspaces, live funnels, leads, team seats, AI credits and automated emails" width="1662" height="1322" loading="lazy" />
   </Step>
 </Steps>
 
@@ -42,9 +57,23 @@ The menu shows the plan name, its status (**Active subscription**, **N days left
 
 - **Leads.** At 80% of your monthly leads, a banner on the **Leads** page warns you that new leads lock when you reach the limit. Past the limit, a banner says how many leads are locked. Locked leads are saved but hidden, and they are not sent to your integrations or notifications. When they unlock, they are sent to your integrations automatically. See [What happens when you reach your monthly lead limit](/billing/monthly-lead-limit).
 - **Live funnels and team seats.** A window titled **You've reached your [plan] plan limit** appears with **"Upgrade plan"** and **"Not now"**. Funnels you already published keep running, but you cannot publish a new funnel or publish changes until you are under the limit. The same goes for adding team members.
-- **AI credits.** AI features pause once your credits run out, until your credits reset or until you add capacity. See [How AI credits work](/billing/ai-credits).
+- **AI credits.** AI features pause once your credits run out, until your credits reset or until you add capacity. A banner under the top bar says **AI is paused.** and when your credits renew. See [How AI credits work](/billing/ai-credits).
+- **Automated emails.** Your email sequences pause and the emails wait. They are not lost. A banner under the top bar says **Email sequences are paused.**, how many emails are waiting and when they send. See [Email limits and paused sequences](/messages/automated-emails#email-limits-and-paused-sequences).
 
 To add capacity, click **"Change plan"**, then see [Upgrade your plan](/billing/upgrade).
+
+## The banner under the top bar
+
+When automated emails or AI credits reach their limit, one banner appears under the top bar. You cannot close it. It goes away by itself when the limit no longer holds anything.
+
+- **The words** say what is paused, how many emails are waiting and when they send.
+- **The button** names the plan that has enough room, for example **"Upgrade to Scale"**. On a free trial it names the plan you are trying when that plan has enough room, for example **"Subscribe to Growth"**.
+- **Members who are not Global Admins** see **Ask a Global Admin to upgrade the plan.** instead of the button, or **Ask a Global Admin to subscribe.** on a free trial.
+- **If two limits are reached,** you see the first one, with **and 1 more** next to it. Click it to open the **Plan** page.
+
+<img src="/images/billing/plan-and-usage/usage-banner.png" alt="The top bar with a red dot on the plan badge, and under it a banner that says Email sequences are paused, with the number of waiting emails, the date they send and an Upgrade to Scale button, highlighted" width="1470" height="410" loading="lazy" />
+
+A free trial's full day of emails has no banner here. It is shown on the email sequences pages only, without a button.
 
 <Tip>
   Locked leads unlock when your capacity goes up, for example after an upgrade or a leads add-on, oldest first. Deleting leads does not unlock others, and your count starting again does not unlock leads that were locked before it.
@@ -57,6 +86,14 @@ To add capacity, click **"Change plan"**, then see [Upgrade your plan](/billing/
 - **Leads / month:** funnel submissions received since your count last started. The count resets on your billing date, and the **Plan** page says the date, for example **Resets on October 14**. On a yearly plan it resets every month on that day of the month, or on the last day of a shorter month that does not have it. During a free trial it resets every month from the day the trial started.
 - **Team seats:** people in your organization who use a seat. See [Team seats](/workspaces/team-seats).
 - **AI credits / month:** credits used by AI features such as building or editing a funnel with AI and creating images. They reset on your billing date, like leads. During a free trial you can use 100 a month, even if the **Plan** page lists more, and they reset on the first day of each calendar month (UTC, standard world time). Point at the number in the plan badge menu to see why.
+- **Automated emails / month:** emails sent by your email flows since your count last started, including team alerts, where each person who gets an alert counts as one. The count resets on your billing date, like leads. If you reach it, your sequences pause until then, or within a day of an upgrade.
+
+A free trial has two email rows instead, because a trial is limited in total and per day:
+
+- **Trial emails:** the emails sent during the whole trial, out of 300. This count never starts again. Subscribe to keep your sequences running.
+- **Trial emails today:** the emails sent today, out of 100. It starts again at midnight UTC.
+
+<img src="/images/billing/plan-and-usage/trial-email-rows.png" alt="The bottom of the Plan page on a free trial, with the Trial emails row full at 300 of 300, the note Trial limit reached, and the Trial emails today row at 40 of 100, both rows highlighted" width="1662" height="448" loading="lazy" />
 
 Usage is counted for your whole organization, not for one workspace.
 
@@ -81,6 +118,12 @@ The status label at the top shows where you are:
   </Accordion>
   <Accordion title="My AI credits show 100 but my plan includes more">
     During a free trial, AI credits are limited to 100 per month, whichever plan you picked. The plan badge menu shows this limit, while the **Plan** page may list your plan's full amount. The full allowance applies once you subscribe.
+  </Accordion>
+  <Accordion title="There is a dot on my plan badge">
+    A usage limit needs attention. An orange dot means one is at 80% or more. A red dot means one is reached, or your email sequences are paused. Click the plan badge to see which row says so.
+  </Accordion>
+  <Accordion title="I see a banner but no button">
+    Only Global Admins can change the plan, so only they see the button. Everyone else sees **Ask a Global Admin to upgrade the plan.** (**Ask a Global Admin to subscribe.** on a free trial). Ask your organization owner or another Global Admin.
   </Accordion>
   <Accordion title="The numbers look higher than I expected">
     Limits include any add-ons you bought, and usage counts every workspace in your organization.

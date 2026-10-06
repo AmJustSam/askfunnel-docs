@@ -1,22 +1,22 @@
 [
   {
     "out": "images/billing/plan-and-usage/plan-pill-menu.png",
-    "src": "source/raw/billing/plan-and-usage/01-pill-menu-trial.png",
+    "src": "source/raw/billing/plan-and-usage/03-popover-ok.png",
     "args": [
       "--crop",
-      "2260,0,940,700",
+      "1220,0,940,640",
       "--ring",
-      "2878,28,192,72",
+      "1922,20,142,56",
       "--width",
       "1470"
     ]
   },
   {
     "out": "images/billing/plan-and-usage/plan-page.png",
-    "src": "source/raw/billing/plan-and-usage/02-plan-page-trial.png",
+    "src": "source/raw/billing/plan-and-usage/06-plan-page-paid.png",
     "args": [
       "--crop",
-      "880,160,1980,1240"
+      "545,140,1470,1150"
     ]
   },
   {
@@ -29,6 +29,40 @@
       "2555,659,593,88",
       "--width",
       "1100"
+    ]
+  },
+  {
+    "out": "images/billing/plan-and-usage/usage-dot.png",
+    "src": "source/raw/billing/plan-and-usage/04-popover-approaching.png",
+    "args": [
+      "--crop",
+      "1220,0,940,720",
+      "--ring",
+      "1920,14,146,60",
+      "--width",
+      "1470"
+    ]
+  },
+  {
+    "out": "images/billing/plan-and-usage/usage-banner.png",
+    "src": "source/raw/billing/plan-and-usage/05-banner-paused.png",
+    "args": [
+      "--crop",
+      "0,0,1152,230",
+      "--ring",
+      "904,128,210,64",
+      "--width",
+      "1470"
+    ]
+  },
+  {
+    "out": "images/billing/plan-and-usage/trial-email-rows.png",
+    "src": "source/raw/billing/plan-and-usage/07-plan-page-trial-cap.png",
+    "args": [
+      "--crop",
+      "545,1136,1470,276",
+      "--ring",
+      "590,1152,1380,210"
     ]
   }
 ]
