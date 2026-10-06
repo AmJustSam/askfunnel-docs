@@ -1,66 +1,74 @@
 [
-  {
-    "out": "images/billing/plan-and-usage/plan-pill-menu.png",
-    "src": "source/raw/billing/plan-and-usage/03-popover-ok.png",
-    "args": [
-      "--crop",
-      "2425,0,599,620",
-      "--ring",
-      "2785,22,138,52",
-      "--width",
-      "1100"
-    ]
-  },
-  {
-    "out": "images/billing/plan-and-usage/plan-page.png",
-    "src": "source/raw/billing/plan-and-usage/06-plan-page-paid.png",
-    "args": [
-      "--crop",
-      "975,136,1482,1157"
-    ]
-  },
-  {
-    "out": "images/billing/plan-and-usage/profile-menu.png",
-    "src": "source/raw/billing/billing-and-invoices/02-profile-menu.png",
-    "args": [
-      "--crop",
-      "2556,0,620,950",
-      "--ring",
-      "2555,659,593,88",
-      "--width",
-      "1100"
-    ]
-  },
-  {
-    "out": "images/billing/plan-and-usage/usage-dot.png",
-    "src": "source/raw/billing/plan-and-usage/04-popover-approaching.png",
-    "args": [
-      "--crop",
-      "2425,0,599,635",
-      "--ring",
-      "2785,15,142,59",
-      "--width",
-      "1100"
-    ]
-  },
-  {
-    "out": "images/billing/plan-and-usage/usage-banner.png",
-    "src": "source/raw/billing/plan-and-usage/05-banner-paused.png",
-    "args": [
-      "--crop",
-      "0,0,2304,295",
-      "--ring",
-      "1885,168,277,83"
-    ]
-  },
-  {
-    "out": "images/billing/plan-and-usage/trial-email-rows.png",
-    "src": "source/raw/billing/plan-and-usage/07-plan-page-trial-cap.png",
-    "args": [
-      "--crop",
-      "998,1164,1436,219",
-      "--ring",
-      "1013,1172,1406,204"
-    ]
-  }
+ {
+  "out": "images/billing/plan-and-usage/plan-pill-menu.png",
+  "src": "source/raw/billing/plan-and-usage/03-popover-ok.png",
+  "args": [
+   "--crop",
+   "2425,0,599,620",
+   "--ring",
+   "2785,22,138,52",
+   "--width",
+   "1100"
+  ]
+ },
+ {
+  "out": "images/billing/plan-and-usage/plan-page.png",
+  "src": "source/raw/billing/plan-and-usage/06-plan-page-paid.png",
+  "args": [
+   "--crop",
+   "975,136,1482,1157"
+  ]
+ },
+ {
+  "out": "images/billing/plan-and-usage/profile-menu.png",
+  "src": "source/raw/billing/billing-and-invoices/02-profile-menu.png",
+  "args": [
+   "--crop",
+   "2556,0,620,950",
+   "--ring",
+   "2555,659,593,88",
+   "--width",
+   "1100"
+  ]
+ },
+ {
+  "out": "images/billing/plan-and-usage/usage-dot.png",
+  "src": "source/raw/billing/plan-and-usage/04-popover-approaching.png",
+  "args": [
+   "--crop",
+   "2425,0,599,635",
+   "--ring",
+   "2785,15,142,59",
+   "--width",
+   "1100"
+  ]
+ },
+ {
+  "out": "images/billing/plan-and-usage/usage-banner.png",
+  "src": "source/raw/billing/plan-and-usage/05-banner-paused.png",
+  "args": [
+   "--crop",
+   "0,0,2304,295",
+   "--ring",
+   "1885,168,277,83"
+  ]
+ },
+ {
+  "out": "images/billing/plan-and-usage/trial-email-rows.png",
+  "src": "source/raw/billing/plan-and-usage/07-plan-page-trial-cap.png",
+  "args": [
+   "--crop",
+   "998,1164,1436,219",
+   "--ring",
+   "1013,1172,1406,204"
+  ]
+ },
+ {
+  "out": "images/billing/plan-and-usage/usage-by-client.png",
+  "src": "source/raw/billing/plan-and-usage/usage-by-client.png",
+  "args": [
+   "--crop",
+   "968,900,1490,565"
+  ]
+ }
 ]
