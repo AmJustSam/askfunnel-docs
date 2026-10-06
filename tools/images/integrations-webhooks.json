@@ -30,16 +30,6 @@
     ]
   },
   {
-    "out": "images/integrations/webhooks/send-test-menu.png",
-    "src": "source/raw/integrations/webhooks/02-row-menu-plain.png",
-    "args": [
-      "--crop",
-      "902,608,1396,653",
-      "--ring",
-      "1590,944,578,70"
-    ]
-  },
-  {
     "out": "images/integrations/webhooks/edit-advanced.png",
     "src": "source/raw/integrations/webhooks/04-edit-advanced.png",
     "args": [
@@ -59,6 +49,20 @@
       "954,304,1292,1192",
       "--pad",
       "89"
+    ]
+  },
+  {
+    "out": "images/integrations/webhooks/webhooks-list.png",
+    "src": "source/raw/integrations/webhooks/06-list-mixed.png",
+    "args": [
+      "--crop",
+      "791,469,1298,862",
+      "--ring",
+      "1944,684,76,70",
+      "--width",
+      "1470",
+      "--radius",
+      "24"
     ]
   }
 ]

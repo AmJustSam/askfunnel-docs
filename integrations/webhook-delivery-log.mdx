@@ -42,9 +42,9 @@ With the delivery log, you can:
     3. Under **Send leads to**, on the **Webhooks** card, click **"Settings"**.
     4. Click the three dots (**...**) on the webhook, then **"Delivery log"**. The window is titled **Delivery log** followed by the name of the webhook.
 
-    If a webhook shows **Needs attention**, click **"View delivery log"** under its name instead. To go back to your webhooks, click **"Webhooks"** at the top left of the log.
+    If a webhook shows **Needs attention**, its row says what went wrong in one line, with **"View delivery log"** under it. Click that instead. To go back to your webhooks, click **"Webhooks"** at the top left of the log.
 
-    <img src="/images/integrations/webhook-delivery-log/open-log.png" alt="The Webhooks window with one webhook row whose three dots menu is open, showing Edit, Send test, Delivery log and Delete, with Delivery log highlighted" width="1696" height="866" />
+    <img src="/images/integrations/webhook-delivery-log/open-log.png" alt="The Webhooks window with three webhooks, the three dots button of the first one highlighted, and the View delivery log link under the webhook that needs attention, highlighted" width="1470" height="1042" />
   </Step>
   <Step title="Read a row">
     Each row is one lead. From left to right you see:
@@ -112,7 +112,7 @@ When a lead fails for good, the webhook shows **Needs attention** with the reaso
 ## How do I know it is working?
 
 - A new lead shows at the top of the log with **Delivered**, and its details say **Delivered (200 OK).** or another success code.
-- The webhook in the list and its card show **On** or **Connected**, without **Needs attention**.
+- The webhook's row and its card show **Connected**, without **Needs attention**.
 - The lead appears in your receiving tool, for example in your Zap's run history.
 
 ## Troubleshooting

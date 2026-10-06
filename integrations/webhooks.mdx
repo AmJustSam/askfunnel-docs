@@ -64,7 +64,7 @@ With webhooks, you can:
     2. AskFunnel sends a sample lead named **AskFunnel Test** (test@askfunnel.test), built from your funnel's own questions. If your server accepts it, you see **Test delivered** and the status it answered with, for example **Test delivered (200 OK)**. The request contains `"test": true`, so your tool can tell it apart from a real lead.
     3. In your tool, use the test request to set up the next steps, for example to add a row in your CRM.
 
-    <img src="/images/integrations/webhooks/send-test-menu.png" alt="The webhook's three dots menu open, with Send test highlighted" width="1578" height="817" loading="lazy" />
+    <img src="/images/integrations/webhooks/webhooks-list.png" alt="The Webhooks window with three webhooks, each with its status, switch and three dots button, the three dots button of the first one highlighted" width="1470" height="1042" loading="lazy" />
 
     <Tip>
       A test is a real request to your URL. Your server or tool will receive it, so delete the test contact afterwards if you like.
@@ -72,7 +72,7 @@ With webhooks, you can:
   </Step>
   <Step title="Name it and add headers (optional)">
     1. Click the webhook's name to open **"Edit webhook"**.
-    2. **Name** is optional and only shown in AskFunnel. Without a name, the webhook is named after its host, for example hooks.zapier.com.
+    2. **Name (optional)** is only shown in AskFunnel. Without a name, the webhook is named after its host, for example hooks.zapier.com.
     3. Click **Advanced**. Under **Headers**, click **"Add header"** to send your own header (extra information sent with every request), for example **Authorization** with the value `Bearer your-token`. You can add up to 10. Values are hidden once saved. To change one, type a new value.
     4. The **Signing secret** is a private code your server can use to check that a request came from AskFunnel. It starts with whsec_. Click the eye icon to show it and the copy icon to copy it. You need it only if your server checks signatures. See [Verify the signature](/integrations/webhook-reference#verify-the-signature).
     5. Click **"Save"**.
@@ -88,6 +88,16 @@ With webhooks, you can:
 <Card title="For developers: payload, headers and signature" icon="code" href="/integrations/webhook-reference" horizontal>
   The exact request AskFunnel sends, how to verify its signature and which answers count as delivered.
 </Card>
+
+## Read the webhook list
+
+The **Webhooks** window lists every webhook of the funnel. A line at the top says **Every new lead is sent to each webhook that is on.** Each row shows:
+
+- **The name** and, under it, the host of its address.
+- **A status**, the same words as on the **Webhooks** card: **Connected** (it is on and sending), **Needs attention** (the last lead could not be sent), **Paused** (you turned it off) or **Not sending** (your plan does not include webhooks).
+- **A switch** to turn it on or off, and the three dots (**...**) menu with **Edit**, **Send test**, **Delivery log** and **Delete**.
+
+When a webhook needs attention, one line under its name says why, with **"View delivery log"** under it. At the bottom of the window, **"Add webhook"** is on the left and **"Close"** on the right. When **"Add webhook"** is grayed out, a line beside or under it says why. See [Troubleshooting](#troubleshooting).
 
 ## Build your automation
 
@@ -139,17 +149,17 @@ There is nothing to set up. UTM parameters are tags on your link (source, medium
     AskFunnel delivers each lead at least once. If your server was slow and AskFunnel retried, or you clicked **"Retry"**, the same lead arrives again with the same `webhook-id` header and the same `id`. Ignore a lead whose ID you have already handled. See [Retries](/integrations/webhook-reference#retries-and-what-counts-as-success).
   </Accordion>
   <Accordion title="The Webhooks card says Growth and above">
-    Webhooks are available on the Growth plan and above. Click **"Upgrade to Growth"** in the Webhooks settings, or see [Upgrade your plan](/billing/upgrade). If you had webhooks before, the card shows **Not sending**. Your webhooks and their settings are kept, and they start sending new leads again once your plan includes webhooks.
+    Webhooks are available on the Growth plan and above. Click **"Upgrade to Growth"** in the Webhooks settings, or see [Upgrade your plan](/billing/upgrade). If you had webhooks before, the card and each webhook's row show **Not sending**. Your webhooks and their settings are kept, and they start sending new leads again once your plan includes webhooks.
   </Accordion>
   <Accordion title="The Add webhook button is grayed out">
-    A funnel can have up to 10 webhooks. Delete one you do not use, or reuse an existing webhook.
+    A line beside or under the button says why. With 10 webhooks it says **You can add up to 10 webhooks.** Delete one you do not use, or reuse an existing webhook. If your plan does not include webhooks, it says **Upgrade to Growth to add a webhook.**
   </Accordion>
 </AccordionGroup>
 
 ## Manage the integration
 
-- **Send to several tools:** click **"Add webhook"** in the Webhooks settings to add another URL, up to 10.
-- **Pause one webhook:** turn off the switch on its row. Leads that arrive while it is paused are not sent later.
+- **Send to several tools:** click **"Add webhook"** at the bottom left of the Webhooks window to add another URL, up to 10.
+- **Pause one webhook:** turn off the switch on its row. Its status changes to **Paused**. Leads that arrive while it is paused are not sent later.
 - **Change a URL or a header:** click the webhook's name, edit it and click **"Save"**. Saved header values are kept only while the URL stays on the same website. If you point the webhook to a different website, enter the header values again.
 - **Change the signing secret:** in **"Edit webhook"**, open **Advanced** and click **"Rotate secret"**. Requests signed with the old secret will fail verification, so update your server right after.
 - **Delete a webhook:** click **"Delete webhook"** in **"Edit webhook"**, or **"Delete"** in the webhook's three dots menu. New leads stop being sent to it.

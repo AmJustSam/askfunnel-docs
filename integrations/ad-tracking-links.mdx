@@ -40,31 +40,33 @@ The text uses the ad platform's own placeholders. When someone clicks your ad, M
 
     <img src="/images/integrations/ad-tracking-links/tracking-links-card.png" alt="The Tracking group in Funnel Settings, Integrations, with the Tracking links card and its Get links button highlighted" width="2000" height="1001" />
 
+    The **Tracking links** window opens with one line of help and **"Test a link"** at the top right. Under it are the tabs **Meta**, **Google** and **TikTok**. Each tab has the text to paste, with **"Copy"** beside its label, and a short note. Click **"Close"** at the bottom when you are done.
+
     The text is the same for every funnel, so you only need to set it up once per ad account.
   </Step>
   <Step title="Facebook and Instagram (Meta)">
-    1. On the **Meta** tab, click **"Copy"**.
+    1. On the **Meta** tab, click **"Copy"** beside **URL parameters**.
     2. In Meta Ads Manager, open your ad and scroll to **Tracking**.
     3. Paste the text into **URL parameters**. Do not add it to the website URL.
     4. Publish the ad.
 
-    <img src="/images/integrations/ad-tracking-links/meta-url-parameters.png" alt="The Tracking links panel on the Meta tab, with the URL parameters text and the Copy button highlighted" width="1470" height="1048" loading="lazy" />
+    <img src="/images/integrations/ad-tracking-links/meta-url-parameters.png" alt="The Tracking links window on the Meta tab, with the URL parameters text and the Copy button beside its label highlighted" width="1470" height="1045" loading="lazy" />
 
     Meta adds its own click ID (`fbclid`) to every click, so it is not part of the text.
   </Step>
   <Step title="Google Ads">
-    1. On the **Google** tab, click **"Copy"**.
+    1. On the **Google** tab, click **"Copy"** beside **Final URL suffix**.
     2. In Google Ads, open **Admin**, then **Account settings**, and open **Tracking template**.
     3. Paste the text into **Final URL suffix** and save. You can also set it on one campaign, ad group or ad instead of the whole account.
 
-    <img src="/images/integrations/ad-tracking-links/google-final-url-suffix.png" alt="The Tracking links panel on the Google tab, with the Final URL suffix text and the Copy button highlighted" width="1470" height="1048" loading="lazy" />
+    <img src="/images/integrations/ad-tracking-links/google-final-url-suffix.png" alt="The Tracking links window on the Google tab, with the Final URL suffix text, the step that says to open Tracking template, and the Copy button beside the label highlighted" width="1470" height="1162" loading="lazy" />
 
     Use **Final URL suffix**, not **Tracking template**. Google loads the tracking template in the background, so anything in it never reaches your funnel. Keep auto tagging on, so Google adds its own click ID.
 
     In **Performance Max** campaigns, Google only sends the campaign ID, so those leads show the campaign but not the ad group or ad.
   </Step>
   <Step title="TikTok">
-    1. On the **TikTok** tab, click **"Copy"**.
+    1. On the **TikTok** tab, click **"Copy"** beside **Destination URL**.
     2. In TikTok Ads Manager, open your ad and go to **Ad details**.
     3. Add the text to the end of your **Destination URL**, after a question mark (**?**). If your URL already has a question mark, add the text after an ampersand (**&**) instead.
 
@@ -72,10 +74,11 @@ The text uses the ad platform's own placeholders. When someone clicks your ad, M
   </Step>
   <Step title="Test a link">
     1. Open your ad's preview in the ads manager and copy the link it opens.
-    2. In **Tracking links**, click **"Test a link"**, paste the link and click **"Check link"**.
+    2. At the top right of **Tracking links**, click **"Test a link"**. The window changes to **Test a link**, and you stay in the same window. Paste the link and click **"Check link"**.
     3. Check that **Campaign ID**, **Ad set ID** (or **Ad group ID**) and **Ad ID** show numbers.
+    4. To go back to the tabs, click **"Tracking links"** at the top left of the window.
 
-    <img src="/images/integrations/ad-tracking-links/test-a-link.png" alt="The Test a link tab with a checked Facebook ad link: a green message, the platform Meta, the campaign, ad set and ad IDs and the placement" width="1470" height="1248" loading="lazy" />
+    <img src="/images/integrations/ad-tracking-links/test-a-link.png" alt="The Test a link window with a checked Facebook ad link: a green message, the platform Meta, the campaign, ad set and ad IDs and the placement" width="1470" height="1240" loading="lazy" />
 
     If a value still shows a placeholder, such as `{{ad.id}}`, the platform did not fill it in. Test again with the link from the ad preview. A preview link may not have a click ID, because the platform only adds it to real clicks.
   </Step>

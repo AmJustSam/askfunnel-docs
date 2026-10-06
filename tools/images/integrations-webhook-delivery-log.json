@@ -1,12 +1,18 @@
 [
   {
     "out": "images/integrations/webhook-delivery-log/open-log.png",
-    "src": "source/raw/integrations/webhook-delivery-log/01-open-log.png",
+    "src": "source/raw/integrations/webhooks/06-list-mixed.png",
     "args": [
       "--crop",
-      "880,590,1500,690",
+      "791,469,1298,862",
       "--ring",
-      "1581,1011,593,88"
+      "1944,684,76,70",
+      "--ring",
+      "858,960,210,42",
+      "--width",
+      "1470",
+      "--radius",
+      "24"
     ]
   },
   {
