@@ -28,6 +28,7 @@ The text uses the ad platform's own placeholders. When someone clicks your ad, M
   - Only clicks on ads that carry the tracking text get ad IDs. Add it to every ad you want to track. Leads from before you added it show their UTM tags only, if they had any.
   - In Meta, changing the URL parameters of an ad that is already running can restart its ad set's learning phase. Add the text when you create an ad when you can.
   - Campaign, ad set and ad IDs are always saved. The platform's click ID (such as `fbclid` or `gclid`) is saved only when the visitor accepts marketing cookies, or when your funnel shows no cookie banner. See [Set up cookies and visitor consent](/funnel-settings/cookies-and-consent).
+  - Click IDs are removed from a lead 90 days after the visit that brought it. The campaign, ad set and ad IDs and the UTM tags stay with the lead for as long as the lead does.
   - The text adds UTM tags too, so you do not need separate UTM tags on these ads. See [Track campaigns with UTM links](/analytics/utm-tracking).
 </Warning>
 
@@ -96,7 +97,7 @@ The **Ad details** card shows:
 - **Clicked the ad:** how long before submitting the person clicked.
 - **First visit:** the ad or source that first brought the person in, when it is different from the last one.
 
-Click **"Show advanced"** to see which platforms sent a click ID.
+Click **"Show advanced"** to see which platforms sent a click ID. On a lead that is more than 90 days past its visit, **Click IDs** says **Removed after 90 days.** The ad details above it stay.
 
 <img src="/images/integrations/ad-tracking-links/lead-ad-details.png" alt="A lead's Tracking tab with the Source card showing Facebook and the campaign Spring buyers Austin, and the Ad details card highlighted with the campaign, ad set and ad IDs, the placement Instagram stories and the time the person clicked" width="1470" height="1920" loading="lazy" />
 
@@ -120,6 +121,9 @@ Run your ad, or open its preview, and submit your funnel with details you will r
   </Accordion>
   <Accordion title="Click IDs say Not saved">
     The visitor did not accept marketing cookies, so AskFunnel kept the campaign, ad set and ad IDs but not the platform's click ID. This is expected. See [Set up cookies and visitor consent](/funnel-settings/cookies-and-consent).
+  </Accordion>
+  <Accordion title="Click IDs say Removed after 90 days">
+    AskFunnel removes a lead's click IDs 90 days after the visit that brought it, so they do not stay on file longer than needed. The campaign, ad set and ad IDs and the UTM tags are kept. A lead's status can still be sent to Meta after that, matched by the lead's email and phone, but without the click.
   </Accordion>
   <Accordion title="Google leads show IDs where I expected names">
     Google has no placeholder for campaign or ad names, so the text sends the campaign ID and the ad ID in the UTM tags too. Use the IDs to find the campaign and the ad in Google Ads.
