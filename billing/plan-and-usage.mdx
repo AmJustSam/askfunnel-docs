@@ -59,11 +59,15 @@ If you manage several clients, you probably keep one workspace for each of them.
 
 Each row is a workspace, with three numbers:
 
-- **Leads:** the leads the workspace received in the period. Leads that are locked because you reached your limit are not counted, like the **Leads / month** bar.
+- **Leads:** the leads the workspace received in the period. A lead is counted under its workspace when it comes in, so deleting a lead does not move it to another row, and the number does not go down. Leads that are locked because you reached your limit are not counted, like the **Leads / month** bar.
 - **Emails:** the automated emails the workspace sent in the period.
 - **AI credits:** the AI credits used in the workspace, such as a funnel build or an image.
 
-The last row, **Total**, adds the rows up. Two more rows appear when they are needed, so the columns add up to your bars: **Whole account** for AI credits used by your organization itself rather than in a workspace (a dictated note, for example), and **Deleted workspaces** for the leads, emails and AI credits of workspaces you have deleted since.
+The last row, **Total**, adds the rows up. More rows appear when they are needed, so the columns add up to your bars:
+
+- **Whole account:** AI credits used by your organization itself rather than in a workspace (a dictated note, for example).
+- **Deleted workspaces:** the leads, emails and AI credits of workspaces you have deleted since. Only a workspace you deleted goes here, never a lead you deleted.
+- **Not attributed:** leads from a period that began before AskFunnel counted leads by workspace, which can only be placed when the lead still exists. The rest cannot be placed, because a lead you deleted looks the same as a lead of a workspace you deleted. A line under the table says so. Periods that begin from now on are counted by workspace as the leads come in, so they do not have this row.
 
 A line above the table says which days it counts, for example **From September 25 until October 26**. It is the same period as the usage bars above it. During a free trial it says **Leads this month. Emails and AI credits for the whole trial.**
 
@@ -107,7 +111,8 @@ A free trial's full day of emails has no banner here. It is shown on the email s
 - **Live funnels:** funnels that are published, counted across all your workspaces.
 - **Leads / month:** funnel submissions received since your count last started. The count resets on your billing date, and the **Plan** page says the date, for example **Resets on October 14**. On a yearly plan it resets every month on that day of the month, or on the last day of a shorter month that does not have it. During a free trial it resets every month from the day the trial started.
 - **Team seats:** people in your organization who use a seat. See [Team seats](/workspaces/team-seats).
-- **AI credits / month:** credits used by AI features such as building or editing a funnel with AI and creating images. They reset on your billing date, like leads. During a free trial you can use 100 in total, even if the **Plan** page lists more, and they do not reset. Point at the number in the plan badge menu to see why. Global Admins can see every use under **"View history"**.
+- **AI credits / month:** credits used by AI features such as building or editing a funnel with AI and creating images. They reset on your billing date, like leads. Global Admins can see every use under **"View history"**.
+- **Trial AI credits:** during a free trial this line replaces **AI credits / month**. You can use 100 in total, even if the **Plan** page lists more, and they do not reset, so the line has no reset date. Point at the number in the plan badge menu to see why.
 - **Automated emails / month:** emails sent by your email flows since your count last started, including team alerts, where each person who gets an alert counts as one. The count resets on your billing date, like leads. If you reach it, your sequences pause until then, or within a day of an upgrade.
 
 A free trial has two email rows instead, because a trial is limited in total and per day:
