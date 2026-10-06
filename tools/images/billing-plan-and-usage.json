@@ -4,11 +4,11 @@
     "src": "source/raw/billing/plan-and-usage/03-popover-ok.png",
     "args": [
       "--crop",
-      "1220,0,940,640",
+      "2425,0,599,620",
       "--ring",
-      "1922,20,142,56",
+      "2785,22,138,52",
       "--width",
-      "1470"
+      "1100"
     ]
   },
   {
@@ -16,7 +16,7 @@
     "src": "source/raw/billing/plan-and-usage/06-plan-page-paid.png",
     "args": [
       "--crop",
-      "545,140,1470,1150"
+      "975,136,1482,1157"
     ]
   },
   {
@@ -36,11 +36,11 @@
     "src": "source/raw/billing/plan-and-usage/04-popover-approaching.png",
     "args": [
       "--crop",
-      "1220,0,940,720",
+      "2425,0,599,635",
       "--ring",
-      "1920,14,146,60",
+      "2785,15,142,59",
       "--width",
-      "1470"
+      "1100"
     ]
   },
   {
@@ -48,11 +48,9 @@
     "src": "source/raw/billing/plan-and-usage/05-banner-paused.png",
     "args": [
       "--crop",
-      "0,0,1152,230",
+      "0,0,2304,295",
       "--ring",
-      "904,128,210,64",
-      "--width",
-      "1470"
+      "1885,168,277,83"
     ]
   },
   {
@@ -60,9 +58,9 @@
     "src": "source/raw/billing/plan-and-usage/07-plan-page-trial-cap.png",
     "args": [
       "--crop",
-      "545,1136,1470,276",
+      "998,1164,1436,219",
       "--ring",
-      "590,1152,1380,210"
+      "1013,1172,1406,204"
     ]
   }
 ]

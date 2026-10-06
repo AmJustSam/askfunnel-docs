@@ -56,11 +56,9 @@
     "src": "source/raw/messages/automated-emails/05-sequences-paused-paid.png",
     "args": [
       "--crop",
-      "0,98,1152,372",
-      "--width",
-      "1470",
-      "--radius",
-      "20"
+      "0,0,2304,620",
+      "--ring",
+      "1885,168,277,83"
     ]
   },
   {
@@ -68,11 +66,9 @@
     "src": "source/raw/messages/automated-emails/06-sequences-trial-daily-cap.png",
     "args": [
       "--crop",
-      "0,98,600,448",
-      "--width",
-      "1100",
-      "--radius",
-      "20"
+      "0,130,2304,480",
+      "--ring",
+      "10,385,740,110"
     ]
   },
   {

@@ -56,13 +56,11 @@
     "src": "source/raw/integrations/webhooks/06-list-mixed.png",
     "args": [
       "--crop",
-      "791,469,1298,862",
+      "1022,481,983,632",
       "--ring",
-      "1944,684,76,70",
+      "1890,630,60,55",
       "--width",
-      "1470",
-      "--radius",
-      "24"
+      "1470"
     ]
   }
 ]

@@ -42,11 +42,9 @@
     "src": "source/raw/integrations/ad-tracking-links/09-test-result.png",
     "args": [
       "--crop",
-      "12,10,1296,1060",
+      "1022,393,983,809",
       "--width",
-      "1470",
-      "--radius",
-      "22"
+      "1470"
     ]
   },
   {
