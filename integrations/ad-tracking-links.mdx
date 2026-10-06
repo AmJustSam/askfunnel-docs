@@ -99,6 +99,16 @@ The **Ad details** card shows:
 
 Click **"Show advanced"** to see which platforms sent a click ID. On a lead that is more than 90 days past its visit, **Click IDs** says **Removed after 90 days.** The ad details above it stay.
 
+## Send the ad details to your other tools
+
+The same ad details can go with every new lead to the tools you connect:
+
+- **Webhooks:** `attribution.platform` and `attribution.ads` in the request. See [Webhook payload and signature](/integrations/webhook-reference).
+- **HighLevel:** match **Ad platform**, **Campaign ID**, **Ad set ID**, **Ad ID** and **Placement** to contact fields. See [Send leads to HighLevel](/integrations/highlevel).
+- **Google Sheets:** five extra columns, under **Include UTM parameters, referrer and ad details**. See [Send your leads to Google Sheets](/integrations/google-sheets).
+
+They are sent only when the visitor allowed analytics cookies, the same rule as UTM tags. Click IDs are never sent to these tools.
+
 <img src="/images/integrations/ad-tracking-links/lead-ad-details.png" alt="A lead's Tracking tab with the Source card showing Facebook and the campaign Spring buyers Austin, and the Ad details card highlighted with the campaign, ad set and ad IDs, the placement Instagram stories and the time the person clicked" width="1470" height="1920" loading="lazy" />
 
 If a lead clicked an ad that does not carry the tracking text, the card says the platform but not the ad: **"This lead clicked a Meta ad, but we don't know which one."** Click **"Open tracking links"** in that message to set up your ads.

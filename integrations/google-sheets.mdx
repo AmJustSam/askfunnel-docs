@@ -54,7 +54,7 @@ With the Google Sheets integration, you can:
     1. Next to **Spreadsheet**, click **"Choose spreadsheet"**. Google Drive's file picker opens.
     2. Pick your spreadsheet. Spreadsheets in My Drive and in shared drives are both listed.
     3. Under **Tab**, choose the tab that should receive your leads.
-    4. **Include UTM parameters and referrer** is on by default. Turn it off if you do not want those columns.
+    4. **Include UTM parameters, referrer and ad details** is on by default. Turn it off if you do not want those columns.
 
     **"Send test row"** and **"Save"** turn on once a spreadsheet and a tab are chosen.
 
@@ -129,7 +129,7 @@ Each lead becomes one row. The columns are, in this order:
 4. **Funnel.** The name of the funnel.
 5. **Score.** The [lead score](/funnel-settings/lead-scoring).
 6. **Marketing cookies.** TRUE if the visitor accepted marketing cookies, FALSE if not.
-7. If **Include UTM parameters and referrer** is on: **UTM source**, **UTM medium**, **UTM campaign**, **UTM term**, **UTM content** and **Referrer**.
+7. If **Include UTM parameters, referrer and ad details** is on: **UTM source**, **UTM medium**, **UTM campaign**, **UTM term**, **UTM content**, **Referrer**, **Ad platform**, **Campaign ID**, **Ad set ID**, **Ad ID** and **Placement**. **Ad set ID** is the ad group ID for Google and TikTok.
 
 Your own columns are fine too. If your sheet already has a header that matches one of these (upper or lower case, extra spaces do not matter), for example **Email**, AskFunnel writes into that column. Headers it does not find are added to the right. You can move columns around, and columns you add yourself stay empty for new rows.
 
@@ -141,7 +141,9 @@ Your own columns are fine too. If your sheet already has a header that matches o
 
 ## Tracking where your leads come from
 
-There is nothing to set up. UTM parameters are tags on your link (source, medium, campaign, term and content) that show where a visit came from. When someone lands on your funnel, AskFunnel captures them and the referrer (the page they came from) automatically. If your funnel shows a cookie banner and the visitor declines analytics cookies, the UTM values are left empty. With **Include UTM parameters and referrer** on, they are written to the UTM columns and the **Referrer** column of each row.
+There is nothing to set up. UTM parameters are tags on your link (source, medium, campaign, term and content) that show where a visit came from. When someone lands on your funnel, AskFunnel captures them and the referrer (the page they came from) automatically. If your funnel shows a cookie banner and the visitor declines analytics cookies, the UTM values are left empty. With **Include UTM parameters, referrer and ad details** on, they are written to the UTM columns and the **Referrer** column of each row.
+
+Leads that come from ads with your [ad tracking links](/integrations/ad-tracking-links) also fill **Ad platform**, **Campaign ID**, **Ad set ID**, **Ad ID** and **Placement**. They follow the same cookie rule: they are left empty when the visitor declines analytics cookies. If your sheet already had the UTM columns, these five columns are added to the right with the next lead, like a new question.
 
 ## Manage the integration
 

@@ -122,7 +122,14 @@ Here is a sample lead from a funnel called Buyer inquiry. JSON is a standard tex
     },
     "referrer": "https://l.facebook.com/",
     "pageUrl": "https://summit-realty.askfunnel.com/buyer-inquiry",
-    "pageUrlWithUtm": "https://summit-realty.askfunnel.com/buyer-inquiry?utm_source=facebook&utm_medium=paid_social&utm_campaign=spring_buyers"
+    "pageUrlWithUtm": "https://summit-realty.askfunnel.com/buyer-inquiry?utm_source=facebook&utm_medium=paid_social&utm_campaign=spring_buyers",
+    "platform": "meta",
+    "ads": {
+      "campaignId": "120210000000001",
+      "adsetId": "120210000000002",
+      "adId": "120210000000003",
+      "placement": "instagram_stories"
+    }
   }
 }
 ```
@@ -140,9 +147,11 @@ Here is a sample lead from a funnel called Buyer inquiry. JSON is a standard tex
 | `answers` | Each question's text with the answer as text. Multiple choice answers are joined with commas. A repeated question text gets a suffix, such as `Budget (2)`. |
 | `fields` | The same answers with detail. `id` stays the same if you rename the question. `type` is the question type. `value` is the raw answer: text, a number, true or false, `null`, or a list of texts for multiple choice. `displayValue` is the answer as text. `displayValues` lists the option labels of a multiple choice answer. |
 | `consent` | `marketing` is whether the visitor accepted marketing cookies. `analytics` is `essential`, `analytics_granted` or `all_granted`. |
-| `attribution` | `utm` holds the UTM parameters that were present (keys such as `utm_source`), or `null`, which is also the case when the visitor declined analytics cookies. `referrer` is the page the visitor came from, or `null`. `pageUrl` and `pageUrlWithUtm` are the funnel page address, when available. |
+| `attribution` | `utm` holds the UTM parameters that were present (keys such as `utm_source`), or `null`, which is also the case when the visitor declined analytics cookies. `referrer` is the page the visitor came from, or `null`. `pageUrl` and `pageUrlWithUtm` are the funnel page address, when available. `platform` is the ad platform the lead came from (`meta`, `google`, `tiktok`, `microsoft`, `other` or `direct`), or `null`. `ads` holds the `campaignId`, `adsetId`, `adId` and `placement` of the ad. Each is `null` when the ad did not carry it, and `ads` is `null` when the lead has no ad details. `adsetId` is the ad group ID for Google and TikTok. |
 
-In a test, `test` is `true`, `lead.id` is `null`, `score` is `0`, `consent.marketing` is `false`, and `attribution.utm` and `attribution.referrer` are `null`. The answers are sample text built from your funnel's questions.
+`platform` and `ads` follow the same rule as `utm`: both are `null` when the visitor declined analytics cookies. Ad IDs are filled only for ads that carry your [ad tracking links](/integrations/ad-tracking-links). Click IDs such as `fbclid` and `gclid` are never sent.
+
+In a test, `test` is `true`, `lead.id` is `null`, `score` is `0`, `consent.marketing` is `false`, and `attribution.utm`, `attribution.referrer`, `attribution.platform` and `attribution.ads` are `null`. The answers are sample text built from your funnel's questions.
 
 <Tip>
   You can also copy a sample from AskFunnel. Before you add your first webhook, click the info icon next to **What we send**, then **"Copy sample"**.

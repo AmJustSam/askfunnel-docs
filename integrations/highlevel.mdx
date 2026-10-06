@@ -84,6 +84,22 @@ There is nothing to set up. UTM parameters are tags on your link (source, medium
 - They always appear in the answers note.
 - You can also match them to contact fields, for example **UTM source** to HighLevel's **Source** field.
 
+### Send the ad behind each lead
+
+When a lead comes from an ad that carries your [ad tracking links](/integrations/ad-tracking-links), AskFunnel knows its platform, campaign, ad set and ad. You can put them on the HighLevel contact:
+
+1. Create a text custom field in HighLevel for each one you want, for example **Campaign ID**, **Ad set ID** and **Ad ID**.
+2. In the GoHighLevel settings, click the refresh icon next to **Fields**, then click **"Add field"**.
+3. Under **Ad details** in the funnel field list, choose **Ad platform**, **Campaign ID**, **Ad set ID**, **Ad ID** or **Placement**, and match it to your HighLevel field. **Ad platform** can go to HighLevel's **Source** field.
+
+For the names, match **UTM campaign** (campaign name), **UTM term** (ad set name) and **UTM content** (ad name) the same way.
+
+<Note>
+  - Nothing changes until you match these fields. Existing setups keep sending exactly what they sent before.
+  - They are empty when the visitor declined analytics cookies or the lead did not come from a tracked ad. The field is left blank, and the lead is still delivered.
+  - HighLevel does not let other apps fill its built-in attribution section, so the ad details go into contact fields you choose.
+</Note>
+
 ## Start a HighLevel workflow for new leads
 
 1. In HighLevel, go to **Automation**, then **Workflows**, and click **"Create Workflow"**. Choose **"Start from Scratch"**.

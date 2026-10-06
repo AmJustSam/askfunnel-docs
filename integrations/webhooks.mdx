@@ -115,6 +115,8 @@ Zapier, Make and n8n each have a trigger that waits for a webhook, often called 
 
 There is nothing to set up. UTM parameters are tags on your link (source, medium, campaign, term and content) that show where a visit came from. When someone lands on your funnel, AskFunnel captures them and the referrer (the page they came from) automatically. They arrive in the `attribution` part of the request when the visitor allowed analytics cookies. If your funnel shows a cookie banner and the visitor declined analytics, the UTM fields are empty.
 
+For leads that come from ads with your [ad tracking links](/integrations/ad-tracking-links), the same part also holds the ad platform and the campaign, ad set and ad IDs (`attribution.platform` and `attribution.ads`). They follow the same cookie rule as the UTM fields.
+
 ## How do I know it is working?
 
 - The **Webhooks** card shows **Connected** and the address of your webhook, for example hooks.zapier.com. With several webhooks, it shows how many you have.
