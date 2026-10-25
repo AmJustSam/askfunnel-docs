@@ -1,11 +1,11 @@
 ---
 title: "Track lead and team activity in the activity log"
 sidebarTitle: "Activity log"
-description: "See every lead captured, status change, note and funnel update in one timeline, and search it."
+description: "See every lead captured, status change, note and funnel update in one timeline, then filter and search it."
 icon: "clock-rotate-left"
 ---
 
-See what your team did without asking, and check the history of a lead. The **Activity** page is a timeline of everything that happens in one funnel: new leads, status changes, tags, assignments, notes and funnel updates.
+See what your team did without asking, and check the history of a lead. The **Activity** tab is a timeline of everything that happens in one funnel: new leads, status changes, tags, assignments, notes, WhatsApp messages and funnel updates.
 
 **Before you start**, you need:
 
@@ -16,29 +16,49 @@ See what your team did without asking, and check the history of a lead. The **Ac
 <Warning>
   - Deleting a lead removes its earlier entries. Only a short "deleted a lead" line remains. See [Delete leads](/leads/delete-leads).
   - The log shows one funnel at a time, the one you opened. Open another funnel to see its log.
+  - Leads locked by your plan are not in the log, and their earlier entries are removed when they are locked. See [What happens when you reach your monthly lead limit](/billing/monthly-lead-limit).
 </Warning>
 
 ## Open the activity log
 
-Open your funnel from the **Funnels** page, then click **Activity** in the sidebar. The page is titled **Activity** and says "Every status change, note, and lead captured on this funnel."
+Open your funnel from the **Funnels** page, then click **Activity** in the tabs at the top of the page.
 
-Entries are grouped by day, newest first. Each one shows who did it, what they did and how long ago. Hover over the time to see the exact date and time. Actions done automatically, such as a lead arriving from your funnel, show a robot icon instead of a person.
+Entries are grouped by day (**Today**, **Yesterday**, then the weekday and date), newest first. Each one has a colored icon for the kind of event, a sentence that says who did what, and the time at the end. A person's entry shows their photo or initials. Actions done automatically, such as a lead arriving from your funnel, say **System**.
+
+Three or more leads that come in through the funnel on the same day fold into one row, such as **12 new leads came in through the funnel**, with the times they came in. Click it to open the leads in place.
 
 <img src="/images/analytics/activity-log/timeline.png" alt="The Activity Log with the search box above a timeline of new leads, status changes and notes" width="1582" height="1604" />
 
-## Search and open a lead
+Click a row to open it. A lead's row opens the lead's side panel on the same page. A WhatsApp message opens its chat. Rows about the funnel itself, or about a lead that is gone, do not open anything.
 
-- **Search:** type a word in **Search activities...** and press **Enter** or click the magnifier. For example, type "converted" to find every lead that reached that status, or type a lead's name to see its history. Matches are highlighted. Click the clear icon to go back to the full timeline.
-- **Open a lead:** click a lead's name (in blue) to open its side panel.
-- **See older activity:** click **Load more** at the bottom. New entries appear at the top on their own while you are not searching.
+## Filter and search
+
+Above the timeline there is a search box and two filters. All of them work on the entries already loaded, so the page answers at once.
+
+- **Search activity:** type a word, for example "converted" to find every lead that reached that status, or a lead's name to see its history. Matches are highlighted. If nothing matches, the page says **No matches for** your words, with **Clear search**.
+- **Type:** show only **Leads**, **Notes**, **Funnel** or **WhatsApp** entries. You can pick more than one.
+- **Person:** show only what chosen people did. The list has your team A to Z, then **System**.
+
+A number on the filter shows how many are on. With filters on and nothing to show, the page says **No activity matches these filters**, with **Clear filters**. On a phone, the filters are in one **Filters** button.
+
+## Search all activity
+
+The page loads the newest entries first, so a search only covers what is loaded. When you type a word, the last row says **Search all activity for** your word. Click it to search the whole log of the funnel, including older entries. It finds exact words first, then entries that mean the same thing, and shows them grouped by day. Change the words, or click **Clear search**, to go back to the timeline.
+
+If the search fails, the page says **Couldn't search activity.** with **Try again**. If you search very often, it asks you to wait: **Too many searches. Try again in a minute.**
+
+## See older activity
+
+Click **Load more** at the bottom of the timeline to load older entries. The button is hidden while you type a search. New entries appear at the top on their own.
 
 ## What is recorded
 
-- **New leads:** a lead **received** through your funnel, or a lead that was **imported**.
-- **Status changes:** the lead's old and new status side by side, for example **RECEIVED** to **MEETING**.
+- **New leads:** a lead that **came in through the funnel**, or that someone **added** or **imported**.
+- **Status changes:** the lead's old and new status side by side, as colored chips.
 - **Tag changes:** which tags were set on the lead.
 - **Assignments:** who was assigned to a lead or removed from it.
-- **Notes:** a note added, edited (with the text before and after) or deleted.
+- **Notes:** a note added, edited or deleted, with the note's words under the line.
+- **WhatsApp messages:** a new message from a lead, one entry for a run of messages in a row. It opens the chat.
 - **Deleted leads:** who deleted a lead. The entry does not show the lead's name.
 - **Funnel updates:** the funnel was created, published, unpublished or deleted.
 
