@@ -23,29 +23,29 @@
   },
   {
     "out": "images/getting-started/dashboard-tour/sidebar-bottom.png",
-    "src": "source/raw/getting-started/dashboard-tour/01-home-sidebar.png",
+    "src": "source/raw/getting-started/dashboard-tour/r2-home-sidebar.png",
     "args": [
       "--crop",
       "0,1400,520,400",
       "--ring",
-      "6,1452,498,227",
+      "6,1441,498,246",
       "--width",
       "900"
     ]
   },
   {
     "out": "images/getting-started/dashboard-tour/plan-menu.png",
-    "src": "source/raw/getting-started/dashboard-tour/02-plan-menu.png",
+    "src": "source/raw/getting-started/dashboard-tour/r2-plan-menu.png",
     "args": [
       "--crop",
-      "0,720,700,1080",
+      "0,1230,684,970",
       "--width",
       "1000"
     ]
   },
   {
     "out": "images/getting-started/dashboard-tour/account-menu.png",
-    "src": "source/raw/getting-started/sign-in/03-log-out-menu.png",
+    "src": "source/raw/getting-started/dashboard-tour/r2-account-menu.png",
     "args": [
       "--crop",
       "0,880,622,920",
@@ -67,7 +67,7 @@
   },
   {
     "out": "images/getting-started/dashboard-tour/phone-menu.png",
-    "src": "source/raw/getting-started/dashboard-tour/11-phone-menu.png",
+    "src": "source/raw/getting-started/dashboard-tour/r2-phone-menu.png",
     "args": [
       "--crop",
       "0,0,1170,2532",

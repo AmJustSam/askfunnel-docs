@@ -1,12 +1,12 @@
 [
   {
     "out": "images/getting-started/notifications/bell.png",
-    "src": "source/raw/getting-started/dashboard-tour/01-home-sidebar.png",
+    "src": "source/raw/getting-started/notifications/r2-home-bell.png",
     "args": [
       "--crop",
       "0,1400,520,400",
       "--ring",
-      "420,1706,68,68",
+      "418,1704,72,72",
       "--width",
       "900"
     ]
@@ -16,7 +16,7 @@
     "src": "source/raw/getting-started/notifications/r2-notifications-page.png",
     "args": [
       "--crop",
-      "570,20,1702,1504",
+      "570,20,1702,984",
       "--ring",
       "614,157,436,84",
       "--ring",
@@ -32,7 +32,7 @@
     "src": "source/raw/getting-started/notifications/r2-bell-list.png",
     "args": [
       "--crop",
-      "513,647,791,968",
+      "513,647,791,970",
       "--ring",
       "528,776,425,80",
       "--width",

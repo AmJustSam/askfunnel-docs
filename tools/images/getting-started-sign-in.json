@@ -31,7 +31,7 @@
   },
   {
     "out": "images/getting-started/sign-in/log-out-menu.png",
-    "src": "source/raw/getting-started/sign-in/03-log-out-menu.png",
+    "src": "source/raw/getting-started/dashboard-tour/r2-account-menu.png",
     "args": [
       "--crop",
       "0,880,622,920",
