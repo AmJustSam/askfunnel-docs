@@ -8,7 +8,7 @@
    "--ring",
    "3030,201,80,80",
    "--ring",
-   "2306,359,210,47",
+   "2296,358,240,58",
    "--width",
    "1470",
    "--radius",
@@ -17,7 +17,7 @@
  },
  {
   "out": "images/integrations/webhook-delivery-log/log-rows.png",
-  "src": "source/raw/integrations/webhook-delivery-log/01-log.png",
+  "src": "source/raw/integrations/webhook-delivery-log/r2-01-log.png",
   "args": [
    "--crop",
    "2224,16,960,804",

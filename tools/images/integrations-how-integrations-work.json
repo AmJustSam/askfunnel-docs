@@ -1,14 +1,16 @@
 [
  {
   "out": "images/integrations/how-integrations-work/integrations-menu.png",
-  "src": "source/raw/integrations/how-integrations-work/01-funnel-integrations.png",
+  "src": "source/raw/integrations/how-integrations-work/r2-01-integrations-menu.png",
   "args": [
    "--crop",
    "0,0,2260,1580",
    "--ring",
-   "616,152,222,66",
+   "614,150,226,70",
    "--ring",
-   "616,919,147,66"
+   "614,663,184,70",
+   "--ring",
+   "614,917,151,70"
   ]
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "out": "images/integrations/make/add-webhook.png",
-  "src": "source/raw/integrations/make/01-add-webhook.png",
+  "src": "source/raw/integrations/make/r2-01-add-webhook.png",
   "args": [
    "--crop",
    "2224,16,960,828",
@@ -17,7 +17,7 @@
  },
  {
   "out": "images/integrations/make/send-test.png",
-  "src": "source/raw/integrations/zapier/02-send-test-menu.png",
+  "src": "source/raw/integrations/make/r2-02-send-test-menu.png",
   "args": [
    "--crop",
    "2224,16,960,968",

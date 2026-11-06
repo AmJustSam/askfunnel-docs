@@ -1,7 +1,7 @@
 [
  {
   "out": "images/integrations/ad-tracking-links/tracking-links-card.png",
-  "src": "source/raw/integrations/how-integrations-work/01-funnel-integrations.png",
+  "src": "source/raw/integrations/ad-tracking-links/r2-01-integrations-tracking.png",
   "args": [
    "--crop",
    "576,903,1688,640",
@@ -39,7 +39,7 @@
  },
  {
   "out": "images/integrations/ad-tracking-links/test-a-link.png",
-  "src": "source/raw/integrations/ad-tracking-links/04-test-a-link.png",
+  "src": "source/raw/integrations/ad-tracking-links/r2-04-test-a-link.png",
   "args": [
    "--crop",
    "2224,16,960,945",
@@ -51,16 +51,16 @@
  },
  {
   "out": "images/integrations/ad-tracking-links/lead-ad-details.png",
-  "src": "source/raw/integrations/ad-tracking-links/06-lead-ad-details.png",
+  "src": "source/raw/integrations/ad-tracking-links/r2-06-lead-ad-details.png",
   "args": [
    "--crop",
-   "2642,0,1198,1740",
+   "1984,16,1200,1240",
    "--ring",
-   "2716,1132,1047,592",
+   "2004,696,1152,473",
    "--width",
    "1470",
    "--radius",
-   "20"
+   "30"
   ]
  }
 ]

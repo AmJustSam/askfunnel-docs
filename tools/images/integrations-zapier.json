@@ -17,7 +17,7 @@
  },
  {
   "out": "images/integrations/zapier/send-test.png",
-  "src": "source/raw/integrations/zapier/02-send-test-menu.png",
+  "src": "source/raw/integrations/zapier/r2-02-send-test-menu.png",
   "args": [
    "--crop",
    "2224,16,960,968",

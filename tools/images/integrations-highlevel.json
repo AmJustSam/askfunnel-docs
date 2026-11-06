@@ -1,7 +1,7 @@
 [
  {
   "out": "images/integrations/highlevel/connect-card.png",
-  "src": "source/raw/integrations/how-integrations-work/01-funnel-integrations.png",
+  "src": "source/raw/integrations/webhooks/r2-01-integrations-before.png",
   "args": [
    "--crop",
    "576,136,1688,511",
@@ -43,10 +43,10 @@
  },
  {
   "out": "images/integrations/highlevel/delivery-log.png",
-  "src": "source/raw/integrations/highlevel/04-delivery-log.png",
+  "src": "source/raw/integrations/highlevel/r2-04-delivery-log.png",
   "args": [
    "--crop",
-   "2224,16,960,776",
+   "2224,16,960,793",
    "--width",
    "1470",
    "--radius",
@@ -69,7 +69,7 @@
  },
  {
   "out": "images/integrations/highlevel/manage-accounts.png",
-  "src": "source/raw/integrations/highlevel/05-accounts-panel.png",
+  "src": "source/raw/integrations/highlevel/r2-05-accounts-panel.png",
   "args": [
    "--crop",
    "2224,16,960,608",

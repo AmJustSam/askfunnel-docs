@@ -1,7 +1,7 @@
 [
  {
   "out": "images/integrations/calendars/connect-calendar.png",
-  "src": "source/raw/integrations/calendars/01-workspace-integrations.png",
+  "src": "source/raw/integrations/calendars/r2-01-workspace-integrations.png",
   "args": [
    "--crop",
    "0,0,2260,1212",

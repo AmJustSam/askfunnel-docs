@@ -1,7 +1,7 @@
 [
  {
   "out": "images/integrations/meta-pixel/connect-card.png",
-  "src": "source/raw/integrations/how-integrations-work/01-funnel-integrations.png",
+  "src": "source/raw/integrations/webhooks/r2-01-integrations-before.png",
   "args": [
    "--crop",
    "576,903,1688,640",
@@ -11,7 +11,7 @@
  },
  {
   "out": "images/integrations/meta-pixel/pixel-id-unsaved.png",
-  "src": "source/raw/integrations/meta-pixel/03-pixel-id.png",
+  "src": "source/raw/integrations/meta-pixel/r2-03-pixel-id.png",
   "args": [
    "--crop",
    "2224,16,960,978",

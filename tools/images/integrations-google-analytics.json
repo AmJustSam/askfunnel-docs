@@ -1,7 +1,7 @@
 [
  {
   "out": "images/integrations/google-analytics/connect-card.png",
-  "src": "source/raw/integrations/how-integrations-work/01-funnel-integrations.png",
+  "src": "source/raw/integrations/webhooks/r2-01-integrations-before.png",
   "args": [
    "--crop",
    "576,903,1688,640",

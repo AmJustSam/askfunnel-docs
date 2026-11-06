@@ -64,7 +64,7 @@ With webhooks, you can:
     2. AskFunnel sends a sample lead named **AskFunnel Test** (test@askfunnel.test), built from your funnel's own questions. If your server accepts it, you see **Test delivered** and the status it answered with, for example **Test delivered (200 OK)**. The request contains `"test": true`, so your tool can tell it apart from a real lead.
     3. In your tool, use the test request to set up the next steps, for example to add a row in your CRM.
 
-    <img src="/images/integrations/webhooks/webhooks-list.png" alt="The Webhooks panel with a webhook that needs attention, showing its last error and View delivery log, with its switch and three dots button, the three dots button highlighted" width="1470" height="1148" loading="lazy" />
+    <img src="/images/integrations/webhooks/webhooks-list.png" alt="The Webhooks panel with one webhook row showing the status On, its switch and its three dots button, the three dots button highlighted" width="1470" height="1148" loading="lazy" />
 
     <Tip>
       A test is a real request to your URL. Your server or tool will receive it, so delete the test contact afterwards if you like.
@@ -124,7 +124,7 @@ For leads that come from ads with your [ad tracking links](/integrations/ad-trac
 - If your server cannot be reached, AskFunnel tries again automatically, as described in [Retries](/integrations/webhook-reference#retries-and-what-counts-as-success).
 - If something needs your attention, the webhook shows **Needs attention** with the reason, the row shows **Needs attention**, and the organization owner gets an email.
 
-<img src="/images/integrations/webhooks/delivery-log.png" alt="The webhook delivery log with delivered leads and one lead opened to show Delivered (200 OK)" width="1470" height="1352" loading="lazy" />
+<img src="/images/integrations/webhooks/delivery-log.png" alt="The webhook delivery log with delivered leads and one lead opened to show Delivered (200 OK)" width="1470" height="1148" loading="lazy" />
 
 ## Troubleshooting
 

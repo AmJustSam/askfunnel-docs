@@ -1,7 +1,7 @@
 [
  {
   "out": "images/integrations/webhooks/connect-card.png",
-  "src": "source/raw/integrations/how-integrations-work/01-funnel-integrations.png",
+  "src": "source/raw/integrations/webhooks/r2-01-integrations-before.png",
   "args": [
    "--crop",
    "576,136,1688,511",
@@ -41,17 +41,19 @@
  },
  {
   "out": "images/integrations/webhooks/delivery-log.png",
-  "src": "source/raw/integrations/webhooks/05-delivery-log.png",
+  "src": "source/raw/integrations/webhooks/r2-05-delivery-log.png",
   "args": [
    "--crop",
-   "954,304,1292,1192",
-   "--pad",
-   "89"
+   "2224,16,960,968",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
   ]
  },
  {
   "out": "images/integrations/webhooks/webhooks-list.png",
-  "src": "source/raw/integrations/webhooks/02-webhooks-list.png",
+  "src": "source/raw/integrations/webhooks/r2-02-webhooks-list.png",
   "args": [
    "--crop",
    "2224,16,960,968",

@@ -1,7 +1,7 @@
 [
  {
   "out": "images/integrations/google-sheets/connect-card.png",
-  "src": "source/raw/integrations/how-integrations-work/01-funnel-integrations.png",
+  "src": "source/raw/integrations/webhooks/r2-01-integrations-before.png",
   "args": [
    "--crop",
    "576,136,1688,511",
@@ -11,7 +11,7 @@
  },
  {
   "out": "images/integrations/google-sheets/settings-dialog.png",
-  "src": "source/raw/integrations/google-sheets/02-panel.png",
+  "src": "source/raw/integrations/google-sheets/r2-02-panel.png",
   "args": [
    "--crop",
    "2224,16,960,1541",
@@ -55,7 +55,7 @@
  },
  {
   "out": "images/integrations/google-sheets/manage-accounts.png",
-  "src": "source/raw/integrations/google-sheets/04-accounts-panel.png",
+  "src": "source/raw/integrations/google-sheets/r2-04-accounts-panel.png",
   "args": [
    "--crop",
    "2224,16,960,608",
