@@ -27,12 +27,12 @@
   },
   {
     "out": "images/funnels/branch-by-answer/destination-list.png",
-    "src": "source/raw/funnels/branch-by-answer/03-destination-list.png",
+    "src": "source/raw/funnels/branch-by-answer/r2-03-destination-list.png",
     "args": [
       "--crop",
-      "950,300,1300,1342",
+      "950,600,1300,1200",
       "--ring",
-      "1150,1022,1028,602",
+      "1149,1322,1028,450",
       "--radius",
       "16"
     ]

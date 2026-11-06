@@ -49,16 +49,18 @@
   },
   {
     "out": "images/funnels/images-video-icons/video-window.png",
-    "src": "source/raw/funnels/images-video-icons/05-video-window.png",
+    "src": "source/raw/funnels/images-video-icons/r2-05-video-window.png",
     "args": [
       "--crop",
-      "920,279,1360,472",
+      "962,615,1276,403",
       "--ring",
-      "988,401,1216,108",
+      "988,701,1216,108",
       "--ring",
-      "988,539,1216,96",
+      "988,841,1216,96",
       "--width",
-      "1560"
+      "1560",
+      "--radius",
+      "16"
     ]
   },
   {

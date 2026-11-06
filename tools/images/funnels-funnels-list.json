@@ -1,10 +1,10 @@
 [
   {
     "out": "images/funnels/funnels-list/page-overview.png",
-    "src": "source/raw/funnels/funnels-list/01-page-overview.png",
+    "src": "source/raw/funnels/funnels-list/r2-01-page-overview.png",
     "args": [
       "--crop",
-      "600,0,2512,1052",
+      "600,0,2512,920",
       "--ring",
       "2782,6,318,98",
       "--radius",
@@ -13,12 +13,12 @@
   },
   {
     "out": "images/funnels/funnels-list/unpublished-dot.png",
-    "src": "source/raw/funnels/funnels-list/02-unpublished-dot.png",
+    "src": "source/raw/funnels/funnels-list/r2-02-unpublished-dot.png",
     "args": [
       "--crop",
-      "600,560,2512,206",
+      "600,416,2512,190",
       "--ring",
-      "2012,598,306,124",
+      "2012,448,314,120",
       "--pad",
       "70",
       "--radius",

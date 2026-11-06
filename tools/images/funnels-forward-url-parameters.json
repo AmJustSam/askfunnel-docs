@@ -1,12 +1,12 @@
 [
   {
     "out": "images/funnels/forward-url-parameters/forward-rows.png",
-    "src": "source/raw/funnels/forward-url-parameters/01-forward-rows.png",
+    "src": "source/raw/funnels/forward-url-parameters/r2-01-forward-rows.png",
     "args": [
       "--crop",
-      "950,439,1300,922",
+      "950,739,1300,922",
       "--ring",
-      "976,801,1248,315",
+      "984,1107,1232,305",
       "--width",
       "1560"
     ]

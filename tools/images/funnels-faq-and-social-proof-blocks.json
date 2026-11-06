@@ -1,14 +1,14 @@
 [
   {
     "out": "images/funnels/faq-and-social-proof-blocks/faq-block.png",
-    "src": "source/raw/funnels/faq-and-social-proof-blocks/01-faq-block.png",
+    "src": "source/raw/funnels/faq-and-social-proof-blocks/r2-01-faq-block.png",
     "args": [
       "--crop",
-      "1500,160,980,1310",
+      "1180,236,1020,1184",
       "--ring",
-      "2339,708,96,96",
+      "2025,632,84,84",
       "--ring",
-      "2189,904,100,100",
+      "1873,802,92,92",
       "--width",
       "1500"
     ]
@@ -39,14 +39,14 @@
   },
   {
     "out": "images/funnels/faq-and-social-proof-blocks/logo-bar-block.png",
-    "src": "source/raw/funnels/faq-and-social-proof-blocks/04-logo-bar-block.png",
+    "src": "source/raw/funnels/faq-and-social-proof-blocks/r2-04-logo-bar-block.png",
     "args": [
       "--crop",
-      "0,128,2460,1238",
+      "0,128,2400,1427",
       "--ring",
-      "22,299,714,236",
+      "22,315,711,202",
       "--ring",
-      "22,1101,355,243"
+      "22,1094,354,243"
     ]
   }
 ]
