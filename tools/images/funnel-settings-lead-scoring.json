@@ -31,12 +31,12 @@
   },
   {
     "out": "images/funnel-settings/lead-scoring/leads-score-column.png",
-    "src": "source/raw/funnel-settings/lead-scoring/r2-10-leads-score-column.png",
+    "src": "source/raw/funnel-settings/lead-scoring/r2-12t-leads-score-column.png",
     "args": [
       "--crop",
-      "430,276,2162,1074",
+      "622,150,2168,1083",
       "--ring",
-      "2303,284,278,1062",
+      "2496,306,278,919",
       "--pad",
       "80",
       "--radius",

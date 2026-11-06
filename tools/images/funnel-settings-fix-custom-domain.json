@@ -15,7 +15,7 @@
   },
   {
     "out": "images/funnel-settings/fix-custom-domain/dns-hint.png",
-    "src": "source/raw/funnel-settings/custom-domain/r2-07-pending-checked.png",
+    "src": "source/raw/funnel-settings/custom-domain/r2-15-pending-checked.png",
     "args": [
       "--crop",
       "2226,18,956,1764",
@@ -31,16 +31,16 @@
   },
   {
     "out": "images/funnel-settings/fix-custom-domain/issue-status.png",
-    "src": "source/raw/funnel-settings/fix-custom-domain/r2-03-issue-status.png",
+    "src": "source/raw/funnel-settings/fix-custom-domain/r2-04-issue-status.png",
     "args": [
       "--crop",
-      "420,140,1640,620",
+      "600,140,1660,740",
       "--ring",
-      "1687,325,250,66",
+      "1878,583,250,66",
       "--ring",
-      "540,358,516,44",
+      "736,618,503,42",
       "--pad",
-      "80",
+      "60",
       "--radius",
       "20"
     ]
