@@ -1,7 +1,7 @@
 ---
 title: "See whether your automated emails are delivered, opened and clicked"
 sidebarTitle: "Email results"
-description: "Read the Sent, Delivered, Clicked, Opened and Bounced counts of each email, check a single lead, and see what your recipients see."
+description: "Read the sent, delivered, clicked, opened and bounced counts of each email, check a single lead, and see what your recipients see."
 icon: "envelope-open-text"
 ---
 
@@ -9,14 +9,14 @@ icon: "envelope-open-text"
   Available on: **all plans** (Starter, Growth, Scale and Enterprise).
 </Callout>
 
-Once your flow is live, every email in it shows how it is doing: how many were sent, how many arrived, how many got clicked and opened, and how many bounced. A bounce is an email that could not be delivered. You can also open one lead and see exactly what happened to the emails sent to them. This page explains each number, how to turn on clicks and opens, and what your recipients see at the bottom of every email.
+Once your flow is live, every email in it shows how it is doing: how many were sent, how many arrived, how many got clicked and opened, and how many bounced. A bounce is an email that could not be delivered. You can also open one lead and see exactly what happened to the messages sent to them. This page explains each number, how to turn on clicks and opens, and what your recipients see at the bottom of every email.
 
 With the results, you can:
 
-- **Check that your emails arrive.** Compare **Sent** with **Delivered**.
-- **See what gets attention.** **Clicked** and **Opened** show which emails your leads act on.
-- **Spot problems early.** A growing **Bounced** count points to wrong addresses.
-- **Follow one lead.** See each email, whether it arrived and what the lead did with it.
+- **Check that your emails arrive.** Compare **sent** with **delivered**.
+- **See what gets attention.** **clicked** and **opened** show which emails your leads act on.
+- **Spot problems early.** A growing **bounced** count points to wrong addresses.
+- **Follow one lead.** See each message, whether it arrived and what the lead did with it.
 
 **Before you start**, you need:
 
@@ -27,46 +27,45 @@ With the results, you can:
 ## Important to note
 
 <Warning>
-  - **Clicked** and **Opened** only count when tracking is on for your sender's domain. Without it they stay at zero or do not show. See [Turn on click and open tracking](/messages/custom-sender-email#turn-on-click-and-open-tracking).
-  - **Clicked** and **Opened** count emails, not clicks. An email that was opened five times counts once.
+  - **clicked** and **opened** only count when tracking is on for your sender's domain. Without it they stay at zero or do not show. See [Turn on click and open tracking](/messages/custom-sender-email#turn-on-click-and-open-tracking).
+  - **clicked** and **opened** count emails, not clicks. An email that was opened five times counts once.
   - Open counts are not exact. They use an invisible image, and some mail apps, such as Apple Mail, load it even when nobody opens the email.
-  - Numbers update as delivery reports come in, so a new email can show **Sent** first and **Delivered** a little later.
+  - Numbers update as delivery reports come in, so a new email can show **sent** first and **delivered** a little later.
 </Warning>
 
 ## Read the results in your flow
 
 <Steps>
   <Step title="Open your flow">
-    1. From your main dashboard, find the funnel. Click the three small dots (**...**) on its row, then click **"Edit Funnel"**.
-    2. At the top, next to the funnel name, click the **Funnel** button and choose **"Flows"**.
-    3. Choose your flow in the list on the left.
+    1. In the sidebar, click **Funnels** and open your funnel. Click **Edit funnel** in the funnel's menu.
+    2. At the top, next to the funnel's name, click the **Funnel** button and choose **"Flows"**.
+    3. Choose your flow in the **Flows** list on the left.
 
-    At the top of the flow, a line shows how many leads went through it, for example **12 enrolled · 3 active · 9 completed**.
+    Above the **Trigger** card, a line shows how many leads went through the flow, for example **3 enrolled · 0 active · 3 completed**.
+
+    <img src="/images/messages/email-delivery-stats/flow-summary.png" alt="The top of a flow with the line 3 enrolled, 0 active, 3 completed above the Trigger card, the line highlighted" width="1378" height="520" />
   </Step>
-  <Step title="Read the line under each subject">
-    Under the subject of each email you see its counts, for example **Sent 12 · Delivered 11 · Clicked 3 · Opened 7 · Bounced 1**. Before the first send, the line says **No sends yet**. If **Bounced** is above zero, it turns red.
+  <Step title="Read the line under each email">
+    At the bottom of each email card you see its counts, for example **3 sent**, **2 delivered**, **1 clicked**, **1 opened** and **0 bounced**. Before the first send, the line says **No sends yet**. If **bounced** is above zero, it turns red. **opened** shows only when open tracking is on.
 
-    <img src="/images/messages/email-delivery-stats/stats-line.png" alt="One email card in the flow editor with the subject Thanks for your interest in selling with Summit Realty Group and, under it, the line Sent 12, Delivered 11, Clicked 3, Opened 7, Bounced 1, with Bounced in red, the stats line highlighted" width="1560" height="440" />
-
-    <img src="/images/messages/email-delivery-stats/flow-summary.png" alt="The top of the flow editor with the line 12 enrolled, 3 active, 9 completed above the Trigger card, the summary line highlighted" width="1400" height="580" loading="lazy" />
+    <img src="/images/messages/email-delivery-stats/stats-line.png" alt="The foot of one email card with the line 3 sent, 2 delivered, 1 clicked, 1 opened, 0 bounced, highlighted" width="1378" height="425" loading="lazy" />
   </Step>
   <Step title="Turn on tracking for clicks and opens (optional)">
-    If **Clicked** stays at zero, or **Opened** is missing, click tracking or open tracking is off. In **Workspace Settings**, open **Senders**, find your domain and turn on **Click tracking**. After that, an **Open tracking** switch appears. The full steps are in [Add and verify a sender email](/messages/custom-sender-email#turn-on-click-and-open-tracking). **Opened** shows once open tracking is on for any domain of your workspace.
+    If **clicked** stays at zero, or **opened** is missing, click tracking or open tracking is off. In the sidebar, click **Settings**, then **Senders**. Open your domain and turn on **Click tracking**. After that, an **Open tracking** switch appears. The full steps are in [Add and verify a sender email](/messages/custom-sender-email#turn-on-click-and-open-tracking). **opened** shows once open tracking is on for any domain of your workspace.
   </Step>
   <Step title="Check one lead">
-    Open the lead from your funnel's **Leads** page and look at **Email flows** in the **Profile** tab. Each flow shows its state, **Active**, **Waiting**, **Paused**, **Completed**, **Failed** or **Cancelled**, and these lines for every email:
+    Open the lead from your funnel's **Leads** page and click the **Messages** tab. It lists every flow the lead is in, newest first, with the flow's state and the messages it sent.
 
-    - **Email sent**
-    - **Delivered**
-    - **Opened** and **Clicked**, when tracking is on
-    - **Bounced**, or **Bounced (temporary)** when the problem may pass
-    - **Marked as spam**, when the person reported your email
-    - **Waiting until**, with the time the next email goes out
-    - **Paused**, with the reason, for example **Paused. Your free trial can send 100 emails a day. Sending continues tomorrow.** This is a send limit or a paused account. See [Email limits and paused sequences](/messages/automated-emails#email-limits-and-paused-sequences).
-    - **Paused to protect your email reputation**, with the reason and **Contact support@askfunnel.com to start sending again.** See [Keep your emails out of spam](/messages/email-deliverability).
-    - **Skipped. It was more than 3 days late.**, when an email waited more than 3 days and the flow moved on
+    <img src="/images/messages/email-delivery-stats/lead-messages.png" alt="A lead's Messages tab with the flow New lead follow-up opened, showing the email Your free home valuation is ready with its delivered mark, the Messages tab highlighted" width="1368" height="800" loading="lazy" />
 
-    <img src="/images/messages/email-delivery-stats/lead-email-flows.png" alt="A lead's Profile tab scrolled to the Email flows section, showing the flow New lead follow-up in the Waiting state with the lines Email sent, Delivered, Opened and Clicked with times and Waiting until with a date, the Email flows section highlighted" width="1500" height="650" loading="lazy" />
+    - **The switch** at the top shows **All**, **Email** or **WhatsApp** messages. A flow that has finished is one folded row, such as **Completed · 1 message**. Click it to open it.
+    - **The flow's state** is **Running**, **Waiting**, **Paused**, **Completed**, **Failed**, **Stopped** or **Not started**. A paused flow says why, for example **Your free trial can send 100 emails a day. Sending continues tomorrow.** See [Email limits and paused sequences](/messages/automated-emails#email-limits-and-paused-sequences).
+    - **Each message** shows its subject, the channel and when it was sent. A mark at the end of the row says how far it got. Hover over it for its word: **Sent**, **Delivered**, **Opened** or **Clicked**.
+    - **A problem keeps its word:** **Bounced**, or **Bounced (temporary)** when the problem may pass, **Marked as spam** when the person reported your email, or **Failed**.
+    - **Waits** show as **Wait 1 day**, with **In 23 hours** while the lead is waiting and **Done** after.
+    - **Messages that did not go out** are grey. **Next** marks the one that goes next. **Skipped** says why: **More than 3 days late**, **Did not tick email updates**, **No phone number**, **Said stop** or **Got this flow in the last 24 hours**. **Not sent** means the flow stopped before that message.
+    - **A flow that stopped** says **Stopped** and who answered, for example "Sofia replied at 10:14 AM", or "your team replied".
+    - **A paused flow that is on hold to protect your sending** says **Too many emails bounced** or **Too many emails were marked as spam**. See [Keep your emails out of spam](/messages/email-deliverability).
   </Step>
 </Steps>
 
@@ -74,31 +73,31 @@ With the results, you can:
 
 | Count | What it means |
 |---|---|
-| **Sent** | Every email AskFunnel handed to the mail system for this message. It includes the emails counted in the next lines. |
-| **Delivered** | The recipient's mail server accepted the email. |
-| **Clicked** | Emails where the lead clicked a link at least once. |
-| **Opened** | Emails that were opened at least once. Only shows when open tracking is on. |
-| **Bounced** | Emails that could not be delivered, for example because the address does not exist. |
+| **sent** | Every email AskFunnel sent for this message. It includes the emails counted in the next lines. |
+| **delivered** | The recipient's mail server accepted the email. |
+| **clicked** | Emails where the lead clicked a link at least once. |
+| **opened** | Emails that were opened at least once. Only shows when open tracking is on. |
+| **bounced** | Emails that could not be delivered, for example because the address does not exist. |
 
-An email the recipient marked as spam counts in **Sent**, and the lead's history shows **Marked as spam**.
+An email the recipient marked as spam counts in **sent**, and the lead's history shows **Marked as spam**.
 
 ## What your recipients see
 
 At the bottom of every email, your leads see:
 
 - A small **AskFunnel** badge, unless you turned **Branding** off on the Growth plan or above. See [Remove the Made with AskFunnel branding](/funnel-settings/remove-branding).
-- The line **You signed up to receive emails via this funnel**, where **this funnel** links to your funnel.
-- The line **If you no longer want to receive emails, unsubscribe here**.
+- The line **You got this email because you filled in** and your funnel's name, which links to your funnel, followed by **Unsubscribe**.
+- The line with your business name and your business address.
 
-These two lines cannot be removed, because email rules require them.
+These lines cannot be removed, because email rules require them. Set your business address under **Settings**, **General**, **Business address**.
 
-When a lead clicks **unsubscribe here**, a page asks **Unsubscribe from these emails?** with an **Unsubscribe** button, and then confirms **You are unsubscribed**. Some mail apps also show their own unsubscribe button, which works in one click. From then on, AskFunnel sends no more emails from your workspace to that address, from any flow. Addresses that bounced or reported your email as spam are also skipped.
+When a lead clicks **Unsubscribe**, a page asks **Unsubscribe from these emails?** with an **Unsubscribe** button, and then confirms **You are unsubscribed**. Some mail apps also show their own unsubscribe button, which works in one click. From then on, AskFunnel sends no more emails from your workspace to that address, from any flow. Addresses that bounced or reported your email as spam are also skipped.
 
 ## How do I know it is working?
 
-- After the first send, the line under the subject shows numbers instead of **No sends yet**.
-- **Delivered** is close to **Sent**.
-- A lead's **Email flows** section shows **Email sent** and **Delivered**.
+- After the first send, the line under the email shows numbers instead of **No sends yet**.
+- **delivered** is close to **sent**.
+- A lead's **Messages** tab shows the email with a **Delivered** mark.
 
 ## Troubleshooting
 
@@ -107,25 +106,25 @@ When a lead clicks **unsubscribe here**, a page asks **Unsubscribe from these em
     Your flow is published but no lead has reached its trigger status since then. Leads that already had that status when you published are not added. See [Send automated emails to new leads](/messages/automated-emails).
   </Accordion>
   <Accordion title="I do not see any numbers under my emails">
-    The numbers only show for a flow that has been published at least once. Click **"Publish Flow"**, and check that your role can edit funnels.
+    The numbers only show for a flow that has been published at least once. Click **"Publish"**, and check that your role can edit funnels.
   </Accordion>
-  <Accordion title="Clicked is always 0">
-    Click tracking is off for your sender's domain, the email has no links, or nobody clicked yet. Turn on **Click tracking** in **Workspace Settings**, under **Senders**.
+  <Accordion title="clicked is always 0">
+    Click tracking is off for your sender's domain, the email has no links, or nobody clicked yet. Turn on **Click tracking** under **Settings**, **Senders**.
   </Accordion>
-  <Accordion title="Opened does not show">
-    **Opened** only appears when **Open tracking** is on for one of your sender domains. It can also be switched on only after click tracking is active. See [Add and verify a sender email](/messages/custom-sender-email#turn-on-click-and-open-tracking).
+  <Accordion title="opened does not show">
+    **opened** only appears when **Open tracking** is on for one of your sender domains. It can also be switched on only after click tracking is active. See [Add and verify a sender email](/messages/custom-sender-email#turn-on-click-and-open-tracking).
   </Accordion>
-  <Accordion title="Delivered is lower than Sent">
-    Some emails have not been confirmed yet, or they bounced. Check again after a few minutes. If **Bounced** is above zero, open the leads whose **Email flows** show **Bounced** and fix or delete those addresses.
+  <Accordion title="delivered is lower than sent">
+    Some emails have not been confirmed yet, or they bounced. Check again after a few minutes. If **bounced** is above zero, open the leads whose **Messages** tab shows **Bounced** and fix or delete those addresses.
   </Accordion>
   <Accordion title="Opens look too high">
-    Some mail apps, such as Apple Mail, load the tracking image without anyone reading the email. Use **Clicked** as the more reliable number.
+    Some mail apps, such as Apple Mail, load the tracking image without anyone reading the email. Use **clicked** as the more reliable number.
   </Accordion>
-  <Accordion title="A lead says Sending paused to protect deliverability">
-    AskFunnel paused sending to protect your sender reputation. See [Keep your emails out of spam](/messages/email-deliverability).
+  <Accordion title="A lead's flow says sending is on hold">
+    AskFunnel put sending on hold to protect your sender reputation. See [Keep your emails out of spam](/messages/email-deliverability).
   </Accordion>
   <Accordion title="Can I remove the unsubscribe line?">
-    No. The signup line and the unsubscribe line are required for email, so they always appear.
+    No. The reason line with **Unsubscribe**, and the line with your business address, are required for email, so they always appear.
   </Accordion>
 </AccordionGroup>
 

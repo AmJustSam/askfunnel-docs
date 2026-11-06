@@ -1,0 +1,48 @@
+[
+  {
+    "out": "images/messages/whatsapp-conversations/conversations.png",
+    "src": "source/raw/messages/whatsapp-conversations/01-conversations.png",
+    "args": [
+      "--crop",
+      "0,0,2570,1800",
+      "--ring",
+      "10,280,490,82",
+      "--ring",
+      "540,110,266,72"
+    ]
+  },
+  {
+    "out": "images/messages/whatsapp-conversations/chat-header.png",
+    "src": "source/raw/messages/whatsapp-conversations/01-conversations.png",
+    "args": [
+      "--crop",
+      "1190,0,1380,520",
+      "--ring",
+      "2086,6,462,76",
+      "--pad",
+      "89"
+    ]
+  },
+  {
+    "out": "images/messages/whatsapp-conversations/closed-window.png",
+    "src": "source/raw/messages/whatsapp-conversations/01-conversations.png",
+    "args": [
+      "--crop",
+      "1190,1610,1380,190",
+      "--ring",
+      "2210,1660,303,92",
+      "--pad",
+      "89"
+    ]
+  },
+  {
+    "out": "images/messages/whatsapp-conversations/template-picker.png",
+    "src": "source/raw/messages/whatsapp-conversations/02-template-picker.png",
+    "args": [
+      "--crop",
+      "1190,1400,1380,400",
+      "--pad",
+      "89"
+    ]
+  }
+]

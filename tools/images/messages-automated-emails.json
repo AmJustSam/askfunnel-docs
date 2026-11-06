@@ -1,98 +1,130 @@
 [
-  {
-    "out": "images/messages/automated-emails/flow-editor.png",
-    "src": "source/raw/messages/automated-emails/01-flow-editor.png",
-    "args": [
-      "--crop",
-      "0,0,2000,1800",
-      "--ring",
-      "34,366,200,72",
-      "--ring",
-      "1234,23,232,80",
-      "--pad",
-      "90"
-    ]
-  },
-  {
-    "out": "images/messages/automated-emails/automation-logic.png",
-    "src": "source/raw/messages/automated-emails/02-automation-logic.png",
-    "args": [
-      "--crop",
-      "354,688,1292,758",
-      "--ring",
-      "418,875,1164,100",
-      "--ring",
-      "386,1015,243,100",
-      "--pad",
-      "89"
-    ]
-  },
-  {
-    "out": "images/messages/automated-emails/add-file-block.png",
-    "src": "source/raw/messages/automated-emails/03-block-picker.png",
-    "args": [
-      "--crop",
-      "0,128,760,1040",
-      "--ring",
-      "384,930,344,210",
-      "--width",
-      "1470"
-    ]
-  },
-  {
-    "out": "images/messages/automated-emails/file-block-settings.png",
-    "src": "source/raw/messages/automated-emails/04-file-block-settings.png",
-    "args": [
-      "--crop",
-      "0,128,760,1090",
-      "--ring",
-      "20,444,716,96",
-      "--width",
-      "1470"
-    ]
-  },
-  {
-    "out": "images/messages/automated-emails/sequences-paused.png",
-    "src": "source/raw/messages/automated-emails/05-sequences-paused-paid.png",
-    "args": [
-      "--crop",
-      "0,0,2304,620",
-      "--ring",
-      "1885,168,277,83"
-    ]
-  },
-  {
-    "out": "images/messages/automated-emails/trial-emails-line.png",
-    "src": "source/raw/messages/automated-emails/06-sequences-trial-daily-cap.png",
-    "args": [
-      "--crop",
-      "0,130,2304,480",
-      "--ring",
-      "10,385,740,110"
-    ]
-  },
-  {
-    "out": "images/messages/automated-emails/lead-paused.png",
-    "src": "source/raw/messages/automated-emails/03-lead-paused-daily-cap.png",
-    "args": [
-      "--crop",
-      "0,0,888,200",
-      "--width",
-      "1400",
-      "--radius",
-      "20"
-    ]
-  },
-  {
-    "out": "images/messages/automated-emails/lead-skipped.png",
-    "src": "source/raw/messages/automated-emails/04-lead-skipped-late.png",
-    "args": [
-      "--crop",
-      "0,0,888,272",
-      "--width",
-      "1400",
-      "--radius",
-      "20"
-    ]
-  }
+ {
+  "out": "images/messages/automated-emails/flow-editor.png",
+  "src": "source/raw/messages/automated-emails/01-flow-editor.png",
+  "args": [
+   "--crop",
+   "0,128,2620,1300",
+   "--ring",
+   "16,470,726,76"
+  ]
+ },
+ {
+  "out": "images/messages/automated-emails/publish-control.png",
+  "src": "source/raw/messages/automated-emails/06-to-row-warning.png",
+  "args": [
+   "--crop",
+   "2060,0,1140,128",
+   "--ring",
+   "2810,18,184,90",
+   "--pad",
+   "89"
+  ]
+ },
+ {
+  "out": "images/messages/automated-emails/automation-logic.png",
+  "src": "source/raw/messages/automated-emails/02-trigger-window.png",
+  "args": [
+   "--crop",
+   "953,556,1294,688",
+   "--ring",
+   "994,709,1212,84",
+   "--ring",
+   "994,817,235,86",
+   "--pad",
+   "89"
+  ]
+ },
+ {
+  "out": "images/messages/automated-emails/audience-menu.png",
+  "src": "source/raw/messages/automated-emails/05-audience-menu.png",
+  "args": [
+   "--crop",
+   "1400,1050,1200,600",
+   "--ring",
+   "2430,1236,130,64",
+   "--pad",
+   "89"
+  ]
+ },
+ {
+  "out": "images/messages/automated-emails/to-row-warning.png",
+  "src": "source/raw/messages/automated-emails/06-to-row-warning.png",
+  "args": [
+   "--crop",
+   "1400,1040,1200,600",
+   "--ring",
+   "2312,1312,236,60",
+   "--pad",
+   "89"
+  ]
+ },
+ {
+  "out": "images/messages/automated-emails/add-file-block.png",
+  "src": "source/raw/messages/automated-emails/03-block-picker.png",
+  "args": [
+   "--crop",
+   "0,128,760,1040",
+   "--ring",
+   "384,930,344,210",
+   "--width",
+   "1470"
+  ]
+ },
+ {
+  "out": "images/messages/automated-emails/file-block-settings.png",
+  "src": "source/raw/messages/automated-emails/04-file-block-settings.png",
+  "args": [
+   "--crop",
+   "0,128,760,1090",
+   "--ring",
+   "28,452,704,84",
+   "--width",
+   "1470"
+  ]
+ },
+ {
+  "out": "images/messages/automated-emails/sequences-paused.png",
+  "src": "source/raw/messages/automated-emails/05-sequences-paused-paid.png",
+  "args": [
+   "--crop",
+   "0,0,2304,620",
+   "--ring",
+   "1885,168,277,83"
+  ]
+ },
+ {
+  "out": "images/messages/automated-emails/trial-emails-line.png",
+  "src": "source/raw/messages/automated-emails/06-sequences-trial-daily-cap.png",
+  "args": [
+   "--crop",
+   "0,130,2304,480",
+   "--ring",
+   "10,385,740,110"
+  ]
+ },
+ {
+  "out": "images/messages/automated-emails/lead-paused.png",
+  "src": "source/raw/messages/automated-emails/03-lead-paused-daily-cap.png",
+  "args": [
+   "--crop",
+   "0,0,888,200",
+   "--width",
+   "1400",
+   "--radius",
+   "20"
+  ]
+ },
+ {
+  "out": "images/messages/automated-emails/lead-skipped.png",
+  "src": "source/raw/messages/automated-emails/04-lead-skipped-late.png",
+  "args": [
+   "--crop",
+   "0,0,888,272",
+   "--width",
+   "1400",
+   "--radius",
+   "20"
+  ]
+ }
 ]

@@ -1,30 +1,26 @@
 [
   {
-    "out": "images/messages/whatsapp-template/template-setting.png",
-    "src": "source/raw/messages/whatsapp-template/01-funnel-settings-whatsapp.png",
+    "out": "images/messages/whatsapp-template/step-card.png",
+    "src": "source/raw/messages/whatsapp-flow-messages/01-whatsapp-step-top.png",
     "args": [
       "--crop",
-      "30,170,2070,625",
+      "1380,880,1200,820",
       "--ring",
-      "44,598,504,100",
+      "1743,924,182,60",
       "--pad",
-      "60",
-      "--max-width",
-      "2080"
+      "89"
     ]
   },
   {
-    "out": "images/messages/whatsapp-template/lead-panel-whatsapp.png",
-    "src": "source/raw/messages/whatsapp-template/02-lead-panel-whatsapp.png",
+    "out": "images/messages/whatsapp-template/editor-end.png",
+    "src": "source/raw/messages/whatsapp-flow-messages/03-whatsapp-step-end.png",
     "args": [
       "--crop",
-      "2040,0,1160,432",
+      "1380,186,1200,1064",
       "--ring",
-      "2648,200,96,96",
-      "--width",
-      "1470",
-      "--pad-y",
-      "80"
+      "1712,194,392,76",
+      "--pad",
+      "89"
     ]
   }
 ]

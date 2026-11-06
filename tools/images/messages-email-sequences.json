@@ -1,26 +1,26 @@
 [
   {
-    "out": "images/messages/email-sequences/add-email.png",
-    "src": "source/raw/messages/email-sequences/01-add-email.png",
+    "out": "images/messages/email-sequences/add-message.png",
+    "src": "source/raw/messages/email-sequences/01-add-message.png",
     "args": [
       "--crop",
-      "800,1250,1160,650",
+      "1370,1400,1250,392",
       "--ring",
-      "986,1655,788,116",
+      "1376,1518,1208,94",
       "--pad",
-      "155"
+      "89"
     ]
   },
   {
     "out": "images/messages/email-sequences/delay-card.png",
-    "src": "source/raw/messages/email-sequences/02-delay-card.png",
+    "src": "source/raw/messages/automated-emails/01-flow-editor.png",
     "args": [
       "--crop",
-      "800,1448,1160,472",
+      "1330,640,1300,300",
       "--ring",
-      "986,1652,784,260",
+      "1408,800,1144,92",
       "--pad",
-      "155"
+      "89"
     ]
   },
   {
@@ -28,11 +28,9 @@
     "src": "source/raw/messages/email-sequences/03-delay-modal.png",
     "args": [
       "--crop",
-      "350,798,1300,538",
-      "--ring",
-      "1430,1187,184,100",
+      "953,720,1294,360",
       "--pad",
-      "85"
+      "89"
     ]
   }
 ]

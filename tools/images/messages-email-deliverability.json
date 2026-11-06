@@ -4,9 +4,11 @@
     "src": "source/raw/messages/email-deliverability/01-subject-warning.png",
     "args": [
       "--crop",
-      "800,900,1160,430",
+      "1400,1436,1200,180",
+      "--ring",
+      "1606,1526,620,60",
       "--pad",
-      "155"
+      "89"
     ]
   }
 ]

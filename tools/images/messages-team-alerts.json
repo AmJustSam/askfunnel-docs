@@ -1,12 +1,12 @@
 [
   {
     "out": "images/messages/team-alerts/automation-logic.png",
-    "src": "source/raw/messages/team-alerts/01-automation-logic.png",
+    "src": "source/raw/messages/team-alerts/01-trigger-rule.png",
     "args": [
       "--crop",
-      "354,556,1292,1022",
+      "953,424,1294,952",
       "--ring",
-      "386,1147,243,100",
+      "992,683,1216,244",
       "--pad",
       "89"
     ]
@@ -16,11 +16,11 @@
     "src": "source/raw/messages/team-alerts/02-workspace-members.png",
     "args": [
       "--crop",
-      "790,780,1180,950",
+      "1390,1175,1230,570",
       "--ring",
-      "987,1087,938,98",
+      "1566,1240,988,92",
       "--pad",
-      "145"
+      "89"
     ]
   }
 ]

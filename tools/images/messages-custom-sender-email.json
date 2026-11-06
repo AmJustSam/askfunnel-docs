@@ -1,17 +1,50 @@
 [
-  {
-    "out": "images/messages/custom-sender-email/senders-tab.png",
-    "src": "source/raw/messages/custom-sender-email/01-senders-tab.png",
-    "args": ["--crop", "880,180,1320,1110", "--ring", "904,1145,1264,127", "--pad", "75"]
-  },
-  {
-    "out": "images/messages/custom-sender-email/free-email-error.png",
-    "src": "source/raw/messages/custom-sender-email/02-free-email-error.png",
-    "args": ["--crop", "954,506,1292,787", "--pad", "89"]
-  },
-  {
-    "out": "images/messages/custom-sender-email/dns-records.png",
-    "src": "source/raw/messages/custom-sender-email/03-dns-records.png",
-    "args": ["--crop", "954,304,1292,1192", "--ring", "1894,1353,320,98", "--pad", "89"]
-  }
+ {
+  "out": "images/messages/custom-sender-email/senders-tab.png",
+  "src": "source/raw/messages/custom-sender-email/01-senders-tab.png",
+  "args": [
+   "--crop",
+   "0,140,2260,500",
+   "--ring",
+   "16,506,484,76",
+   "--ring",
+   "630,296,1590,106",
+   "--pad",
+   "89"
+  ]
+ },
+ {
+  "out": "images/messages/custom-sender-email/free-email-error.png",
+  "src": "source/raw/messages/custom-sender-email/02-add-sender-panel.png",
+  "args": [
+   "--crop",
+   "2230,20,950,640",
+   "--pad",
+   "89"
+  ]
+ },
+ {
+  "out": "images/messages/custom-sender-email/domain-panel.png",
+  "src": "source/raw/messages/custom-sender-email/03-domain-panel.png",
+  "args": [
+   "--crop",
+   "2230,20,950,1140",
+   "--ring",
+   "2262,584,892,148",
+   "--pad",
+   "89"
+  ]
+ },
+ {
+  "out": "images/messages/custom-sender-email/dns-records.png",
+  "src": "source/raw/messages/custom-sender-email/03-dns-records.png",
+  "args": [
+   "--crop",
+   "954,304,1292,1192",
+   "--ring",
+   "1894,1353,320,98",
+   "--pad",
+   "89"
+  ]
+ }
 ]

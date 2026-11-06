@@ -1,0 +1,38 @@
+[
+  {
+    "out": "images/messages/connect-whatsapp/integrations-row.png",
+    "src": "source/raw/messages/connect-whatsapp/03-integrations-row.png",
+    "args": [
+      "--crop",
+      "590,510,1680,250",
+      "--ring",
+      "619,605,1612,140",
+      "--pad",
+      "89"
+    ]
+  },
+  {
+    "out": "images/messages/connect-whatsapp/connect-view.png",
+    "src": "source/raw/messages/connect-whatsapp/01-connect-view.png",
+    "args": [
+      "--crop",
+      "590,130,1680,1010",
+      "--ring",
+      "620,300,1608,136",
+      "--ring",
+      "616,965,400,94",
+      "--pad",
+      "89"
+    ]
+  },
+  {
+    "out": "images/messages/connect-whatsapp/connected.png",
+    "src": "source/raw/messages/connect-whatsapp/02-connected.png",
+    "args": [
+      "--crop",
+      "590,130,1680,540",
+      "--pad",
+      "89"
+    ]
+  }
+]

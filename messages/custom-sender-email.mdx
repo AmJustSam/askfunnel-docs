@@ -16,47 +16,53 @@ The sender is the from address. AskFunnel sends only from an address on your own
 ## Add a sender
 
 <Steps>
-  <Step title="Open the Senders tab">
-    1. Go to your **Workspaces** page, click the three dots on the workspace's row and choose **"Workspace settings"**. See [What is a workspace?](/workspaces/what-is-a-workspace).
-    2. Click **"Senders"** in the left menu.
+  <Step title="Open the Senders page">
+    1. In the sidebar, click **Settings**. A second menu opens under the heading **Workspace settings**.
+    2. Click **"Senders"**.
 
-    <img src="/images/messages/custom-sender-email/senders-tab.png" alt="The Senders tab in Workspace Settings, with the Add new sender button highlighted" width="1470" height="1246" />
+    <img src="/images/messages/custom-sender-email/senders-tab.png" alt="The Workspace settings menu with Senders highlighted, and the Senders page with the Add sender row highlighted" width="2000" height="541" />
 
-    You can also start from a flow: in an email's **From** list, click **"Add new sender"**.
+    You can also start from a flow: in an email's **From** list, click **"Add new sender"**. The **Add sender** panel opens, and the back arrow at the top of the menu takes you back to your flow.
   </Step>
   <Step title="Enter the address and name">
-    1. Click **"Add new sender"**, then **"Continue"** on the first screen.
+    1. Click **"Add sender"**. On a workspace with no senders yet, the page says **No senders yet** and has the same button.
     2. Under **Sender email**, type an address on your own domain, for example you@yourcompany.com.
     3. Under **Sender name**, type the name leads see in their inbox, for example "Jane from Acme".
-    4. Click **"Continue"**.
+    4. Click **"Continue"**. The button stays gray until both fields are filled in.
 
-    <img src="/images/messages/custom-sender-email/free-email-error.png" alt="The error shown when the sender email is a free address such as Gmail" width="1470" height="947" loading="lazy" />
+    <img src="/images/messages/custom-sender-email/free-email-error.png" alt="The Add sender panel with a Gmail address and the error that free mailboxes cannot be verified" width="1128" height="800" loading="lazy" />
 
-    If you type a free address from Gmail, Outlook or Yahoo, AskFunnel asks for an address at your own domain.
+    If you type a free address from Gmail, Outlook or Yahoo, the panel says **Use an address at your own domain. Free mailboxes like Gmail or Outlook can't be verified as a sender.**
   </Step>
   <Step title="Verify your domain">
-    If the domain is new to your workspace, the **Verify your domain** window lists DNS records with a **Type**, a **Host** and a **Value**.
+    If the domain is new to your workspace, the panel is now titled **Verify your domain**. It says "Add these records where your domain is managed. DNS changes can take up to 24 hours." and lists each record with a **Type**, a **Host** and a **Value**.
 
     1. Log in to the place where your domain is managed.
     2. Add each record exactly as shown. Use the copy icons next to the **Host** and **Value**.
     3. The records under **Recommended: improves inbox placement** are optional, but they help your emails reach the inbox.
-    4. Back in AskFunnel, click **"Verify records now"**.
+    4. Back in AskFunnel, click **"Verify records"**.
+
+    When the records are found, AskFunnel says "Domain verified. Your sender is ready." and the panel closes. If they are not found yet, the panel says **Records not found yet.** or **We couldn't find these records yet. Confirm they're saved exactly with your DNS provider, then check again.** Wait a little and click **"Verify records"** again.
 
     <img src="/images/messages/custom-sender-email/dns-records.png" alt="The Verify your domain window with the DNS records and the Verify records now button" width="1470" height="1352" loading="lazy" />
 
-    DNS changes can take anywhere from a few minutes up to 24 hours. If the records are not found yet, click **"Finish later"** and come back. On the **Senders** tab, click the three dots on your domain, choose **"Verify records"** and try again.
+    To leave and come back later, click **"Finish later"**. The domain stays on the **Senders** page as **Pending**. Click its row, then **"Verify records"**.
   </Step>
 </Steps>
 
-When verification works, AskFunnel says "Domain verified. Your sender is ready." and the domain shows **Verified**. A domain that is still waiting shows **Pending**, and one whose records were not found shows **Failed**.
+On the **Senders** page every row is a domain. Its status is **Pending** while the records are not confirmed, **Verified** when they are, and **Needs attention** when they could not be found. A domain that needs attention says why under its name, for example "We couldn't find this domain's DNS records."
 
 ## Add another sender on a verified domain
 
-Once a domain is **Verified**, click **"Add sender"** on its card. Type only the part before the @, add a **Sender name** and click **"Continue"**. The sender is ready right away, with no new DNS records.
+Click the domain's row, then **"Add sender"** in its **Senders** list. Type only the part before the @, add a **Sender name** and click **"Add sender"**. The sender is ready right away, with no new DNS records. A domain that is still **Pending** has no **Add sender** link until it is verified.
 
 ## Turn on click and open tracking
 
-To see which links your leads click, use the **Click tracking** switch on the domain's card. AskFunnel shows one more record to add at your DNS provider, for a branded address such as click.yourcompany.com. Add it, then click **"Verify record"**. When it says "Click tracking is active.", the switch stays on.
+To see which links your leads click, open the domain's row and turn on **Click tracking**.
+
+<img src="/images/messages/custom-sender-email/domain-panel.png" alt="A verified domain's panel with its sender, the Click tracking and Open tracking switches and the Remove domain button, the Click tracking row highlighted" width="1128" height="1300" loading="lazy" />
+
+AskFunnel shows one more record to add at your DNS provider, for a branded address such as click.yourcompany.com. Add it, then click **"Verify record"**. When it says "Click tracking is active.", the switch stays on.
 
 After that, an **Open tracking** switch appears. It uses an invisible image to detect opens. This can slightly affect deliverability (whether your emails reach the inbox), and Apple Mail inflates open counts, so turn it on only if you need it.
 
@@ -64,22 +70,29 @@ Tracking results appear on each email in your flow. See [See whether your automa
 
 ## Manage your senders
 
-- **Rename a sender:** click the three dots next to it, choose **"Rename sender"**, change the name and click **"Save"**.
-- **Delete a sender:** click the three dots, choose **"Delete"** and confirm. Any flow that used it cannot send until you choose another sender.
-- **Turn off tracking:** click the three dots on the domain, choose **"Turn off tracking"** and confirm.
-- **Remove a domain:** click the three dots on the domain and choose **"Remove domain"**. Its senders are deleted, and flows cannot send from it until you add and verify it again.
+Open a domain's row to manage what is on it.
+
+- **Rename a sender:** click the sender, change **Sender name** and click **"Save"**. The address itself cannot change. To send from another address, add a new sender.
+- **Remove a sender:** click the sender, then **"Remove sender"**. AskFunnel lists the funnels whose flows can't send from it until you choose another sender. Confirm with **"Remove"**.
+- **Turn off tracking:** turn off the **Click tracking** switch and confirm with **"Turn off"**. Link click and open tracking stop for emails from this domain. You can set them up again.
+- **Remove a domain:** click **"Remove domain"** and confirm. Its senders are removed too, and flows cannot send from it until you add and verify it again.
+
+If your emails bounce or are marked as spam too often, a notice **Sending is on hold** appears at the top of the **Senders** page. See [Keep your emails out of spam](/messages/email-deliverability).
 
 ## Troubleshooting
 
 <AccordionGroup>
   <Accordion title="My sender does not appear in the From list">
-    Only senders on a **Verified** domain appear. Open **Senders**, check the domain status and finish verification.
+    Only senders on a **Verified** domain appear. Open **Senders**, check the domain's status and finish verification.
   </Accordion>
-  <Accordion title="My domain stays Pending or shows Failed">
-    Check that every record was saved exactly as shown, with the same **Host** and **Value**. Some DNS providers add your domain to the end of the host automatically, so you may need to type only the first part. Wait up to 24 hours, then click **"Verify records now"** again.
+  <Accordion title="My domain stays Pending or shows Needs attention">
+    Check that every record was saved exactly as shown, with the same **Host** and **Value**. Some DNS providers add your domain to the end of the host automatically, so you may need to type only the first part. Wait up to 24 hours, then click **"Verify records"** again.
   </Accordion>
-  <Accordion title="I see Only workspace admins can manage these settings">
+  <Accordion title="I see Only Workspace Admins can change these settings">
     Ask a Workspace Admin or Global Admin to add the sender, or to give you the Workspace Admin role.
+  </Accordion>
+  <Accordion title="A lead's flow says This email's sender isn't verified or was removed">
+    The sender of that email was removed, or its domain is no longer verified. Fix it under **Settings**, **Senders**, or choose another sender in the email's **From** list. An email that waits more than 3 days for a working sender is skipped.
   </Accordion>
 </AccordionGroup>
 
