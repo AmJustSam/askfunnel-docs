@@ -14,7 +14,8 @@ Download the leads you see in the table, or only the ones you pick, as a file fo
 ## Important to note
 
 <Warning>
-  - A view can hold up to 3,000 leads (newest first). If your funnel has more, the menu says **"Export N loaded leads"** and the file contains only those.
+  - An export covers up to 3,000 leads (newest first). If your funnel has more, the menu says, for example, **"Export the newest 3,000 leads (CSV)"** and the file contains only those.
+  - **Select all** across pages does not work with **Export**. Tick the leads you want instead. Once every lead is chosen, **Export** is greyed out and says **Export works on the leads you tick, not on Select all.**
   - Your file may contain personal data. Store and share it with the same care as the data in AskFunnel.
 </Warning>
 
@@ -27,9 +28,9 @@ The file matches your current view, so set it up first. Use search and filters t
     Open your funnel's **Leads** page and click the three vertical dots (**View options**) in the toolbar.
   </Step>
   <Step title="Choose a file format">
-    Click **"Export N leads (CSV)"** for a file that works almost everywhere, or **"Export N leads (Excel)"** for an Excel workbook. N is the number of leads in your current view.
+    Click **"Export leads (CSV)"** for a file that works almost everywhere, or **"Export leads (Excel)"** for an Excel workbook. Once all the leads of your view are loaded, the menu names how many, for example **"Export 120 leads (CSV)"**.
 
-    <img src="/images/leads/export-contacts/export-menu.png" alt="The View options menu with the CSV and Excel export options" width="1471" height="660" />
+    <img src="/images/leads/export-contacts/export-menu.png" alt="The View options menu with the Import leads, Export leads (CSV) and Export leads (Excel) options, and the View options button highlighted" width="1470" height="650" />
   </Step>
   <Step title="Open the file">
     Your browser downloads **leads-export.csv** or **leads-export.xlsx**. Open it in Excel, Google Sheets or any other tool.
@@ -38,17 +39,17 @@ The file matches your current view, so set it up first. Use search and filters t
 
 ## Export only some leads
 
-1. Hover over a lead's avatar in the **Name** column to show its checkbox, then tick each lead you want. To tick every lead in the table, use the checkbox in the header row.
-2. A bar appears at the bottom of the screen with the number of leads selected. Click **"Export"**.
+1. Hover over a lead's avatar in the **Name** column to show its checkbox, then tick each lead you want. To tick every lead you can see, use the checkbox in the header row.
+2. A bar appears over the toolbar with the number of leads selected and the buttons **Assign**, **Export**, **Clear** and **Delete**. Click **"Export"**.
 
-<img src="/images/leads/export-contacts/bulk-export.png" alt="The bottom bar for selected leads, with the Export button highlighted" width="1200" height="326" loading="lazy" />
+<img src="/images/leads/export-contacts/bulk-export.png" alt="The bar for selected leads, with the Export button highlighted" width="1200" height="285" loading="lazy" />
 
 Exports of selected leads are always CSV files.
 
 ## What is in the file
 
 - One column for each field you can see, in the same order as the table, with a header row. Hidden fields are left out.
-- Choices appear as their names, checkboxes as **Yes** or **No**, and dates in the same format as the table. Fields with several choices list them separated by commas.
+- Choices appear as their names, checkboxes as **Yes** or **No**, and dates as a date and time. Columns that hold a moment, such as **Created**, name your time zone in the header, for example **Created (Europe/London)**. Fields with several choices list them separated by commas.
 - The **Score** column exports as a number, not as **Hot**, **Warm** or **Cold**.
 - Locked leads (leads over your plan's monthly limit) are not included.
 

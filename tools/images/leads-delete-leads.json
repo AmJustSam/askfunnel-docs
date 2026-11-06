@@ -4,9 +4,9 @@
     "src": "source/raw/leads/delete-leads/01-bulk-bar.png",
     "args": [
       "--crop",
-      "500,1602,1000,166",
+      "2250,150,880,125",
       "--ring",
-      "1135,1666,195,88",
+      "2900,170,175,76",
       "--width",
       "1200",
       "--pad-y",
@@ -18,9 +18,9 @@
     "src": "source/raw/leads/delete-leads/02-delete-dialog.png",
     "args": [
       "--crop",
-      "480,720,1040,360",
+      "1040,630,1120,540",
       "--ring",
-      "1302,934,180,96",
+      "1900,1000,185,84",
       "--radius",
       "22",
       "--width",

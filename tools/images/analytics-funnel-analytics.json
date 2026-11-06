@@ -1,20 +1,22 @@
 [
   {
     "out": "images/analytics/funnel-analytics/date-range.png",
-    "src": "source/raw/analytics/funnel-analytics/02-more-menu.png",
+    "src": "source/raw/analytics/funnel-analytics/02-date-menu.png",
     "args": [
       "--crop",
-      "365,195,2470,900",
+      "600,150,596,900",
       "--ring",
-      "1355,236,240,74"
+      "616,160,320,84",
+      "--width",
+      "1470"
     ]
   },
   {
     "out": "images/analytics/funnel-analytics/kpi-cards.png",
-    "src": "source/raw/analytics/funnel-analytics/01-page-compare7.png",
+    "src": "source/raw/analytics/funnel-analytics/01-page.png",
     "args": [
       "--crop",
-      "345,215,2490,880"
+      "600,150,2520,450"
     ]
   },
   {
@@ -22,9 +24,9 @@
     "src": "source/raw/leads/view-and-manage-leads/01-funnels-table.png",
     "args": [
       "--crop",
-      "0,380,2000,610",
+      "560,150,2600,748",
       "--ring",
-      "1347,392,224,580"
+      "2380,160,310,590"
     ]
   }
 ]

@@ -1,0 +1,30 @@
+[
+  {
+    "out": "images/leads/import-leads/import-menu.png",
+    "src": "source/raw/leads/export-contacts/01-export-menu.png",
+    "args": [
+      "--crop",
+      "620,150,910,470",
+      "--ring",
+      "905,258,612,80",
+      "--width",
+      "1470"
+    ]
+  },
+  {
+    "out": "images/leads/import-leads/map-fields.png",
+    "src": "source/raw/leads/import-leads/01-map-fields.png",
+    "args": [
+      "--crop",
+      "760,300,1680,1200"
+    ]
+  },
+  {
+    "out": "images/leads/import-leads/review-import.png",
+    "src": "source/raw/leads/import-leads/02-review-import.png",
+    "args": [
+      "--crop",
+      "760,410,1680,980"
+    ]
+  }
+]

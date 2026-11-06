@@ -1,24 +1,32 @@
 [
   {
-    "out": "images/leads/contact-status/total-leads.png",
-    "src": "source/raw/leads/contact-status/01-total-leads.png",
+    "out": "images/leads/contact-status/status-list.png",
+    "src": "source/raw/leads/contact-status/01-status-list.png",
     "args": [
       "--crop",
-      "1000,160,980,700",
+      "2450,500,740,782",
       "--ring",
-      "1626,182,325,88",
+      "2590,1182,580,84",
       "--width",
       "1470"
     ]
   },
   {
-    "out": "images/leads/contact-status/status-list.png",
-    "src": "source/raw/leads/contact-status/02-status-list.png",
+    "out": "images/leads/contact-status/edit-options.png",
+    "src": "source/raw/leads/contact-status/02-edit-options.png",
     "args": [
       "--crop",
-      "1800,560,1100,900",
-      "--ring",
-      "2275,1305,589,100",
+      "2450,500,740,1070",
+      "--width",
+      "1470"
+    ]
+  },
+  {
+    "out": "images/leads/contact-status/total-leads.png",
+    "src": "source/raw/leads/contact-status/03-total-leads.png",
+    "args": [
+      "--crop",
+      "2390,150,700,755",
       "--width",
       "1470"
     ]

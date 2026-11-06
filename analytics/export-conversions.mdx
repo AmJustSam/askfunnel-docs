@@ -5,7 +5,7 @@ description: "Download the numbers behind any analytics section to open in Excel
 icon: "file-csv"
 ---
 
-Download the numbers behind any section of the **Analytics** tab, to build a report, share results with a client or keep a record of a campaign. Every section that has data has its own download, and you find them all in one place.
+Download the numbers behind any section of the **Analytics** page, to build a report, share results with a client or keep a record of a campaign. Every section that has data has its own download, and you find them all in one place.
 
 **Before you start**, you need:
 
@@ -16,12 +16,12 @@ Download the numbers behind any section of the **Analytics** tab, to build a rep
 
 <Steps>
   <Step title="Choose your date range">
-    Open your funnel, click **Analytics** and pick the dates you want in the date menu, for example **Last 28 days** or a **Custom range**. The file covers the range you have selected.
+    Open your funnel, click **Analytics** in the funnel's menu and pick the dates you want in the date menu, for example **Last 28 days** or a **Custom range**. The file covers the range you have selected.
   </Step>
   <Step title="Open More options and pick a download">
-    Click **More options** (the three dots) at the right end of the bar under the tabs. Under **Copy link**, the menu lists a download for each section, such as **Download Funnel as CSV** or **Download Devices as CSV**. The file downloads to your computer right away. A section without data has no entry, so if you do not see one, widen the date range.
+    Click **More options** (the three dots) at the right end of the bar at the top of the page. Under the heading **Download CSV**, the menu lists **Funnel steps**, **Sources**, **Hours**, **Devices**, **Answers**, **Quiz results** and **Lead statuses**. Click one and the file downloads to your computer right away. A section with no numbers for your dates is greyed out and says why, for example **No numbers for this range**, so widen the date range. **Quiz results** says **No quiz results in this funnel** for a funnel with fewer than two results.
 
-    <img src="/images/analytics/export-conversions/download-icon.png" alt="The download icon in the corner of the Visitors and conversions card, highlighted" width="2000" height="843" />
+    <img src="/images/analytics/export-conversions/download-icon.png" alt="The More options menu of the Analytics page open on its Download CSV list, with the More options button highlighted" width="1470" height="1000" />
   </Step>
   <Step title="Open the file">
     Open the CSV (a simple spreadsheet file) in Excel, Google Sheets or any other tool.
@@ -39,13 +39,13 @@ The numbers of the main chart (visitors, leads and the conversion rate for each 
 Each section downloads its own file, and the end of the file name tells you which one it is.
 
 - **Chart options, Download as CSV** (ends in `_visitors.csv`): one row per day with visitors, leads, completions and the conversion rate, plus a total row. The file still calls the leads column `conversions`.
-- **Download Funnel as CSV** (`_dropoff.csv`): how many times each step was reached.
-- **Download Where visitors come from as CSV** (`_sources.csv`): visitors, leads and conversion rate for the tab you have open, such as sources or campaigns.
-- **Download Visits by hour of day as CSV** (`_hours.csv`): visits for each hour.
-- **Download Devices as CSV** (`_devices.csv`): visits by device type.
-- **Download Answers as CSV** (`_responses.csv`): how often each answer was picked.
-- **Download Quiz results as CSV** (`_results.csv`): how many visits ended on each result. It is offered for a funnel with more than one result.
-- **Download Lead statuses as CSV** (`_pipeline.csv`): how many of the leads created in your date range are in each status.
+- **Funnel steps** (`_dropoff.csv`): how many times each step was reached.
+- **Sources** (`_sources.csv`): visitors, leads and conversion rate for the tab of **Where visitors come from** you have open, such as sources or campaigns.
+- **Hours** (`_hours.csv`): visits for each hour of the day.
+- **Devices** (`_devices.csv`): visits by device type.
+- **Answers** (`_responses.csv`): how often each answer was picked.
+- **Quiz results** (`_results.csv`): how many visits ended on each result. It is offered for a funnel with more than one result.
+- **Lead statuses** (`_pipeline.csv`): how many of the leads created in your date range are in each status.
 
 The first few lines of each file say which funnel it is, the date range, the time zone and when the file was created. Days are always UTC. The hours file uses your own time zone where it can, and says which one it used. Delete those first lines if a tool you import into needs a clean table.
 

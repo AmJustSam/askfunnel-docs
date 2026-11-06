@@ -1,12 +1,26 @@
 [
   {
     "out": "images/leads/contact-fields/fields-panel.png",
-    "src": "source/raw/leads/custom-contact-fields/01-fields-panel.png",
-    "args": ["--crop", "30,165,1010,980", "--ring", "51,182,187,88", "--width", "1470"]
+    "src": "source/raw/leads/contact-fields/01-fields-panel.png",
+    "args": [
+      "--crop",
+      "600,150,762,980",
+      "--ring",
+      "629,164,194,90",
+      "--width",
+      "1470"
+    ]
   },
   {
     "out": "images/leads/contact-fields/column-menu.png",
-    "src": "source/raw/leads/contact-fields/03-column-menu.png",
-    "args": ["--crop", "1040,296,920,664", "--ring", "1842,307,64,64"]
+    "src": "source/raw/leads/contact-fields/02-column-menu.png",
+    "args": [
+      "--crop",
+      "1650,250,890,750",
+      "--ring",
+      "2069,302,67,67",
+      "--width",
+      "1470"
+    ]
   }
 ]

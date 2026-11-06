@@ -18,7 +18,7 @@ There is nothing to switch on in AskFunnel. You add the tags to your link, and A
 
 <Warning>
   - The tags must be on the link people click. AskFunnel cannot add them for you, and a link without tags shows its leads as coming from the site that sent them, or as **Direct / Unknown**.
-  - AskFunnel reads the tags when a visitor first opens your funnel and keeps them until that visit ends, even though the next pages have no tags in the address.
+  - The tags only need to be on the link people click. They stay with the visit even though the next pages show no tags in the address.
   - If your funnel uses a cookie banner, a visitor who does not accept analytics cookies is left out of your campaign charts, and their tags are not sent to connected webhooks. The lead still keeps its tags on the **Tracking** tab. See [Cookies and consent](/funnel-settings/cookies-and-consent).
   - Keep personal details, such as an email address, out of your tags.
 </Warning>
@@ -61,17 +61,17 @@ Start with `utm_source`, `utm_medium` and `utm_campaign`. Add the other two only
     1. Open the tagged link in a private browser window.
     2. Go through your funnel and submit the form with details you will recognize.
     3. In the dashboard, open your funnel's **Leads** page and open your test lead.
-    4. Click the **Tracking** tab. Check that **Source** shows the source you typed after `utm_source`, and that **UTM parameters** lists your tags. AskFunnel may show a known source with a capital letter, so `facebook` appears as **Facebook**.
-
-    <img src="/images/analytics/utm-tracking/lead-tracking-tab.png" alt="A lead's Tracking tab with the Source card showing Facebook, paid_social and the campaign spring_buyers, and the UTM parameters card listing Source, Medium and Campaign, both highlighted" width="1470" height="1680" />
+    4. Click the **Tracking** tab. Check that **Source** shows the source you typed after `utm_source`, and that **Medium** and **Campaign** show the tags you added. AskFunnel may show a known source with a capital letter, so `facebook` appears as **Facebook**.
   </Step>
 </Steps>
 
+    <img src="/images/analytics/utm-tracking/lead-tracking-tab.png" alt="A lead's Tracking tab with the Source card showing Facebook, paid_social and the campaign spring_buyers, and the UTM parameters card listing Source, Medium and Campaign, both highlighted" width="1470" height="1680" />
+
 ## Where you see the results
 
-- **On every lead.** Open a lead and click **Tracking**. **Source** shows the `utm_source`, with the medium and campaign next to it. **UTM parameters** lists every tag. Sources AskFunnel knows, such as Facebook, Google and Instagram, show with their brand name, and other values show as you typed them. The medium next to the source can start with a capital letter, for example **Paid_social**, while **UTM parameters** shows it as you typed it. With no `utm_source`, AskFunnel shows the website the visitor came from, or **Direct / Unknown**. See [See where a lead came from](/analytics/lead-insights).
+- **On every lead.** Open a lead and click **Tracking**. **Source** shows the `utm_source`. **Medium**, **Campaign**, **Term** and **Content** list the other tags you used. Sources AskFunnel knows, such as Facebook, Google and Instagram, show with their brand name, and other values show as you typed them. With no `utm_source`, AskFunnel shows the website the visitor came from, or **Direct / Unknown**. See [See where a lead came from](/analytics/lead-insights).
 - **In your funnel analytics.** **Where visitors come from** ranks your sources by visitors, with the conversion rate of each. It shows the five biggest first, and **Show all** lists the rest. Use the tabs **Sources**, **Mediums**, **Campaigns**, **Referrers**, **Countries** and **Languages** to change the grouping. See [Read your funnel analytics](/analytics/funnel-analytics).
-- **In Google Sheets.** Keep **Include UTM parameters and referrer** on in the Google Sheets settings to add them to each row. See [Send leads to Google Sheets](/integrations/google-sheets).
+- **In Google Sheets.** Each row includes the UTM tags and the referrer. See [Send leads to Google Sheets](/integrations/google-sheets).
 - **In HighLevel.** Match a tag, such as **UTM source**, to a HighLevel field. See [Send your leads to HighLevel](/integrations/highlevel).
 - **In a webhook.** The tags arrive in the `attribution` part of each lead. See [What AskFunnel sends](/integrations/webhook-reference).
 - **On another page.** A button can pass the tags on to a booking page or another website. See [Pass UTM and custom URL parameters on to another page](/funnels/forward-url-parameters). You can also show a tag inside your funnel text. See [Personalize your funnel text with variables](/funnels/personalize-with-variables).

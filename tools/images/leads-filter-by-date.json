@@ -1,12 +1,24 @@
 [
   {
     "out": "images/leads/filter-by-date/filter-button.png",
-    "src": "source/raw/leads/view-and-manage-leads/02-toolbar-grid.png",
-    "args": ["--crop", "30,165,1940,230", "--ring", "239,182,175,88"]
+    "src": "source/raw/leads/filter-by-date/01-filter-button.png",
+    "args": [
+      "--crop",
+      "600,150,900,125",
+      "--ring",
+      "815,155,180,95",
+      "--width",
+      "1470",
+      "--pad-y",
+      "80"
+    ]
   },
   {
     "out": "images/leads/filter-by-date/filter-panel.png",
     "src": "source/raw/leads/filter-by-date/02-filter-panel.png",
-    "args": ["--crop", "30,165,1940,495"]
+    "args": [
+      "--crop",
+      "828,150,1344,495"
+    ]
   }
 ]

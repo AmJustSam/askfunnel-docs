@@ -5,7 +5,7 @@ description: "Move leads through your follow-up, create your own statuses and se
 icon: "list-check"
 ---
 
-Use statuses to show where each lead is in your follow-up, so your whole team sees the same picture. Every new lead starts as **RECEIVED**. As you or your team work with the lead, you update its status.
+Use statuses to show where each lead is in your follow-up, so your whole team sees the same picture. Every new lead starts as **Received**. As you or your team work with the lead, you update its status.
 
 **Before you start**, you need:
 
@@ -15,17 +15,17 @@ Use statuses to show where each lead is in your follow-up, so your whole team se
 ## Important to note
 
 <Warning>
-  Statuses belong to one funnel. Custom statuses you create in one funnel do not appear in another, and a funnel can have up to 50 statuses.
+  Statuses belong to one funnel. Statuses you create in one funnel do not appear in another, and a funnel can have up to 50 statuses.
 </Warning>
 
 ## The default statuses
 
-- **RECEIVED:** a new lead. This is the default status.
-- **NOT RESPONDED**
-- **CONTACTED**
-- **MEETING**
-- **CONVERTED:** the lead became a customer.
-- **REJECTED**
+- **Received:** a new lead. This is the default status.
+- **Not responded**
+- **Contacted**
+- **Meeting**
+- **Converted:** the lead became a customer.
+- **Rejected**
 
 Use them in the way that fits your team, or create your own below.
 
@@ -37,40 +37,42 @@ Use them in the way that fits your team, or create your own below.
 
 You can also change the status from a lead's side panel: click the status at the top, or the **Status** row in the **Profile** tab.
 
-Each change is recorded in the [activity log](/analytics/activity-log), for example from **RECEIVED** to **MEETING**. Statuses also start and stop [automated emails](/messages/automated-emails), because a flow begins when a lead reaches the status you choose as its trigger.
+Each change is recorded in the [activity log](/analytics/activity-log), for example from **Received** to **Meeting**. Statuses also start and stop [automated emails](/messages/automated-emails), because a flow begins when a lead reaches the status you choose as its trigger.
 
-## Create your own status
+## Create, rename or delete a status
 
-Add statuses that match how you work, such as "High potential" or "Follow up next week".
+Add statuses that match how you work, such as "High potential" or "Follow up next week". You manage them all in one place, the options editor of the **Status** cell.
 
 <Steps>
-  <Step title="Open the status list">
-    Click any **Status** cell.
+  <Step title="Open the options editor">
+    Click any **Status** cell, then click **"Edit options"** at the bottom of the list.
+
+    <img src="/images/leads/contact-status/status-list.png" alt="The status list open on a lead, with the Edit options row highlighted" width="1470" height="962" />
   </Step>
-  <Step title="Add the status">
-    1. Click **"New status"** at the bottom of the list.
+  <Step title="Change the list">
+    1. To add a status, click **"Add option"** and type a name.
+    2. To recolor a status, click the color square at its left and pick a color.
+    3. To rename a status, click its name and type.
+    4. To remove a status, click the trash icon (**Delete option**) at its right.
 
-    <img src="/images/leads/contact-status/status-list.png" alt="The status list open on a lead, with the New status button highlighted" width="1470" height="1080" />
-
-    2. Type a name.
-    3. Optionally click the color circle in the name box and pick a color.
-    4. Click **"Save"**.
+    <img src="/images/leads/contact-status/edit-options.png" alt="The Edit options step with the six default statuses, their colors, the Add option link and the Save button" width="1470" height="1250" loading="lazy" />
+  </Step>
+  <Step title="Save">
+    Click **"Save"**. Use the back arrow at the top to leave without saving.
   </Step>
 </Steps>
 
-The new status is available for every lead in this funnel, and the table shows it in the color you picked.
-
-To rename or recolor a status, hover over it in the list and click the pencil (**Edit status**). To remove one, click the trash icon (**Delete status**) and confirm. **RECEIVED** is marked **Default**: you can rename or recolor it, but you cannot delete it.
+The new status is available for every lead in this funnel, and the table shows it in the color you picked. **Received** is marked **Default**: you can rename or recolor it, but you cannot delete it, because every new lead starts there.
 
 <Tip>
-  Move the leads out of a status before you delete it. Otherwise those leads keep a status that is no longer in your list.
+  If leads still have a status you delete, AskFunnel asks where they should go. A window says how many leads have the status and lets you pick a new one for them (**Received** unless you choose another). Click **"Move and delete"** to confirm.
 </Tip>
 
 ## See how many leads are in each status
 
-Click **Total leads** at the right end of the toolbar. The menu lists every status with its number of leads. Tick one or more statuses to filter the table to them, and untick them to clear the filter.
+Click **Total leads** at the right end of the toolbar. The menu lists every status with its number of leads and a **Total** at the bottom. Tick one or more statuses to filter the table to them, and untick them to clear the filter.
 
-<img src="/images/leads/contact-status/total-leads.png" alt="The Total Leads menu open, with the number of leads in each status" width="1470" height="880" loading="lazy" />
+<img src="/images/leads/contact-status/total-leads.png" alt="The Total leads menu open, with the number of leads in each status and the total" width="1470" height="935" loading="lazy" />
 
 The **Lead statuses** section in your [funnel analytics](/analytics/funnel-analytics) shows the same breakdown for the leads created in a date range.
 

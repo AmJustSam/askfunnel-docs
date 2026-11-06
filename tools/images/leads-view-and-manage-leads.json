@@ -4,9 +4,9 @@
     "src": "source/raw/leads/view-and-manage-leads/01-funnels-table.png",
     "args": [
       "--crop",
-      "0,380,2000,610",
+      "560,150,2600,748",
       "--ring",
-      "31,500,1937,170"
+      "620,568,2470,184"
     ]
   },
   {
@@ -14,7 +14,7 @@
     "src": "source/raw/leads/view-and-manage-leads/03-grid-wide.png",
     "args": [
       "--crop",
-      "340,150,2540,1630"
+      "600,150,2520,1546"
     ]
   }
 ]

@@ -1,12 +1,14 @@
 [
   {
     "out": "images/analytics/export-conversions/download-icon.png",
-    "src": "source/raw/analytics/export-conversions/01-page.png",
+    "src": "source/raw/analytics/export-conversions/01-more-menu.png",
     "args": [
       "--crop",
-      "360,1090,2462,885",
+      "2470,150,650,820",
       "--ring",
-      "2655,1168,58,58"
+      "3000,160,96,76",
+      "--width",
+      "1470"
     ]
   }
 ]

@@ -1,0 +1,12 @@
+[
+  {
+    "out": "images/leads/lead-notes/notes-tab.png",
+    "src": "source/raw/leads/lead-notes/01-notes-tab.png",
+    "args": [
+      "--crop",
+      "1992,24,1176,1750",
+      "--width",
+      "1470"
+    ]
+  }
+]

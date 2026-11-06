@@ -1,14 +1,14 @@
 [
   {
     "out": "images/leads/custom-contact-fields/new-field-button.png",
-    "src": "source/raw/leads/custom-contact-fields/01-fields-panel.png",
+    "src": "source/raw/leads/custom-contact-fields/01-new-field-button.png",
     "args": [
       "--crop",
-      "30,165,1010,980",
+      "600,150,762,980",
       "--ring",
-      "51,182,187,88",
+      "629,164,194,90",
       "--ring",
-      "445,1045,217,72",
+      "1112,996,236,80",
       "--width",
       "1470"
     ]
@@ -18,9 +18,9 @@
     "src": "source/raw/leads/custom-contact-fields/02-new-field-form.png",
     "args": [
       "--crop",
-      "40,165,880,700",
+      "600,150,762,720",
       "--ring",
-      "520,729,230,96",
+      "1078,700,246,100",
       "--width",
       "1470"
     ]

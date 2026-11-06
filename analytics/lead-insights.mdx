@@ -1,7 +1,7 @@
 ---
 title: "See where a lead came from"
 sidebarTitle: "Lead insights"
-description: "Open a lead's Tracking tab to see their source, device, landing page and time on your funnel, then add notes for your team."
+description: "Open a lead's Tracking tab to see their source, device, landing page and time on your funnel before you follow up."
 icon: "magnifying-glass-chart"
 ---
 
@@ -19,22 +19,19 @@ Check where a lead came from, what device they used and how long they spent in y
     In your funnel's **Leads** page, hover over the lead's name and click the **"Open lead"** icon. A panel opens on the right.
   </Step>
   <Step title="Open the Tracking tab">
-    The panel has three tabs: **Profile**, **Notes** and **Tracking**. Click **Tracking**.
+    The panel has four tabs: **Profile**, **Messages**, **Notes** and **Tracking**. Click **Tracking**.
 
-    <img src="/images/analytics/lead-insights/tracking-tab.png" alt="A lead's Tracking tab, highlighted, showing their source, device, browser and UTM parameters" width="1470" height="1664" />
+    <img src="/images/analytics/lead-insights/tracking-tab.png" alt="A lead's Tracking tab showing their source, when they arrived, their device, browser, language, time on the funnel and landing page" width="1470" height="1580" />
   </Step>
 </Steps>
 
 ## Keep notes and update the lead
 
-- **Write a note:** open the **Notes** tab, type in **Write a note...** and click the send arrow. Each note shows who wrote it and when. You can edit or delete your own notes, but not a teammate's.
-
-  <img src="/images/analytics/lead-insights/notes-tab.png" alt="A lead's Notes tab with one note from Alex Morgan and the Write a note box below it" width="1470" height="1780" loading="lazy" />
-
+- **Write a note:** open the **Notes** tab to keep a record of calls and next steps, reply to teammates and mention them. See [Write notes on a lead](/leads/lead-notes).
 - **Change the status:** click the status at the top of the panel. See [Track leads with statuses](/leads/contact-status).
 - **Add tags or change details:** use the **Profile** tab. Click any field to edit it, for example **Tags** or **Preferred time**.
 - **Contact the lead:** use the email, call and WhatsApp icons at the top of the panel. See [Message a lead on WhatsApp](/messages/whatsapp-template).
-- **See their emails:** in **Profile**, the **Email flows** section lists every [automated email](/messages/automated-emails) flow the lead is in and what was sent.
+- **See their messages:** the **Messages** tab lists the [automated email](/messages/automated-emails) and WhatsApp flows the lead is in and what was sent.
 
 <Tip>
   Notes and status changes also appear in your team's [activity log](/analytics/activity-log), so nobody has to ask who called whom.
@@ -42,15 +39,20 @@ Check where a lead came from, what device they used and how long they spent in y
 
 ## What the Tracking tab shows
 
-- **Source:** a headline with where the lead arrived from (for example a social network or a search engine), when they arrived, and the campaign name if your link had one. With no campaign tags, it shows the site they came from, or **Direct / Unknown**.
-- **Device, Browser, OS and Time on funnel:** four tiles. **Time on funnel** is how long the lead spent before they submitted. A long time can mean strong interest, or that the funnel was hard to follow, so read it next to their answers.
-- **UTM parameters:** the marketing tags on the link the lead clicked (source, medium, campaign, term and content). AskFunnel captures them automatically.
-- **Device & environment:** device type, browser, operating system, language and time zone.
-- **Landing & session:** the **Referrer** (the page that sent them), the **Landing URL** (the page they arrived on) and **Time on page**.
+The tab is one list of rows. A row with nothing to say is left out.
 
-Click **Show advanced** for technical details: the **Screen** size, **Page title**, **Session ID**, the Meta click and pixel IDs (**Click & pixel IDs**) and **Show raw user agent**. Click **Hide advanced** to tuck them away. If support asks for a session ID, it is here.
+- **Source:** where the lead arrived from, for example a social network or a search engine. With no campaign tags, it shows the site they came from, or **Direct / Unknown**.
+- **Arrived:** when they arrived. Point at it to see the exact date and time.
+- **Medium**, **Campaign**, **Term** and **Content:** the marketing tags on the link the lead clicked. AskFunnel captures them automatically. See [Track campaigns with UTM links](/analytics/utm-tracking).
+- **Referrer:** the website that sent them, shown only when it says more than **Source** does.
+- **For a lead that clicked an ad:** **Campaign ID**, **Ad set ID**, **Ad ID**, **Placement**, **Clicked the ad** and **First visit**. See [See which ad each lead came from](/integrations/ad-tracking-links).
+- **Device**, **Browser**, **OS**, **Language** and **Timezone:** what the lead used.
+- **Time on funnel:** how long the lead spent before they submitted. A long time can mean strong interest, or that the funnel was hard to follow, so read it next to their answers.
+- **Landing page:** the page they arrived on, with a button to copy it.
 
-If a lead shows **No tracking data captured**, they may have submitted before tracking was turned on, or used a browser that blocks visitor analytics. Their details are still saved in **Profile**.
+Click **Show advanced** for the rows a person fixing an ad setup needs: the **Screen** size, **Page title**, **Session ID**, **Click IDs** and the Meta click and browser IDs (**Facebook Click ID**, **Facebook click cookie** and **Facebook browser cookie**), and **Show raw user agent**. Click **Hide advanced** to tuck them away. If support asks for a session ID, it is here.
+
+If a lead shows **No tracking data captured**, they may have submitted before tracking was turned on, come from an import, or used a browser that blocks visitor analytics. Their details are still saved in **Profile**.
 
 ## What to do next
 

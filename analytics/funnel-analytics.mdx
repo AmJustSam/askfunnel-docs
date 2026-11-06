@@ -21,20 +21,20 @@ See how your funnel performs: how many people visit, how many become leads, wher
 ## Open your analytics
 
 <Steps>
-  <Step title="Open the funnel's Analytics tab">
-    From your **Funnels** page, click the funnel, then click **Analytics** in the sidebar.
+  <Step title="Open the funnel's Analytics page">
+    Click **Funnels** in the sidebar, click the funnel, then click **Analytics** in the funnel's menu. On a phone, tap **Menu** in the bottom bar first.
   </Step>
   <Step title="Choose a date range">
     Click the date button at the top left. It shows the range you are looking at, such as **Last 7 days**. In its menu, pick **Today**, **Yesterday**, **Last 7 days**, **Last 28 days**, **Last 90 days**, **This quarter**, **Year to date** or **Custom range**. With **Custom range**, pick a **Start date** and an **End date** (up to about a year), then click **"Apply"**. Nothing changes until you do. The page opens on **Last 7 days**.
 
-    <img src="/images/analytics/funnel-analytics/date-range.png" alt="The date range buttons with the More menu open, next to the Compare switch, Copy link and Refresh" width="2000" height="852" />
+    <img src="/images/analytics/funnel-analytics/date-range.png" alt="The date range menu with the preset ranges, the Compare with previous period switch and the Dates use UTC note, next to Refresh and More options" width="1470" height="1080" />
   </Step>
   <Step title="Compare with the previous period (optional)">
     The same menu has a **Compare with previous period** switch. It is on when you first open the page, so every number shows its change against the period of the same length just before, and a tag such as **vs previous 7 days** appears next to the date button. Turn the switch off to see only this period.
   </Step>
 </Steps>
 
-Three more things sit in the same bar. The time **Updated 3:41 PM** shows when the numbers were last read. **Refresh** (the circular arrow) reads them again. **More options** (the three dots) holds **Copy link**, which copies a link to this exact view (date range, Compare and the chart you picked) to share with a teammate, and the downloads. See [Download your analytics as CSV](/analytics/export-conversions).
+Two more controls sit at the right end of the same bar. **Refresh** (the circular arrow) reads the numbers again, and pointing at it shows when they were last read, such as **Updated 3:41 PM**. **More options** (the three dots) holds **Copy link**, which copies a link to this exact view (date range, Compare and the chart you picked) to share with a teammate, and the **Download CSV** list. See [Download your analytics as CSV](/analytics/export-conversions).
 
 ## Compare before and after a change
 
@@ -46,24 +46,24 @@ Publishes also show as small grey marks along the chart (not on a one day range)
 
 ## The four numbers at the top
 
-- **Visitors:** the sum of daily unique visitors. A person who comes back on another day counts again on that day.
-- **Leads:** the total number of form submissions in the date range.
+- **Visitors:** the people who visited. A person who comes back on another day counts again on that day.
+- **Leads:** the total number of form submissions in the date range, including leads locked by your plan.
 - **Conversion rate:** leads divided by visitors. In plain words, the share of visitors who become leads. Only leads that came with visitor tracking count, so leads you imported are left out.
 - **Completion rate:** visits that reached the end, out of all visits. The end is the success page or a quiz result.
 
-Each card shows its change against the previous period while Compare is on, and a small line of its days. Point at the info icon on a card to read how it is counted.
+Each card shows its change against the previous period while Compare is on, and a small line of its days. Click the info icon on a card to read what it counts.
 
 Under the numbers, the chart follows one of them. Use the switch above it to choose **Visitors**, **Leads** or **Conversion rate**. The previous period is drawn as a second line, and the last part of the chart is dashed when it ends today, because the day is not over. On a one day range, the chart shows **Visits by hour** instead.
 
-<img src="/images/analytics/funnel-analytics/kpi-cards.png" alt="Smart insights and the five cards: Visitors, Conversions, Conversion rate, Completion rate and Avg time to complete" width="2000" height="833" loading="lazy" />
+<img src="/images/analytics/funnel-analytics/kpi-cards.png" alt="The four number cards: Visitors, Leads, Conversion rate and Completion rate, each with its change and a small trend line" width="2000" height="524" loading="lazy" />
 
 ## Find where visitors leave
 
 Open **Funnel**. It lists every step of your funnel in order, from the first question to the success page, with a bar for how often each step was reached. Under each step except the last, a chip such as **12% left** shows the share of people who reached that step and did not go on to a later one in the same visit. The step with the biggest drop is red. A big drop points to a question that is too long, too personal or unclear.
 
-Counts are recorded per step, so a step can be higher than the one before it. Use the chart as a guide rather than an exact headcount. With Compare on, a small tick on each bar marks the same step in the previous period. A step you have since removed from the funnel keeps its numbers and carries a **Removed** tag.
+A step can be higher than the one before it, so use the chart as a guide rather than an exact headcount. With Compare on, a small tick on each bar marks the same step in the previous period. A step you have since removed from the funnel keeps its numbers and carries a **Removed** tag.
 
-The end of the section's heading shows the **Average time to complete**, from a visitor's first page load to reaching the end. Visits that took more than 24 hours are left out, so an abandoned tab does not skew it.
+The end of the section's heading shows the **Average time to complete**, from a visitor's first page to reaching the end.
 
 If the **Funnel** section is missing, your funnel may not record steps. Open your funnel's settings, go to **Cookies & Consent** and set **Analytics tracking depth** to a **Detailed** option. See [Cookies and consent](/funnel-settings/cookies-and-consent).
 
@@ -73,7 +73,7 @@ If the **Funnel** section is missing, your funnel may not record steps. Open you
 
 ## Mark events on your chart
 
-Global Admins and Workspace Admins can pin a marker for a campaign launch, a release, an incident, an experiment or a note. Click the three dots (**Chart options**) in the corner of the chart, choose **"Add event marker"**, then in **Pin an event marker** choose a **Date**, a **Type**, a color and a **Label**, and click **"Pin marker"**. The marker shows on the chart so you can see how an event changed your traffic.
+Global Admins and Workspace Admins can pin a marker for a campaign launch, a release, an incident, an experiment or a note. Click the three dots (**Chart options**) in the corner of the chart, choose **"Add event marker"**, then in **Pin an event marker** choose a **Date**, a **Type** (**Campaign launch**, **Release**, **Incident**, **Experiment** or **Note**) and a **Label**, and click **"Pin marker"**. The marker shows on the chart so you can see how an event changed your traffic.
 
 ## The sections below
 
@@ -90,7 +90,7 @@ Global Admins and Workspace Admins can pin a marker for a campaign launch, a rel
 
 The **Conversion rate** column on your **Funnels** page shows each funnel's conversion rate over its whole life, for example **12.00%** when 12 of 100 visitors became leads.
 
-<img src="/images/analytics/funnel-analytics/cvr-column.png" alt="The CVR column on the Funnels page, highlighted" width="2000" height="747" loading="lazy" />
+<img src="/images/analytics/funnel-analytics/cvr-column.png" alt="The Conversion rate column on the Funnels page, highlighted" width="2000" height="716" loading="lazy" />
 
 A funnel with nothing to divide yet shows **No data yet**. Leads you imported, or that arrived before tracking began, have no visitor data, so a funnel with only those has no rate until new traffic arrives. Point at the words to see why.
 
@@ -106,7 +106,7 @@ A funnel with nothing to divide yet shows **No data yet**. Leads you imported, o
   <Accordion title="The page says No visitors in this range">
     Your funnel has no visits on those days. Choose another range in the date menu. A funnel that was never published says **No visitors yet**: publish it to start collecting numbers.
   </Accordion>
-  <Accordion title="My numbers are different from the Leads tab">
+  <Accordion title="My numbers are different from the Leads page">
     Analytics uses UTC days and counts a returning visitor once per day. **Leads** here counts every form submission, including leads locked by your plan, while the Leads table uses your local time and does not show locked leads. See [Why your lead and analytics numbers differ](/analytics/why-numbers-differ).
   </Accordion>
 </AccordionGroup>

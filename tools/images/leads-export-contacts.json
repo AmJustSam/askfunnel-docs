@@ -1,12 +1,28 @@
 [
   {
     "out": "images/leads/export-contacts/export-menu.png",
-    "src": "source/raw/leads/export-contacts/01-view-options.png",
-    "args": ["--crop", "41,165,905,480", "--ring", "337,352,580,144", "--width", "1470"]
+    "src": "source/raw/leads/export-contacts/01-export-menu.png",
+    "args": [
+      "--crop",
+      "620,150,910,470",
+      "--ring",
+      "1436,155,88,100",
+      "--width",
+      "1470"
+    ]
   },
   {
     "out": "images/leads/export-contacts/bulk-export.png",
-    "src": "source/raw/leads/delete-leads/01-bulk-bar.png",
-    "args": ["--crop", "500,1602,1000,166", "--ring", "948,1666,195,88", "--width", "1200", "--pad-y", "80"]
+    "src": "source/raw/leads/export-contacts/02-bulk-bar.png",
+    "args": [
+      "--crop",
+      "2250,150,880,125",
+      "--ring",
+      "2510,170,190,76",
+      "--width",
+      "1200",
+      "--pad-y",
+      "80"
+    ]
   }
 ]
