@@ -31,7 +31,7 @@ You add them to your link one after the other, each written as a name, an equals
 |---|---|---|
 | `utm_source` | Where did the visitor come from? | `facebook`, `instagram`, `newsletter` |
 | `utm_medium` | What kind of channel is it? | `paid_social`, `email`, `cpc` |
-| `utm_campaign` | Which campaign is it? | `spring_open_house` |
+| `utm_campaign` | Which campaign is it? | `austin_buyers_nov` |
 | `utm_term` | Which keyword was it? Optional. | `home_valuation` |
 | `utm_content` | Which ad or version was it? Optional. | `video_ad_a` |
 
@@ -43,14 +43,14 @@ Start with `utm_source`, `utm_medium` and `utm_campaign`. Add the other two only
   <Step title="Copy your funnel link">
     Copy the link of your live funnel. Your link looks like this:
 
-    `https://summit-realty.askfunnel.com/home-valuation-x7k2m9p4qa`
+    `https://summit-realty.askfunnel.com/buyer-guide`
 
     If you use your own domain, the link starts with your domain. See [Connect your custom domain](/funnel-settings/custom-domain).
   </Step>
   <Step title="Add the tags to the end">
     Type a question mark (**?**) after the link, then your tags with an ampersand (**&**) between them. For example:
 
-    `https://summit-realty.askfunnel.com/home-valuation-x7k2m9p4qa?utm_source=facebook&utm_medium=paid_social&utm_campaign=spring_open_house`
+    `https://summit-realty.askfunnel.com/buyer-guide?utm_source=facebook&utm_medium=paid_social&utm_campaign=austin_buyers_nov`
 
     If your link already has a question mark, add your tags with an ampersand instead. Write the tag names in lowercase, and write the values the same way every time, for example always `facebook`, never `Facebook` in one link and `facebook` in another.
   </Step>
@@ -62,21 +62,21 @@ Start with `utm_source`, `utm_medium` and `utm_campaign`. Add the other two only
     2. Go through your funnel and submit the form with details you will recognize.
     3. In the dashboard, open your funnel's **Leads** page and open your test lead.
     4. Click the **Tracking** tab. Check that **Source** shows the source you typed after `utm_source`, and that **Medium** and **Campaign** show the tags you added. AskFunnel may show a known source with a capital letter, so `facebook` appears as **Facebook**.
+
+    <img src="/images/analytics/utm-tracking/lead-tracking-tab.png" alt="A lead's Tracking tab with the Source row showing Facebook, and the Campaign and Medium rows showing austin_buyers_nov and paid_social, highlighted" width="1470" height="1612" />
   </Step>
 </Steps>
-
-    <img src="/images/analytics/utm-tracking/lead-tracking-tab.png" alt="A lead's Tracking tab with the Source card showing Facebook, paid_social and the campaign spring_buyers, and the UTM parameters card listing Source, Medium and Campaign, both highlighted" width="1470" height="1680" />
 
 ## Where you see the results
 
 - **On every lead.** Open a lead and click **Tracking**. **Source** shows the `utm_source`. **Medium**, **Campaign**, **Term** and **Content** list the other tags you used. Sources AskFunnel knows, such as Facebook, Google and Instagram, show with their brand name, and other values show as you typed them. With no `utm_source`, AskFunnel shows the website the visitor came from, or **Direct / Unknown**. See [See where a lead came from](/analytics/lead-insights).
-- **In your funnel analytics.** **Where visitors come from** ranks your sources by visitors, with the conversion rate of each. It shows the five biggest first, and **Show all** lists the rest. Use the tabs **Sources**, **Mediums**, **Campaigns**, **Referrers**, **Countries** and **Languages** to change the grouping. See [Read your funnel analytics](/analytics/funnel-analytics).
+- **In your funnel analytics.** **Where visitors come from** ranks your sources by visitors. It shows the five biggest first, and **Show all** lists the rest. A line under the list says how many visitors have no source, for example **40 visitors have no source.** When the rows account for every lead in the range, each row also shows its conversion rate. Use the tabs **Sources**, **Mediums**, **Campaigns**, **Referrers**, **Countries** and **Languages** to change the grouping. See [Read your funnel analytics](/analytics/funnel-analytics).
 - **In Google Sheets.** Each row includes the UTM tags and the referrer. See [Send leads to Google Sheets](/integrations/google-sheets).
 - **In HighLevel.** Match a tag, such as **UTM source**, to a HighLevel field. See [Send your leads to HighLevel](/integrations/highlevel).
 - **In a webhook.** The tags arrive in the `attribution` part of each lead. See [What AskFunnel sends](/integrations/webhook-reference).
 - **On another page.** A button can pass the tags on to a booking page or another website. See [Pass UTM and custom URL parameters on to another page](/funnels/forward-url-parameters). You can also show a tag inside your funnel text. See [Personalize your funnel text with variables](/funnels/personalize-with-variables).
 
-<img src="/images/analytics/utm-tracking/top-traffic-sources.png" alt="The Top traffic sources card with Facebook, Google, Instagram and Direct ranked by visitors, each with a share bar and a conversion rate, and the list set to By source highlighted" width="1470" height="1161" loading="lazy" />
+<img src="/images/analytics/utm-tracking/top-traffic-sources.png" alt="The Where visitors come from card on a funnel's Analytics page, with the Sources tab open and the tabs Sources, Mediums, Campaigns, Referrers, Countries and Languages highlighted, ranking Facebook, Instagram, Google, Newsletter and a partner site by visitors, with the line 40 visitors have no source" width="1854" height="1007" loading="lazy" />
 
 ## How do I know it is working?
 

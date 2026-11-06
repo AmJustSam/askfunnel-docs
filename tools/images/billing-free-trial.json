@@ -1,12 +1,14 @@
 [
   {
     "out": "images/billing/free-trial/move-trial.png",
-    "src": "source/raw/billing/free-trial/10-move-trial-scale.png",
+    "src": "source/raw/billing/free-trial/20-move-trial-scale.png",
     "args": [
       "--crop",
-      "136,136,2928,1380",
+      "2257,264,796,980",
       "--ring",
-      "2314,1074,692,56"
+      "2481,1087,358,43",
+      "--width",
+      "1100"
     ]
   },
   {

@@ -13,20 +13,20 @@
   },
   {
     "out": "images/analytics/funnel-analytics/kpi-cards.png",
-    "src": "source/raw/analytics/funnel-analytics/01-page.png",
+    "src": "source/raw/analytics/funnel-analytics/10-kpi-page.png",
     "args": [
       "--crop",
-      "600,150,2520,450"
+      "560,140,2600,470"
     ]
   },
   {
     "out": "images/analytics/funnel-analytics/cvr-column.png",
-    "src": "source/raw/leads/view-and-manage-leads/01-funnels-table.png",
+    "src": "source/raw/analytics/funnel-analytics/10-funnels-list.png",
     "args": [
       "--crop",
-      "560,150,2600,748",
+      "560,140,2600,760",
       "--ring",
-      "2380,160,310,590"
+      "2383,151,308,735"
     ]
   }
 ]

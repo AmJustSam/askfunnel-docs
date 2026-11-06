@@ -1,7 +1,7 @@
 [
   {
     "out": "images/billing/billing-and-invoices/billing-page.png",
-    "src": "source/raw/billing/billing-and-invoices/11-billing-page.png",
+    "src": "source/raw/billing/billing-and-invoices/20-billing-page.png",
     "args": [
       "--crop",
       "540,0,1720,1010"
@@ -9,7 +9,7 @@
   },
   {
     "out": "images/billing/billing-and-invoices/profile-menu.png",
-    "src": "source/raw/billing/billing-and-invoices/10-account-menu.png",
+    "src": "source/raw/billing/billing-and-invoices/21-account-menu.png",
     "args": [
       "--crop",
       "0,890,660,910",

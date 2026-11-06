@@ -13,7 +13,7 @@
   },
   {
     "out": "images/analytics/why-numbers-differ/kpi-tooltip.png",
-    "src": "source/raw/analytics/why-numbers-differ/01-visitors-tooltip.png",
+    "src": "source/raw/analytics/why-numbers-differ/10-visitors-tooltip.png",
     "args": [
       "--crop",
       "600,380,840,320",

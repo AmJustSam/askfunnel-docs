@@ -1,10 +1,12 @@
 [
   {
     "out": "images/analytics/lead-insights/tracking-tab.png",
-    "src": "source/raw/analytics/lead-insights/01-tracking-tab.png",
+    "src": "source/raw/analytics/lead-insights/10-tracking-tab.png",
     "args": [
       "--crop",
-      "1992,24,1176,1400",
+      "1996,28,1176,1432",
+      "--ring",
+      "2403,230,138,92",
       "--width",
       "1470"
     ]
