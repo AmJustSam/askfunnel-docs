@@ -1,29 +1,29 @@
 [
   {
     "out": "images/workspaces/give-access/account-menu.png",
-    "src": "source/raw/getting-started/sign-in/03-log-out-menu.png",
+    "src": "source/raw/workspaces/give-access/r2-01-avatar-menu.png",
     "args": [
       "--crop",
       "0,880,622,920",
       "--ring",
-      "30,1240,572,62",
+      "22,1230,588,80",
       "--width",
       "1000"
     ]
   },
   {
     "out": "images/workspaces/give-access/members-page.png",
-    "src": "source/raw/workspaces/give-access/02-members-page.png",
+    "src": "source/raw/workspaces/give-access/r2-02-members-page.png",
     "args": [
       "--crop",
       "600,0,2500,950",
       "--ring",
-      "2754,6,343,97"
+      "2754,6,344,98"
     ]
   },
   {
     "out": "images/workspaces/give-access/invite-form.png",
-    "src": "source/raw/workspaces/give-access/03-invite-form.png",
+    "src": "source/raw/workspaces/give-access/r2-03-invite-form.png",
     "args": [
       "--crop",
       "1080,501,1040,798",
@@ -37,10 +37,10 @@
   },
   {
     "out": "images/workspaces/give-access/manage-access.png",
-    "src": "source/raw/workspaces/give-access/04-manage-access.png",
+    "src": "source/raw/workspaces/give-access/r2-04-manage-access.png",
     "args": [
       "--crop",
-      "1080,657,1040,485",
+      "1080,658,1040,484",
       "--width",
       "1470",
       "--radius",

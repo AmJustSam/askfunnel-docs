@@ -1,7 +1,7 @@
 [
   {
     "out": "images/workspaces/switch-workspaces/switcher-trigger.png",
-    "src": "source/raw/getting-started/dashboard-tour/01-home-sidebar.png",
+    "src": "source/raw/workspaces/switch-workspaces/r2-00-switcher-trigger.png",
     "args": [
       "--crop",
       "0,0,520,300",
@@ -13,12 +13,12 @@
   },
   {
     "out": "images/workspaces/switch-workspaces/switcher-list.png",
-    "src": "source/raw/workspaces/switch-workspaces/01-switcher-open.png",
+    "src": "source/raw/workspaces/switch-workspaces/r2-01-switcher-open.png",
     "args": [
       "--crop",
       "0,0,622,800",
       "--ring",
-      "22,562,590,88",
+      "18,407,596,92",
       "--width",
       "1000"
     ]

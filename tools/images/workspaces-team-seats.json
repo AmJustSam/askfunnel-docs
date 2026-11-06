@@ -1,32 +1,32 @@
 [
   {
     "out": "images/workspaces/team-seats/seat-count.png",
-    "src": "source/raw/workspaces/team-seats/01-seat-count.png",
+    "src": "source/raw/workspaces/team-seats/r2-01-seat-count.png",
     "args": [
       "--crop",
-      "600,120,2500,388",
+      "600,120,2500,820",
       "--ring",
-      "2639,160,459,64"
+      "2439,160,460,64"
     ]
   },
   {
     "out": "images/workspaces/team-seats/seat-free.png",
-    "src": "source/raw/workspaces/team-seats/02-seat-free.png",
+    "src": "source/raw/workspaces/team-seats/r2-02-seat-free.png",
     "args": [
       "--crop",
-      "620,1190,2480,290",
+      "620,364,2480,284",
       "--ring",
-      "1766,1373,260,60"
+      "1766,543,260,64"
     ]
   },
   {
     "out": "images/workspaces/team-seats/seat-counted.png",
-    "src": "source/raw/workspaces/team-seats/03-seat-counted.png",
+    "src": "source/raw/workspaces/team-seats/r2-03-seat-counted.png",
     "args": [
       "--crop",
-      "620,636,2480,290",
+      "620,502,2480,284",
       "--ring",
-      "1864,841,260,60"
+      "1766,681,216,64"
     ]
   }
 ]
