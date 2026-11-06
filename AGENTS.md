@@ -26,7 +26,7 @@ Business owners, marketers and agencies, not developers. Many are in the middle 
 
 ## Page structure
 
-1. Frontmatter: `title` (the question or task, in the reader's words), `sidebarTitle` (short, 1 to 4 words), `description` (one sentence), `icon` (a Font Awesome name).
+1. Frontmatter: `title` (the question or task, in the reader's words), `sidebarTitle` (short, 1 to 4 words), `description` (one sentence), `icon` (a Font Awesome name; anything made by AI uses the AI tile, `/images/icons/ai-mark.svg`, never a sparkle or a wand).
 2. If the feature depends on the plan, start with the plan badge:
    `<Callout icon="star" color="#155DFC">Available on: **the Growth plan and above**.</Callout>`
 3. One or two short paragraphs: what it is and why it helps.
