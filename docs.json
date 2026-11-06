@@ -50,6 +50,10 @@
           "getting-started/create-account",
           "getting-started/change-your-email",
           "getting-started/sign-in",
+          "getting-started/your-profile",
+          "getting-started/dashboard-tour",
+          "getting-started/home-overview",
+          "getting-started/notifications",
           "getting-started/launch-your-first-funnel",
           "getting-started/learn-tab",
           "getting-started/onboarding-call",
@@ -108,11 +112,13 @@
         "pages": [
           "leads/view-and-manage-leads",
           "leads/crm-contacts",
+          "leads/lead-notes",
           "leads/contact-status",
           "funnel-settings/lead-scoring",
           "leads/filter-by-date",
           "leads/contact-fields",
           "leads/custom-contact-fields",
+          "leads/import-leads",
           "leads/export-contacts",
           "leads/delete-leads"
         ]
@@ -127,7 +133,9 @@
           "messages/email-delivery-stats",
           "messages/team-alerts",
           "messages/email-deliverability",
-          "messages/whatsapp-template"
+          "messages/connect-whatsapp",
+          "messages/whatsapp-template",
+          "messages/whatsapp-conversations"
         ]
       },
       {
