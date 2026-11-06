@@ -1,46 +1,52 @@
 [
  {
   "out": "images/billing/plan-and-usage/plan-pill-menu.png",
-  "src": "source/raw/billing/plan-and-usage/03-popover-grouped.png",
+  "src": "source/raw/billing/plan-and-usage/10-plan-card-menu.png",
   "args": [
    "--crop",
-   "2425,0,599,625",
+   "0,790,720,1010",
    "--ring",
-   "2785,22,138,52",
+   "8,1446,494,246",
    "--width",
    "1100"
   ]
  },
  {
   "out": "images/billing/plan-and-usage/plan-page.png",
-  "src": "source/raw/billing/plan-and-usage/06-plan-page-grouped.png",
+  "src": "source/raw/billing/plan-and-usage/11-plan-page.png",
   "args": [
    "--crop",
-   "975,136,1480,1100"
+   "590,0,1670,1670"
   ]
  },
  {
   "out": "images/billing/plan-and-usage/profile-menu.png",
-  "src": "source/raw/billing/billing-and-invoices/02-profile-menu.png",
+  "src": "source/raw/billing/billing-and-invoices/10-account-menu.png",
   "args": [
    "--crop",
-   "2556,0,620,950",
+   "0,890,660,910",
    "--ring",
-   "2555,659,593,88",
+   "18,1336,596,88",
    "--width",
    "1100"
   ]
  },
  {
-  "out": "images/billing/plan-and-usage/usage-dot.png",
-  "src": "source/raw/billing/plan-and-usage/04-usage-dot-grouped.png",
+  "out": "images/billing/plan-and-usage/trial-email-rows.png",
+  "src": "source/raw/billing/plan-and-usage/13-trial-plan-page.png",
   "args": [
    "--crop",
-   "2425,0,599,662",
+   "596,974,1660,616",
    "--ring",
-   "2785,15,142,59",
-   "--width",
-   "1100"
+   "646,1168,1548,380"
+  ]
+ },
+ {
+  "out": "images/billing/plan-and-usage/usage-by-client.png",
+  "src": "source/raw/billing/plan-and-usage/12-usage-by-workspace.png",
+  "args": [
+   "--crop",
+   "596,760,1660,770"
   ]
  },
  {
@@ -54,21 +60,15 @@
   ]
  },
  {
-  "out": "images/billing/plan-and-usage/trial-email-rows.png",
-  "src": "source/raw/billing/plan-and-usage/trial-email-rows-grouped.png",
+  "out": "images/billing/plan-and-usage/usage-dot.png",
+  "src": "source/raw/billing/plan-and-usage/04-usage-dot-grouped.png",
   "args": [
    "--crop",
-   "998,880,1436,255",
+   "2425,0,599,662",
    "--ring",
-   "1013,888,1406,240"
-  ]
- },
- {
-  "out": "images/billing/plan-and-usage/usage-by-client.png",
-  "src": "source/raw/billing/plan-and-usage/usage-by-client.png",
-  "args": [
-   "--crop",
-   "968,845,1490,620"
+   "2785,15,142,59",
+   "--width",
+   "1100"
   ]
  }
 ]

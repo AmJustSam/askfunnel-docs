@@ -1,14 +1,14 @@
 [
   {
     "out": "images/billing/ai-credits/plan-badge-credits.png",
-    "src": "source/raw/billing/ai-credits/01-plan-badge-credits.png",
+    "src": "source/raw/billing/plan-and-usage/10-plan-card-menu.png",
     "args": [
       "--crop",
-      "2390,0,810,660",
+      "0,790,720,1010",
       "--ring",
-      "2420,438,634,66",
+      "58,1228,616,72",
       "--width",
-      "1470"
+      "1100"
     ]
   },
   {
