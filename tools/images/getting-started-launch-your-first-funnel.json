@@ -41,12 +41,14 @@
   },
   {
     "out": "images/getting-started/launch-your-first-funnel/leads-test-lead.png",
-    "src": "source/raw/getting-started/launch-your-first-funnel/04-leads-test-lead.png",
+    "src": "source/raw/getting-started/launch-your-first-funnel/r2-leads.png",
     "args": [
       "--crop",
-      "620,150,2480,938",
+      "590,268,2525,1426",
       "--pad",
-      "100"
+      "90",
+      "--radius",
+      "24"
     ]
   }
 ]

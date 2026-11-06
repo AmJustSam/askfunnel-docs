@@ -55,10 +55,10 @@
   },
   {
     "out": "images/getting-started/dashboard-tour/phone-home.png",
-    "src": "source/raw/getting-started/dashboard-tour/10-phone-home.png",
+    "src": "source/raw/getting-started/dashboard-tour/r2-phone-home.png",
     "args": [
       "--crop",
-      "0,0,1170,2532",
+      "0,0,1170,2832",
       "--width",
       "1320",
       "--radius",

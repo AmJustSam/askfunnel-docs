@@ -1,7 +1,7 @@
 [
   {
     "out": "images/getting-started/create-account/signup.png",
-    "src": "source/raw/getting-started/create-account/01-signup.png",
+    "src": "source/raw/getting-started/create-account/r2-01-signup.png",
     "args": [
       "--crop",
       "300,240,1000,930",
@@ -17,7 +17,7 @@
   },
   {
     "out": "images/getting-started/create-account/check-email.png",
-    "src": "source/raw/getting-started/create-account/02-check-email.png",
+    "src": "source/raw/getting-started/create-account/r2-02-check-email.png",
     "args": [
       "--crop",
       "300,240,1000,500",
@@ -45,7 +45,7 @@
   },
   {
     "out": "images/getting-started/create-account/setup-workspace.png",
-    "src": "source/raw/getting-started/create-account/05-setup-workspace.png",
+    "src": "source/raw/getting-started/create-account/r2-05-setup-workspace.png",
     "args": [
       "--crop",
       "960,60,1280,680",
@@ -61,17 +61,17 @@
   },
   {
     "out": "images/getting-started/create-account/choose-plan.png",
-    "src": "source/raw/getting-started/create-account/08-choose-plan.png",
+    "src": "source/raw/getting-started/create-account/r2-08-choose-plan.png",
     "args": [
       "--crop",
-      "300,20,2600,1605",
+      "300,20,2600,1930",
       "--ring",
-      "1170,1515,860,110"
+      "1170,1716,860,110"
     ]
   },
   {
     "out": "images/getting-started/create-account/trial-started.png",
-    "src": "source/raw/getting-started/create-account/09-trial-started.png",
+    "src": "source/raw/getting-started/create-account/r2-09-trial-started.png",
     "args": [
       "--crop",
       "0,1400,520,400",

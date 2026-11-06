@@ -1,10 +1,14 @@
 [
   {
     "out": "images/getting-started/use-cases/client-workspaces.png",
-    "src": "source/raw/getting-started/home-overview/01-overview.png",
+    "src": "source/raw/getting-started/home-overview/r2-all-1600.png",
     "args": [
       "--crop",
-      "600,40,2500,1600"
+      "570,0,1802,1680",
+      "--pad",
+      "80",
+      "--radius",
+      "24"
     ]
   }
 ]

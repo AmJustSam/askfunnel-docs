@@ -13,14 +13,32 @@
   },
   {
     "out": "images/getting-started/notifications/notifications-page.png",
-    "src": "source/raw/getting-started/notifications/01-notifications-page.png",
+    "src": "source/raw/getting-started/notifications/r2-notifications-page.png",
     "args": [
       "--crop",
-      "600,100,1660,795",
+      "570,20,1702,1504",
       "--ring",
-      "614,157,438,84",
+      "614,157,436,84",
       "--ring",
-      "1890,162,342,74"
+      "1890,150,344,98",
+      "--pad",
+      "100",
+      "--radius",
+      "24"
+    ]
+  },
+  {
+    "out": "images/getting-started/notifications/bell-list.png",
+    "src": "source/raw/getting-started/notifications/r2-bell-list.png",
+    "args": [
+      "--crop",
+      "513,647,791,968",
+      "--ring",
+      "528,776,425,80",
+      "--width",
+      "1000",
+      "--radius",
+      "24"
     ]
   }
 ]

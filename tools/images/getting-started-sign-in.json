@@ -1,7 +1,7 @@
 [
   {
     "out": "images/getting-started/sign-in/login-page.png",
-    "src": "source/raw/getting-started/sign-in/01-login-page.png",
+    "src": "source/raw/getting-started/sign-in/r2-01-login-page.png",
     "args": [
       "--crop",
       "300,240,1000,910",
@@ -17,7 +17,7 @@
   },
   {
     "out": "images/getting-started/sign-in/confirm-email.png",
-    "src": "source/raw/getting-started/sign-in/02-confirm-email.png",
+    "src": "source/raw/getting-started/sign-in/r2-02-confirm-email.png",
     "args": [
       "--crop",
       "1161,241,878,682",

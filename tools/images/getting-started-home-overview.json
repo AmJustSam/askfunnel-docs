@@ -1,26 +1,26 @@
 [
   {
     "out": "images/getting-started/home-overview/workspace-home.png",
-    "src": "source/raw/getting-started/dashboard-tour/01-home-sidebar.png",
+    "src": "source/raw/getting-started/home-overview/r2-ws-1600.png",
     "args": [
       "--crop",
-      "0,0,3200,1800",
+      "570,0,2560,1840",
       "--pad",
-      "100",
+      "90",
       "--radius",
-      "30"
+      "26"
     ]
   },
   {
     "out": "images/getting-started/home-overview/all-workspaces.png",
-    "src": "source/raw/getting-started/home-overview/01-overview.png",
+    "src": "source/raw/getting-started/home-overview/r2-all-1600.png",
     "args": [
       "--crop",
-      "0,0,3200,1700",
+      "570,0,2560,1680",
       "--pad",
-      "100",
+      "90",
       "--radius",
-      "30"
+      "26"
     ]
   }
 ]
