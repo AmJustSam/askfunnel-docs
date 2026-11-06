@@ -1,14 +1,14 @@
 [
   {
     "out": "images/funnel-settings/lead-scoring/lead-scoring-settings.png",
-    "src": "source/raw/funnel-settings/lead-scoring/06-scoring-ranges-filled.png",
+    "src": "source/raw/funnel-settings/lead-scoring/01-lead-scoring-settings.png",
     "args": [
       "--crop",
-      "560,150,1620,950",
+      "600,0,1650,700",
       "--ring",
-      "1990,530,112,66",
+      "2086,190,112,68",
       "--ring",
-      "1812,632,254,246",
+      "1988,304,196,206",
       "--pad",
       "70",
       "--radius",
@@ -17,10 +17,10 @@
   },
   {
     "out": "images/funnel-settings/lead-scoring/score-rule.png",
-    "src": "source/raw/funnel-settings/lead-scoring/09-action-flow-one-rule.png",
+    "src": "source/raw/funnel-settings/lead-scoring/05-action-flow-window.png",
     "args": [
       "--crop",
-      "950,300,1300,1200",
+      "949,299,1297,1200",
       "--ring",
       "1146,1024,246,72",
       "--width",

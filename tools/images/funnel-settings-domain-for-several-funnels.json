@@ -4,31 +4,41 @@
     "src": "source/raw/funnel-settings/domain-for-several-funnels/01-funnel-domains.png",
     "args": [
       "--crop",
-      "880,314,1990,716",
+      "600,140,1660,620",
       "--ring",
-      "2594,572,200,80"
+      "2084,396,116,72",
+      "--pad",
+      "60",
+      "--radius",
+      "20"
     ]
   },
   {
     "out": "images/funnel-settings/domain-for-several-funnels/remove-domain.png",
-    "src": "source/raw/funnel-settings/domain-for-several-funnels/02-remove-domain.png",
+    "src": "source/raw/funnel-settings/custom-domain/06-pending-panel.png",
     "args": [
       "--crop",
-      "880,340,1620,870",
+      "2226,850,946,930",
       "--ring",
-      "1797,1061,597,92"
+      "2256,1630,310,100",
+      "--width",
+      "1470",
+      "--radius",
+      "24"
     ]
   },
   {
     "out": "images/funnel-settings/domain-for-several-funnels/remove-domain-confirm.png",
-    "src": "source/raw/funnel-settings/domain-for-several-funnels/03-remove-domain-confirm.png",
+    "src": "source/raw/funnel-settings/domain-for-several-funnels/03-remove-domain-confirm-used.png",
     "args": [
       "--crop",
-      "1020,640,1160,520",
+      "1082,626,1030,544",
       "--ring",
-      "1900,954,184,100",
+      "1895,1034,176,100",
       "--width",
-      "1500"
+      "1470",
+      "--radius",
+      "16"
     ]
   }
 ]

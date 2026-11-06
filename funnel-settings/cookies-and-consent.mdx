@@ -1,14 +1,15 @@
 ---
 title: "Set up cookies and visitor consent"
 sidebarTitle: "Cookies and consent"
-description: "Choose whether visitors see a cookie banner before tracking starts, and how much visitor activity AskFunnel tracks."
+description: "Choose whether visitors see a cookie banner before tracking starts, how much visitor activity AskFunnel tracks and which privacy and cookie policy links visitors see."
 icon: "cookie-bite"
 ---
 
-Decide how your funnel handles visitor consent, so tracking starts only when you want it to. If you run ads or measure your traffic, this matters. Cookies are small files a website saves in a visitor's browser. In **Funnel Settings**, **Cookies & Consent** lets you choose two things for each funnel:
+Decide how your funnel handles visitor consent, so tracking starts only when you want it to. If you run ads or measure your traffic, this matters. Cookies are small files a website saves in a visitor's browser. In **Funnel settings**, **Cookies & Consent** lets you choose three things for each funnel:
 
 - **Cookie banner:** whether visitors see a cookie notice and must agree before your tracking pixels (small pieces of code from ad platforms such as Meta) and detailed analytics start.
 - **Analytics tracking depth:** how much of a visitor's activity AskFunnel records.
+- **Policy links:** your own privacy policy and cookie policy pages, which visitors see in the notice instead of AskFunnel's.
 
 <Note>
   This page explains what the settings do. It is not legal advice. The rules depend on where your visitors live and which tools you use. If you are not sure what you need, ask a legal professional.
@@ -16,13 +17,14 @@ Decide how your funnel handles visitor consent, so tracking starts only when you
 
 **Before you start**, you need:
 
-- A funnel, and a role that can open **"Funnel Settings"**: Global Admin, Workspace Admin or Content Editor.
+- A funnel, and a role that can open **"Funnel settings"**: Global Admin, Workspace Admin or Content Editor.
 
 ## Important to note
 
 <Warning>
-  - These settings belong to one funnel, so set them for each funnel you run. New funnels start with **No banner**.
-  - With **No banner**, visitors are never asked, so AskFunnel treats consent as given. That means **Detailed (with consent)** tracks every visitor, exactly like **Detailed (always on)**. Choose **Show banner** if you need visitors to agree first.
+  - These settings belong to one funnel, so set them for each funnel you run. New funnels start with **Show banner**. Funnels you made earlier keep the choice they had.
+  - With **No banner**, visitors are never asked, so tracking and pixels start for every visitor.
+  - Two choices go together. **Detailed (with consent)** needs the banner on, because it waits for the visitor to accept. **Detailed (always on)** needs the banner off. The choice that does not fit is grayed out, and it tells you what to change first.
   - If a visitor's browser sends the Global Privacy Control signal (a browser setting that tells websites not to track), AskFunnel keeps non essential tracking off for that visitor, whichever option you choose.
 </Warning>
 
@@ -30,47 +32,51 @@ Decide how your funnel handles visitor consent, so tracking starts only when you
 
 <Steps>
   <Step title="Open Cookies & Consent">
-    1. From your funnel list, click the three dots (**...**) on your funnel's row, then click **"Funnel Settings"**. Inside the builder, you can click the gear icon at the top right instead.
-    2. On the left side menu, click **"Cookies & Consent"**.
+    1. Open **Funnel settings** for your funnel. Click your funnel in the list and then **"Settings"** in its menu, or click the three dots (**...**) on the funnel's row and then **"Funnel settings"**. Inside the builder, you can click the gear icon at the top right instead.
+    2. In the left menu, click **"Cookies & Consent"**.
   </Step>
   <Step title="Choose your cookie banner">
-    Under **Cookie banner**, click one of the two cards:
+    Under **Cookie banner**, click one of the two rows:
 
-    - **Show banner:** visitors accept first, and pixels load after. A cookie notice appears at the bottom right of your funnel.
-    - **No banner:** pixels load for every visitor and no notice appears.
+    - **Show banner:** visitors accept first, and pixels load after. A cookie notice appears on your funnel.
+    - **No banner:** no cookie notice appears. Tracking and pixels start for every visitor.
 
-    <img src="/images/funnel-settings/cookies-and-consent/cookie-banner-options.png" alt="The Cookies and Consent settings with the Show banner and No banner cards and the Analytics tracking depth list highlighted" width="1760" height="1141" />
+    <img src="/images/funnel-settings/cookies-and-consent/cookie-banner-options.png" alt="The Cookies and Consent settings with the Show banner and No banner rows and the Analytics tracking depth list highlighted, and the Policy links below" width="1790" height="1486" />
   </Step>
   <Step title="Choose your analytics tracking depth">
     Open the **Analytics tracking depth** list and pick one:
 
-    - **Essential:** visits and conversions only. This is the lightest option.
-    - **Detailed (with consent):** step by step activity and where visitors drop off, recorded after the visitor accepts the banner. The list says to use it for visitors from the EU or UK.
-    - **Detailed (always on):** full tracking without waiting for consent. Use it only where the privacy laws that apply to your visitors do not require consent first.
+    - **Essential:** counts visits and conversions. This is the lightest option. With no banner it also remembers returning visitors and campaign tags.
+    - **Detailed (with consent):** shows each step and where visitors drop off, after they accept the banner. It needs the cookie banner on.
+    - **Detailed (always on):** full tracking with no banner. Use it only where the law in your visitors' countries does not ask for consent.
 
     This choice saves as soon as you pick it. You see **Analytics tracking depth updated**.
   </Step>
-  <Step title="Save your banner choice">
-    After you change the banner, a bar with **You have unsaved changes** appears at the top. Click **"Save changes"**. You see **Settings saved. Your live funnel is updated.** You do not need to publish again.
+  <Step title="Add your own policy links (optional)">
+    Under **Policy links**, paste the address of your own pages in **Privacy policy link** and **Cookie policy link**. Each address must start with `https://`. If an address is not valid, you see **Use a link that starts with https://.** under the field.
+
+    Visitors then see your pages in the cookie notice instead of AskFunnel's. If you set only one link, the notice shows only that one. Leave both empty to show AskFunnel's pages. Your privacy policy link also fills the **Privacy Policy** link in your funnel footer when you do not add a link there. See [Set up your privacy policy, terms links and consent](/funnel-settings/privacy-policy-and-terms).
+  </Step>
+  <Step title="Save your banner choice and links">
+    After you change the banner or a link, a bar with **Unsaved changes** appears at the top. Click **"Save"**. You see **Settings saved. Your live funnel is updated.** You do not need to publish again.
   </Step>
 </Steps>
 
 <Tip>
-  - You can also open the same settings from the builder: click the footer at the bottom of a page, then click the gear next to **Cookie banner**.
-  - Link your own privacy policy in the footer of your funnel. Click the footer and use the gear next to **Privacy policy**. See [Set up your privacy policy, terms links and consent](/funnel-settings/privacy-policy-and-terms).
+  - You can also open the banner choices from the builder: click the footer at the bottom of a page, then click the gear next to **Cookie banner**. A window titled **Manage cookies** opens with the same choices.
   - Tracking pixels you add under **Integrations** follow the banner choice. See [Meta Pixel](/integrations/meta-pixel), [Google Analytics](/integrations/google-analytics) and [TikTok Pixel](/integrations/tiktok-pixel).
 </Tip>
 
 ## What visitors see with the banner
 
-With **Show banner**, visitors see a **Cookie notice** with three buttons: **Accept all**, **Reject non-essential** and **Manage preferences**. In the preferences they can switch **Preferences**, **Analytics** and **Marketing** cookies on or off. **Essential** cookies are always on. AskFunnel remembers their choice for 365 days, and your funnel footer shows a **Manage Cookies** link so they can change it.
+With **Show banner**, visitors see a cookie notice with three buttons: **Accept all**, **Reject all** and **Manage preferences**. Under the buttons, they see links to the cookie policy and the privacy policy, yours if you added them. In **Manage preferences**, a window titled **Cookie preferences** lets them switch **Preferences**, **Analytics** and **Marketing** cookies on or off, and click **Save choices**. **Essential** cookies are **Always on**. AskFunnel remembers their choice for 365 days, and your funnel footer shows a **Cookie preferences** link so they can change it.
 
 A video from YouTube or Vimeo does not autoplay with **Show banner**. It waits behind a play button until the visitor accepts marketing cookies or clicks play.
 
 ## How do I know it is working?
 
 1. Open your live funnel in a private browser window, where you have not made a cookie choice before.
-2. With **Show banner**, the **Cookie notice** appears at the bottom right. Click **"Accept all"** and continue through the funnel.
+2. With **Show banner**, the cookie notice appears. Click **"Accept all"** and continue through the funnel.
 3. With **No banner**, no notice appears.
 4. To test again, close the private window and open a new one. Your choice is stored in the browser.
 
@@ -78,19 +84,28 @@ A video from YouTube or Vimeo does not autoplay with **Show banner**. It waits b
 
 <AccordionGroup>
   <Accordion title="The banner does not show on my funnel">
-    Check that **Show banner** is selected and that you clicked **"Save changes"**. If you already chose an option in that browser, the notice does not come back, so try a private window. Some automated browsers and crawlers never see the banner.
+    Check that **Show banner** is selected and that you clicked **"Save"**. If you already chose an option in that browser, the notice does not come back, so try a private window. Some automated browsers and crawlers never see the banner.
+  </Accordion>
+  <Accordion title="I cannot pick Detailed (always on) or Detailed (with consent)">
+    The two choices go with the banner. **Detailed (always on)** says **Turn the cookie banner off to use always on tracking.** while the banner is on. **Detailed (with consent)** says **Turn the cookie banner on to use tracking with consent.** while the banner is off. Change the banner first, or pick **Essential**.
+  </Accordion>
+  <Accordion title="I cannot pick No banner or Show banner">
+    **No banner** says **Choose another tracking level to use no banner.** while the depth is **Detailed (with consent)**. **Show banner** says **Choose a lower tracking level to use the cookie banner.** while the depth is **Detailed (always on)**. Change the depth first.
+  </Accordion>
+  <Accordion title="I see Steps are not counted while the banner is off">
+    Your funnel was saved with **Detailed (with consent)** and **No banner** before the two were tied together. Nobody can accept without a banner, so the funnel runs as **Essential** and no step is counted. Turn the banner on to count them.
   </Accordion>
   <Accordion title="My pixel does not run when I test">
     With **Show banner**, a pixel starts only after you accept. If your browser sends the Global Privacy Control signal, pixels stay off even if you accept. Try another browser or turn the setting off for the test.
   </Accordion>
-  <Accordion title="I do not see the Manage Cookies link in my footer">
+  <Accordion title="I do not see the Cookie preferences link in my footer">
     The link only shows when the funnel uses **Show banner**.
   </Accordion>
   <Accordion title="A video does not autoplay">
     With **Show banner**, YouTube and Vimeo videos wait for the visitor to accept marketing cookies or click play. Videos you upload yourself are not affected.
   </Accordion>
   <Accordion title="Analytics does not show where visitors drop off">
-    Step by step activity needs **Detailed (with consent)** or **Detailed (always on)**. With **Essential**, you only see visits and conversions. With **Show banner**, it also needs visitors to accept.
+    Step by step activity needs **Detailed (with consent)** or **Detailed (always on)**. With **Essential**, you only see visits and conversions. With **Detailed (with consent)**, it also needs visitors to accept the banner.
   </Accordion>
 </AccordionGroup>
 

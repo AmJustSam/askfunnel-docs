@@ -1,28 +1,42 @@
 [
   {
-    "out": "images/funnel-settings/funnel-settings-overview/delete-window.png",
-    "src": "source/raw/funnel-settings/funnel-settings-overview/02-delete-window.png",
+    "out": "images/funnel-settings/funnel-settings-overview/open-settings.png",
+    "src": "source/raw/funnel-settings/funnel-settings-overview/00-funnel-menu.png",
     "args": [
       "--crop",
-      "1080,698,1040,404",
+      "4,130,500,470",
       "--ring",
-      "1902,956,180,96",
+      "12,430,486,76",
       "--width",
-      "1470",
+      "900",
       "--radius",
-      "16"
+      "20"
     ]
   },
   {
     "out": "images/funnel-settings/funnel-settings-overview/settings-tabs.png",
-    "src": "source/raw/funnel-settings/funnel-settings-overview/01-settings-tabs.png",
+    "src": "source/raw/funnel-settings/social-preview-and-favicon/01-social-preview.png",
     "args": [
       "--crop",
-      "340,120,2520,970",
+      "0,0,2260,790",
       "--ring",
-      "366,176,500,742",
+      "10,205,495,555",
       "--ring",
-      "904,176,1928,143"
+      "616,4,1612,104"
+    ]
+  },
+  {
+    "out": "images/funnel-settings/funnel-settings-overview/delete-window.png",
+    "src": "source/raw/funnel-settings/funnel-settings-overview/02-delete-window.png",
+    "args": [
+      "--crop",
+      "1082,685,1030,427",
+      "--ring",
+      "1896,971,184,96",
+      "--width",
+      "1470",
+      "--radius",
+      "16"
     ]
   }
 ]

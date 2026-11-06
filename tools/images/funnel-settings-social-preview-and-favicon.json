@@ -1,12 +1,12 @@
 [
   {
     "out": "images/funnel-settings/social-preview-and-favicon/social-preview.png",
-    "src": "source/raw/funnel-settings/social-preview-and-favicon/07-social-saved.png",
+    "src": "source/raw/funnel-settings/social-preview-and-favicon/01-social-preview.png",
     "args": [
       "--crop",
-      "570,150,1600,1732",
+      "600,0,1650,1710",
       "--ring",
-      "587,1101,938,501",
+      "612,940,945,752",
       "--pad",
       "70",
       "--radius",
@@ -18,9 +18,9 @@
     "src": "source/raw/funnel-settings/social-preview-and-favicon/02-favicon.png",
     "args": [
       "--crop",
-      "560,170,1620,730",
+      "600,20,1650,780",
       "--ring",
-      "636,532,299,299",
+      "661,427,303,304",
       "--pad",
       "70",
       "--radius",

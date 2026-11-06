@@ -15,7 +15,7 @@ Setting it up has two parts:
 **Before you start**, you need:
 
 - A funnel with at least one quiz question. See [Build quiz questions](/funnels/quiz-questions).
-- A role that can open **"Funnel Settings"**: Global Admin, Workspace Admin or Content Editor.
+- A role that can open **"Funnel settings"**: Global Admin, Workspace Admin or Content Editor.
 
 ## Important to note
 
@@ -29,39 +29,39 @@ Setting it up has two parts:
 
 <Steps>
   <Step title="Turn on lead scoring and set your ranges">
-    1. From your funnel list, click the three dots (**...**) on your funnel's row, then click **"Funnel Settings"**.
-    2. On the left side menu, click **"Lead Scoring"**.
+    1. Open **Funnel settings** for your funnel: click the three dots (**...**) on its row in the funnel list, then click **"Funnel settings"**. You can also click your funnel and then **"Settings"** in its menu.
+    2. In the left menu, click **"Lead scoring"**.
     3. Turn on **Enable lead scoring**.
-    4. Enter the highest score that is still **Cold** next to **Score up to**, for example 10.
-    5. Enter the highest score that is still **Warm** in the second box of the **Warm** row, for example 25. The first box fills in for you (11).
-    6. **Hot** fills in for you. It means **Score above** your Warm number, here 25.
-    7. Click **"Save changes"** in the bar at the top.
+    4. On the **Cold** row, enter the highest score that is still **Cold** after **Up to**, for example 10.
+    5. On the **Warm** row, enter the highest score that is still **Warm** in the second box, for example 25. The first box fills in for you (11).
+    6. The **Hot** row fills in for you. It means **Above** your Warm number, here 25.
+    7. Click **"Save"** in the bar at the top.
 
-    <img src="/images/funnel-settings/lead-scoring/lead-scoring-settings.png" alt="The Lead Scoring settings with the Enable lead scoring switch and the Cold and Warm score boxes highlighted" width="1760" height="1076" />
+    <img src="/images/funnel-settings/lead-scoring/lead-scoring-settings.png" alt="The Lead scoring settings with the Enable lead scoring switch and the Cold and Warm score boxes highlighted" width="1790" height="826" />
 
     With these numbers, a lead with 10 points or fewer is **Cold**, 11 to 25 is **Warm**, and 26 or more is **Hot**.
   </Step>
   <Step title="Give points to your quiz answers">
-    You set points in the **Action Flow** of a quiz, as a rule under **Advanced Branching**. Rules only work in a quiz set to **Single**.
+    You set points in the **Action flow** of a quiz, as a rule under **Advanced branching**. Rules only work in a quiz set to **Single**.
 
     1. Open your funnel in the builder and go to the page with your quiz.
     2. Click the quiz to select it and make sure it is set to **Single**.
-    3. In the left panel, find **Action Flow** and click the line under it. The **Action Flow** window opens.
-    4. Turn on **Advanced Branching**, then click **"Add a rule"**.
-    5. Under **If**, pick the question (by default this one), choose **is** and pick an answer, for example "Within one month".
-    6. Under **Then**, type the points next to **Score**, for example 25.
+    3. In the left panel, find **Action flow** and click the line under it. The **Action flow** window opens.
+    4. Turn on **Advanced branching**, then click **"Add a rule"**.
+    5. Under **IF**, next to **When**, pick the question, choose **is** and pick an answer, for example "As soon as possible".
+    6. Under **THEN**, type the points next to **Score**, for example 30.
     7. To score more answers, click **"Add rule"** and repeat. Click **"Save"** when you are done.
 
-    <img src="/images/funnel-settings/lead-scoring/score-rule.png" alt="The Action Flow window with one rule, where the answer Within one month gives a Score of 25" width="1470" height="1380" loading="lazy" />
+    <img src="/images/funnel-settings/lead-scoring/score-rule.png" alt="The Action flow window with a rule where the answer As soon as possible gives a Score of 30, the Score box highlighted" width="1471" height="1380" loading="lazy" />
 
-    **Go to** is optional. Leave it empty to keep the normal route and only add points. Choose a page only if you also want to send people there.
+    **Go to** is optional. Leave it on **Next page** to keep the normal route and only add points. Choose a page only if you also want to send people there.
 
     <Tip>
       A rule can look at an earlier question too. Under **When**, pick the question, and use **Add condition** to combine answers with **and** or **or**.
     </Tip>
   </Step>
   <Step title="Publish and check your leads">
-    Click **"Publish Funnel"** at the top right. When people submit your form, the leads table gets a **Score** column with a **Cold**, **Warm** or **Hot** label for each lead.
+    Click **"Publish"** at the top right. When people submit your form, the leads table gets a **Score** column with a **Cold**, **Warm** or **Hot** label for each lead.
 
     <img src="/images/funnel-settings/lead-scoring/leads-score-column.png" alt="The leads table with the Score column highlighted, showing Warm, Cold and Hot labels" width="1860" height="1187" loading="lazy" />
   </Step>
@@ -69,8 +69,8 @@ Setting it up has two parts:
 
 ## How do I know it is working?
 
-- In **Funnel Settings**, **Lead Scoring** shows your ranges after you save.
-- In the builder, the **Action Flow** of your quiz shows how many rules you added, for example **2 rules**.
+- In **Funnel settings**, **Lead scoring** shows your ranges after you save.
+- In the builder, the **Action flow** of your quiz shows how many rules you added, for example **3 rules**.
 - Submit a test lead with your best answers, then open your leads table. The **Score** column should show **Hot**. See [View and manage your leads](/leads/view-and-manage-leads).
 
 ## How the points add up
@@ -88,16 +88,16 @@ For example, with the ranges above:
 
 <AccordionGroup>
   <Accordion title="Every lead is Cold">
-    No answer is giving points yet, or your **Cold** number is too high. Open the **Action Flow** of your quiz, check that each rule has a **Score** above 0, and check your ranges in **Funnel Settings**.
+    No answer is giving points yet, or your **Cold** number is too high. Open the **Action flow** of your quiz, check that each rule has a **Score** above 0, and check your ranges in **Funnel settings**.
   </Accordion>
   <Accordion title="There is no Score column in my leads table">
-    The column appears once you set your ranges or give points to answers. Without ranges you only see a number, not **Cold**, **Warm** or **Hot**. Turn on **Enable lead scoring** and click **"Save changes"**.
+    The column appears once you set your ranges or give points to answers. Without ranges you only see a number, not **Cold**, **Warm** or **Hot**. Turn on **Enable lead scoring** and click **"Save"**.
   </Accordion>
-  <Accordion title="Advanced Branching is turned off">
-    It is only available when the quiz is set to **Single**. Select the quiz, click **"Single"**, then open **Action Flow** again.
+  <Accordion title="Advanced branching says Needs a single answer question">
+    It is only available when the quiz is set to **Single**. Select the quiz, click **"Single"**, then open **Action flow** again.
   </Accordion>
   <Accordion title="My ranges will not save">
-    If it says **Enter both Cold and Warm values**, fill in both numbers, or turn off **Enable lead scoring**. If it says **Cold max must be lower than warm max**, the number in the **Warm** row must be higher than the number in the **Cold** row. For example, use 10 for Cold and 25 for Warm.
+    If it says **Enter both Cold and Warm values.**, fill in both numbers, or turn off **Enable lead scoring**. If it says **Cold max must be lower than warm max.**, the number in the **Warm** row must be higher than the number in the **Cold** row. For example, use 10 for Cold and 25 for Warm.
   </Accordion>
   <Accordion title="A rule shows Can't match, Always matches or Unavailable question">
     - **Can't match:** a person picks only one answer, so two **is** conditions joined by **and** are never both true. Use **or**, or use **is not**.
