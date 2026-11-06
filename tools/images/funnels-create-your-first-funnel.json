@@ -4,13 +4,13 @@
     "src": "source/raw/funnels/create-your-first-funnel/01-chooser.png",
     "args": [
       "--crop",
-      "800,572,1600,656",
+      "1080,632,1040,536",
       "--ring",
-      "836,761,504,406",
+      "1119,732,958,140",
       "--pad",
       "70",
       "--radius",
-      "18"
+      "30"
     ]
   },
   {
@@ -18,11 +18,11 @@
     "src": "source/raw/funnels/create-your-first-funnel/02-name-step.png",
     "args": [
       "--crop",
-      "801,720,1598,360",
+      "1080,692,1040,416",
       "--ring",
-      "2065,921,299,112",
+      "1776,948,308,110",
       "--pad",
-      "90",
+      "70",
       "--radius",
       "30"
     ]
@@ -32,11 +32,11 @@
     "src": "source/raw/funnels/create-your-first-funnel/04-hero-designs.png",
     "args": [
       "--crop",
-      "0,128,1460,1087",
+      "0,126,1470,1440",
       "--ring",
-      "371,150,365,95",
+      "24,679,710,147",
       "--ring",
-      "22,667,714,148",
+      "373,152,361,92",
       "--pad",
       "56",
       "--radius",

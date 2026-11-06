@@ -4,11 +4,11 @@
     "src": "source/raw/funnels/faq-and-social-proof-blocks/01-faq-block.png",
     "args": [
       "--crop",
-      "1500,160,980,1290",
+      "1500,160,980,1310",
       "--ring",
-      "2189,833,100,100",
+      "2339,708,96,96",
       "--ring",
-      "2340,639,92,92",
+      "2189,904,100,100",
       "--width",
       "1500"
     ]
@@ -18,11 +18,11 @@
     "src": "source/raw/funnels/faq-and-social-proof-blocks/02-reviews-block.png",
     "args": [
       "--crop",
-      "0,130,2460,1560",
+      "0,128,2460,1572",
       "--ring",
-      "24,421,710,115",
+      "22,495,714,120",
       "--ring",
-      "22,1315,356,288"
+      "22,1390,355,288"
     ]
   },
   {
@@ -30,11 +30,11 @@
     "src": "source/raw/funnels/faq-and-social-proof-blocks/03-testimonial-block.png",
     "args": [
       "--crop",
-      "0,130,2460,1370",
+      "0,128,2460,1363",
       "--ring",
-      "24,317,710,99",
+      "22,303,714,128",
       "--ring",
-      "22,507,714,871"
+      "22,494,714,896"
     ]
   },
   {
@@ -42,11 +42,11 @@
     "src": "source/raw/funnels/faq-and-social-proof-blocks/04-logo-bar-block.png",
     "args": [
       "--crop",
-      "0,128,2460,780",
+      "0,128,2460,1238",
       "--ring",
-      "22,316,712,200",
+      "22,299,714,236",
       "--ring",
-      "22,604,360,244"
+      "22,1101,355,243"
     ]
   }
 ]

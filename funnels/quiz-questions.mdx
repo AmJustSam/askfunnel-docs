@@ -8,7 +8,7 @@ icon: "list-check"
 Ask one question per page and show the answers as buttons people tap. It feels lighter than a long form, and the answers tell you who your best leads are. AskFunnel has two styles:
 
 - **Quiz:** text answers. Good for yes or no questions and simple choices, for example "Buy", "Sell" or "Rent".
-- **Media Quiz:** answers with a picture, an icon or an emoji above the text. Good for real estate, e-commerce or any choice people make by looking.
+- **Media quiz:** answers with a picture, an icon or an emoji above the text. Good for real estate, e-commerce or any choice people make by looking.
 
 You can also start from a ready-made design: under **Content**, open the **Quiz** section in the **Sections** list.
 
@@ -20,8 +20,9 @@ You can also start from a ready-made design: under **Content**, open the **Quiz*
 
 <Warning>
   - Use one quiz per page.
-  - **Advanced Branching** and lead scoring work only in **Single** mode.
+  - **Advanced branching** and lead scoring work only in **Single** mode.
   - Answers are saved with the lead when the visitor submits your form.
+  - After you publish a funnel, changing a question from **Single** to **Multiple** (or back) asks you to confirm with **Change type**. The question then starts as a new question, and the answers people gave to the old one stay in your Analytics, marked **Removed**.
 </Warning>
 
 ## Add a quiz
@@ -30,9 +31,9 @@ You can also start from a ready-made design: under **Content**, open the **Quiz*
   <Step title="Add the quiz to a page">
     1. In the builder, open the page where you want the question.
     2. Click the **"Content"** tab on the left side menu.
-    3. Click **"Interactions"**, then click **"Quiz"** or **"Media Quiz"**. It is added to your page with the question **Your question here?** and three answers.
+    3. Click **"Interactions"**, then click **"Quiz"** or **"Media quiz"**. It is added to your page with the question **Your question here?** and three answers.
 
-    <img src="/images/funnels/quiz-questions/interactions-menu.png" alt="The Content tab with Interactions highlighted and the Quiz and Media Quiz blocks highlighted on the right" width="1572" height="800" />
+    <img src="/images/funnels/quiz-questions/interactions-menu.png" alt="The Content tab with Interactions highlighted and the Quiz and Media quiz blocks highlighted on the right" width="1572" height="800" />
   </Step>
   <Step title="Write your question and answers">
     A quiz needs at least 2 answers and can have up to 12.
@@ -45,16 +46,20 @@ You can also start from a ready-made design: under **Content**, open the **Quiz*
     <Tip>
       Select an answer to change its text size (**S**, **M**, **L**, **XL**) and to make it bold, italic or underlined. Under **Color**, **F** sets the text color and **B** sets the background color of that answer. Select the quiz itself and **F** sets the color of the question.
     </Tip>
+
+    In a text **Quiz**, you can also put a small icon or emoji in front of an answer. Select the answer, click **Add media** in the left panel and pick one from the **Icon** or **Emoji** tab.
   </Step>
-  <Step title="Choose pictures for a Media Quiz">
+  <Step title="Choose pictures for a Media quiz">
     Skip this step if you use a text **Quiz**.
 
     1. Click the picture of an answer to select it.
-    2. In the left panel, click the **Change** icon under the picture. A window opens.
-    3. Pick a tab: **Upload** for your own picture, **Image** to search free photos, **My gallery** for pictures you uploaded before, **Icon**, **Emoji** or **AI**.
+    2. At the top of the left panel, click the **Change media** icon (the first of the two icons above the picture). The **Media gallery** window opens.
+    3. Pick a tab: **Upload** for your own picture, **My gallery** for pictures you uploaded before, **Image** to search free photos, **Icon**, **Emoji** or **AI**.
     4. For a photo, click **"Select image"**. Icons and emojis are added as soon as you click them.
 
-    Every answer in a Media Quiz needs a picture, an icon or an emoji. You can swap it but not remove it.
+    The **AI** tab creates a picture from your description and uses AI credits. See [Add images, video, icons and emojis](/funnels/images-video-icons).
+
+    Every answer in a Media quiz needs a picture, an icon or an emoji. You can swap it but not remove it.
   </Step>
   <Step title="Choose the layout and how many answers people can pick">
     Select the quiz. At the top of the left panel, under **Settings**:
@@ -64,16 +69,16 @@ You can also start from a ready-made design: under **Content**, open the **Quiz*
     - **Single** lets the visitor pick one answer, and tapping it sends them to the next step right away. **Multiple** lets them pick several and tap **Next**.
     - The small icon at the right of **Column** and **Row** changes whether the question is aligned left, center or right.
 
-    <img src="/images/funnels/quiz-questions/quiz-settings.png" alt="The Media Quiz settings with the Column, Row, Single and Multiple options highlighted" width="1470" height="1060" loading="lazy" />
+    <img src="/images/funnels/quiz-questions/quiz-settings.png" alt="The Media quiz settings with the Column, Row, Single and Multiple options highlighted" width="1470" height="979" loading="lazy" />
   </Step>
   <Step title="Choose where the answer leads">
-    1. Under **Action Flow**, a new quiz says **Always goes to Next Page**. Click it to open the **Action Flow** window.
+    1. Under **Action flow**, a new quiz says **Always goes to Next page**. Click it to open the **Action flow** window.
     2. Under **Always goes to**, choose any page or result of your funnel, then click **"Save"**.
 
-    To send people to different pages based on their answer, turn on **Advanced Branching** in the same window. See [Send visitors to different pages based on their answers](/funnels/branch-by-answer). You can also give each rule a **Score** to rank your leads. See [Set up lead scoring](/funnel-settings/lead-scoring).
+    To send people to different pages based on their answer, turn on **Advanced branching** in the same window. See [Send visitors to different pages based on their answers](/funnels/branch-by-answer). You can also give each rule a **Score** to rank your leads. See [Set up lead scoring](/funnel-settings/lead-scoring).
   </Step>
   <Step title="Publish your funnel">
-    Click **"Publish Funnel"** at the top right to make your changes live.
+    Click **"Publish"** at the top right to make your changes live.
   </Step>
 </Steps>
 
@@ -90,14 +95,14 @@ Open your live funnel and answer the question like a visitor. In **Single** mode
   <Accordion title="I cannot add more answers">
     A quiz can have up to 12 answers. Remove one before you add another, or split your question into two quizzes on two pages.
   </Accordion>
-  <Accordion title="Advanced Branching is turned off">
-    It is only available when the quiz is set to **Single**. Select the quiz, click **"Single"** under **Settings**, then open **Action Flow** again.
+  <Accordion title="Advanced branching is turned off">
+    It is only available when the quiz is set to **Single**. The window says **Needs a single answer question** next to a **Setting** link, which takes you to the answer setting. Click **"Single"**, then open **Action flow** again.
   </Accordion>
   <Accordion title="The answers are not side by side">
     Check that **Column** is selected under **Settings**. Answers also stack on narrow screens, and a tablet or phone shows at most 2 answers across.
   </Accordion>
   <Accordion title="People are not going to the page I expected">
-    Open **Action Flow** on the quiz. **Always goes to** decides the next step, and a matching branching rule overrides it.
+    Open **Action flow** on the quiz. **Always goes to** decides the next step, and a matching branching rule overrides it.
   </Accordion>
 </AccordionGroup>
 

@@ -27,7 +27,6 @@ With variables, you can:
   - A visitor's answer is only known after they give it. Put a variable on a page after the page that asks the question, for example "Thanks, **@Name**" on your thank you screen.
   - Always choose a good fallback, such as "there" for a name. Visitors who skip a question, or who open your link without the tag, see the fallback.
   - Only the five UTM tags and tags that start with `ps_` can come from a link. Other parameters in a link are ignored.
-  - A value is always shown as plain text, so nothing a visitor types can change how your page looks or runs.
 </Warning>
 
 ## Insert a variable
@@ -45,14 +44,14 @@ With variables, you can:
 
     Keep typing after the @ to narrow the list. If two fields have the same name, a small label next to each helps you tell them apart.
 
-    <img src="/images/funnels/personalize-with-variables/variable-list.png" alt="A headline being edited in the builder with the @ list open below the cursor, showing the groups Contact with Name, Email and Phone, Answers with two quiz questions and URL parameters starting with UTM Source, the open list with its group names highlighted" width="1600" height="1040" />
+    <img src="/images/funnels/personalize-with-variables/variable-list.png" alt="A headline reading Thanks, followed by an @, being edited in the builder with the @ list open below the cursor, showing the groups Contact with Name, Email and Phone, Answers with three quiz questions and URL parameters starting with UTM Source, the open list highlighted" width="1600" height="1140" />
   </Step>
   <Step title="Choose the fallback">
     Click a detail. A small box asks **Fallback for** and the name of the detail, with the hint that the fallback is shown when the field is empty. Type the words to show instead, for example "there", then click **"Insert"**. For a name, AskFunnel suggests "there". Click **"No fallback"** to show nothing when the value is missing.
 
     The variable appears in your text as a pill, such as **@Name**.
 
-    <img src="/images/funnels/personalize-with-variables/fallback-box.png" alt="The small box titled Fallback for Name with the text there typed in the box and the hint that it shows when the field is empty, and the buttons No fallback and Insert, the fallback box highlighted" width="1600" height="560" loading="lazy" />
+    <img src="/images/funnels/personalize-with-variables/fallback-box.png" alt="The small box titled Fallback for Name with the text there typed in the box and the hint that it shows when the field is empty, and the buttons No fallback and Insert, the fallback box highlighted" width="1600" height="710" loading="lazy" />
   </Step>
   <Step title="Add your own link tag (optional)">
     To use a tag that is not a UTM tag, click **Create custom URL parameter** at the bottom of the list.
@@ -64,15 +63,15 @@ With variables, you can:
     Then add the tag to the end of your funnel link, for example `https://summit-realty.askfunnel.com/home-valuation-x7k2m9p4qa?ps_city=Austin`. The visitor sees "Austin". See [Track campaigns with UTM links](/analytics/utm-tracking) for how to build links.
   </Step>
   <Step title="Publish and test it">
-    Click **"Publish Funnel"**, then open your live funnel. Test the real value and the fallback: go through your funnel and give your details, then open the link again in a private window and skip the question. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
+    Click **"Publish"**, then open your live funnel. Test the real value and the fallback: go through your funnel and give your details, then open the link again in a private window and skip the question. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
   </Step>
 </Steps>
 
 ## What each group shows
 
-- **Contact** shows what the visitor typed into your form, for example their name. It is empty until they have filled in the form, and the details are forgotten if the visitor reloads the page.
-- **Answers** shows the visitor's answer to a quiz question or a form field on an earlier page, as text. Quiz answers are remembered on the visitor's device, so they still work after a reload. Details typed into a form field are not.
-- **URL parameters** shows the value from the link the visitor opened. AskFunnel remembers it for the whole visit, so it still works on later pages even though the address of those pages has no tags. It is forgotten when the visitor closes the browser tab.
+- **Contact** shows what the visitor typed into your form, for example their name. It is empty until they have filled in the form, and it is gone if the visitor reloads the page.
+- **Answers** shows the visitor's answer to a quiz question or a form field on an earlier page, as text. Quiz answers still work after a reload. Details typed into a form field do not.
+- **URL parameters** shows the value from the link the visitor opened. It still works on later pages, even though the addresses of those pages have no tags, until the visitor closes the browser tab.
 
 <Tip>
   Do not put personal details, such as an email address, in link tags. Links are copied, shared and saved by other tools, and anyone who sees the link sees the tag.

@@ -11,7 +11,7 @@ With the form block, you can:
 
 - **Choose what you ask.** Pick from 15 field types, such as name, email, phone, date, dropdown, country and a consent checkbox.
 - **Set what is required.** Every field is required by default, and you can make any field optional.
-- **Check answers as people type.** Emails, phone numbers, websites, numbers and dates are checked before the form can be sent.
+- **Check answers before they are sent.** Emails, phone numbers, websites, numbers and dates are checked when the visitor clicks **Submit**, and the form does not send until they pass.
 - **Decide what happens next.** Send people to the next page, to a specific page or result, or to your own website.
 
 **Before you start**, you need:
@@ -24,6 +24,7 @@ With the form block, you can:
 <Warning>
   - A lead is saved only when the visitor fills in an **Email** or a **Phone** field. If your form asks only for a name, or the visitor leaves both empty, they still move on but no lead is saved. Keep at least one of them in your form.
   - Each form saves its own lead when it is submitted. Most funnels need one form, on the last page before the thank you screen.
+  - The builder warns you. A funnel with no form shows **This funnel has no form, so it won't collect leads.** above the canvas with an **Add a form** link. A form with no **Email** or **Phone** field says **Your form doesn't ask for an email or phone, so you won't be able to contact these leads.** with an **Edit form** link. The same warning shows when you click **"Publish"**, with a **Publish anyway** button.
 </Warning>
 
 ## Add and customize your form
@@ -47,10 +48,10 @@ With the form block, you can:
     1. Click a field to select it. A small toolbar appears at its right, and the left panel shows its settings.
     2. In the dropdown at the top of the left panel, choose the field type: **Full name**, **First name**, **Last name**, **Email**, **Phone**, **Number**, **Custom**, **Message**, **Website**, **Date**, **Time**, **Birthday**, **Dropdown**, **Country** or **Consent**.
     3. Turn the **Required** switch on or off. Turn it off for details you only want if the person is happy to share them.
-    4. Click the gray text inside the field to change what it says, for example "Your mobile number".
+    4. Click the gray text inside the field to change what it says, for example "Your mobile number". The text also names the field in your leads table.
     5. To add a field, click the **Duplicate** icon on the toolbar and change the copy. To remove a field, click the trash icon. To reorder fields, drag the **=** icon.
 
-    <img src="/images/funnels/lead-capture-forms/field-settings.png" alt="A selected form field with the field type list open and the toolbar with delete, reorder and duplicate icons highlighted" width="2000" height="1025" loading="lazy" />
+    <img src="/images/funnels/lead-capture-forms/field-settings.png" alt="A selected form field with the field type list open and the toolbar with delete, reorder and duplicate icons highlighted" width="2000" height="846" loading="lazy" />
 
     A lead is named after its **Full name**, **First name** or **Last name** field. If the form has none, AskFunnel uses the email or phone number instead. Some field types have extra settings, listed under [Settings for each field type](#settings-for-each-field-type).
 
@@ -64,18 +65,18 @@ With the form block, you can:
     3. Use the color swatch under **Color** to change the button color. Use the other controls to change the text size, make it **Filled** or **Outline**, or stretch it to the full width.
   </Step>
   <Step title="Choose where people go after they submit">
-    The **Action Flow** setting decides where people go next.
+    The **Action flow** setting decides where people go next.
 
     1. Click a field, then click **"Form"** in the path at the top of the left panel to select the whole form.
-    2. Find **Action Flow**. While it is off, people go to the next page in your list, which is usually your thank you screen.
-    3. To send them somewhere else, turn **Action Flow** on, click the summary under it, and choose **Always goes to**: **Next Page**, **External URL** (your own website), a specific page or a result. Click **"Save"**.
+    2. Find **Action flow**. While it is off, people go to the next page in your list, which is usually your thank you screen.
+    3. To send them somewhere else, turn **Action flow** on, click the summary under it, and choose **Always goes to**: **Next page**, **External URL** (your own website), a specific page or a result. Click **"Save"**.
 
     <Note>
-      The submit button has no **Action Flow** of its own. The form decides where people go.
+      The submit button has no **Action flow** of its own. The form decides where people go.
     </Note>
   </Step>
   <Step title="Publish your funnel">
-    Click **"Publish Funnel"** at the top right to make your changes live.
+    Click **"Publish"** at the top right to make your changes live.
   </Step>
 </Steps>
 
@@ -90,8 +91,8 @@ Test your form on the live page, not in the builder.
 ## Troubleshooting
 
 <AccordionGroup>
-  <Accordion title="My form says This is a required field">
-    That field is required and was left empty. Turn off **Required** for details that are optional. A required **Consent** checkbox shows **Please accept to continue.** until it is ticked.
+  <Accordion title="My form tells visitors to fill in a field">
+    That field is required and was left empty. The message depends on the field, for example **Enter your name.**, **Enter your email.** or **Enter your phone number.** Turn off **Required** for details that are optional. A required **Consent** checkbox shows **Accept to continue.** until it is ticked.
   </Accordion>
   <Accordion title="My form says Please use your company email address">
     **Company emails only** is on for the email field. Turn it off if you also want to accept addresses from providers such as Gmail.
@@ -100,7 +101,7 @@ Test your form on the live page, not in the builder.
     A form can have up to 8 fields. Remove one first, or ask the rest of your questions in a [quiz](/funnels/quiz-questions).
   </Accordion>
   <Accordion title="People land on the wrong page after they submit">
-    Select the form and check **Action Flow**. If it is off, people go to the next page in your page list. Reorder your pages, or turn **Action Flow** on and choose a page.
+    Select the form and check **Action flow**. If it is off, people go to the next page in your page list. Reorder your pages, or turn **Action flow** on and choose a page.
   </Accordion>
   <Accordion title="My test lead does not show up">
     Check that you published your funnel and that you submitted the form on the live page, not in the builder. The test must include an email or a phone number, because a form with only a name does not create a lead. Then open the **Leads** page and refresh it.
@@ -116,7 +117,7 @@ Some field types have extra settings in the left panel. For every field type, it
 - **Number:** **Minimum** and **Maximum** limit the number a person can enter.
 - **Dropdown** and **Time:** **Choices** holds your options, one per line. **Allow multiple selections** lets a person pick more than one option in a dropdown.
 - **Date:** **Allow past dates** and **Disable weekends** limit the days a person can pick.
-- **Consent:** a checkbox with text you write, for example "I agree to be contacted about my enquiry." Click the text to edit it.
+- **Consent:** a checkbox with text you write, for example "I agree to be contacted about my inquiry." Click the text to edit it. **Used for** says what the box is for: **Privacy policy**, **Email updates** or **WhatsApp updates**. A privacy policy box is required unless you turn **Required** off. An updates box is never required, because people must agree freely, and it shows no **Required** switch. **WhatsApp updates** is offered only on a plan with WhatsApp. When someone ticks an updates box, the lead keeps that agreement. Changing **Used for** resets the words next to the box. New forms start without a consent box, so add one if you need it.
 
 ## Book a call after the form
 

@@ -4,9 +4,9 @@
     "src": "source/raw/funnels/branch-by-answer/01-action-flow-summary.png",
     "args": [
       "--crop",
-      "0,128,760,880",
+      "0,128,760,857",
       "--ring",
-      "22,872,714,92",
+      "22,871,714,96",
       "--width",
       "1470",
       "--radius",
@@ -18,9 +18,9 @@
     "src": "source/raw/funnels/branch-by-answer/02-rule-card.png",
     "args": [
       "--crop",
-      "950,600,1300,1200",
+      "950,300,1300,956",
       "--ring",
-      "988,705,1228,622",
+      "988,510,1224,621",
       "--radius",
       "16"
     ]
@@ -30,9 +30,9 @@
     "src": "source/raw/funnels/branch-by-answer/03-destination-list.png",
     "args": [
       "--crop",
-      "950,600,1300,1200",
+      "950,300,1300,1342",
       "--ring",
-      "1150,1224,618,553",
+      "1150,1022,1028,602",
       "--radius",
       "16"
     ]

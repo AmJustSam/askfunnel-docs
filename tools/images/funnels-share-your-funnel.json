@@ -4,11 +4,11 @@
     "src": "source/raw/funnels/share-your-funnel/01-funnels-list.png",
     "args": [
       "--crop",
-      "380,410,1880,570",
+      "600,405,2512,365",
       "--ring",
-      "1962,718,60,56",
+      "2132,457,84,84",
       "--pad",
-      "56",
+      "70",
       "--radius",
       "18"
     ]
@@ -18,11 +18,11 @@
     "src": "source/raw/funnels/share-your-funnel/03-funnel-domains.png",
     "args": [
       "--crop",
-      "560,160,1600,590",
+      "590,20,1660,466",
       "--ring",
-      "2029,424,62,62",
+      "2130,174,80,80",
       "--pad",
-      "56",
+      "70",
       "--radius",
       "18"
     ]
@@ -32,9 +32,9 @@
     "src": "source/raw/funnels/share-your-funnel/02-row-menu.png",
     "args": [
       "--crop",
-      "1827,412,992,820",
+      "2320,415,830,590",
       "--ring",
-      "2170,1028,578,70",
+      "2428,771,579,76",
       "--width",
       "1470",
       "--radius",

@@ -26,7 +26,8 @@ With the right field types, you can:
 <Warning>
   - The checks look at the format only. AskFunnel does not check that an email inbox exists, and it does not call or text a phone number to confirm it. There is no verification code step.
   - A form holds 1 to 8 fields. A lead is saved only when the visitor fills in an **Email** or a **Phone** field, so keep at least one of them.
-  - The checks run when the visitor clicks the submit button, and the form does not send until every field passes.
+  - The checks run when the visitor clicks the submit button, and the form does not send until every field passes. The page scrolls to the first field that needs attention.
+  - Answers have a length limit: 256 characters for a name, an email address and a time, 64 for a phone number and 20,000 for anything else. A longer answer shows **This answer is too long.**
   - **Company emails only** blocks a list of common free providers, for example Gmail, Yahoo, Outlook, iCloud and Proton. A free provider that is not on the list is not blocked.
 </Warning>
 
@@ -50,7 +51,7 @@ Pick the type for a field in the dropdown at the top of the left panel when the 
 | **Birthday** | The date box of the visitor's browser. | The date must be a real date. | None. |
 | **Dropdown** | A list of your options. | The visitor must pick one if the field is required. | **Choices** and **Allow multiple selections**. |
 | **Country** | A list of countries that can be searched. | The visitor must pick one if the field is required. | None. |
-| **Consent** | A checkbox with your own text. | If required, the box must be ticked. | Edit the text next to the box. |
+| **Consent** | A checkbox with your own text. | If required, the box must be ticked. | **Used for**, and the text next to the box. |
 
 <img src="/images/funnels/form-fields-and-validation/field-types.png" alt="A selected form field in the builder with the field type list open in the left panel, showing Full name, First name, Last name, Email, Phone and Number, with more types below when you scroll, the open field type list highlighted" width="1100" height="1080" />
 
@@ -61,25 +62,41 @@ Pick the type for a field in the dropdown at the top of the left panel when the 
     1. In the builder, click your form, then click the field you want to change. A small toolbar appears at its right and the left panel shows its settings.
     2. In the dropdown at the top of the left panel, choose the field type.
     3. Click the gray text inside the field and type the words visitors see, for example "Your work email". AskFunnel also uses this text to name the field in your leads table, so choose a clear name.
+
+    <Note>
+      If you change the type of a field you have already published, the left panel says **Changing a field's type starts a new column in Leads. Earlier answers stay in the old column.**
+    </Note>
   </Step>
   <Step title="Choose whether it is required">
-    Turn the **Required** switch on or off. A required field shows **This is a required field** when it is empty. A required **Consent** checkbox shows **Please accept to continue.** until it is ticked.
+    Turn the **Required** switch on or off. A required field that is empty tells the visitor what to do, in words that fit the field:
+
+    | Field type | Message |
+    |---|---|
+    | **Full name**, **First name**, **Last name** | **Enter your name.** |
+    | **Email** | **Enter your email.** |
+    | **Phone** | **Enter your phone number.** |
+    | **Number** | **Enter a number.** |
+    | **Custom**, **Message**, **Website** | **Enter an answer.** |
+    | **Date**, **Birthday** | **Enter a date.** |
+    | **Time** | **Enter a time.** |
+    | **Dropdown**, **Country** | **Choose an option.** |
+    | **Consent** | **Accept to continue.** |
   </Step>
   <Step title="Set the rules for this type">
     The left panel shows the settings for the type you picked. The next section explains each one.
 
-    <img src="/images/funnels/form-fields-and-validation/phone-settings.png" alt="A selected Phone field in the builder with the left panel showing the field type Phone, the Required and Country code selector icons both on and the Default country list set to Auto (visitor's country), the Country code selector icon and the Default country list highlighted" width="2000" height="927" loading="lazy" />
+    <img src="/images/funnels/form-fields-and-validation/phone-settings.png" alt="A selected Phone field in the builder with the left panel showing the field type Phone, the Required and Country code selector buttons both on and the Default country list set to Auto (visitor's browser language), the Country code selector button and the Default country list highlighted" width="2000" height="1019" loading="lazy" />
   </Step>
   <Step title="Publish and test it">
-    Click **"Publish Funnel"**. Open your live funnel, type a wrong value on purpose and click the submit button. The message appears under the field and the form does not send. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
+    Click **"Publish"**. Open your live funnel, type a wrong value on purpose and click the submit button. The message appears under the field and the form does not send. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
   </Step>
 </Steps>
 
 ## What each setting does
 
 - **Email, Company emails only.** Refuses addresses from common free providers. The visitor sees **Please use your company email address.** An address that is not shaped like an email shows **Enter a valid email address.**
-- **Phone, Country code selector.** On by default. Visitors pick their country, type the number the way they know it and AskFunnel saves it with the country code. The number must be valid for that country, or the visitor sees **Enter a valid phone number.** A visitor can also type a full number that starts with a plus sign and the country flag changes by itself. When you turn it off, there is no picker and visitors type the whole number themselves. A number that starts with a plus sign is checked as a full international number, and any other answer with 6 to 15 digits is accepted.
-- **Phone, Default country.** Chooses which country shows first. The default is **Auto (visitor's country)**. Visitors can still change it.
+- **Phone, Country code selector.** On by default. Visitors pick their country, type the number the way they know it and AskFunnel saves it with the country code. The number must be valid for that country. If it is not, the visitor sees **Enter a valid phone number for** the country shown and its dial code, followed by **or start with + and your country code.** With the selector off, the message is **Enter a valid phone number.** A visitor can also type a full number that starts with a plus sign and the country flag changes by itself. When you turn it off, there is no picker and visitors type the whole number themselves. A number that starts with a plus sign is checked as a full international number, and any other answer with 6 to 15 digits is accepted.
+- **Phone, Default country.** Chooses which country shows first. The default is **Auto (visitor's browser language)**: a visitor whose browser is set to English (UK) starts on +44 and one set to English (US) starts on +1, and anyone else starts on the United States. It is not the visitor's location. Visitors can still change it.
 - **Number, Minimum and Maximum.** Leave them empty for no limit. Visitors see **Must be at least** or **Must be at most** followed by your number, or **Enter a valid number.** if they type something that is not a number.
 - **Website.** The answer must look like a web address, such as example.com or https://example.com. Otherwise the visitor sees **Enter a valid website URL.**
 - **Date, Allow past dates.** On by default. Turn it off for bookings. Earlier days are then grayed out in the calendar and cannot be picked.
@@ -87,7 +104,7 @@ Pick the type for a field in the dropdown at the top of the left panel when the 
 - **Time, Choices.** Type one time per line, for example 09:30. If you leave **Choices** empty, visitors see hourly times from 09:00 to 17:00. The chosen time is saved in the **Preferred time** field of the lead.
 - **Dropdown, Choices.** Type one option per line. A dropdown with no choices has nothing to pick, so always add some.
 - **Dropdown, Allow multiple selections.** The options show as a list of tick boxes instead of a pop-up list. The lead gets the chosen options separated by commas.
-- **Consent.** Click the text next to the checkbox and write what visitors agree to. When ticked, the answer is saved with the lead as **Yes**. See [Set up your privacy policy, terms links and consent](/funnel-settings/privacy-policy-and-terms).
+- **Consent.** Click the text next to the checkbox and write what visitors agree to. When ticked, the answer is saved with the lead as **Yes**. **Used for** says what the box is for. **Privacy policy** is required unless you turn **Required** off. **Email updates** and **WhatsApp updates** are never required, because people must agree freely, and they have no **Required** switch. **WhatsApp updates** is offered only on a plan with WhatsApp. Changing **Used for** resets the words next to the box. See [Set up your privacy policy, terms links and consent](/funnel-settings/privacy-policy-and-terms).
 
 <Note>
   Birthday uses the date box of the visitor's browser and has no past date or weekend settings. Use **Date** if you need those rules.
@@ -102,8 +119,8 @@ Pick the type for a field in the dropdown at the top of the left panel when the 
 ## Troubleshooting
 
 <AccordionGroup>
-  <Accordion title="A real phone number says Enter a valid phone number.">
-    With **Country code selector** on, the number must match the country shown by the flag. Check the flag and change it if needed, or type the full number with a plus sign and the country code. If you want to accept any number, turn **Country code selector** off in the field's settings.
+  <Accordion title="A real phone number says Enter a valid phone number">
+    With **Country code selector** on, the number must match the country shown by the flag. The message names that country, for example **Enter a valid phone number for United States (+1), or start with + and your country code.** Check the flag and change it if needed, or type the full number with a plus sign and the country code. If you want to accept any number, turn **Country code selector** off in the field's settings.
   </Accordion>
   <Accordion title="The form says Please use your company email address.">
     **Company emails only** is on for the email field. Turn it off if you also want addresses from providers such as Gmail.

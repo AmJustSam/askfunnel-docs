@@ -1,14 +1,14 @@
 [
   {
     "out": "images/funnels/lead-capture-forms/form-block.png",
-    "src": "source/raw/funnels/quiz-questions/01-interactions.png",
+    "src": "source/raw/funnels/lead-capture-forms/01-form-block.png",
     "args": [
       "--crop",
       "0,128,1460,700",
       "--ring",
-      "22,449,714,146",
+      "22,455,714,152",
       "--ring",
-      "784,608,326,223",
+      "784,610,326,225",
       "--pad",
       "56",
       "--radius",
@@ -20,11 +20,11 @@
     "src": "source/raw/funnels/lead-capture-forms/04-field-type-list-narrow.png",
     "args": [
       "--crop",
-      "0,130,2010,988",
+      "0,128,2460,988",
       "--ring",
-      "23,373,746,95",
+      "22,367,714,108",
       "--ring",
-      "1838,593,97,231",
+      "2333,702,108,244",
       "--pad",
       "56",
       "--radius",

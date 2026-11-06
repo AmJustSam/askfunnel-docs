@@ -4,11 +4,11 @@
     "src": "source/raw/funnels/test-your-funnel/01-device-button.png",
     "args": [
       "--crop",
-      "760,130,1106,1670",
+      "1540,130,1660,1560",
       "--ring",
-      "1747,1509,92,92",
-      "--width",
-      "1470",
+      "3080,1508,92,92",
+      "--pad",
+      "70",
       "--radius",
       "20"
     ]

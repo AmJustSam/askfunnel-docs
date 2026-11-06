@@ -4,9 +4,9 @@
     "src": "source/raw/funnels/link-buttons-and-images/01-action-flow-switch.png",
     "args": [
       "--crop",
-      "0,130,2460,1330",
+      "0,128,2520,1330",
       "--ring",
-      "22,992,714,160"
+      "22,974,714,187"
     ]
   },
   {
@@ -14,9 +14,9 @@
     "src": "source/raw/funnels/link-buttons-and-images/02-destination-list.png",
     "args": [
       "--crop",
-      "920,670,1380,830",
+      "950,678,1300,956",
       "--ring",
-      "990,923,618,556",
+      "988,920,1224,696",
       "--width",
       "1560"
     ]
@@ -26,11 +26,11 @@
     "src": "source/raw/funnels/link-buttons-and-images/03-external-url.png",
     "args": [
       "--crop",
-      "920,495,1360,810",
+      "950,523,1300,754",
       "--ring",
-      "988,784,1224,96",
+      "988,783,1224,96",
       "--ring",
-      "988,1025,350,62",
+      "988,1026,400,64",
       "--width",
       "1560"
     ]

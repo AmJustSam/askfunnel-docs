@@ -4,11 +4,11 @@
     "src": "source/raw/funnels/form-fields-and-validation/02-phone-settings.png",
     "args": [
       "--crop",
-      "0,128,2460,1000",
+      "0,128,2460,1128",
       "--ring",
-      "388,478,338,84",
+      "302,477,426,88",
       "--ring",
-      "24,620,710,100"
+      "22,623,714,96"
     ]
   },
   {

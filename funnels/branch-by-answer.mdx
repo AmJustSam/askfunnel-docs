@@ -1,11 +1,11 @@
 ---
 title: "Send visitors to different pages based on their answers"
 sidebarTitle: "Answer branching"
-description: "Use Advanced Branching to send people to a different page or result depending on what they pick."
+description: "Use Advanced branching to send people to a different page or result depending on what they pick."
 icon: "code-branch"
 ---
 
-By default, everyone who answers a quiz question goes to the next page. With **Advanced Branching**, the answer decides where they go. You can send people who are not a good fit to a polite result screen, send buyers and sellers down different paths, or send your best prospects straight to a booking page. This is how a funnel qualifies people, and it keeps your questions short because each person only sees what fits them.
+By default, everyone who answers a quiz question goes to the next page. With **Advanced branching**, the answer decides where they go. You can send people who are not a good fit to a polite result screen, send buyers and sellers down different paths, or send your best prospects straight to a booking page. This is how a funnel qualifies people, and it keeps your questions short because each person only sees what fits them.
 
 With branching, you can:
 
@@ -23,40 +23,42 @@ With branching, you can:
 ## Important to note
 
 <Warning>
-  - Branching only works on a quiz set to **Single**, where the visitor picks one answer. In **Multiple** mode, **Advanced Branching** is turned off.
+  - Branching only works on a quiz set to **Single**, where the visitor picks one answer. In **Multiple** mode, **Advanced branching** is turned off.
   - AskFunnel checks your rules from top to bottom. The first rule that matches and has a **Go to** page decides where the visitor goes. Put your most specific rule first.
   - If no rule matches, the visitor follows **Otherwise**. A rule that only adds a score does not decide the route.
   - A lead is saved when the visitor submits your form. If a rule sends someone to a result before they reach your form, they are not saved as a lead.
+  - A condition that checks an earlier question is false when the visitor never answered it, even with **is not**.
+  - A rule that points to an answer or a question you deleted never decides the route. AskFunnel skips it.
   - One question can have up to 20 rules, and one rule can have up to 20 conditions.
 </Warning>
 
 ## Set up branching
 
 <Steps>
-  <Step title="Open the Action Flow of your quiz">
+  <Step title="Open the Action flow of your quiz">
     1. In the builder, open the page with your quiz and click the quiz to select it.
-    2. In the left panel, find **Action Flow**. It says **Always goes to Next Page**.
-    3. Click that line. The **Action Flow** window opens.
+    2. In the left panel, find **Action flow**. It says **Always goes to Next page**.
+    3. Click that line. The **Action flow** window opens.
 
-    <img src="/images/funnels/branch-by-answer/action-flow-summary.png" alt="The left panel of a selected quiz with the Action Flow line Always goes to Next Page highlighted" width="1470" height="1060" />
+    <img src="/images/funnels/branch-by-answer/action-flow-summary.png" alt="The left panel of a selected quiz with the Action flow line Always goes to Next page highlighted" width="1470" height="1037" />
   </Step>
-  <Step title="Turn on Advanced Branching">
-    Turn on the **Advanced Branching** switch. The hint says **Route to different pages based on the visitor's answer.** The window now shows **No rules yet** and an **"Add a rule"** button.
+  <Step title="Turn on Advanced branching">
+    Turn on the **Advanced branching** switch. The hint says **Route to different pages based on the visitor's answer.** The window now shows **No rules yet** and an **"Add a rule"** button.
 
-    If the switch is grayed out, your quiz is set to **Multiple**. Close the window, select the quiz and click **"Single"** under **Settings**.
+    If the switch is grayed out, your quiz is set to **Multiple**. The hint says **Needs a single answer question** and has a **Setting** link that takes you to the answer setting. Click **"Single"** under **Settings**, then open **Action flow** again.
   </Step>
   <Step title="Build your first rule">
     Click **"Add a rule"**. A card called **Rule 1** appears.
 
-    1. Under **If**, the **When** box shows this question. Keep it. When you open the list, this question has a **Current** tag, followed by the quizzes on earlier pages.
+    1. Under **If**, the **When** box shows this question. Keep it. When you open the list, the quizzes on earlier pages come first, in page order, and this question comes last with a **Current** tag.
     2. Next to it, choose **is** or **is not**, then click **Pick an option** and choose the answer, for example "Under $200,000".
-    3. Under **Then**, next to **Go to**, choose where people with that answer go. The list shows your pages and results (results have a flag icon), then **Next Page**, which means whichever page comes next in your page list.
+    3. Under **Then**, next to **Go to**, choose where people with that answer go. The list shows your pages and results (results have a flag icon), then **Next page**, which means whichever page comes next in your page list.
 
     For example: **When** "What is your budget?" **is** "Under $200,000", **Go to** your "Not a fit" result.
 
-    <img src="/images/funnels/branch-by-answer/rule-card.png" alt="The Action Flow window with Rule 1 filled in: if What is your budget? is Under $200,000, go to the result Not a fit, highlighted, with Otherwise set to Next Page below it" width="1470" height="1354" loading="lazy" />
+    <img src="/images/funnels/branch-by-answer/rule-card.png" alt="The Action flow window with Rule 1 filled in: if What is your budget? is Under $200,000, go to the result Not a fit, highlighted, and the Add rule button below it" width="1470" height="1110" loading="lazy" />
 
-    <img src="/images/funnels/branch-by-answer/destination-list.png" alt="The Go to drop-down list of a rule, open, showing pages with a page icon, results with a flag icon and Next Page at the bottom, highlighted" width="1470" height="1354" loading="lazy" />
+    <img src="/images/funnels/branch-by-answer/destination-list.png" alt="The Go to drop-down list of a rule, open, showing pages with a page icon, results with a flag icon and Next page at the bottom, highlighted" width="1470" height="1496" loading="lazy" />
   </Step>
   <Step title="Add more rules or combine answers (optional)">
     - To add another rule, click **"Add rule"**. Drag the grip icon at the left of a rule to change the order.
@@ -64,12 +66,12 @@ With branching, you can:
     - To copy or remove a rule, use the copy and trash icons on the rule.
   </Step>
   <Step title="Choose what everyone else sees">
-    Under **Otherwise**, next to **Go to**, choose where people go when no rule matches. The hint says **If no rule matches, leads go here. Defaults to the next page.** Most funnels keep **Next Page**.
+    Under **Otherwise**, next to **Go to**, choose where people go when no rule matches. The hint says **If no rule matches, leads go here. Defaults to the next page.** Most funnels keep **Next page**.
 
     Click **"Save"**.
   </Step>
   <Step title="Publish and test every path">
-    Click **"Publish Funnel"**, then open the arrow next to it and click **"View live"**. There is no private preview, so test on the live page. Go through the funnel once for each answer that has a rule, and once with an answer that has none, and check where you land each time. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
+    Click **"Publish"**, then open the arrow next to it and click **"View live"**. There is no private preview, so test on the live page. Go through the funnel once for each answer that has a rule, and once with an answer that has none, and check where you land each time. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
   </Step>
 </Steps>
 
@@ -82,18 +84,18 @@ With branching, you can:
 
 ## How do I know it is working?
 
-- Under **Action Flow**, the summary shows how many rules you have and where **Otherwise** leads, for example **2 rules · Otherwise Next Page**.
+- Under **Action flow**, the summary shows how many rules you have and where **Otherwise** leads, for example **2 rules · Otherwise Next page**.
 - On your live funnel, each answer takes you to the page you chose.
 - No rule card shows a red dot or a **Can't match** tag.
 
 ## Troubleshooting
 
 <AccordionGroup>
-  <Accordion title="Advanced Branching is turned off">
-    It is only available when the quiz is set to **Single**. Select the quiz, click **"Single"** under **Settings**, then open **Action Flow** again.
+  <Accordion title="Advanced branching is turned off">
+    It is only available when the quiz is set to **Single**. Select the quiz, click **"Single"** under **Settings**, then open **Action flow** again. The switch also shows **Needs a single answer question** with a **Setting** link.
   </Accordion>
   <Accordion title="Everyone goes to the same page">
-    Open **Action Flow** and check each rule. A rule only decides the route if it has a **Go to** page. Also check **Otherwise**, which is where everyone else goes, and the order of your rules. If an earlier rule matches first, later rules never run.
+    Open **Action flow** and check each rule. A rule only decides the route if it has a **Go to** page. Also check **Otherwise**, which is where everyone else goes, and the order of your rules. If an earlier rule matches first, later rules never run.
   </Accordion>
   <Accordion title="A rule shows Can't match, Always matches or Unavailable question">
     - **Can't match:** a person picks only one answer, so two **is** conditions joined by **and** are never both true. Use **or**, or use **is not**.
@@ -104,10 +106,10 @@ With branching, you can:
     Each rule needs at least one condition with an answer picked, and either a **Go to** page or a **Score** other than 0. The rule shows what is missing, for example **Pick an option for every condition** or **Pick a destination or set a non-zero score**.
   </Accordion>
   <Accordion title="Visitors skip my contact form">
-    A rule or **Otherwise** sends them past it, for example straight to a result. Open **Action Flow** and choose the page with your form, or place your form on a page that every path passes through. See [Set up your lead capture form](/funnels/lead-capture-forms).
+    A rule or **Otherwise** sends them past it, for example straight to a result. Open **Action flow** and choose the page with your form, or place your form on a page that every path passes through. See [Set up your lead capture form](/funnels/lead-capture-forms).
   </Accordion>
   <Accordion title="My test still follows the old route">
-    Your changes only go live when you publish. Click **"Publish Funnel"** again, wait a minute and test on the live page.
+    Your changes only go live when you publish. Click **"Publish"** again, wait a minute and test on the live page.
   </Accordion>
   <Accordion title="I cannot add another rule">
     A question can have up to 20 rules. Delete one you do not need, or combine answers into one rule with **or**.

@@ -20,9 +20,9 @@
     "src": "source/raw/funnels/layout-blocks/03-button-selected-narrow.png",
     "args": [
       "--crop",
-      "0,130,2010,815",
+      "0,128,2520,860",
       "--ring",
-      "1886,723,64,64",
+      "2371,609,96,96",
       "--pad",
       "56",
       "--radius",

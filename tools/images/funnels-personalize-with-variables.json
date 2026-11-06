@@ -4,9 +4,9 @@
     "src": "source/raw/funnels/personalize-with-variables/01-variable-list.png",
     "args": [
       "--crop",
-      "1340,170,1320,860",
+      "1330,200,1320,960",
       "--ring",
-      "1876,396,533,598",
+      "1848,438,544,684",
       "--width",
       "1600"
     ]
@@ -16,9 +16,9 @@
     "src": "source/raw/funnels/personalize-with-variables/02-fallback-box.png",
     "args": [
       "--crop",
-      "1340,340,1180,380",
+      "1330,260,1360,530",
       "--ring",
-      "1878,396,566,300",
+      "1848,438,567,302",
       "--width",
       "1600"
     ]

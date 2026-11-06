@@ -1,7 +1,7 @@
 ---
 title: "Read your funnels list"
 sidebarTitle: "Your funnels list"
-description: "Understand every column and menu on your Funnels page, from Status and CVR to the three dots menu."
+description: "Understand every column and menu on your Funnels page, from Status and Conversion rate to the three dots menu."
 icon: "list"
 ---
 
@@ -9,7 +9,7 @@ Click **Funnels** in the sidebar to open the **Funnels** page. It lists every fu
 
 **"Create funnel"** at the top right starts a new funnel. Your role in this workspace shows under the workspace name at the top of the sidebar.
 
-<img src="/images/funnels/funnels-list/page-overview.png" alt="The Funnels page of the Summit Realty Group workspace, with the Create Funnel button, the Your role here badge and the list of three funnels, the button and the badge highlighted" width="2000" height="882" />
+<img src="/images/funnels/funnels-list/page-overview.png" alt="The Funnels page of the Summit Realty Group workspace with its columns Name, Favorite, Status, Conversion rate and Leads, a three dots menu on each row and the Create funnel button highlighted" width="2000" height="949" />
 
 **Before you start**, you need:
 
@@ -18,57 +18,69 @@ Click **Funnels** in the sidebar to open the **Funnels** page. It lists every fu
 ## Important to note
 
 <Warning>
-  - **CVR** and **Leads** are totals since the funnel started. They are not for a date range. For a date range, open the funnel's **Analytics** page. See [Read your funnel analytics](/analytics/funnel-analytics).
+  - **Conversion rate** is the figure since the funnel started. It is not for a date range. For a date range, open the funnel's **Analytics** page. See [Read your funnel analytics](/analytics/funnel-analytics).
   - These numbers can differ from your **Leads** page and from Analytics, because each place counts slightly differently. See [Why your lead and analytics numbers differ](/analytics/why-numbers-differ).
-  - Content Editors design funnels but do not see lead data. They see a dash under **CVR** and **0** under **Leads**, even when the funnel has leads.
+  - Content Editors design funnels but do not see lead data. The **Conversion rate** and **Leads** columns are left out of the list for them.
 </Warning>
 
 ## The columns
 
-<img src="/images/leads/view-and-manage-leads/open-funnel.png" alt="The Funnels list with the columns Name, Favorite, Status, CVR and Leads, and a three dots menu on each row" width="2000" height="747" loading="lazy" />
-
 | Column | What it shows |
 |---|---|
-| **Name** | The funnel's name, with its picture or first letter, and when you last changed it, for example **10 hours ago** or a date. |
+| **Name** | The funnel's name, with its picture or first letter, and when you last changed it, for example **Edited 3 hr ago**, **Edited 1 day ago** or a date. |
 | **Favorite** | A star. Click it to mark the funnel as a favorite, and click again to remove the mark. Favorites are shared, so everyone in the workspace sees the same stars. |
 | **Status** | **Live** (green) or **Draft** (gray). While a publish is running you see **Publishing...**. An eye icon next to **Live** opens the live funnel. |
-| **CVR** | The conversion rate: the share of visitors who sent the form, since the funnel started. For example **25.00%**. A dash means there is not enough data yet. |
-| **Leads** | The number of form submissions the funnel has recorded since it started, in a blue tag. |
+| **Conversion rate** | The share of visitors who sent the form, since the funnel started. For example **50.00%**. **No data yet** means the funnel has not had enough visitors and leads to work it out. |
+| **Leads** | The number of leads the funnel has, in a blue tag. It is the same total as on the funnel's **Leads** page. Leads that are locked or deleted are not counted. |
 | Three dots (**...**) | The menu of the funnel. See below. |
 
-The list shows favorite funnels first. The other funnels follow, with the one that changed most recently at the top. Clicking a star counts as a change. The list shows 10 funnels per page, and the page buttons at the bottom right show where you are, for example **1 of 3**.
+The list shows favorite funnels first. The other funnels follow, with the one you changed most recently at the top. Marking a favorite moves the funnel up, and it does not change its **Edited** time. The list shows 10 funnels per page, and the page buttons at the bottom right show where you are, for example **1 of 2**.
+
+<Note>
+  In a narrow browser window the **Conversion rate** column is left out so the rest fits. On a phone, each funnel is a row with its name and its status, then its number of leads for a live funnel, or when it was edited for a draft. The row's three dots menu there also has **Add to favorites** (and **View funnel** for a live funnel), for every role.
+</Note>
 
 ### What the Status column tells you
 
 - **Live:** the funnel is public. Click the eye icon to open it in a new tab.
 - **Draft:** the funnel is not public. It has never been published, or you took it offline.
-- **An orange dot next to Live:** you have edited the funnel since you last published it. Point at the dot to read the reminder. Open the funnel in the builder and click **"Publish Funnel"** to update the live version.
+- **Unpublished changes** (orange dot, under **Live**): you have edited the funnel since you last published it. Point at the note to read the reminder. Open the funnel in the builder and click **"Publish"** to update the live version.
 
-<img src="/images/funnels/funnels-list/unpublished-dot.png" alt="The Real estate row of the Funnels list with the Live badge and a small orange dot next to it, and the tooltip that says You've edited this funnel since publishing, Publish to update the live version, highlighted" width="2000" height="440" loading="lazy" />
+<img src="/images/funnels/funnels-list/unpublished-dot.png" alt="The Home valuation quiz row of the Funnels list with the Live badge and the note Unpublished changes under it, highlighted" width="2000" height="250" loading="lazy" />
 
 ## The three dots menu
 
 Click the three dots (**...**) at the end of a row.
 
-<img src="/images/funnels/share-your-funnel/row-menu.png" alt="The three dots menu of a funnel row, with Edit Funnel, View Funnel, Unpublish Funnel, Funnel Settings and Delete Funnel" width="1470" height="1000" loading="lazy" />
+<img src="/images/funnels/share-your-funnel/row-menu.png" alt="The three dots menu of a funnel row, with Edit funnel, View funnel, Unpublish funnel, Funnel settings and Delete funnel" width="1470" height="770" loading="lazy" />
 
-- **Edit Funnel:** opens the funnel in the builder.
-- **View Funnel:** opens the live funnel in a new tab. It only shows for a live funnel.
-- **Publish Funnel** or **Unpublish Funnel:** puts the funnel live, or takes it offline. **Publish Funnel** is grayed out until your email address is verified. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
-- **Funnel Settings:** opens the settings of the funnel. See [Funnel settings overview and deleting a funnel](/funnel-settings/funnel-settings-overview).
-- **Delete Funnel:** the red item at the bottom. Only Global Admins and Workspace Admins see it.
+- **Edit funnel:** opens the funnel in the builder.
+- **View funnel:** opens the live funnel in a new tab. It only shows for a live funnel.
+- **Publish funnel** or **Unpublish funnel:** puts the funnel live, or takes it offline. **Publish funnel** is grayed out until your email address is verified. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
+- **Funnel settings:** opens the settings of the funnel. See [Funnel settings overview and deleting a funnel](/funnel-settings/funnel-settings-overview).
+- **Delete funnel:** the red item at the bottom. Only Global Admins and Workspace Admins see it.
+
+If a funnel has no form, or its form asks for neither an email nor a phone number, **Publish funnel** asks you first. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
+
+### Delete a funnel
+
+**Delete funnel** opens a window titled **Delete this funnel?**. It says the funnel leaves your dashboard and goes offline now, and how many leads and notes it holds. Its leads, notes and analytics are deleted for good after 30 days. If you deleted it by mistake, email [support@askfunnel.com](mailto:support@askfunnel.com) within that time.
+
+A funnel with more than 400 leads cannot be deleted from the dashboard. The window says so. Export its leads first, or contact support to archive it.
 
 ## What happens when you click a row
 
 - **Global Admins, Workspace Admins and Contacts Managers:** the funnel's **Leads** page opens. See [View and manage your leads](/leads/view-and-manage-leads).
 - **Content Editors:** the builder opens, because they do not have access to lead data.
 
+Inside a funnel, the sidebar shows the funnel's own menu: **Leads**, **Analytics**, **Activity**, **Settings** and an **Edit funnel** button. The row at the top, **Funnels**, takes you back to this list.
+
 ## What each role sees
 
-| Role | Create funnel | Three dots menu | CVR and Leads |
+| Role | Create funnel | Three dots menu | Conversion rate and Leads |
 |---|---|---|---|
 | **Global Admin** and **Workspace Admin** | Yes | All items | Yes |
-| **Content Editor** | Yes | All items except **Delete Funnel** | No |
+| **Content Editor** | Yes | All items except **Delete funnel** | No, the columns are left out |
 | **Contacts Manager** | No | No menu. The eye icon opens a live funnel. | Yes |
 
 ## How do I know it is working?
@@ -84,27 +96,24 @@ Click the three dots (**...**) at the end of a row.
     Your role in this workspace cannot edit funnels. Contacts Managers have a read only list. Ask a Workspace Admin or Global Admin to change your role. See [What a Contacts Manager can see and do](/workspaces/contacts-manager).
   </Accordion>
   <Accordion title="My funnel shows Draft but I published it before">
-    A funnel that you took offline shows **Draft** in this list. Click **"Publish Funnel"** in its three dots menu to put it live again. You do not need to change anything first.
+    A funnel that you took offline shows **Draft** in this list. Click **"Publish funnel"** in its three dots menu to put it live again. You do not need to change anything first.
   </Accordion>
-  <Accordion title="There is an orange dot next to Live">
-    The live version is older than your latest edits. Open the funnel in the builder and click **"Publish Funnel"**.
+  <Accordion title="I see Unpublished changes under Live">
+    The live version is older than your latest edits. Open the funnel in the builder and click **"Publish"**.
   </Accordion>
-  <Accordion title="CVR shows a dash">
-    There are no visitors or conversions to compare yet, or the funnel only has imported leads. Point at the dash to read the reason. The rate appears once the live funnel has had visitors and form submissions.
+  <Accordion title="Conversion rate shows No data yet">
+    The funnel has no visitors or no leads yet, or its leads came in before visitors were counted. Point at **No data yet** to read the reason. The rate appears once the live funnel has had visitors and form submissions.
   </Accordion>
-  <Accordion title="Leads shows a different number than the Leads tab">
-    The list counts every form submission since the funnel started, including leads you imported. The **Leads** page shows the leads you can see now, so locked and deleted leads, filters and searches change it. See [Why your lead and analytics numbers differ](/analytics/why-numbers-differ).
+  <Accordion title="Leads shows a different number than the Leads page">
+    The list shows the same total as the funnel's **Leads** page. A filter or a search on that page shows fewer leads, and locked or deleted leads are not in either number. See [Why your lead and analytics numbers differ](/analytics/why-numbers-differ).
   </Accordion>
-  <Accordion title="Leads shows 0 but the funnel has leads">
-    If you are a Content Editor, lead numbers are hidden from you and show as 0. Otherwise, wait a moment, because the numbers load after the list. If they stay at 0, reload the page.
+  <Accordion title="There are no Conversion rate and Leads columns">
+    If you are a Content Editor, lead numbers are hidden from you. Otherwise, make your browser window wider. The **Conversion rate** column drops out of a narrow window, and a phone shows a short row for each funnel instead.
   </Accordion>
-  <Accordion title="I moved a funnel up and it jumped back">
-    Each row has a grip icon on the left, and you can drag a row. The new order only lasts until you leave or reload the page, because AskFunnel does not save it. To keep a funnel at the top, click its star to make it a favorite.
-  </Accordion>
-  <Accordion title="The Publish Funnel menu item is grayed out">
+  <Accordion title="The Publish funnel menu item is grayed out">
     Publishing needs a verified email address. Point at the item to read **Verify your email to publish this funnel**, then open the verification email we sent you.
   </Accordion>
-  <Accordion title="I see We couldn't load your funnels">
+  <Accordion title="I see Couldn't load funnels">
     Click **"Try again"**. If it keeps happening, check your internet connection and email support.
   </Accordion>
   <Accordion title="A funnel I started with AI is not in the list">
@@ -116,13 +125,13 @@ Click the three dots (**...**) at the end of a row.
 
 <Columns cols={2}>
   <Card title="Funnel settings overview" icon="gear" href="/funnel-settings/funnel-settings-overview">
-    See what each settings tab does and how to delete a funnel.
+    See what each settings page does and how to delete a funnel.
   </Card>
   <Card title="Publish, unpublish and restore" icon="clock-rotate-left" href="/funnels/publish-and-restore">
     Put changes live and go back to an earlier version.
   </Card>
   <Card title="View and manage your leads" icon="users" href="/leads/view-and-manage-leads">
-    Open a funnel's Leads tab and work with its leads.
+    Open a funnel's Leads page and work with its leads.
   </Card>
   <Card title="Find and share your funnel link" icon="share-nodes" href="/funnels/share-your-funnel">
     Copy your link and send people to it.

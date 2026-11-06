@@ -16,9 +16,9 @@
     "src": "source/raw/funnels/thank-you-screen/01-result-selected.png",
     "args": [
       "--crop",
-      "0,128,760,1180",
+      "0,128,760,1076",
       "--ring",
-      "22,1120,714,101",
+      "22,878,714,112",
       "--width",
       "1470",
       "--radius",

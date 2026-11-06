@@ -4,9 +4,11 @@
     "src": "source/raw/funnels/publish-and-restore/01-publish-control.png",
     "args": [
       "--crop",
-      "2060,0,1140,170",
+      "2400,0,800,150",
       "--ring",
-      "2218,16,562,94",
+      "2584,14,486,98",
+      "--pad",
+      "70",
       "--radius",
       "16"
     ]
@@ -16,11 +18,11 @@
     "src": "source/raw/funnels/publish-and-restore/02-publish-menu.png",
     "args": [
       "--crop",
-      "2100,0,660,500",
+      "2380,0,820,500",
       "--ring",
-      "2653,17,92,92",
+      "2976,18,88,90",
       "--ring",
-      "2146,116,580,76",
+      "2460,114,584,80",
       "--width",
       "1470",
       "--radius",
@@ -32,13 +34,13 @@
     "src": "source/raw/funnels/publish-and-restore/03-version-history.png",
     "args": [
       "--crop",
-      "1080,463,1040,874",
+      "1080,600,1040,598",
       "--ring",
-      "1719,907,331,82",
-      "--width",
-      "1470",
+      "1708,915,344,86",
+      "--pad",
+      "70",
       "--radius",
-      "16"
+      "30"
     ]
   },
   {
@@ -46,15 +48,15 @@
     "src": "source/raw/funnels/publish-and-restore/04-backup-preview-bar.png",
     "args": [
       "--crop",
-      "0,0,1653,232",
+      "0,0,2560,236",
       "--ring",
-      "12,138,680,82",
+      "20,138,680,86",
       "--ring",
-      "1385,136,250,86",
-      "--width",
-      "1830",
+      "2292,134,248,92",
+      "--pad",
+      "70",
       "--pad-y",
-      "80",
+      "70",
       "--radius",
       "20"
     ]

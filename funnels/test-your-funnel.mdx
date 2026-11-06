@@ -28,25 +28,27 @@ With this routine, you can:
 <Warning>
   - A test lead is a real lead. There is no test mode. It counts toward your monthly lead limit, shows in your leads table and in your analytics, and goes to your connected tools and automated emails like any other lead. Use details that are easy to spot, and delete the lead when you finish.
   - Publishing makes the funnel public. Anyone who has the link can open it, so keep the link to yourself until the test is done. If the funnel already has visitors, they see your edits as soon as you publish.
-  - The form saves a lead only when the visitor fills in an **Email** or a **Phone** field. Include one of them in your test.
+  - The form saves a lead only when the visitor fills in at least one of **Name**, **Email** or **Phone**. Include your email address in your test.
 </Warning>
 
 ## Run the test
 
 <Steps>
   <Step title="Check each screen size in the builder">
-    1. In the builder, find the device button at the right side of the canvas. Its icon shows the view you are in now. The builder opens in **Mobile** view.
+    1. In the builder, find the device button at the right side of the canvas. Its icon shows the view you are in now. The builder opens in **Mobile** view. If your browser window is too narrow for a view, the builder drops to the largest view that fits.
     2. Click it to switch to the next view. The order is **Desktop**, then **Tablet**, then **Mobile**, then back to **Desktop**. Point at the button to see the name of the next view.
     3. On each page, look for text that is cut off or too small, images that are cropped badly and buttons or form fields that sit too far down. On a phone, columns stack one above the other. See [Build multi-column layouts](/funnels/grid-layouts).
 
-    <img src="/images/funnels/test-your-funnel/device-button.png" alt="The funnel builder canvas in Mobile view with a quiz page at phone width, and the small toolbar at the right edge with the Undo and Redo buttons and the device button, the device button highlighted" width="1470" height="1850" />
+    <img src="/images/funnels/test-your-funnel/device-button.png" alt="The funnel builder canvas in Mobile view with the first quiz question at phone width, and the small toolbar at the right edge with the Undo and Redo buttons and the device button, the device button highlighted" width="1800" height="1686" />
+
+    When you build on a phone, the builder only shows the **Mobile** view and has no device button.
   </Step>
   <Step title="Publish and open your live funnel">
-    1. Click **"Publish Funnel"** at the top right and wait until the status says **Live**. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore) if the button is grayed out.
-    2. Click the small arrow next to **"Publish Funnel"**, then click **"View live"**. Your funnel opens in a new tab and shows exactly what visitors see.
+    1. Click **"Publish"** at the top right and wait until the status says **Live**. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore) if the button is grayed out. If the funnel has no form, a window warns you first.
+    2. Click the small arrow next to **"Publish"**, then click **"View live"**. Your funnel opens in a new tab and shows exactly what visitors see.
     3. For a clean test, copy the address into a private browser window, where you are not signed in. Then open the same link on your own phone.
 
-    <img src="/images/getting-started/launch-your-first-funnel/publish-menu.png" alt="The builder header showing Live next to the Publish Funnel button, with the arrow menu open and View live as its first item" width="1168" height="481" loading="lazy" />
+    <img src="/images/funnels/publish-and-restore/publish-menu.png" alt="The builder top bar with the arrow menu next to Publish open and View live highlighted as its first item" width="1470" height="680" loading="lazy" />
   </Step>
   <Step title="Walk through it like a visitor">
     - **Answer every question.** If your funnel uses a cookie banner, make a choice like a visitor would. Test it once with the banner accepted and once with it declined. See [Set up cookies and visitor consent](/funnel-settings/cookies-and-consent).
@@ -59,11 +61,9 @@ With this routine, you can:
     3. Read your thank you screen and click its button, if it has one. See [Customize your thank you screen](/funnels/thank-you-screen).
   </Step>
   <Step title="Find the lead and check it">
-    1. In the dashboard, open your **Funnels** page and click your funnel's row. Its **Leads** page opens.
+    1. Click **Funnels** in the sidebar and click your funnel's row. Its **Leads** page opens.
     2. Click the magnifier icon and type the name you used.
     3. Hover over the lead's name and click the **"Open lead"** icon. In the **Profile** tab, check that the contact details and every answer match what you entered.
-
-    <img src="/images/getting-started/launch-your-first-funnel/leads-test-lead.png" alt="The Leads tab with a new lead in the table and its answers in the columns" width="2000" height="837" loading="lazy" />
 
     Finding the lead is the check that matters. Reaching the thank you screen alone does not prove that a lead was saved.
   </Step>
@@ -90,17 +90,17 @@ With this routine, you can:
 
 <AccordionGroup>
   <Accordion title="I do not see my changes on the live funnel">
-    Changes only go live when you publish. If the status says **Edited**, click **"Publish Funnel"**, then wait about a minute and refresh the page. Use a private browser window so your browser does not show an old copy. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
+    Changes only go live when you publish. If the status says **Edited**, click **"Publish"**, then wait about a minute and refresh the page. Use a private browser window so your browser does not show an old copy. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
   </Accordion>
   <Accordion title="I reached the thank you screen but cannot find the lead">
-    - The form saved no lead because the **Email** and **Phone** fields were both empty.
+    - The form saved no lead because the **Name**, **Email** and **Phone** fields were all empty.
     - You are in the **Leads** page of a different funnel, or a filter or search hides the lead. Clear them, or click **View options**, then **"Reset view"**.
     - Your plan's monthly lead limit is used up. The lead is saved but locked and hidden. See [What happens when you reach your monthly lead limit](/billing/monthly-lead-limit).
   </Accordion>
   <Accordion title="I do not see View live">
-    **"View live"** only shows for a live funnel. Click **"Publish Funnel"** first.
+    **"View live"** only shows for a live funnel. Click **"Publish"** first.
   </Accordion>
-  <Accordion title="I cannot open the Leads tab">
+  <Accordion title="I cannot open the Leads page">
     Content Editors design funnels but cannot see leads. Ask a Global Admin, Workspace Admin or Contacts Manager to check the lead for you, or to change your role. See [Invite a teammate or client to a workspace](/workspaces/give-access).
   </Accordion>
   <Accordion title="The funnel looks different on my phone than in Mobile view">
