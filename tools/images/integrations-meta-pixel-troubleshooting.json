@@ -1,22 +1,26 @@
 [
-  {
-    "out": "images/integrations/meta-pixel-troubleshooting/card-status.png",
-    "src": "source/raw/integrations/meta-pixel-troubleshooting/01-card-status.png",
-    "args": [
-      "--crop",
-      "880,660,1990,540",
-      "--ring",
-      "1310,820,200,72"
-    ]
-  },
-  {
-    "out": "images/integrations/meta-pixel-troubleshooting/test-mode-chip.png",
-    "src": "source/raw/integrations/meta-pixel-troubleshooting/02-test-mode-chip.png",
-    "args": [
-      "--crop",
-      "930,1020,1700,340",
-      "--ring",
-      "953,1241,544,80"
-    ]
-  }
+ {
+  "out": "images/integrations/meta-pixel-troubleshooting/card-status.png",
+  "src": "source/raw/integrations/how-integrations-work/01-funnel-integrations.png",
+  "args": [
+   "--crop",
+   "576,903,1688,640",
+   "--ring",
+   "2023,1037,103,62"
+  ]
+ },
+ {
+  "out": "images/integrations/meta-pixel-troubleshooting/test-mode-chip.png",
+  "src": "source/raw/integrations/meta-pixel/01-panel.png",
+  "args": [
+   "--crop",
+   "2224,858,960,331",
+   "--ring",
+   "2262,1055,541,83",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
+  ]
+ }
 ]

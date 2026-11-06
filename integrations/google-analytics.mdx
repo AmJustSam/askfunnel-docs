@@ -34,12 +34,11 @@ With the Google Analytics integration, you can:
 
 <Steps>
   <Step title="Open the Google Analytics settings">
-    1. From your main dashboard, find the funnel you want to track.
-    2. Click the three small dots (**...**) on that funnel's row, then click **"Funnel Settings"**.
-    3. On the left side menu, click **"Integrations"**.
-    4. Under **Tracking**, on the **Google Analytics** card, click **"Settings"**.
+    1. Click **Funnels** in the sidebar, then click the funnel you want to track.
+    2. In the funnel's menu, click **"Settings"**. If **Integrations** is not open, click it.
+    3. Under **Tracking**, click the **Google Analytics** row. A panel opens on the right.
 
-    <img src="/images/integrations/google-analytics/connect-card.png" alt="The Integrations menu item and the Settings link on the Google Analytics card, both highlighted" width="2080" height="938" />
+    <img src="/images/integrations/google-analytics/connect-card.png" alt="The Integrations page of a funnel's settings with the Google Analytics row highlighted" width="1908" height="838" />
   </Step>
   <Step title="Paste your Measurement ID">
     1. In Google Analytics, click the gear icon (**Admin**) at the bottom left.
@@ -47,14 +46,14 @@ With the Google Analytics integration, you can:
     3. At the top right of the stream details, copy the **Measurement ID**. It looks like G-XXXXXXXXXX.
     4. Back in AskFunnel, paste it into **Measurement ID**.
 
-    <img src="/images/integrations/google-analytics/measurement-id.png" alt="The Google Analytics 4 settings with a Measurement ID typed in, and the You have unsaved changes bar above it, with the Measurement ID field and the Save changes button highlighted" width="2000" height="763" loading="lazy" />
+    <img src="/images/integrations/google-analytics/measurement-id.png" alt="The Google Analytics panel with a Measurement ID typed in, with the Measurement ID field and the Save button highlighted" width="1470" height="1008" loading="lazy" />
 
     <Tip>
       Copy the **Measurement ID**, not the **Stream ID**. The Stream ID is only numbers.
     </Tip>
   </Step>
   <Step title="Save your changes">
-    In the bar that appears at the top, click **"Save changes"**. If your funnel is published, AskFunnel shows **Settings saved. Your live funnel is updated.**
+    Click **"Save"** at the bottom of the panel. If your funnel is published, AskFunnel shows **Settings saved. Your live funnel is updated.** The panel closes, and the **Google Analytics** row shows your Measurement ID and **On**.
 
     If you see **Expected format: G- followed by letters or digits**, check that you copied the whole Measurement ID.
   </Step>
@@ -62,7 +61,7 @@ With the Google Analytics integration, you can:
 
 ## How do I know it is working?
 
-- The Google Analytics card shows **Connected**, and its switch is on.
+- The **Google Analytics** row shows your Measurement ID and **On**.
 - In Google Analytics, open **Reports**, then **Realtime**. Open your funnel in another tab, accept the cookies and click through it. You should appear within a minute, with events such as **funnel_page_view** and **answer_click**.
 - Standard reports can take a day to update.
 
@@ -72,8 +71,8 @@ With the Google Analytics integration, you can:
   <Accordion title="I do not see any data in Google Analytics">
     Check these, in order:
 
-    - The card shows **Connected**, not **Paused** or **Not connected**.
-    - You clicked **"Save changes"** after pasting the Measurement ID.
+    - The row shows **On**, not **Paused**, and no **Not saved**. A row with no chip has no Measurement ID saved yet.
+    - You clicked **"Save"** after pasting the Measurement ID.
     - The Measurement ID belongs to a GA4 property and matches the web stream for your funnel.
     - You accepted analytics cookies on the funnel, if your cookie banner is on.
     - Your ad blocker or browser privacy setting is off for the test.
@@ -82,8 +81,8 @@ With the Google Analytics integration, you can:
   <Accordion title="I see Expected format: G- followed by letters or digits">
     The Measurement ID must start with G-. You may have pasted the Stream ID, a UA- ID or a space. Copy the **Measurement ID** again from your web stream.
   </Accordion>
-  <Accordion title="The card says Paused">
-    The switch on the card is off. Your setup is kept. Turn the switch on and click **"Save changes"**.
+  <Accordion title="The row says Paused">
+    The **Active** switch in the panel is off. Your setup is kept. Turn the switch on and click **"Save"**.
   </Accordion>
   <Accordion title="I want to rename the events or map them">
     You cannot. Google Analytics uses fixed event names, listed under [What gets sent to Google Analytics](#what-gets-sent-to-google-analytics). Meta and TikTok can be mapped. See [Map your funnel steps to standard events](/integrations/event-mapping).
@@ -97,12 +96,12 @@ Google's own tag records a standard **page_view** when your funnel opens. On top
 | What the visitor does | GA4 event | funnel_label |
 |---|---|---|
 | Reaches a funnel page | `funnel_page_view` | The page name |
-| Clicks an answer | `answer_click` | The answer text |
+| Clicks an answer | `answer_click` | None |
 | Clicks a button | `button_click` | The button text |
 | Types in the first field of the lead form | `form_start` | None |
 | Submits the lead form | `generate_lead` | None |
 
-The **funnel_label** is sent as an event parameter. To use it in reports, add it as a custom dimension (an extra column for your reports) in GA4.
+The **funnel_label** is sent as an event parameter. To use it in reports, add it as a custom dimension (an extra column for your reports) in GA4. The text of an answer a visitor picks is never sent, so answer clicks have no **funnel_label**.
 
 <Note>
   Event mapping is not available for Google Analytics, because GA4 only accepts event names made of letters, numbers and underscores. To rename steps for Meta or TikTok, see [Map your funnel steps to standard events](/integrations/event-mapping).
@@ -116,9 +115,9 @@ There is nothing to set up. UTM parameters are tags on your link that show where
 
 ## Manage the integration
 
-- **Pause it:** turn off the switch on the Google Analytics card, then click **"Save changes"**. Your Measurement ID is kept.
-- **Change the property:** replace the **Measurement ID** and click **"Save changes"**.
-- **Remove it from the funnel:** clear the **Measurement ID** and click **"Save changes"**. The card goes back to **Not connected**.
+- **Pause it:** turn off the **Active** switch in the panel, then click **"Save"**. Your Measurement ID is kept.
+- **Change the property:** replace the **Measurement ID** and click **"Save"**.
+- **Remove it from the funnel:** clear the **Measurement ID** and click **"Save"**. The row goes back to showing no chip.
 
 ## What to do next
 

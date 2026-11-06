@@ -6,10 +6,10 @@ icon: "stethoscope"
 ---
 
 <Callout icon="star" color="#155DFC">
-  Available on: **all plans** (Starter, Growth, Scale and Enterprise). The Conversions API, which sends events from AskFunnel's servers, needs **the Growth plan and above**.
+  Available on: **all plans** (Starter, Growth, Scale and Enterprise). The Conversions API, which sends events straight to Meta, needs **the Growth plan and above**.
 </Callout>
 
-You connected Meta, but is it really working? This page gives you a short routine to test it, and a checklist of the reasons events go missing. The browser pixel is the small piece of code that runs in your visitor's browser. The Conversions API sends the same events from AskFunnel's servers, so ad blockers cannot stop them.
+You connected Meta, but is it really working? This page gives you a short routine to test it, and a checklist of the reasons events go missing. The browser pixel is the small piece of code that runs in your visitor's browser. The Conversions API sends the same events straight to Meta, not through the browser, so ad blockers cannot stop them.
 
 If you have not connected Meta yet, start with [Track your Facebook and Instagram ads with Meta Pixel](/integrations/meta-pixel).
 
@@ -24,7 +24,7 @@ With this routine, you can:
 
 - Your Meta Pixel connected to the funnel, with your funnel published. See [Meta Pixel](/integrations/meta-pixel).
 - Access to Meta Events Manager for your pixel.
-- A role that can open **Funnel Settings**: Global Admin, Workspace Admin or Content Editor.
+- A role that can open the funnel's **Settings**: Global Admin, Workspace Admin or Content Editor.
 
 ## Important to note
 
@@ -38,13 +38,12 @@ With this routine, you can:
 ## Test your setup
 
 <Steps>
-  <Step title="Check the Meta Pixel card">
-    1. From your funnel list, click the three dots (**...**) on the funnel's row, then click **"Funnel Settings"**.
-    2. On the left side menu, click **"Integrations"**. Under **Tracking**, look at the **Meta Pixel** card.
-    3. It must say **Connected**. **Paused** means the switch is off, and **Not connected** means no Pixel ID is saved.
-    4. Click **"Settings"** and compare **Pixel ID** with the ID of your pixel in Meta Events Manager, under **Data sources**. They must be the same, with no spaces. If you changed it, click **"Save changes"**.
+  <Step title="Check the Meta Pixel row">
+    1. Click **Funnels** in the sidebar, then click the funnel. In the funnel's menu, click **"Settings"**. If **Integrations** is not open, click it.
+    2. Under **Tracking**, look at the **Meta Pixel** row. It shows your Pixel ID and must say **On**. **Paused** means the **Active** switch in the panel is off. No chip means no Pixel ID is saved. **Not saved** means you changed something and have not clicked **Save** yet.
+    3. Click the row and compare **Pixel ID** with the ID of your pixel in Meta Events Manager, under **Data sources**. They must be the same, with no spaces. If you changed it, click **"Save"**.
 
-    <img src="/images/integrations/meta-pixel-troubleshooting/card-status.png" alt="The Tracking part of the Integrations page with the Meta Pixel card showing the Connected chip and its switch on, next to the Google Analytics and TikTok Pixel cards that say Not connected, with the Connected chip of the Meta Pixel card highlighted" width="2000" height="687" />
+    <img src="/images/integrations/meta-pixel-troubleshooting/card-status.png" alt="The Tracking group of the Integrations page with the Meta Pixel row showing its Pixel ID and the On chip, with the On chip highlighted" width="1908" height="838" />
   </Step>
   <Step title="Watch the browser events in Test events">
     1. In Meta Events Manager, open your pixel and click **Test events**.
@@ -54,21 +53,21 @@ With this routine, you can:
     You should see **PageView** first, then one event for each page, answer and button you used, then **Form Started** and **Lead**. The names are listed in [Map your funnel steps to standard events](/integrations/event-mapping#what-each-step-sends-when-you-do-not-map-it). Events can take a few minutes to show.
   </Step>
   <Step title="Test the Conversions API (Growth and above)">
-    Open **Settings** on the **Meta Pixel** card again and scroll to **Conversions API (server-side)**. It must show **Connected**.
+    Open the **Meta Pixel** row again and scroll to **Meta Conversions API**. It must show **Connected**.
 
     To see these server events in **Test events** too, add a test events code:
 
     1. In Meta's **Test events** tab, copy the test code, for example `TEST12345`.
     2. In AskFunnel, click **"Replace token"**, paste your access token again, and paste the code into **Test events code (optional)**.
-    3. Click **"Replace token"**. You see **Conversions API connected. Meta verified your token.**
-    4. Submit a test lead on your live funnel with marketing cookies accepted. A **Lead** event arrives from AskFunnel's servers.
+    3. Click **"Save"**. You see **Conversions API connected. Meta verified your token.**
+    4. Submit a test lead on your live funnel with marketing cookies accepted. A server **Lead** event arrives.
 
-    Under **Connected**, the chip **Test mode** now shows your code, with a **"Turn off"** button next to it. Meta counts the browser copy and the server copy of the same Lead as one, because they share one event ID.
+    Under **Meta Conversions API**, the chip **Test mode** now shows your code, with a **"Turn off"** button next to it. Meta counts the browser copy and the server copy of the same Lead as one, because they share one event ID.
 
-    <img src="/images/integrations/meta-pixel-troubleshooting/test-mode-chip.png" alt="The Conversions API (server-side) section of the Meta settings with the Connected chip and the Replace token and Disconnect buttons, and under them the Test mode chip with the code TEST12345 and its Turn off button, the Test mode chip and the Turn off button highlighted" width="1922" height="540" loading="lazy" />
+    <img src="/images/integrations/meta-pixel-troubleshooting/test-mode-chip.png" alt="The Meta Conversions API section of the Meta Pixel panel with the Connected chip, the Replace token and Disconnect buttons, and under them the Test mode chip with a test code and its Turn off button, the Test mode chip and the Turn off button highlighted" width="1470" height="511" loading="lazy" />
   </Step>
   <Step title="Turn off test mode">
-    When your events look right, click **"Turn off"** next to **Test mode**. You see **Test mode turned off. Events now reach your ads.** Until you do this, server events are excluded from your ads.
+    When your events look right, click **"Turn off"** next to **Test mode**. You see **Test mode turned off.** From then on, server events reach your ads. Until you do this, they are excluded from your ads.
   </Step>
 </Steps>
 
@@ -79,12 +78,12 @@ The Conversions API sends a **Lead** for a new lead only when everything on this
 | Needs | What to check |
 |---|---|
 | The Growth plan or above | Without it, the section shows an upgrade message. A funnel whose plan dropped below Growth stops sending server events. |
-| A saved Pixel ID | The card shows **Connected**, not **Not connected**. |
-| Meta not paused | The switch on the **Meta Pixel** card is on. |
-| A working token | **Connected** shows without the red message **Meta rejected the saved token.** If it shows, click **"Reconnect"** and paste a new token. |
+| A saved Pixel ID | The **Meta Pixel** row shows your Pixel ID, not an empty line. |
+| Meta not paused | The **Active** switch in the **Meta Pixel** panel is on. |
+| A working token | **Connected** shows without the red message **Meta rejected the saved token.** If it shows, click **"Reconnect"**, paste a new token and click **"Save"**. |
 | Marketing cookies accepted | The visitor accepted marketing cookies, or your cookie banner is off, and their browser does not send the Global Privacy Control signal. |
 | A lead that counts | The lead is new, and not locked because you reached your monthly lead limit. See [What happens when you reach your monthly lead limit](/billing/monthly-lead-limit). |
-| Test mode off | **Test mode** is not shown under **Connected**, so events reach your ads. |
+| Test mode off | **Test mode** is not shown under **Meta Conversions API**, so events reach your ads. |
 
 Leads that arrived before you connected the Conversions API, or while one of these was missing, are not sent later.
 
@@ -94,7 +93,7 @@ Leads that arrived before you connected the Conversions API, or while one of the
 
 ## How do I know it is working?
 
-- The **Meta Pixel** card says **Connected**, and the Conversions API section says **Connected** without a red message.
+- The **Meta Pixel** row says **On**, and the **Meta Conversions API** section says **Connected** without a red message.
 - In **Test events**, you see the events of your test visit, and with a test code also the server **Lead**.
 - After you turn test mode off, new leads reach Meta as usual and count for your ads. They can take a while to appear in your ad reports.
 
@@ -104,8 +103,8 @@ Leads that arrived before you connected the Conversions API, or while one of the
   <Accordion title="I do not see any events in Test events">
     Check these, in order:
 
-    - The **Meta Pixel** card shows **Connected**, and the Pixel ID matches your pixel exactly.
-    - You clicked **"Save changes"** after you pasted the Pixel ID.
+    - The **Meta Pixel** row shows **On**, and the Pixel ID matches your pixel exactly.
+    - You clicked **"Save"** after you pasted the Pixel ID.
     - You opened the live funnel, not the builder, and accepted marketing cookies if your banner is on.
     - Your ad blocker is off, and the browser does not send the Global Privacy Control signal.
     - A few minutes have passed.
@@ -114,10 +113,10 @@ Leads that arrived before you connected the Conversions API, or while one of the
     Go through the table in **Why a server event is not sent**. The most common causes are a missing test events code (so you cannot see server events in **Test events**), the Growth plan, and a visitor who did not accept marketing cookies.
   </Accordion>
   <Accordion title="I see two Lead events for one visit">
-    The browser Lead and the server Lead share one ID, so Meta counts them once. If you see two from the browser, another funnel step is probably mapped to **Lead**. Open **Map events to standard events** in the Meta settings and change that entry. See [Map your funnel steps to standard events](/integrations/event-mapping).
+    The browser Lead and the server Lead share one ID, so Meta counts them once. If you see two from the browser, another funnel step is probably mapped to **Lead**. Open **Map events to standard events** in the Meta Pixel panel and change that entry. See [Map your funnel steps to standard events](/integrations/event-mapping).
   </Accordion>
-  <Accordion title="I see Save your Meta Pixel ID first">
-    The Conversions API sends to the Pixel ID that is saved on the funnel. Type your Pixel ID, click **"Save changes"**, then connect.
+  <Accordion title="I see Add your Meta Pixel ID above first">
+    The Conversions API sends to the Pixel ID of the funnel. Type your Pixel ID in **Pixel ID** at the top of the panel, then click **"Save"**. One **Save** stores the ID and connects the token. If you see **Save your Meta Pixel ID first**, do the same.
   </Accordion>
   <Accordion title="I see Meta rejected this token">
     The token is wrong, expired or has no permission. In Meta Events Manager, open your dataset's **Settings**, find **Conversions API** and generate a new token. Paste it whole.
@@ -126,7 +125,7 @@ Leads that arrived before you connected the Conversions API, or while one of the
     The token was made for a different pixel. Check the Pixel ID, and generate the token from the same dataset.
   </Accordion>
   <Accordion title="I see Meta couldn't verify this token right now, or Couldn't reach Meta">
-    Meta did not answer in time. Wait a minute and click **"Connect"** again.
+    Meta did not answer in time. Wait a minute and click **"Save"** again.
   </Accordion>
   <Accordion title="Test mode is still on">
     Click **"Turn off"** next to **Test mode**. Server events sent in test mode were not counted for your ads, and they are not sent again.

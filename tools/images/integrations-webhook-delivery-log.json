@@ -1,56 +1,62 @@
 [
-  {
-    "out": "images/integrations/webhook-delivery-log/open-log.png",
-    "src": "source/raw/integrations/webhooks/06-list-mixed.png",
-    "args": [
-      "--crop",
-      "791,469,1298,862",
-      "--ring",
-      "1944,684,76,70",
-      "--ring",
-      "858,960,210,42",
-      "--width",
-      "1470",
-      "--radius",
-      "24"
-    ]
-  },
-  {
-    "out": "images/integrations/webhook-delivery-log/log-rows.png",
-    "src": "source/raw/integrations/webhook-delivery-log/02-log-rows.png",
-    "args": [
-      "--crop",
-      "930,415,1340,970",
-      "--ring",
-      "1855,665,136,57",
-      "--ring",
-      "1793,787,192,57",
-      "--ring",
-      "1742,947,91,57",
-      "--ring",
-      "1877,1107,136,57",
-      "--ring",
-      "1927,533,285,82"
-    ]
-  },
-  {
-    "out": "images/integrations/webhook-delivery-log/attempts.png",
-    "src": "source/raw/integrations/webhook-delivery-log/03-attempts.png",
-    "args": [
-      "--crop",
-      "930,285,1340,1240",
-      "--ring",
-      "1087,729,1106,308"
-    ]
-  },
-  {
-    "out": "images/integrations/webhook-delivery-log/retry-failed.png",
-    "src": "source/raw/integrations/webhook-delivery-log/04-retry-failed.png",
-    "args": [
-      "--crop",
-      "930,280,1340,1010",
-      "--ring",
-      "1927,396,285,86"
-    ]
-  }
+ {
+  "out": "images/integrations/webhook-delivery-log/open-log.png",
+  "src": "source/raw/integrations/webhooks/02-webhooks-list.png",
+  "args": [
+   "--crop",
+   "2224,16,960,968",
+   "--ring",
+   "3030,201,80,80",
+   "--ring",
+   "2306,359,210,47",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
+  ]
+ },
+ {
+  "out": "images/integrations/webhook-delivery-log/log-rows.png",
+  "src": "source/raw/integrations/webhook-delivery-log/01-log.png",
+  "args": [
+   "--crop",
+   "2224,16,960,804",
+   "--ring",
+   "2838,175,306,79",
+   "--ring",
+   "2679,317,91,55",
+   "--width",
+   "1514",
+   "--radius",
+   "30"
+  ]
+ },
+ {
+  "out": "images/integrations/webhook-delivery-log/attempts.png",
+  "src": "source/raw/integrations/webhook-delivery-log/02-attempts.png",
+  "args": [
+   "--crop",
+   "2224,16,960,865",
+   "--ring",
+   "2366,532,756,173",
+   "--width",
+   "1514",
+   "--radius",
+   "30"
+  ]
+ },
+ {
+  "out": "images/integrations/webhook-delivery-log/retry-failed.png",
+  "src": "source/raw/integrations/webhook-delivery-log/01-log.png",
+  "args": [
+   "--crop",
+   "2224,16,960,669",
+   "--ring",
+   "2838,175,306,79",
+   "--width",
+   "1514",
+   "--radius",
+   "30"
+  ]
+ }
 ]

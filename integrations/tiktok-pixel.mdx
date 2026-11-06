@@ -31,25 +31,25 @@ You do not need to install TikTok's code. AskFunnel adds the pixel to your funne
   - When your cookie banner is on, the pixel only tracks visitors who accept marketing cookies. See [Cookies and consent](/funnel-settings/cookies-and-consent).
   - Ad blockers and some privacy browsers block the pixel. Test with your ad blocker turned off.
   - Each funnel uses one TikTok Pixel.
+  - The text of an answer a visitor picks is never sent to TikTok. The click is still counted as **Answer Selected**, or as the standard event you mapped it to.
 </Warning>
 
 ## Setup
 
 <Steps>
   <Step title="Open the TikTok Pixel settings">
-    1. From your main dashboard, find the funnel you want to track.
-    2. Click the three small dots (**...**) on that funnel's row, then click **"Funnel Settings"**.
-    3. On the left side menu, click **"Integrations"**.
-    4. Under **Tracking**, on the **TikTok Pixel** card, click **"Settings"**.
+    1. Click **Funnels** in the sidebar, then click the funnel you want to track.
+    2. In the funnel's menu, click **"Settings"**. If **Integrations** is not open, click it.
+    3. Under **Tracking**, click the **TikTok Pixel** row. A panel opens on the right.
 
-    <img src="/images/integrations/tiktok-pixel/connect-card.png" alt="The Integrations menu item and the Settings link on the TikTok Pixel card, both highlighted" width="2080" height="938" />
+    <img src="/images/integrations/tiktok-pixel/connect-card.png" alt="The Integrations page of a funnel's settings with the TikTok Pixel row highlighted" width="1908" height="838" />
   </Step>
   <Step title="Paste your Pixel ID">
     1. In TikTok Events Manager, open **Data sources**, select your pixel and copy the **Pixel ID** shown under its name. It is a mix of letters and numbers, like C123456ABCDEFG.
     2. Back in AskFunnel, paste it into **Pixel ID**.
-    3. In the bar that appears at the top, click **"Save changes"**. If your funnel is published, AskFunnel shows **Settings saved. Your live funnel is updated.**
+    3. Click **"Save"** at the bottom of the panel. If your funnel is published, AskFunnel shows **Settings saved. Your live funnel is updated.**
 
-    <img src="/images/integrations/tiktok-pixel/pixel-id-unsaved.png" alt="The TikTok Pixel settings with a Pixel ID typed in and the You have unsaved changes bar showing, with the Pixel ID field and the Save changes button highlighted" width="2000" height="712" loading="lazy" />
+    <img src="/images/integrations/tiktok-pixel/pixel-id-unsaved.png" alt="The TikTok Pixel panel with a Pixel ID typed in, with the Pixel ID field and the Save button highlighted" width="1470" height="1128" loading="lazy" />
 
     <Note>
       TikTok may keep showing its own setup checklist until your funnel sends its first events. That is normal.
@@ -58,16 +58,16 @@ You do not need to install TikTok's code. AskFunnel adds the pixel to your funne
   <Step title="Match your funnel steps to TikTok events (optional)">
     Under **Map events to standard events**, click **"Add entry"**, pick a funnel step on the left and the TikTok event it should send on the right. You can add several entries. Anything you do not map is still sent as a custom event. The full guide is in [Map your funnel steps to standard events](/integrations/event-mapping).
 
-    <img src="/images/integrations/tiktok-pixel/map-events.png" alt="The Map events to standard events section for TikTok with one entry, Lead form started to Contact, and the Add entry button highlighted" width="2000" height="581" loading="lazy" />
+    <img src="/images/integrations/tiktok-pixel/map-events.png" alt="The Map events to standard events section of the TikTok Pixel panel with the Add entry button highlighted" width="1470" height="499" loading="lazy" />
   </Step>
   <Step title="Save your changes">
-    Click **"Save changes"** in the bar at the top. Your TikTok Pixel card now shows **Connected**.
+    Click **"Save"** at the bottom of the panel. The panel closes, and the **TikTok Pixel** row now shows your Pixel ID and **On**.
   </Step>
 </Steps>
 
 ## How do I know it is working?
 
-- The TikTok Pixel card shows **Connected**, and its switch is on.
+- The **TikTok Pixel** row shows your Pixel ID and **On**.
 - In TikTok Events Manager, open your pixel and click **Test events**. Open your funnel in another tab in the same browser and accept the cookies. You see the page event, then an event for each page and answer as you click through, then **SubmitForm** when you submit the form.
 - Data can take up to 30 minutes to show on the pixel's **Overview** tab.
 
@@ -77,26 +77,26 @@ You do not need to install TikTok's code. AskFunnel adds the pixel to your funne
   <Accordion title="I do not see any events in TikTok">
     Check these, in order:
 
-    - The card shows **Connected**, not **Paused** or **Not connected**.
-    - You clicked **"Save changes"** after pasting the Pixel ID, and the ID has no extra spaces.
+    - The row shows **On**, not **Paused**, and no **Not saved**. A row with no chip has no Pixel ID saved yet.
+    - You clicked **"Save"** after pasting the Pixel ID, and the ID has no extra spaces.
     - You copied the **Pixel ID** of the pixel, not an account or business ID.
     - You accepted marketing cookies on the funnel, if your cookie banner is on.
     - Your ad blocker or browser privacy setting is off for the test.
     - A little while has passed. TikTok can take up to 30 minutes to show data.
   </Accordion>
-  <Accordion title="The card says Paused">
-    The switch on the card is off. Your setup is kept. Turn the switch on and click **"Save changes"**.
+  <Accordion title="The row says Paused">
+    The **Active** switch in the panel is off. Your setup is kept. Turn the switch on and click **"Save"**.
   </Accordion>
   <Accordion title="My mapping does not seem to work">
-    Mappings only take effect when a **Pixel ID** is set. Check that the card shows **Connected**, that you clicked **"Save changes"**, and that both sides of the entry are filled in. See [Map your funnel steps to standard events](/integrations/event-mapping).
+    Mappings only take effect when a **Pixel ID** is set. Check that the row shows **On**, that you clicked **"Save"**, and that both sides of the entry are filled in. See [Map your funnel steps to standard events](/integrations/event-mapping).
   </Accordion>
 </AccordionGroup>
 
 ## Manage the integration
 
-- **Pause it:** turn off the switch on the TikTok Pixel card, then click **"Save changes"**. Your Pixel ID and mappings are kept.
-- **Change the pixel:** replace the **Pixel ID** and click **"Save changes"**.
-- **Remove it from the funnel:** clear the **Pixel ID** and click **"Save changes"**. The card goes back to **Not connected**.
+- **Pause it:** turn off the **Active** switch in the panel, then click **"Save"**. Your Pixel ID and mappings are kept.
+- **Change the pixel:** replace the **Pixel ID** and click **"Save"**.
+- **Remove it from the funnel:** clear the **Pixel ID** and click **"Save"**. The row goes back to showing no chip.
 
 ## What to do next
 

@@ -1,64 +1,66 @@
 [
-  {
-    "out": "images/integrations/ad-tracking-links/tracking-links-card.png",
-    "src": "source/raw/integrations/ad-tracking-links/01-settings-card.png",
-    "args": [
-      "--crop",
-      "1220,700,1960,880",
-      "--ring",
-      "1232,1182,623,377"
-    ]
-  },
-  {
-    "out": "images/integrations/ad-tracking-links/meta-url-parameters.png",
-    "src": "source/raw/integrations/ad-tracking-links/07-qa-meta.png",
-    "args": [
-      "--crop",
-      "862,364,1300,865",
-      "--ring",
-      "1983,684,138,62",
-      "--width",
-      "1470",
-      "--radius",
-      "22"
-    ]
-  },
-  {
-    "out": "images/integrations/ad-tracking-links/google-final-url-suffix.png",
-    "src": "source/raw/integrations/ad-tracking-links/08-qa-google.png",
-    "args": [
-      "--crop",
-      "862,305,1300,982",
-      "--ring",
-      "1983,626,138,60",
-      "--width",
-      "1470",
-      "--radius",
-      "22"
-    ]
-  },
-  {
-    "out": "images/integrations/ad-tracking-links/test-a-link.png",
-    "src": "source/raw/integrations/ad-tracking-links/09-test-result.png",
-    "args": [
-      "--crop",
-      "1022,393,983,809",
-      "--width",
-      "1470"
-    ]
-  },
-  {
-    "out": "images/integrations/ad-tracking-links/lead-ad-details.png",
-    "src": "source/raw/integrations/ad-tracking-links/06-lead-ad-details.png",
-    "args": [
-      "--crop",
-      "2642,0,1198,1740",
-      "--ring",
-      "2716,1132,1047,592",
-      "--width",
-      "1470",
-      "--radius",
-      "20"
-    ]
-  }
+ {
+  "out": "images/integrations/ad-tracking-links/tracking-links-card.png",
+  "src": "source/raw/integrations/how-integrations-work/01-funnel-integrations.png",
+  "args": [
+   "--crop",
+   "576,903,1688,640",
+   "--ring",
+   "618,1382,1612,145"
+  ]
+ },
+ {
+  "out": "images/integrations/ad-tracking-links/meta-url-parameters.png",
+  "src": "source/raw/integrations/ad-tracking-links/02-meta.png",
+  "args": [
+   "--crop",
+   "2224,16,960,1015",
+   "--ring",
+   "2984,291,176,79",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
+  ]
+ },
+ {
+  "out": "images/integrations/ad-tracking-links/google-final-url-suffix.png",
+  "src": "source/raw/integrations/ad-tracking-links/03-google.png",
+  "args": [
+   "--crop",
+   "2224,16,960,1043",
+   "--ring",
+   "2984,291,176,79",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
+  ]
+ },
+ {
+  "out": "images/integrations/ad-tracking-links/test-a-link.png",
+  "src": "source/raw/integrations/ad-tracking-links/04-test-a-link.png",
+  "args": [
+   "--crop",
+   "2224,16,960,945",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
+  ]
+ },
+ {
+  "out": "images/integrations/ad-tracking-links/lead-ad-details.png",
+  "src": "source/raw/integrations/ad-tracking-links/06-lead-ad-details.png",
+  "args": [
+   "--crop",
+   "2642,0,1198,1740",
+   "--ring",
+   "2716,1132,1047,592",
+   "--width",
+   "1470",
+   "--radius",
+   "20"
+  ]
+ }
 ]

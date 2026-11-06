@@ -7,7 +7,7 @@ icon: "code"
 
 This page shows the exact request AskFunnel sends to your webhook, how to check that a request really came from AskFunnel, and how retries work. It is for the person who builds the receiving side of a [webhook](/integrations/webhooks). If that is not you, share this page with your developer.
 
-In short: AskFunnel sends one signed request for each new lead. Answer with a 2xx status (a success code such as 200) and AskFunnel counts the lead as delivered.
+In short: AskFunnel sends one signed request for each new lead. Answer with a 2xx status (a success code such as 200) and AskFunnel counts the lead as delivered. A lead can arrive more than once, so ignore an `id` you have already handled.
 
 **Before you start**, you need:
 
@@ -27,8 +27,8 @@ webhook-signature: v1,K8IsC2uUMngvTf26iDGSCfwxusqCe5w675ju4LurUkk=
 idempotency-key: evt_q3Zt8mVx1LpR6cYw0aBdNhKs
 ```
 
-- `webhook-id` and `idempotency-key` are the lead's event ID, the same value as `id` in the body. They stay the same on every retry, so use them to ignore repeats.
-- `webhook-timestamp` is the time of this attempt, in seconds since 1970 (Unix time). Each retry has a new timestamp and a new signature.
+- `webhook-id` and `idempotency-key` are the lead's event ID, the same value as `id` in the body. They stay the same when a lead is sent again, so use them to ignore repeats.
+- `webhook-timestamp` is the time of this attempt, in seconds since 1970 (Unix time). Each new attempt has a new timestamp and a new signature.
 - `webhook-signature` is the signature of this attempt. See [Verify the signature](#verify-the-signature).
 - `user-agent` is always `AskFunnel-Webhooks/1.0 (+https://askfunnel.com)` unless you add your own header with that name.
 
@@ -136,7 +136,7 @@ Here is a sample lead from a funnel called Buyer inquiry. JSON is a standard tex
 
 | Field | What it holds |
 |---|---|
-| `id` | The event ID. Unique per lead and the same on every retry. |
+| `id` | The event ID. Unique per lead and the same every time the lead is sent again. |
 | `type` | Always `lead.submitted`. |
 | `version` | The payload format version, currently `1`. |
 | `test` | `true` for a test send, `false` for a real lead. |
@@ -147,7 +147,7 @@ Here is a sample lead from a funnel called Buyer inquiry. JSON is a standard tex
 | `answers` | Each question's text with the answer as text. Multiple choice answers are joined with commas. A repeated question text gets a suffix, such as `Budget (2)`. |
 | `fields` | The same answers with detail. `id` stays the same if you rename the question. `type` is the question type. `value` is the raw answer: text, a number, true or false, `null`, or a list of texts for multiple choice. `displayValue` is the answer as text. `displayValues` lists the option labels of a multiple choice answer. |
 | `consent` | `marketing` is whether the visitor accepted marketing cookies. `analytics` is `essential`, `analytics_granted` or `all_granted`. |
-| `attribution` | `utm` holds the UTM parameters that were present (keys such as `utm_source`), or `null`, which is also the case when the visitor declined analytics cookies. `referrer` is the page the visitor came from, or `null`. `pageUrl` and `pageUrlWithUtm` are the funnel page address, when available. `platform` is the ad platform the lead came from (`meta`, `google`, `tiktok`, `microsoft`, `other` or `direct`), or `null`. `ads` holds the `campaignId`, `adsetId`, `adId` and `placement` of the ad. Each is `null` when the ad did not carry it, and `ads` is `null` when the lead has no ad details. `adsetId` is the ad group ID for Google and TikTok. |
+| `attribution` | `utm` holds the UTM parameters that were present (keys such as `utm_source`), or `null`, which is also the case when the visitor declined analytics cookies. `referrer` is the page the visitor came from, or `null`. `pageUrl` is the funnel page address without its query string, when available. `pageUrlWithUtm` adds the UTM parameters, and only when the visitor allowed analytics cookies. `platform` is the ad platform the lead came from (`meta`, `google`, `tiktok`, `microsoft`, `other` or `direct`), or `null`. `ads` holds the `campaignId`, `adsetId`, `adId` and `placement` of the ad. Each is `null` when the ad did not carry it, and `ads` is `null` when the lead has no ad details. `adsetId` is the ad group ID for Google and TikTok. |
 
 `platform` and `ads` follow the same rule as `utm`: both are `null` when the visitor declined analytics cookies. Ad IDs are filled only for ads that carry your [ad tracking links](/integrations/ad-tracking-links). Click IDs such as `fbclid` and `gclid` are never sent.
 
@@ -179,7 +179,7 @@ function isFromAskFunnel(rawBody, headers, signingSecret) {
 
   if (!id || !timestamp || !header) return false;
 
-  // Reject old requests. Every retry is signed again with a new timestamp.
+  // Reject old requests. Every attempt is signed again with a new timestamp.
   const ageSeconds = Math.abs(Date.now() / 1000 - Number(timestamp));
   if (!(ageSeconds <= 5 * 60)) return false;
 
@@ -229,16 +229,16 @@ AskFunnel only looks at the status code of your answer. The body of your answer 
 
 | Your server | What AskFunnel does |
 |---|---|
-| Answers with any 2xx status (200, 201, 202, 204 and so on) | The lead is **Delivered**. |
-| Answers 408, 425, 429 or any 5xx status, does not answer within 15 seconds, or cannot be reached | Tries again later, on the schedule below. |
-| Answers any other 4xx status, for example 400, 401, 403, 404 or 410 | Stops. The lead shows **Failed** and is not retried automatically. A 410 (Gone) stops the same way, because it means the address was removed. |
+| Answers with any 2xx status (200, 201, 202, 204 and so on) | The lead counts as delivered. |
+| Answers 408, 425, 429 or any 5xx status, does not answer within 15 seconds, or cannot be reached | Tries again later, for about a day. |
+| Answers any other 4xx status, for example 400, 401, 403, 404 or 410 | Stops. The lead shows **Failed** and is not tried again automatically. A 410 (Gone) stops the same way, because it means the address was removed. |
 | Answers with a redirect (3xx) | Stops. The lead shows **Failed**. AskFunnel does not follow redirects, so use the final URL. |
 
-A lead that can be retried is sent again after 1 minute, then 5 minutes, 30 minutes, 2 hours, 6 hours and 12 hours, each counted from the previous attempt. That is up to 7 attempts in about 21 hours. Each retry sends the same `webhook-id` and the same body, with a new timestamp and signature.
+Each new attempt sends the same `webhook-id` and the same body, with a new timestamp and signature.
 
-- **429 Too Many Requests** is treated as "slow down", not as an outage. If your answer has a `Retry-After` header, in seconds or as an HTTP date, AskFunnel waits at least that long, up to 24 hours. It never retries sooner than the schedule above. It does not schedule a retry later than 72 hours after the first attempt.
+- **429 Too Many Requests** is treated as "slow down", not as an outage. If your answer has a `Retry-After` header, in seconds or as an HTTP date, AskFunnel waits at least that long (up to 24 hours) before the next try.
 - After the last attempt fails, the lead shows **Failed** with the last error, the webhook shows **Needs attention**, and the organization owner gets an email.
-- Clicking **"Retry"** in the delivery log starts a new set of up to 7 attempts.
+- Clicking **"Retry"** in the delivery log starts a new round of automatic tries.
 - Failed leads stay in the delivery log for 30 days. See [Read your webhook delivery log and send failed leads again](/integrations/webhook-delivery-log).
 
 ## Troubleshooting

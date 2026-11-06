@@ -1,32 +1,36 @@
 [
  {
   "out": "images/integrations/highlevel/connect-card.png",
-  "src": "source/raw/integrations/highlevel/01-funnel-settings-integrations.png",
+  "src": "source/raw/integrations/how-integrations-work/01-funnel-integrations.png",
   "args": [
    "--crop",
-   "350,165,1840,530",
+   "576,136,1688,511",
    "--ring",
-   "384,194,270,70",
-   "--ring",
-   "1578,554,174,70"
+   "618,356,1612,145"
   ]
  },
  {
   "out": "images/integrations/highlevel/match-fields.png",
-  "src": "source/raw/integrations/highlevel/02-setup-fields-full.png",
+  "src": "source/raw/integrations/highlevel/02-panel-fields.png",
   "args": [
    "--crop",
-   "954,300,1292,990",
-   "--pad",
-   "89"
+   "2224,16,960,1488",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
   ]
  },
  {
   "out": "images/integrations/highlevel/tags-and-note.png",
-  "src": "source/raw/integrations/highlevel/03-setup-tags-note-full.png",
+  "src": "source/raw/integrations/highlevel/03-panel-tags.png",
   "args": [
    "--crop",
-   "950,880,1300,620"
+   "2224,742,960,607",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
   ]
  },
  {
@@ -39,19 +43,40 @@
  },
  {
   "out": "images/integrations/highlevel/delivery-log.png",
-  "src": "source/raw/integrations/highlevel/05-delivery-log.png",
-  "args": []
+  "src": "source/raw/integrations/highlevel/04-delivery-log.png",
+  "args": [
+   "--crop",
+   "2224,16,960,776",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
+  ]
  },
  {
   "out": "images/integrations/highlevel/ad-details-mapped.png",
-  "src": "source/raw/integrations/highlevel/10-ad-details-mapped.png",
+  "src": "source/raw/integrations/highlevel/02-panel-fields.png",
   "args": [
    "--crop",
-   "1022,620,975,524",
+   "2224,702,960,745",
    "--ring",
-   "1050,1007,868,131",
+   "2262,1134,884,188",
    "--width",
-   "1470"
+   "1470",
+   "--radius",
+   "30"
+  ]
+ },
+ {
+  "out": "images/integrations/highlevel/manage-accounts.png",
+  "src": "source/raw/integrations/highlevel/05-accounts-panel.png",
+  "args": [
+   "--crop",
+   "2224,16,960,608",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
   ]
  }
 ]

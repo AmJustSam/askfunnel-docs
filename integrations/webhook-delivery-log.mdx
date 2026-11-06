@@ -13,7 +13,7 @@ Each webhook has a delivery log. It lists the leads AskFunnel sent to that webho
 
 With the delivery log, you can:
 
-- **Check a lead.** See whether it was **Delivered**, is still being retried, or **Failed**.
+- **Check a lead.** See whether it was delivered, is still being tried again, or **Failed**.
 - **Read the reason.** Every failed lead shows what the receiving server answered.
 - **See every attempt.** Open a lead to see the time and result of each try, and when the next one is planned.
 - **Send leads again.** Retry one lead or all failed leads with one click.
@@ -27,7 +27,8 @@ With the delivery log, you can:
 ## Important to note
 
 <Warning>
-  - Only new leads are sent to a webhook, so the log starts with the first lead after you added it. Leads that arrived earlier, while the webhook was paused, or while your plan did not include webhooks are not in it and are not sent later.
+  - Only new leads from your funnel are sent to a webhook, so the log starts with the first lead after you added it. Leads that arrived earlier, while the webhook was paused, or while your plan did not include webhooks are not in it and are not sent later. Leads you import never go to a webhook.
+  - A lead saved over your monthly lead limit is locked. It joins the log, and is sent, once it unlocks (a new billing period, a plan upgrade or a leads add-on).
   - A lead you send again can reach your tool a second time. It arrives with the same ID, so your tool can ignore repeats. See [Retries and what counts as success](/integrations/webhook-reference#retries-and-what-counts-as-success).
   - The log shows the last 30 days. Older entries disappear, and so does the chance to send them again.
   - Every webhook has its own log. If a funnel has several webhooks, open the log of the one you care about.
@@ -37,32 +38,30 @@ With the delivery log, you can:
 
 <Steps>
   <Step title="Open the delivery log">
-    1. From your main dashboard, find the funnel. Click the three small dots (**...**) on its row, then click **"Funnel Settings"**.
-    2. On the left side menu, click **"Integrations"**.
-    3. Under **Send leads to**, on the **Webhooks** card, click **"Settings"**.
-    4. Click the three dots (**...**) on the webhook, then **"Delivery log"**. The window is titled **Delivery log** followed by the name of the webhook.
+    1. Click **Funnels** in the sidebar, then click the funnel. In the funnel's menu, click **"Settings"**. If **Integrations** is not open, click it.
+    2. Under **Send leads to**, click the **Webhooks** row. A panel opens on the right.
+    3. Click the three dots (**...**) on the webhook, then **"Delivery log"**. The panel is titled **Delivery log**, with the name of the webhook under it.
 
-    If a webhook shows **Needs attention**, its row says what went wrong in one line, with **"View delivery log"** under it. Click that instead. To go back to your webhooks, click **"Webhooks"** at the top left of the log.
+    If a webhook shows **Needs attention**, its row says what went wrong in one line, with **"View delivery log"** under it. Click that instead. To go back to your webhooks, click the back arrow at the top left of the panel.
 
-    <img src="/images/integrations/webhook-delivery-log/open-log.png" alt="The Webhooks window with three webhooks, the three dots button of the first one highlighted, and the View delivery log link under the webhook that needs attention, highlighted" width="1470" height="1042" />
+    <img src="/images/integrations/webhook-delivery-log/open-log.png" alt="The Webhooks panel with a webhook that needs attention, its three dots button highlighted, and the View delivery log link under it, highlighted" width="1470" height="1148" />
   </Step>
   <Step title="Read a row">
     Each row is one lead. From left to right you see:
 
+    - **A status icon.** A green check means the lead was delivered.
     - **The lead.** Their name and, next to it, their email or phone. Click the name to open the lead in a new tab. A lead you deleted shows as **Deleted lead**, and a test shows as **Test**.
-    - **The status.** See the table below.
+    - **A status word**, for a lead that is not delivered yet or has failed. See the table below.
     - **The time** the lead was sent. Point at it to see the exact time.
     - **"Retry"**, on failed leads.
     - **An arrow** that opens the details of the lead.
 
-    A failed lead, or one being retried, shows the reason under its name.
-
-    <img src="/images/integrations/webhook-delivery-log/log-rows.png" alt="The delivery log window for a webhook with four rows, Sofia Alvarez Delivered, Daniel Okafor Retrying 4 of 7 with the reason under the name, Priya Nair Failed with the reason and a Retry button, and a Test row Delivered, with the Retry failed 1 button at the top right, the four statuses and the Retry failed button highlighted" width="1514" height="1126" loading="lazy" />
+    <img src="/images/integrations/webhook-delivery-log/log-rows.png" alt="The delivery log of a webhook with failed leads, each with a Failed status, its time, a Retry button and an arrow, and the Retry failed button at the top right, the first status and the Retry failed button highlighted" width="1514" height="984" loading="lazy" />
   </Step>
   <Step title="See every attempt">
-    Click the arrow at the right of a row. The lead opens to show one line per attempt, with the exact time and the result, for example **Delivered (200 OK).** or the reason it failed. If another try is planned, a last line shows **Next retry** and its time.
+    Click the arrow at the right of a row. The lead opens to show one line per attempt, with the exact time and the result, for example **Delivered (200 OK).** or the reason it failed. If another try is planned, a last line shows **Next retry** and its time. This is also where you read why a lead failed.
 
-    <img src="/images/integrations/webhook-delivery-log/attempts.png" alt="One lead in the delivery log, Daniel Okafor, opened to show four attempt lines with their times and results, such as The endpoint did not respond in time and The endpoint is unavailable (503 Service Unavailable), and a last line Next retry with a time, the attempt lines highlighted" width="1514" height="1396" loading="lazy" />
+    <img src="/images/integrations/webhook-delivery-log/attempts.png" alt="One lead in the delivery log opened to show its attempt with the time and the result The endpoint was not found (404 Not Found), the attempt line highlighted" width="1514" height="1045" loading="lazy" />
   </Step>
 </Steps>
 
@@ -70,20 +69,20 @@ With the delivery log, you can:
 
 | Status | What it means |
 |---|---|
-| **Queued** | The lead is waiting to be sent for the first time. |
+| **Waiting to send** | The lead is waiting to be sent for the first time. |
 | **Sending** | AskFunnel is sending it right now. |
-| **Retrying (2/7)** | The last try failed, and AskFunnel will try again. The numbers show the try it is on and the most tries it will make. |
-| **Delivered** | Your tool answered with a success code, so the lead counts as received. |
+| **Retrying** | The last try failed, and AskFunnel will try again. Open the lead to see when. |
+| A green check | Your tool answered with a success code, so the lead counts as received. |
 | **Failed** | AskFunnel stopped trying. Read the reason, fix it, then send the lead again. |
 | **Test** | A sample lead sent with **Send test**. Tests cannot be retried. |
 
-AskFunnel retries on its own, after 1 minute, 5 minutes, 30 minutes, 2 hours, 6 hours and 12 hours, for up to 7 tries in all and never after more than 72 hours. See [Retries and what counts as success](/integrations/webhook-reference#retries-and-what-counts-as-success) for what your server must answer.
+AskFunnel tries again on its own for about a day. See [Retries and what counts as success](/integrations/webhook-reference#retries-and-what-counts-as-success) for what your server must answer.
 
 ## Fix a failed lead and send it again
 
 <Steps>
   <Step title="Read why it failed">
-    Open the lead with the arrow, or read the reason under its name. The messages and their fixes are the same as for a failed test. See [Troubleshooting](/integrations/webhooks#troubleshooting).
+    Open the lead with the arrow to read the reason. The messages and their fixes are the same as for a failed test. See [Troubleshooting](/integrations/webhooks#troubleshooting).
   </Step>
   <Step title="Fix the cause">
     Change what the reason points to: the webhook address, a header such as an API key, or your own server or automation. If you change the address or a header, click the webhook's name to open **"Edit webhook"** and click **"Save"**.
@@ -91,28 +90,28 @@ AskFunnel retries on its own, after 1 minute, 5 minutes, 30 minutes, 2 hours, 6 
     When you save a change to a webhook that needs attention, AskFunnel clears the warning and sends its failed leads again by itself.
   </Step>
   <Step title="Check with a test">
-    Click the three dots (**...**) on the webhook, then **"Send test"**. When you see **Test delivered**, the webhook works again, and a failing webhook stops showing **Needs attention**.
+    Click the three dots (**...**) on the webhook, then **"Send test"**. When you see **Test delivered**, the webhook works again, and it stops showing **Needs attention**.
   </Step>
   <Step title="Send the failed leads again">
     Open the delivery log.
 
     - To retry one lead, click **"Retry"** on its row. You see **Retrying 1 lead.**
-    - To retry all failed leads, click **"Retry failed"** at the top right. The button shows how many, for example **Retry failed (3)**. A plus sign, such as **(20+)**, means more failed leads are further down the list. You see **Retrying 3 leads.** It sends up to 500 leads each time. If there is nothing to send, you see **There is nothing to retry.**
+    - To retry all failed leads, click **"Retry failed"** at the top right. The button shows how many, for example **Retry failed (3)**. A plus sign, such as **(20+)**, means more failed leads are further down the list. You see **Retrying 3 leads.** If a lot are left afterwards, click it again. If there is nothing to send, you see **There is nothing to retry.**
 
-    Each lead starts a fresh set of up to 7 tries.
+    Each lead starts a fresh round of automatic tries.
 
-    <img src="/images/integrations/webhook-delivery-log/retry-failed.png" alt="The top of the delivery log with the Retry failed (3) button highlighted above the rows, three of them Failed with a reason under the name and a Retry button" width="1514" height="1166" loading="lazy" />
+    <img src="/images/integrations/webhook-delivery-log/retry-failed.png" alt="The top of the delivery log with the Retry failed button highlighted above the first failed leads" width="1514" height="849" loading="lazy" />
   </Step>
 </Steps>
 
 ## When you get an email about it
 
-When a lead fails for good, the webhook shows **Needs attention** with the reason, and so does the **Webhooks** card. AskFunnel also emails the organization owner with the subject **An integration needs your attention**. It sends at most one email a day for each destination, and the email links to your integration settings. The warning goes away after the next delivered lead, a successful test or a saved fix.
+When a lead fails for good, the webhook shows **Needs attention** with the reason, and so does the **Webhooks** row. AskFunnel also emails the organization owner with the subject **An integration needs your attention**. It sends at most one email a day for each destination, and the email links to your integration settings. The warning goes away after the next delivered lead, a successful test or a saved fix.
 
 ## How do I know it is working?
 
-- A new lead shows at the top of the log with **Delivered**, and its details say **Delivered (200 OK).** or another success code.
-- The webhook's row and its card show **Connected**, without **Needs attention**.
+- A new lead shows at the top of the log with a green check, and its details say **Delivered (200 OK).** or another success code.
+- The webhook's row and the **Webhooks** row show **On**, without **Needs attention**.
 - The lead appears in your receiving tool, for example in your Zap's run history.
 
 ## Troubleshooting
@@ -122,25 +121,25 @@ When a lead fails for good, the webhook shows **Needs attention** with the reaso
     No lead has arrived since you added the webhook. Click **"Send test"** to see a **Test** row. Real leads show up as soon as someone submits your live funnel.
   </Accordion>
   <Accordion title="A lead is missing from the log but I can see it in my Leads">
-    Check that the webhook existed and was on when the lead arrived, that your plan included webhooks, and that the lead is not older than 30 days. A lead that is locked because you reached your monthly lead limit is never sent. See [What happens when you reach your monthly lead limit](/billing/monthly-lead-limit).
+    Check that the webhook existed and was on when the lead arrived, that your plan included webhooks, that the lead came through your funnel (imported leads are never sent) and that the lead is not older than 30 days. A lead that is locked because you reached your monthly lead limit is saved but not sent. It is sent once it unlocks. See [What happens when you reach your monthly lead limit](/billing/monthly-lead-limit).
   </Accordion>
   <Accordion title="A lead stays on Retrying">
-    AskFunnel is waiting for the next planned try. Open the lead to read the reason and the time of **Next retry**. If you have already fixed the cause, you do not need to wait: click **"Retry"** once the lead shows **Failed**.
+    AskFunnel is waiting for the next planned try. Open the lead to read the reason and the time of **Next retry**. If you have already fixed the cause, you can send it now: click **"Retry"** once the lead shows **Failed**.
   </Accordion>
   <Accordion title="A lead shows Failed with Your plan does not include this destination">
-    Your plan changed to one without webhooks after the lead was queued, so AskFunnel did not send it. Upgrade to Growth or above, then click **"Retry"** on the lead, or **"Retry failed"** for all of them.
+    Your plan changed to one without webhooks after the lead arrived, so AskFunnel did not send it. Upgrade to Growth or above, then click **"Retry"** on the lead, or **"Retry failed"** for all of them.
   </Accordion>
   <Accordion title="The Retry buttons are grayed out">
     Sending leads again needs the Growth plan or above. Point at the button to see **Upgrade to Growth to send these leads again.** Test rows have no **Retry** button.
   </Accordion>
   <Accordion title="I see This lead can no longer be sent">
-    The lead was deleted, or it was too large to send (over 256 KB), so there is nothing left to send. Add the contact to your tool by hand if you still need it. Open the lead in your **Leads** page and use [Export your leads](/leads/export-contacts) if you need the data.
+    The lead's data is no longer available, for example because the lead was deleted, so there is nothing left to send. Add the contact to your tool by hand if you still need it. Use [Export your leads](/leads/export-contacts) if you need the data.
   </Accordion>
   <Accordion title="The same lead is in my tool twice">
     AskFunnel delivers each lead at least once. A slow answer, or a click on **"Retry"**, can send the same lead again with the same ID. Ignore a lead whose ID you already handled.
   </Accordion>
   <Accordion title="Only 20 rows show">
-    The log loads 20 leads at a time. Click **"Load more"** at the bottom to see older ones, up to 30 days back.
+    The log loads a page of leads at a time. Click **"Load more"** at the bottom to see older ones, up to 30 days back.
   </Accordion>
 </AccordionGroup>
 

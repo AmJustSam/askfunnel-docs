@@ -16,7 +16,7 @@ With webhooks, you can:
 - **Connect almost any tool.** Paste the webhook URL from Zapier, Make, n8n or your own server. No API key from AskFunnel is needed.
 - **Send every answer in one request.** Each lead arrives as JSON (a standard text format that software reads easily) with the contact details, every answer, the lead score (a Cold, Warm or Hot label) and where the lead came from.
 - **Keep it secure.** Every request is signed, so your server can check it came from AskFunnel. You can also add your own headers, such as an API key.
-- **Never lose a lead quietly.** AskFunnel retries automatically, shows every lead in a delivery log, and emails you if something needs your attention.
+- **Never lose a lead quietly.** AskFunnel tries again automatically for about a day, shows every lead in a delivery log, and emails the organization owner if something needs attention.
 
 **Before you start**, you need:
 
@@ -27,7 +27,8 @@ With webhooks, you can:
 ## Important to note
 
 <Warning>
-  - Only new leads are sent. Leads that arrived before you added the webhook are not.
+  - Only new leads from your funnel are sent. Leads that arrived before you added the webhook, and leads you import, are not.
+  - A lead saved over your monthly lead limit is locked. It is sent to your webhooks once it unlocks (a new billing period, a plan upgrade or a leads add-on).
   - If your plan drops below Growth, your webhooks and their settings are kept, but new leads are no longer sent to them and you cannot add, change or test a webhook until you upgrade. Leads that arrive in the meantime are not sent later.
 </Warning>
 
@@ -45,26 +46,25 @@ With webhooks, you can:
   <Step title="Add the webhook to your funnel">
     The URL must start with https://, use the standard port (443) and be reachable from the internet. Addresses inside a private network, such as localhost, are refused. It cannot contain a username, a password or a # fragment.
 
-    1. From your main dashboard, find the funnel you want to connect.
-    2. Click the three small dots (**...**) on that funnel's row, then click **"Funnel Settings"**.
-    3. On the left side menu, click **"Integrations"**.
-    4. Under **Send leads to**, on the **Webhooks** card, click **"Settings"**.
-    5. Paste your URL into **Webhook URL** and click **"Add webhook"**.
+    1. Click **Funnels** in the sidebar, then click the funnel you want to connect.
+    2. In the funnel's menu, click **"Settings"**. If **Integrations** is not open, click it.
+    3. Under **Send leads to**, click the **Webhooks** row. A panel opens on the right.
+    4. Paste your URL into **Webhook URL** and click **"Add webhook"**.
 
     The webhook is on straight away, and AskFunnel shows **Webhook added. New leads will be sent to it.**
 
-    <img src="/images/integrations/webhooks/connect-card.png" alt="The Integrations menu item and the Settings link on the Webhooks card, both highlighted" width="2080" height="547" />
+    <img src="/images/integrations/webhooks/connect-card.png" alt="The Integrations page of a funnel's settings with the Webhooks row highlighted" width="1908" height="709" />
 
-    <img src="/images/integrations/webhooks/add-webhook.png" alt="The Webhooks window with a webhook URL typed in Webhook URL and the Add webhook button highlighted" width="1470" height="702" loading="lazy" />
+    <img src="/images/integrations/webhooks/add-webhook.png" alt="The Webhooks panel with a webhook URL typed in Webhook URL and the Add webhook button highlighted" width="1470" height="1008" loading="lazy" />
   </Step>
   <Step title="Send a test">
     Put your tool in listening mode first, so it can receive the test.
 
-    1. On the webhook's row, click the three dots (**...**), then **"Send test"**.
+    1. In the **Webhooks** panel, click the three dots (**...**) on the webhook's row, then **"Send test"**.
     2. AskFunnel sends a sample lead named **AskFunnel Test** (test@askfunnel.test), built from your funnel's own questions. If your server accepts it, you see **Test delivered** and the status it answered with, for example **Test delivered (200 OK)**. The request contains `"test": true`, so your tool can tell it apart from a real lead.
     3. In your tool, use the test request to set up the next steps, for example to add a row in your CRM.
 
-    <img src="/images/integrations/webhooks/webhooks-list.png" alt="The Webhooks window with three webhooks: one that needs attention, with its last error and View delivery log, one connected and one paused, each with its switch and three dots button, the three dots button of the first one highlighted" width="1471" height="812" loading="lazy" />
+    <img src="/images/integrations/webhooks/webhooks-list.png" alt="The Webhooks panel with a webhook that needs attention, showing its last error and View delivery log, with its switch and three dots button, the three dots button highlighted" width="1470" height="1148" loading="lazy" />
 
     <Tip>
       A test is a real request to your URL. Your server or tool will receive it, so delete the test contact afterwards if you like.
@@ -74,10 +74,10 @@ With webhooks, you can:
     1. Click the webhook's name to open **"Edit webhook"**.
     2. **Name (optional)** is only shown in AskFunnel. Without a name, the webhook is named after its host, for example hooks.zapier.com.
     3. Click **Advanced**. Under **Headers**, click **"Add header"** to send your own header (extra information sent with every request), for example **Authorization** with the value `Bearer your-token`. You can add up to 10. Values are hidden once saved. To change one, type a new value.
-    4. The **Signing secret** is a private code your server can use to check that a request came from AskFunnel. It starts with whsec_. Click the eye icon to show it and the copy icon to copy it. You need it only if your server checks signatures. See [Verify the signature](/integrations/webhook-reference#verify-the-signature).
+    4. The **Signing secret** is a private code your server can use to check that a request came from AskFunnel. It starts with whsec_. A new webhook gets its signing secret when you save it. Click the eye icon to show it and the copy icon to copy it. You need it only if your server checks signatures. See [Verify the signature](/integrations/webhook-reference#verify-the-signature).
     5. Click **"Save"**.
 
-    <img src="/images/integrations/webhooks/edit-advanced.png" alt="The Edit webhook window with Advanced open, showing one header and the hidden Signing secret with its eye and copy icons highlighted" width="1470" height="1401" loading="lazy" />
+    <img src="/images/integrations/webhooks/edit-advanced.png" alt="The Edit webhook panel with Advanced open, showing the Headers section and the hidden Signing secret with its eye and copy icons highlighted" width="1470" height="1948" loading="lazy" />
 
     <Note>
       Some header names are reserved, such as Content-Type and anything that starts with webhook-. AskFunnel shows **AskFunnel sets this header itself** if you try to use one.
@@ -91,13 +91,13 @@ With webhooks, you can:
 
 ## Read the webhook list
 
-The **Webhooks** window lists every webhook of the funnel. A line at the top says **Every new lead is sent to each webhook that is on.** Each row shows:
+The **Webhooks** panel lists every webhook of the funnel. Each row shows:
 
 - **The name** and, under it, the host of its address.
-- **A status**, the same words as on the **Webhooks** card: **Connected** (it is on and sending), **Needs attention** (the last lead could not be sent), **Paused** (you turned it off) or **Not sending** (your plan does not include webhooks).
-- **A switch** to turn it on or off, and the three dots (**...**) menu with **Edit**, **Send test**, **Delivery log** and **Delete**.
+- **A status**, the same words as on the **Webhooks** row: **On** (it is sending), **Needs attention** (the last lead could not be sent, or your plan no longer includes webhooks) or **Paused** (you turned it off).
+- **A switch** to turn it on or off, and the three dots (**...**) menu with **Edit**, **Send test**, **Delivery log** and **Remove**.
 
-When a webhook needs attention, one line under its name says why, with **"View delivery log"** under it. At the bottom of the window, **"Add webhook"** is on the left and **"Close"** on the right. When **"Add webhook"** is grayed out, a line beside or under it says why. See [Troubleshooting](#troubleshooting).
+When a webhook needs attention, one line under its name says why, with **"View delivery log"** under it. At the bottom of the panel, click **"Add webhook"** to add another one. When **"Add webhook"** is grayed out, a line under the list says why. See [Troubleshooting](#troubleshooting).
 
 ## Build your automation
 
@@ -119,10 +119,10 @@ For leads that come from ads with your [ad tracking links](/integrations/ad-trac
 
 ## How do I know it is working?
 
-- The **Webhooks** card shows **Connected** and the address of your webhook, for example hooks.zapier.com. With several webhooks, it shows how many you have.
-- In the Webhooks settings, click the three dots (**...**) on a webhook, then **"Delivery log"**. Each lead shows **Delivered**, **Retrying** or **Failed**, and you can open a lead to see every attempt. Tests are listed as **Test**. For a full guide, see [Read your webhook delivery log and send failed leads again](/integrations/webhook-delivery-log).
-- If your server cannot be reached, AskFunnel retries automatically, as described in [Retries](/integrations/webhook-reference#retries-and-what-counts-as-success).
-- If something needs your attention, the webhook shows **Needs attention** with the reason, the card shows **Needs attention**, and the organization owner gets an email.
+- The **Webhooks** row shows **On** and the address of your webhook, for example hooks.zapier.com. With several webhooks, it shows the first one and how many more you have.
+- In the **Webhooks** panel, click the three dots (**...**) on a webhook, then **"Delivery log"**. A delivered lead has a check mark. A lead that is being tried again shows **Retrying**, and one that could not be sent shows **Failed**. Open a lead to see every attempt. Tests are listed as **Test**. For a full guide, see [Read your webhook delivery log and send failed leads again](/integrations/webhook-delivery-log).
+- If your server cannot be reached, AskFunnel tries again automatically, as described in [Retries](/integrations/webhook-reference#retries-and-what-counts-as-success).
+- If something needs your attention, the webhook shows **Needs attention** with the reason, the row shows **Needs attention**, and the organization owner gets an email.
 
 <img src="/images/integrations/webhooks/delivery-log.png" alt="The webhook delivery log with delivered leads and one lead opened to show Delivered (200 OK)" width="1470" height="1352" loading="lazy" />
 
@@ -142,32 +142,32 @@ For leads that come from ads with your [ad tracking links](/integrations/ad-trac
     - **The endpoint redirected. Use the final URL.** Paste the address you end up at, not the one that redirects.
   </Accordion>
   <Accordion title="A lead shows Failed in the delivery log">
-    Open the lead in the delivery log to see the reason, fix it, then click **"Retry"**, or **"Retry failed"** to send all failed leads again. The reasons are the same as for a failed test. A lead that is too large to send (over 256 KB) cannot be retried.
+    Open the lead in the delivery log to see the reason, fix it, then click **"Retry"**, or **"Retry failed"** to send all failed leads again. The reasons are the same as for a failed test.
   </Accordion>
   <Accordion title="The webhook says Needs attention">
     Open the delivery log, fix the reason shown, then click **"Retry failed"**. Saving the webhook after you change its URL or headers also sends the leads that failed again.
   </Accordion>
   <Accordion title="The same lead arrived twice">
-    AskFunnel delivers each lead at least once. If your server was slow and AskFunnel retried, or you clicked **"Retry"**, the same lead arrives again with the same `webhook-id` header and the same `id`. Ignore a lead whose ID you have already handled. See [Retries](/integrations/webhook-reference#retries-and-what-counts-as-success).
+    AskFunnel delivers each lead at least once. If your server was slow and AskFunnel tried again, or you clicked **"Retry"**, the same lead arrives again with the same `webhook-id` header and the same `id`. Ignore a lead whose ID you have already handled. See [Retries](/integrations/webhook-reference#retries-and-what-counts-as-success).
   </Accordion>
-  <Accordion title="The Webhooks card says Growth and above">
-    Webhooks are available on the Growth plan and above. Click **"Upgrade to Growth"** in the Webhooks settings, or see [Upgrade your plan](/billing/upgrade). If you had webhooks before, the card and each webhook's row show **Not sending**. Your webhooks and their settings are kept, and they start sending new leads again once your plan includes webhooks.
+  <Accordion title="The Webhooks row says Not available, or the panel says to upgrade">
+    Webhooks are available on the Growth plan and above. Click **"Upgrade to Growth"** in the **Webhooks** panel, or see [Upgrade your plan](/billing/upgrade). If you had webhooks before, the row and each webhook show **Needs attention**. Your webhooks and their settings are kept, and they start sending new leads again once your plan includes webhooks.
   </Accordion>
   <Accordion title="The Add webhook button is grayed out">
-    A line beside or under the button says why. With 10 webhooks it says **You can add up to 10 webhooks.** Delete one you do not use, or reuse an existing webhook. If your plan does not include webhooks, it says **Upgrade to Growth to add a webhook.**
+    A line under the list says why. With 10 webhooks it says **You can add up to 10 webhooks.** Remove one you do not use, or reuse an existing webhook. If your plan does not include webhooks, it says **Upgrade to Growth to add a webhook.**
   </Accordion>
 </AccordionGroup>
 
 ## Manage the integration
 
-- **Send to several tools:** click **"Add webhook"** at the bottom left of the Webhooks window to add another URL, up to 10.
+- **Send to several tools:** click **"Add webhook"** at the bottom of the **Webhooks** panel to add another URL, up to 10.
 - **Pause one webhook:** turn off the switch on its row. Its status changes to **Paused**. Leads that arrive while it is paused are not sent later.
 - **Change a URL or a header:** click the webhook's name, edit it and click **"Save"**. Saved header values are kept only while the URL stays on the same website. If you point the webhook to a different website, enter the header values again.
-- **Change the signing secret:** in **"Edit webhook"**, open **Advanced** and click **"Rotate secret"**. Requests signed with the old secret will fail verification, so update your server right after.
-- **Delete a webhook:** click **"Delete webhook"** in **"Edit webhook"**, or **"Delete"** in the webhook's three dots menu. New leads stop being sent to it.
+- **Change the signing secret:** in **"Edit webhook"**, open **Advanced** and click **"Rotate secret"**, then confirm. Requests signed with the old secret will fail verification, so update your server right after.
+- **Remove a webhook:** click **"Remove webhook"** in **"Edit webhook"**, or **"Remove"** in the webhook's three dots menu, then confirm. New leads stop being sent to it.
 
 <Warning>
-  Deleting a webhook also deletes its headers and signing secret. Leads that were still waiting to be sent to it end as failed. Leads your tool already received stay there.
+  Removing a webhook also removes its headers and signing secret. Leads that were still waiting to be sent to it end as failed. Leads your tool already received stay there.
 </Warning>
 
 ## What to do next

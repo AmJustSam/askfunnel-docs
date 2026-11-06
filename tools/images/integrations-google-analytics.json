@@ -1,34 +1,28 @@
 [
-  {
-    "out": "images/integrations/google-analytics/connect-card.png",
-    "src": "source/raw/integrations/google-analytics/01-integrations-cards.png",
-    "args": [
-      "--crop",
-      "350,165,2500,1040",
-      "--ring",
-      "392,200,256,58",
-      "--ring",
-      "1582,1069,166,62",
-      "--pad",
-      "80",
-      "--pad-y",
-      "80",
-      "--max-width",
-      "2080"
-    ]
-  },
-  {
-    "out": "images/integrations/google-analytics/measurement-id.png",
-    "src": "source/raw/integrations/google-analytics/02-measurement-id.png",
-    "args": [
-      "--crop",
-      "895,170,1950,640",
-      "--ring",
-      "2279,635,504,99",
-      "--ring",
-      "2491,197,312,100",
-      "--pad",
-      "100"
-    ]
-  }
+ {
+  "out": "images/integrations/google-analytics/connect-card.png",
+  "src": "source/raw/integrations/how-integrations-work/01-funnel-integrations.png",
+  "args": [
+   "--crop",
+   "576,903,1688,640",
+   "--ring",
+   "618,1124,1612,145"
+  ]
+ },
+ {
+  "out": "images/integrations/google-analytics/measurement-id.png",
+  "src": "source/raw/integrations/google-analytics/01-measurement-id.png",
+  "args": [
+   "--crop",
+   "2224,16,960,828",
+   "--ring",
+   "2264,375,880,92",
+   "--ring",
+   "2968,726,176,94",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
+  ]
+ }
 ]

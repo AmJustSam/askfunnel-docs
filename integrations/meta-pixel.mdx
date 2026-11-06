@@ -6,7 +6,7 @@ icon: "bullseye"
 ---
 
 <Callout icon="star" color="#155DFC">
-  Available on: **all plans** (Starter, Growth, Scale and Enterprise). The Conversions API, which tracks from our servers, is available on **the Growth plan and above**.
+  Available on: **all plans** (Starter, Growth, Scale and Enterprise). The Conversions API, which sends events without the visitor's browser, is available on **the Growth plan and above**.
 </Callout>
 
 Tell Meta who opened your funnel, what they did and who became a lead, so you can see which Facebook and Instagram ads work. A pixel is a small piece of code that reports what people do on your funnel back to an ad platform. Connect your Meta Pixel and AskFunnel sends the events for you.
@@ -17,7 +17,7 @@ With the Meta Pixel integration, you can:
 - **See who became a lead.** When a visitor submits your form, AskFunnel sends a **Lead** event.
 - **Follow every step.** Each funnel page, answer and button click is sent to Meta as its own event, so you can see where visitors drop off.
 - **Tell Meta what counts.** Map any step to one of Meta's standard events. See [Map your funnel steps to standard events](/integrations/event-mapping).
-- **Get past ad blockers.** On the Growth plan and above, the Conversions API sends events from AskFunnel's servers too.
+- **Get past ad blockers.** On the Growth plan and above, the Conversions API also sends events straight to Meta, so ad blockers cannot stop them.
 
 **Before you start**, you need:
 
@@ -30,24 +30,24 @@ With the Meta Pixel integration, you can:
   - When your cookie banner is on, the pixel only tracks visitors who accept marketing cookies. See [Cookies and consent](/funnel-settings/cookies-and-consent).
   - Ad blockers and some privacy browsers block the pixel. Test with your ad blocker turned off.
   - Each funnel uses one Meta Pixel.
+  - The text of an answer a visitor picks is never sent to Meta. The click is still counted as **Answer Selected**, or as the standard event you mapped it to.
 </Warning>
 
 ## Setup
 
 <Steps>
   <Step title="Open the Meta Pixel settings">
-    1. From your main dashboard, find the funnel you want to track.
-    2. Click the three small dots (**...**) on that funnel's row, then click **"Funnel Settings"**.
-    3. On the left side menu, click **"Integrations"**.
-    4. Under **Tracking**, on the **Meta Pixel** card, click **"Settings"**.
+    1. Click **Funnels** in the sidebar, then click the funnel you want to track.
+    2. In the funnel's menu, click **"Settings"**. If **Integrations** is not open, click it.
+    3. Under **Tracking**, click the **Meta Pixel** row. A panel opens on the right.
 
-    <img src="/images/integrations/meta-pixel/connect-card.png" alt="The Integrations menu item and the Settings link on the Meta Pixel card, both highlighted" width="2080" height="938" />
+    <img src="/images/integrations/meta-pixel/connect-card.png" alt="The Integrations page of a funnel's settings with the Meta Pixel row highlighted" width="1908" height="838" />
   </Step>
   <Step title="Paste your Pixel ID">
     1. Next to **Pixel ID**, paste your number, for example 1234567890.
-    2. In the bar that appears at the top, click **"Save changes"**. If your funnel is published, AskFunnel shows **Settings saved. Your live funnel is updated.**
+    2. Click **"Save"** at the bottom of the panel. If your funnel is published, AskFunnel shows **Settings saved. Your live funnel is updated.** The panel closes, and the **Meta Pixel** row shows your Pixel ID and **On**.
 
-    <img src="/images/integrations/meta-pixel/pixel-id-unsaved.png" alt="The Meta settings with a Pixel ID typed in and the You have unsaved changes bar showing, with the Pixel ID field and the Save changes button highlighted" width="2000" height="712" loading="lazy" />
+    <img src="/images/integrations/meta-pixel/pixel-id-unsaved.png" alt="The Meta Pixel panel with a Pixel ID typed in, with the Pixel ID field and the Save button highlighted" width="1470" height="1158" loading="lazy" />
 
     <Tip>
       In Meta Events Manager, open **Data sources**, select your dataset and copy its **ID**. A dataset is Meta's name for a pixel.
@@ -60,37 +60,37 @@ With the Meta Pixel integration, you can:
 
 ## Add the Conversions API (optional, Growth and above)
 
-Browsers with ad blockers or strict privacy settings often block the pixel, so those leads never reach Meta. The Conversions API sends the same events from AskFunnel's servers, and Meta removes the duplicates.
+Browsers with ad blockers or strict privacy settings often block the pixel, so those leads never reach Meta. The Conversions API sends the same events straight to Meta, without the visitor's browser, and Meta removes the duplicates.
 
-1. Save your Pixel ID first. **"Connect"** stays locked until the ID is saved.
+1. Make sure your **Pixel ID** is filled in above. Server events are sent to that pixel.
 2. In Meta Events Manager, open your dataset's **Settings**, find **Conversions API** and generate an access token. Copy it.
-3. In AskFunnel, under **Conversions API (server-side)**, paste the token into **Access token**.
+3. In AskFunnel, under **Meta Conversions API**, paste the token into **Access token**.
 4. Optional: to check your setup first, paste the code from Meta's **Test events** tab into **Test events code (optional)**.
-5. Click **"Connect"**. AskFunnel shows **Conversions API connected. Meta verified your token.** This applies right away. You do not need to save or publish.
+5. Click **"Save"**. One **Save** stores your Pixel ID and connects the token. AskFunnel shows **Conversions API connected. Meta verified your token.** Server events start right away. You do not need to publish.
 
-<img src="/images/integrations/meta-pixel/conversions-api.png" alt="The Conversions API (server-side) section with the Access token and Test events code fields and the Connect button highlighted" width="1470" height="730" loading="lazy" />
+<img src="/images/integrations/meta-pixel/conversions-api.png" alt="The Meta Pixel panel with the Meta Conversions API section open, the Access token and Test events code fields and the Save button highlighted" width="1470" height="1928" loading="lazy" />
 
-Once connected, AskFunnel sends a **Lead** event from its servers for each new lead, and a custom event named after the new status whenever you change a lead's status, for example Qualified. Only leads who accepted marketing cookies are sent. The Conversions API does not bypass consent choices or Meta's data rules.
+Once connected, AskFunnel sends a server **Lead** event for each new lead, and a custom event named after the new status whenever you change a lead's status, for example Qualified. Only leads who accepted marketing cookies are sent. The Conversions API does not bypass consent choices or Meta's data rules.
 
 <Warning>
-  While a test events code is set, **Test mode** shows under **Connected**. Events sent in test mode appear in Meta's **Test events** tab but never reach your ads. When your setup works, click **"Turn off"** next to **Test mode**.
+  While a test events code is set, **Test mode** shows under **Meta Conversions API**. Events sent in test mode appear in Meta's **Test events** tab but never reach your ads. When your setup works, click **"Turn off"** next to **Test mode**.
 </Warning>
 
 ## Report revenue to Meta (optional, Growth and above)
 
 Once the Conversions API is connected, you can tell Meta when a lead turns into revenue, so it finds buyers and not only form fillers.
 
-1. Turn on **Revenue tracking**.
-2. Under **When a lead reaches**, pick the status that means a closed deal, and under **send its Deal Value in**, pick your currency. Click **"Turn on"**. AskFunnel adds a **Deal Value** column to your leads table.
+1. Turn on the **Revenue tracking** switch.
+2. Under **When a lead reaches**, pick the status that means a closed deal, and next to **send its Deal Value in**, pick your currency. Click **"Turn on"**. AskFunnel shows **Revenue tracking is on. The Deal Value column was added to your leads table.**
 3. Your team types each lead's value into **Deal Value**, before or after moving the lead to that status.
 
 When a lead is in that status and has a value, AskFunnel sends Meta one **Purchase** event with that amount. Leads without a value send no Purchase, and only leads who accepted marketing cookies are sent. Do not also map a funnel step to Purchase, or buyers are counted twice.
 
 ## How do I know it is working?
 
-- The Meta Pixel card shows **Connected**, and its switch is on.
+- The **Meta Pixel** row shows your Pixel ID and **On**.
 - In Meta Events Manager, open your dataset and click **Test events**. Open your funnel in another tab in the same browser and accept the cookies. You see **PageView**, then an event for each page and answer as you click through, then **Lead** when you submit the form.
-- With the Conversions API connected, Meta also shows the events sent from AskFunnel's servers.
+- With the Conversions API connected, Meta also shows the server events.
 
 ## Troubleshooting
 
@@ -100,35 +100,35 @@ For a step by step test and a checklist for server events, see [Check that your 
   <Accordion title="I do not see any events in Meta">
     Check these, in order:
 
-    - The card shows **Connected**, not **Paused** or **Not connected**.
-    - You clicked **"Save changes"** after pasting the Pixel ID, and the ID has no extra spaces.
+    - The row shows **On**, not **Paused**, and no **Not saved**. A row with no chip has no Pixel ID saved yet.
+    - You clicked **"Save"** after pasting the Pixel ID, and the ID has no extra spaces.
     - You accepted marketing cookies on the funnel, if your cookie banner is on.
     - Your ad blocker or browser privacy setting is off for the test.
     - A few minutes have passed. Meta can take a little while to show events.
   </Accordion>
-  <Accordion title="The card says Paused">
-    The switch on the card is off. Your setup is kept. Turn the switch on and click **"Save changes"**.
+  <Accordion title="The row says Paused">
+    The **Active** switch in the panel is off. Your setup is kept. Turn the switch on and click **"Save"**.
   </Accordion>
   <Accordion title="Conversions API events do not reach my ads">
-    Look for **Test mode** under **Connected**. Events sent in test mode never reach your ads. Click **"Turn off"**.
+    Look for **Test mode** under **Meta Conversions API**. Events sent in test mode never reach your ads. Click **"Turn off"**.
   </Accordion>
   <Accordion title="Meta rejected the saved token">
-    The token may have expired or been revoked, so server events are not sending. Generate a new token in Meta Events Manager, then click **"Reconnect"**, paste it and click **"Replace token"**.
+    The token may have expired or been revoked, so server events are not sending. Generate a new token in Meta Events Manager, then click **"Reconnect"**, paste it into **Access token** and click **"Save"**.
   </Accordion>
-  <Accordion title="The Connect button is grayed out">
-    **"Connect"** needs a saved **Pixel ID** and an access token. Paste the token, and if you just typed the Pixel ID, click **"Save changes"** first.
+  <Accordion title="Save is grayed out, or I see Add your Meta Pixel ID above first">
+    The token is connected to the Pixel ID of this funnel, so a token needs a **Pixel ID**. Type your Pixel ID above, then click **"Save"**. If you see **That access token is too short. Paste the whole token.**, copy the whole token from Meta again.
   </Accordion>
-  <Accordion title="I see Meta Conversions API is available on the Growth plan and above">
-    Click **"Upgrade to Growth"** or see [Upgrade your plan](/billing/upgrade). The browser pixel keeps working on every plan.
+  <Accordion title="I see Upgrade to Growth under Meta Conversions API">
+    The Conversions API is on the Growth plan and above. Click **"Upgrade to Growth"** or see [Upgrade your plan](/billing/upgrade). The browser pixel keeps working on every plan.
   </Accordion>
 </AccordionGroup>
 
 ## Manage the integration
 
-- **Pause it:** turn off the switch on the Meta Pixel card, then click **"Save changes"**. Your Pixel ID, mappings and token are kept.
-- **Change the pixel:** replace the **Pixel ID** and click **"Save changes"**.
-- **Replace the token:** under **Conversions API (server-side)**, click **"Replace token"**.
-- **Remove it from the funnel:** if the Conversions API is connected, click **"Disconnect"** first. Server events stop and the stored token is deleted. Then clear the **Pixel ID** and click **"Save changes"**.
+- **Pause it:** turn off the **Active** switch in the panel, then click **"Save"**. Your Pixel ID, mappings and token are kept.
+- **Change the pixel:** replace the **Pixel ID** and click **"Save"**.
+- **Replace the token:** under **Meta Conversions API**, click **"Replace token"**, paste the new one and click **"Save"**.
+- **Remove it from the funnel:** if the Conversions API is connected, click **"Disconnect"** first and confirm. Server events stop and the saved token is deleted. Then clear the **Pixel ID** and click **"Save"**.
 
 ## What to do next
 

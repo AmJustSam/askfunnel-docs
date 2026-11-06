@@ -17,7 +17,7 @@ With Make, you can:
 
 - **Connect apps AskFunnel does not connect to directly.** For example Airtable, Notion, Slack or your CRM.
 - **Use every answer.** Pick the contact's email, phone and each answer in any module of your scenario.
-- **Stay in control.** AskFunnel retries automatically and shows every lead in a delivery log.
+- **Stay in control.** AskFunnel tries again automatically and shows every lead in a delivery log.
 
 **Before you start**, you need:
 
@@ -29,7 +29,7 @@ With Make, you can:
 ## Important to note
 
 <Warning>
-  - Only new leads are sent. Leads that arrived before you added the webhook are not.
+  - Only new leads from your funnel are sent. Leads that arrived before you added the webhook, and leads you import, are not.
   - Make gives each scenario its own webhook address. You cannot use one Make address in two scenarios. You can paste the same address into several funnels, and each lead carries its funnel's name so your scenario can tell them apart.
   - If Make cannot take more requests, it answers with an error. AskFunnel then marks the lead **Failed** and does not try again by itself. After the problem is fixed, click **"Retry failed"** in the delivery log.
   - If your plan drops below Growth, your webhook is kept, but new leads are no longer sent to it.
@@ -50,24 +50,23 @@ With Make, you can:
     Click **Run once**. The **Custom webhook** module now waits for data. Keep this window open.
   </Step>
   <Step title="Add the address to your funnel in AskFunnel">
-    1. From your main dashboard, find the funnel you want to connect.
-    2. Click the three small dots (**...**) on that funnel's row, then click **"Funnel Settings"**.
-    3. On the left side menu, click **"Integrations"**.
-    4. Under **Send leads to**, on the **Webhooks** card, click **"Settings"**.
-    5. Paste the address into **Webhook URL** and click **"Add webhook"**.
+    1. Click **Funnels** in the sidebar, then click the funnel you want to connect.
+    2. In the funnel's menu, click **"Settings"**. If **Integrations** is not open, click it.
+    3. Under **Send leads to**, click the **Webhooks** row. A panel opens on the right.
+    4. Paste the address into **Webhook URL** and click **"Add webhook"**.
 
     You see **Webhook added. New leads will be sent to it.**
 
-    <img src="/images/integrations/make/add-webhook.png" alt="The Webhooks window with a Make webhook address typed in the Webhook URL box and the Add webhook button, both highlighted" width="1470" height="725" />
+    <img src="/images/integrations/make/add-webhook.png" alt="The Webhooks panel with a Make webhook address typed in the Webhook URL box and the Add webhook button, both highlighted" width="1470" height="1008" />
   </Step>
   <Step title="Send a test lead">
-    1. In AskFunnel, click the three dots (**...**) on the webhook's row, then **"Send test"**.
+    1. In the **Webhooks** panel, click the three dots (**...**) on the webhook's row, then **"Send test"**.
     2. You see **Test delivered**, for example **Test delivered (200 OK)**. The sample lead is named **AskFunnel Test**.
     3. Back in Make, the module learns the fields of a lead from this test and lists them for the next modules.
 
     If Make is not waiting, click **Run once** again and send the test again.
 
-    <img src="/images/integrations/make/send-test.png" alt="The three dots menu of a webhook, open, with the Send test item highlighted" width="1470" height="740" loading="lazy" />
+    <img src="/images/integrations/make/send-test.png" alt="The three dots menu of a webhook, open, with the Send test item highlighted" width="1470" height="1148" loading="lazy" />
   </Step>
   <Step title="Add what should happen next">
     Add a module for the app you want, for example **Google Sheets**, **Airtable** or **Slack**, and fill its fields with values from the test lead. The lead's name, email and phone are in the contact details, and each answer is in the answers, named after your question. The full list is in [What AskFunnel sends](/integrations/webhook-reference).
@@ -87,8 +86,8 @@ With Make, you can:
 
 ## How do I know it is working?
 
-- The **Webhooks** card in AskFunnel shows **Connected** and the address of your webhook.
-- In AskFunnel, click the three dots (**...**) on the webhook, then **"Delivery log"**. Each lead shows **Delivered**, **Retrying** or **Failed**. Tests are listed as **Test**.
+- The **Webhooks** row in AskFunnel shows **On** and the address of your webhook.
+- In AskFunnel, click the three dots (**...**) on the webhook, then **"Delivery log"**. A delivered lead has a check mark. A lead that is being tried again shows **Retrying**, and one that could not be sent shows **Failed**. Tests are listed as **Test**.
 - In Make, your scenario's history shows a run for each lead.
 
 ## Troubleshooting
@@ -107,18 +106,18 @@ With Make, you can:
     Check that you pasted the whole address from Make, with no spaces, and that the webhook still exists in Make. Other test messages are explained in [Send your leads to a webhook](/integrations/webhooks#troubleshooting).
   </Accordion>
   <Accordion title="The same lead started my scenario twice">
-    AskFunnel delivers each lead at least once. If Make was slow and AskFunnel retried, or you clicked **"Retry"**, the same lead arrives again with the same ID. See [The same lead arrived twice](/integrations/webhooks#troubleshooting).
+    AskFunnel delivers each lead at least once. If Make was slow and AskFunnel tried again, or you clicked **"Retry"**, the same lead arrives again with the same ID. See [The same lead arrived twice](/integrations/webhooks#troubleshooting).
   </Accordion>
-  <Accordion title="The Webhooks card says Growth and above">
-    Webhooks are available on the Growth plan and above. Click **"Upgrade to Growth"** in the Webhooks settings, or see [Upgrade your plan](/billing/upgrade).
+  <Accordion title="The Webhooks row says Not available, or the panel says to upgrade">
+    Webhooks are available on the Growth plan and above. Click **"Upgrade to Growth"** in the **Webhooks** panel, or see [Upgrade your plan](/billing/upgrade).
   </Accordion>
 </AccordionGroup>
 
 ## Manage the connection
 
-- **Send to Make and other tools:** add up to 10 webhooks to a funnel. Click **"Add webhook"** in the Webhooks settings.
+- **Send to Make and other tools:** add up to 10 webhooks to a funnel. Click **"Add webhook"** in the **Webhooks** panel.
 - **Pause it:** turn off the switch on the webhook's row. Leads that arrive while it is paused are not sent later.
-- **Remove it:** click **"Delete webhook"** in **"Edit webhook"**. Switch off or delete the scenario in Make too.
+- **Remove it:** click **"Remove webhook"** in **"Edit webhook"** and confirm. Switch off or delete the scenario in Make too.
 
 ## What to do next
 

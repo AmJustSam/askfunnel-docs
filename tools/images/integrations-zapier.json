@@ -1,30 +1,32 @@
 [
-  {
-    "out": "images/integrations/zapier/add-webhook.png",
-    "src": "source/raw/integrations/zapier/01-add-webhook.png",
-    "args": [
-      "--crop",
-      "953,628,1294,545",
-      "--ring",
-      "988,854,1224,96",
-      "--width",
-      "1470",
-      "--radius",
-      "16"
-    ]
-  },
-  {
-    "out": "images/integrations/zapier/send-test.png",
-    "src": "source/raw/integrations/zapier/02-send-test-menu.png",
-    "args": [
-      "--crop",
-      "953,658,1294,560",
-      "--ring",
-      "1588,934,590,92",
-      "--width",
-      "1470",
-      "--radius",
-      "16"
-    ]
-  }
+ {
+  "out": "images/integrations/zapier/add-webhook.png",
+  "src": "source/raw/integrations/webhooks/01-add-webhook.png",
+  "args": [
+   "--crop",
+   "2224,16,960,828",
+   "--ring",
+   "2264,233,880,92",
+   "--ring",
+   "2880,726,264,94",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
+  ]
+ },
+ {
+  "out": "images/integrations/zapier/send-test.png",
+  "src": "source/raw/integrations/zapier/02-send-test-menu.png",
+  "args": [
+   "--crop",
+   "2224,16,960,968",
+   "--ring",
+   "2506,360,592,84",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
+  ]
+ }
 ]

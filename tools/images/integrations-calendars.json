@@ -1,28 +1,40 @@
 [
-  {
-    "out": "images/integrations/calendars/connect-calendar.png",
-    "src": "source/raw/integrations/calendars/02-workspace-calendars.png",
-    "args": [
-      "--crop",
-      "350,165,1860,820",
-      "--ring",
-      "394,362,224,70",
-      "--ring",
-      "942,494,1188,96",
-      "--pad",
-      "90"
-    ]
-  },
-  {
-    "out": "images/integrations/calendars/form-settings.png",
-    "src": "source/raw/integrations/calendars/01-form-settings.png",
-    "args": [
-      "--crop",
-      "0,128,760,565",
-      "--ring",
-      "24,316,712,100",
-      "--width",
-      "1470"
-    ]
-  }
+ {
+  "out": "images/integrations/calendars/connect-calendar.png",
+  "src": "source/raw/integrations/calendars/01-workspace-integrations.png",
+  "args": [
+   "--crop",
+   "0,0,2260,1212",
+   "--ring",
+   "618,866,1612,144"
+  ]
+ },
+ {
+  "out": "images/integrations/calendars/form-settings.png",
+  "src": "source/raw/integrations/calendars/03-form-settings.png",
+  "args": [
+   "--crop",
+   "0,134,762,700",
+   "--ring",
+   "32,325,694,84",
+   "--width",
+   "1470"
+  ]
+ },
+ {
+  "out": "images/integrations/calendars/calendly-token.png",
+  "src": "source/raw/integrations/calendars/02-calendly-panel.png",
+  "args": [
+   "--crop",
+   "2224,16,960,828",
+   "--ring",
+   "2294,310,782,63",
+   "--ring",
+   "2948,726,196,94",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
+  ]
+ }
 ]

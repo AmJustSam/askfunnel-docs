@@ -11,7 +11,7 @@ icon: "diagram-project"
 
 Choose which standard Meta or TikTok event each funnel step sends, so the ad platform understands what the step means and can use it to optimize your ads.
 
-Your tracking pixels (small pieces of code that report what people do on your funnel to an ad platform) get an event for every step a visitor takes in your funnel. Out of the box, each step is sent as a custom event with a fixed name, such as **Page Viewed** or **Answer Selected**, and the page name, answer or button text is sent with the event as a detail. The form submission is sent as the platform's own lead event. A standard event is one of the platform's fixed event names, such as **Lead** or **Contact**.
+Your tracking pixels (small pieces of code that report what people do on your funnel to an ad platform) get an event for every step a visitor takes in your funnel. Out of the box, each step is sent as a custom event with a fixed name, such as **Page Viewed** or **Answer Selected**, and the page name or button text is sent with the event as a detail. The form submission is sent as the platform's own lead event. A standard event is one of the platform's fixed event names, such as **Lead** or **Contact**.
 
 With event mapping, you can:
 
@@ -36,24 +36,23 @@ With event mapping, you can:
 
 <Steps>
   <Step title="Open the pixel's settings">
-    1. From your main dashboard, find the funnel you want to change.
-    2. Click the three small dots (**...**) on that funnel's row, then click **"Funnel Settings"**.
-    3. On the left side menu, click **"Integrations"**.
-    4. Under **Tracking**, click **"Settings"** on the **Meta Pixel** or **TikTok Pixel** card.
-    5. Scroll down to **Map events to standard events**.
+    1. Click **Funnels** in the sidebar, then click the funnel you want to change.
+    2. In the funnel's menu, click **"Settings"**. If **Integrations** is not open, click it.
+    3. Under **Tracking**, click the **Meta Pixel** or **TikTok Pixel** row. A panel opens on the right.
+    4. Scroll down to **Map events to standard events**.
 
-    <img src="/images/integrations/event-mapping/add-entry.png" alt="The Map events to standard events section of the Meta Pixel settings with no entries yet and the Add entry button highlighted" width="2000" height="513" />
+    <img src="/images/integrations/event-mapping/add-entry.png" alt="The Map events to standard events section of the Meta Pixel panel with no entries yet and the Add entry button highlighted" width="1470" height="499" />
   </Step>
   <Step title="Add an entry">
     1. Click **"Add entry"**.
-    2. In the first dropdown, **Funnel event**, pick the step. You can type to search.
-    3. In the second dropdown, **Standard event**, pick what the platform should call it, for example **Contact** or **Lead**.
-    4. Add more entries for more steps. To remove one, click the **X** at the end of its row.
+    2. In **Funnel event**, pick the step. You can type to search.
+    3. Under it, in **Standard event**, pick what the platform should call it, for example **Contact** or **Lead**.
+    4. Add more entries for more steps. To remove one, click the **X** beside it.
 
-    <img src="/images/integrations/event-mapping/two-entries.png" alt="Two mapping entries, Answer: This week to Lead and Lead form started to Contact, with the two dropdowns of the first entry highlighted" width="2000" height="659" loading="lazy" />
+    <img src="/images/integrations/event-mapping/two-entries.png" alt="Two mapping entries, Answer: As soon as possible to Lead and Lead form started to Contact, with the two dropdowns of the first entry highlighted" width="1470" height="820" loading="lazy" />
   </Step>
   <Step title="Save your changes">
-    Click **"Save changes"** in the bar at the top. If your funnel is published, AskFunnel shows **Settings saved. Your live funnel is updated.**
+    Click **"Save"** at the bottom of the panel. If your funnel is published, AskFunnel shows **Settings saved. Your live funnel is updated.**
   </Step>
 </Steps>
 
@@ -68,13 +67,13 @@ With event mapping, you can:
   <Accordion title="My mapped event does not show in Meta or TikTok">
     Check these, in order:
 
-    - The pixel card shows **Connected**, and a **Pixel ID** is saved. Without one, AskFunnel warns that mappings do not take effect.
+    - The pixel row shows **On**, and a **Pixel ID** is saved. Without one, AskFunnel warns that mappings do not take effect.
     - Both dropdowns of the entry are filled in. A half-filled entry is ignored.
-    - You clicked **"Save changes"**.
+    - You clicked **"Save"**.
     - You accepted marketing cookies on the funnel, if your cookie banner is on.
     - You reached the step in that visit. Each step is sent when the visitor gets there.
   </Accordion>
-  <Accordion title="The first dropdown shows (removed funnel action)">
+  <Accordion title="Funnel event shows (removed funnel action)">
     The page, answer or button that entry pointed to was deleted from your funnel. Click the **X** to remove the entry, or pick another step.
   </Accordion>
   <Accordion title="I mapped the same step twice">
@@ -90,13 +89,13 @@ With event mapping, you can:
 
 ## Manage your mappings
 
-- **Change a mapping:** pick another event in the second dropdown and click **"Save changes"**.
-- **Remove a mapping:** click the **X** at the end of its row and click **"Save changes"**. The step goes back to being sent as a custom event.
-- **Pause tracking:** turn off the switch on the pixel's card. Your mappings are kept.
+- **Change a mapping:** pick another event in **Standard event** and click **"Save"**.
+- **Remove a mapping:** click the **X** beside it and click **"Save"**. The step goes back to being sent as a custom event.
+- **Pause tracking:** turn off the **Active** switch in the pixel's panel and click **"Save"**. Your mappings are kept.
 
 ## The funnel steps you can map
 
-The first dropdown lists the steps of your funnel. Each one is named like this:
+The **Funnel event** dropdown lists the steps of your funnel. Each one is named like this:
 
 - **Page view: Property type.** One entry for each page and result page. A page without a name is called **Untitled page 1**, **Untitled page 2** and so on, by its position.
 - **Answer: Buy a home [What are you looking to do?].** One entry for each answer of a quiz question, followed by its page in square brackets.
@@ -111,12 +110,12 @@ Mappings follow each step's ID, not its text. If you rename a page, answer or bu
 | Funnel step | Sent to Meta and TikTok as a custom event named | Detail sent with it |
 |---|---|---|
 | Page view | Page Viewed | The page name |
-| Answer | Answer Selected | The answer text |
+| Answer | Answer Selected | None |
 | Button | Button Clicked | The button text |
 | Lead form started | Form Started | None |
 | Lead form submitted | Not custom. Meta gets **Lead**, TikTok gets **SubmitForm** | None |
 
-The event name never changes, so your Events Manager shows the same few custom events however many pages, answers and buttons your funnel has. The detail travels with the event instead: Meta gets it as **funnel_label** and TikTok gets it as **content_name**. Long text is cut to 100 characters.
+The event name never changes, so your Events Manager shows the same few custom events however many pages, answers and buttons your funnel has. The detail travels with the event instead: Meta gets it as **funnel_label** and TikTok gets it as **content_name**. Long text is cut to 100 characters. The text of an answer a visitor picks is never sent, so an **Answer Selected** event has no detail. To tell answers apart, map the ones that matter to a standard event.
 
 If Meta applies its data restrictions to your pixel, as it does for some businesses such as health or finance, it may remove the detail. The event itself still arrives.
 

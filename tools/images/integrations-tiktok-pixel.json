@@ -1,46 +1,42 @@
 [
-  {
-    "out": "images/integrations/tiktok-pixel/connect-card.png",
-    "src": "source/raw/integrations/tiktok-pixel/01-integrations-cards.png",
-    "args": [
-      "--crop",
-      "350,165,2500,1040",
-      "--ring",
-      "392,200,256,58",
-      "--ring",
-      "2225,1069,166,62",
-      "--pad",
-      "80",
-      "--pad-y",
-      "80",
-      "--max-width",
-      "2080"
-    ]
-  },
-  {
-    "out": "images/integrations/tiktok-pixel/pixel-id-unsaved.png",
-    "src": "source/raw/integrations/tiktok-pixel/02-pixel-id-unsaved.png",
-    "args": [
-      "--crop",
-      "895,175,1950,585",
-      "--ring",
-      "2279,635,504,99",
-      "--ring",
-      "2491,197,312,100",
-      "--pad",
-      "100"
-    ]
-  },
-  {
-    "out": "images/integrations/tiktok-pixel/map-events.png",
-    "src": "source/raw/integrations/tiktok-pixel/03-mapping.png",
-    "args": [
-      "--crop",
-      "925,640,1865,420",
-      "--ring",
-      "2519,800,230,86",
-      "--pad",
-      "100"
-    ]
-  }
+ {
+  "out": "images/integrations/tiktok-pixel/connect-card.png",
+  "src": "source/raw/integrations/how-integrations-work/01-funnel-integrations.png",
+  "args": [
+   "--crop",
+   "576,903,1688,640",
+   "--ring",
+   "618,1253,1612,145"
+  ]
+ },
+ {
+  "out": "images/integrations/tiktok-pixel/pixel-id-unsaved.png",
+  "src": "source/raw/integrations/tiktok-pixel/02-pixel-id.png",
+  "args": [
+   "--crop",
+   "2224,16,960,948",
+   "--ring",
+   "2264,375,880,92",
+   "--ring",
+   "2968,846,176,94",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
+  ]
+ },
+ {
+  "out": "images/integrations/tiktok-pixel/map-events.png",
+  "src": "source/raw/integrations/tiktok-pixel/01-panel-map.png",
+  "args": [
+   "--crop",
+   "2224,517,960,319",
+   "--ring",
+   "2266,695,233,79",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
+  ]
+ }
 ]
