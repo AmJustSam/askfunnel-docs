@@ -1,48 +1,48 @@
 [
- {
-  "out": "images/funnel-settings/fix-custom-domain/open-domain.png",
-  "src": "source/raw/funnel-settings/custom-domain/05-pending-domain.png",
-  "args": [
-   "--crop",
-   "600,140,1660,590",
-   "--ring",
-   "632,436,1580,100",
-   "--pad",
-   "60",
-   "--radius",
-   "20"
-  ]
- },
- {
-  "out": "images/funnel-settings/fix-custom-domain/dns-hint.png",
-  "src": "source/raw/funnel-settings/fix-custom-domain/02-dns-hint.png",
-  "args": [
-   "--crop",
-   "2226,20,946,1764",
-   "--ring",
-   "2256,168,782,106",
-   "--ring",
-   "2256,1188,886,104",
-   "--width",
-   "1470",
-   "--radius",
-   "24"
-  ]
- },
- {
-  "out": "images/funnel-settings/fix-custom-domain/issue-status.png",
-  "src": "source/raw/funnel-settings/fix-custom-domain/03-issue-status.png",
-  "args": [
-   "--crop",
-   "895,360,1560,670",
-   "--ring",
-   "2166,838,160,80",
-   "--ring",
-   "1050,880,1104,100",
-   "--pad",
-   "80",
-   "--radius",
-   "20"
-  ]
- }
+  {
+    "out": "images/funnel-settings/fix-custom-domain/open-domain.png",
+    "src": "source/raw/funnel-settings/custom-domain/r2-01-workspace-domains.png",
+    "args": [
+      "--crop",
+      "600,140,1660,620",
+      "--ring",
+      "634,424,1580,120",
+      "--pad",
+      "60",
+      "--radius",
+      "20"
+    ]
+  },
+  {
+    "out": "images/funnel-settings/fix-custom-domain/dns-hint.png",
+    "src": "source/raw/funnel-settings/custom-domain/r2-07-pending-checked.png",
+    "args": [
+      "--crop",
+      "2226,18,956,1764",
+      "--ring",
+      "2266,177,776,90",
+      "--ring",
+      "2262,1148,884,114",
+      "--width",
+      "1470",
+      "--radius",
+      "24"
+    ]
+  },
+  {
+    "out": "images/funnel-settings/fix-custom-domain/issue-status.png",
+    "src": "source/raw/funnel-settings/fix-custom-domain/r2-03-issue-status.png",
+    "args": [
+      "--crop",
+      "420,140,1640,620",
+      "--ring",
+      "1687,325,250,66",
+      "--ring",
+      "540,358,516,44",
+      "--pad",
+      "80",
+      "--radius",
+      "20"
+    ]
+  }
 ]

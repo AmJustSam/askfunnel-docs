@@ -61,9 +61,9 @@ Setting it up has two parts:
     </Tip>
   </Step>
   <Step title="Publish and check your leads">
-    Click **"Publish"** at the top right. When people submit your form, the leads table gets a **Score** column with a **Cold**, **Warm** or **Hot** label for each lead.
+    Click **"Publish"** at the top right. When people submit your form, the leads table gets a **Funnel score** column with a **Cold**, **Warm** or **Hot** label for each lead.
 
-    <img src="/images/funnel-settings/lead-scoring/leads-score-column.png" alt="The leads table with the Score column highlighted, showing Warm, Cold and Hot labels" width="1860" height="1187" loading="lazy" />
+    <img src="/images/funnel-settings/lead-scoring/leads-score-column.png" alt="The leads table with the Funnel score column highlighted, showing Hot, Warm and Cold labels" width="2000" height="1049" loading="lazy" />
   </Step>
 </Steps>
 
@@ -71,7 +71,7 @@ Setting it up has two parts:
 
 - In **Funnel settings**, **Lead scoring** shows your ranges after you save.
 - In the builder, the **Action flow** of your quiz shows how many rules you added, for example **3 rules**.
-- Submit a test lead with your best answers, then open your leads table. The **Score** column should show **Hot**. See [View and manage your leads](/leads/view-and-manage-leads).
+- Submit a test lead with your best answers, then open your leads table. The **Funnel score** column should show **Hot**. See [View and manage your leads](/leads/view-and-manage-leads).
 
 ## How the points add up
 
@@ -90,7 +90,7 @@ For example, with the ranges above:
   <Accordion title="Every lead is Cold">
     No answer is giving points yet, or your **Cold** number is too high. Open the **Action flow** of your quiz, check that each rule has a **Score** above 0, and check your ranges in **Funnel settings**.
   </Accordion>
-  <Accordion title="There is no Score column in my leads table">
+  <Accordion title="There is no Funnel score column in my leads table">
     The column appears once you set your ranges or give points to answers. Without ranges you only see a number, not **Cold**, **Warm** or **Hot**. Turn on **Enable lead scoring** and click **"Save"**.
   </Accordion>
   <Accordion title="Advanced branching says Needs a single answer question">
@@ -110,7 +110,7 @@ For example, with the ranges above:
 
 <Columns cols={3}>
   <Card title="View and manage your leads" icon="table-list" href="/leads/view-and-manage-leads">
-    See each lead's label in the Score column.
+    See each lead's label in the Funnel score column.
   </Card>
   <Card title="Filter leads by date" icon="calendar-days" href="/leads/filter-by-date">
     Find the leads from a day, week or month.

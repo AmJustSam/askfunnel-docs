@@ -9,7 +9,7 @@ icon: "sitemap"
   Available on: **all plans** (Starter, Growth, Scale and Enterprise).
 </Callout>
 
-You connect a custom domain once, and then every funnel in your workspace can use it. Each funnel gets its own link on that domain, so one domain such as `funnel.summitrealtygroup.com` can serve your home valuation funnel, your buyer guide and your open house funnel at the same time. This page shows how to put several funnels on one domain, how to pick which address a funnel uses, and what happens when you remove a domain.
+You connect a custom domain once, and then every funnel in your workspace can use it. Each funnel gets its own link on that domain, so one domain such as `funnel.example.com` can serve your home valuation funnel, your buyer guide and your open house funnel at the same time. This page shows how to put several funnels on one domain, how to pick which address a funnel uses, and what happens when you remove a domain.
 
 If you have not connected a domain yet, start with [Connect your custom domain](/funnel-settings/custom-domain).
 
@@ -29,8 +29,8 @@ With one domain for many funnels, you can:
 ## Important to note
 
 <Warning>
-  - A funnel's link is your domain, a slash and the funnel's own ending, for example `https://funnel.summitrealtygroup.com/home-valuation-x7k2m9p4qa`. The ending is made when the funnel is created and does not change when you rename the funnel.
-  - The domain on its own has no page. A visitor who opens only `https://funnel.summitrealtygroup.com` is sent to the main part of your domain, `summitrealtygroup.com`. If the domain you connected has no subdomain in front of it, visitors are sent to askfunnel.com instead. Always share the full link of a funnel.
+  - A funnel's link is your domain, a slash and the funnel's own ending, for example `https://funnel.example.com/home-valuation-x7k2m9p4wd`. The ending is made when the funnel is created and does not change when you rename the funnel.
+  - The domain on its own has no page. A visitor who opens only `https://funnel.example.com` is sent to the main part of your domain, `example.com`. If the domain you connected has no subdomain in front of it, visitors are sent to askfunnel.com instead. Always share the full link of a funnel.
   - A domain belongs to one workspace. Funnels of other workspaces cannot use it.
   - Your AskFunnel address, such as `summit-realty.askfunnel.com`, is marked **Always on**. It works for every funnel and cannot be removed or turned off.
   - A funnel is only visible on a domain after you publish it. See [Publish, unpublish and restore an earlier version](/funnels/publish-and-restore).
@@ -49,7 +49,7 @@ With one domain for many funnels, you can:
 
     The change saves right away and goes live within about a minute. You do not need to click **"Save"** or publish again.
 
-    <img src="/images/funnel-settings/domain-for-several-funnels/funnel-domains.png" alt="The Domains page of a funnel with the always on row summit-realty.askfunnel.com, the row funnel.summitrealtygroup.com with its switch turned on and In use, a row that says Setup not finished and the Manage domains row, the switch highlighted" width="1780" height="728" />
+    <img src="/images/funnel-settings/domain-for-several-funnels/funnel-domains.png" alt="The Domains page of a funnel with the always on row summit-realty.askfunnel.com, the row funnel.example.com with its switch turned on and In use, the row offers.example.com that says Setup not finished and the Manage domains row, the switch highlighted" width="1780" height="728" />
   </Step>
   <Step title="Repeat for your other funnels">
     Open **Funnel settings**, then **Domains**, for each funnel that should use the domain, and turn on the same switch. Every funnel now has its own link on your domain, as in the table below these steps.
@@ -63,9 +63,9 @@ For example, three funnels on one domain have these links:
 
 | Funnel | Link |
 |---|---|
-| Home valuation | `https://funnel.summitrealtygroup.com/home-valuation-x7k2m9p4qa` |
-| Buyer guide | `https://funnel.summitrealtygroup.com/buyer-guide-m4q8z2k7ab` |
-| Open house | `https://funnel.summitrealtygroup.com/open-house-t9w3c6d1xe` |
+| Home valuation | `https://funnel.example.com/home-valuation-x7k2m9p4wd` |
+| Buyer guide | `https://funnel.example.com/buyer-guide-m4q8z2k7ab` |
+| Open house | `https://funnel.example.com/open-house-t9w3c6d1xe` |
 
 ## Choose which address a funnel uses
 
@@ -89,9 +89,9 @@ Remove a domain when you stop using it, or to connect it to a different workspac
     3. Click **"Remove domain"** at the bottom of the panel.
     4. A window asks **Remove** followed by your domain and a question mark. It lists the funnels that stop serving on the domain right away. Click **"Remove"** to confirm. You see **Domain removed**.
 
-    <img src="/images/funnel-settings/domain-for-several-funnels/remove-domain.png" alt="The panel of a domain with the DNS record and the red Remove domain button, which is highlighted" width="1470" height="1110" loading="lazy" />
+    <img src="/images/funnel-settings/domain-for-several-funnels/remove-domain.png" alt="The panel of funnel.example.com with its name at the top, the DNS record and the red Remove domain button, which is highlighted" width="1470" height="1624" loading="lazy" />
 
-    <img src="/images/funnel-settings/domain-for-several-funnels/remove-domain-confirm.png" alt="The window Remove funnel.summitrealtygroup.com that lists the funnels that stop serving on it and says links already shared stop working, with the Cancel and Remove buttons, the Remove button highlighted" width="1470" height="724" loading="lazy" />
+    <img src="/images/funnel-settings/domain-for-several-funnels/remove-domain-confirm.png" alt="The window Remove funnel.example.com that lists the funnel Home valuation quiz as stopping to serve on it and says links already shared stop working, with the Cancel and Remove buttons, the Remove button highlighted" width="1470" height="730" loading="lazy" />
   </Step>
   <Step title="Clean up at your domain provider">
     AskFunnel does not change your DNS settings. At the company that manages your domain, delete the CNAME record that points to `funnels.askfunnel.com` and the TXT record that starts with `_askfunnel-verify` if you no longer need them.

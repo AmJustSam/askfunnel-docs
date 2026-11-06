@@ -1,12 +1,12 @@
 [
   {
     "out": "images/funnel-settings/social-preview-and-favicon/social-preview.png",
-    "src": "source/raw/funnel-settings/social-preview-and-favicon/01-social-preview.png",
+    "src": "source/raw/funnel-settings/social-preview-and-favicon/r2-01-social-preview.png",
     "args": [
       "--crop",
-      "600,0,1650,1710",
+      "600,0,1660,1690",
       "--ring",
-      "612,940,945,752",
+      "613,943,943,714",
       "--pad",
       "70",
       "--radius",

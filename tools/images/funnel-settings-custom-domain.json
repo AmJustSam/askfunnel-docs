@@ -1,12 +1,12 @@
 [
   {
     "out": "images/funnel-settings/custom-domain/workspace-domains.png",
-    "src": "source/raw/funnel-settings/custom-domain/05-pending-domain.png",
+    "src": "source/raw/funnel-settings/custom-domain/r2-01-workspace-domains.png",
     "args": [
       "--crop",
-      "600,140,1660,590",
+      "600,140,1660,620",
       "--ring",
-      "632,566,1580,84",
+      "634,558,1580,98",
       "--pad",
       "60",
       "--radius",
@@ -15,12 +15,14 @@
   },
   {
     "out": "images/funnel-settings/custom-domain/add-domain.png",
-    "src": "source/raw/funnel-settings/custom-domain/02-add-domain-filled.png",
+    "src": "source/raw/funnel-settings/custom-domain/r2-02-add-domain-filled.png",
     "args": [
       "--crop",
-      "2226,20,946,440",
+      "2226,18,956,764",
       "--ring",
-      "2258,246,886,112",
+      "2262,247,884,110",
+      "--ring",
+      "2901,664,245,98",
       "--width",
       "1470",
       "--radius",
@@ -29,12 +31,12 @@
   },
   {
     "out": "images/funnel-settings/custom-domain/dns-record.png",
-    "src": "source/raw/funnel-settings/custom-domain/06-pending-panel.png",
+    "src": "source/raw/funnel-settings/custom-domain/r2-06-pending-panel.png",
     "args": [
       "--crop",
-      "2226,20,946,1764",
+      "2226,18,956,1764",
       "--ring",
-      "2256,171,248,100",
+      "2260,171,237,102",
       "--width",
       "1470",
       "--radius",
@@ -43,12 +45,12 @@
   },
   {
     "out": "images/funnel-settings/custom-domain/pending-domain.png",
-    "src": "source/raw/funnel-settings/fix-custom-domain/02-dns-hint.png",
+    "src": "source/raw/funnel-settings/custom-domain/r2-07-pending-checked.png",
     "args": [
       "--crop",
-      "2226,20,946,320",
+      "2226,18,956,330",
       "--ring",
-      "2256,168,782,106",
+      "2266,177,776,90",
       "--width",
       "1470",
       "--radius",

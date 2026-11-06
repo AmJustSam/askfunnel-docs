@@ -15,14 +15,14 @@
   },
   {
     "out": "images/funnel-settings/funnel-settings-overview/settings-tabs.png",
-    "src": "source/raw/funnel-settings/social-preview-and-favicon/01-social-preview.png",
+    "src": "source/raw/funnel-settings/social-preview-and-favicon/r2-01-social-preview.png",
     "args": [
       "--crop",
       "0,0,2260,790",
       "--ring",
-      "10,205,495,555",
+      "4,199,502,568",
       "--ring",
-      "616,4,1612,104"
+      "612,6,350,96"
     ]
   },
   {

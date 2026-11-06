@@ -31,12 +31,12 @@
   },
   {
     "out": "images/funnel-settings/lead-scoring/leads-score-column.png",
-    "src": "source/raw/funnel-settings/lead-scoring/10-real-estate-score.png",
+    "src": "source/raw/funnel-settings/lead-scoring/r2-10-leads-score-column.png",
     "args": [
       "--crop",
-      "381,309,1700,1043",
+      "430,276,2162,1074",
       "--ring",
-      "1790,314,284,1033",
+      "2303,284,278,1062",
       "--pad",
       "80",
       "--radius",
