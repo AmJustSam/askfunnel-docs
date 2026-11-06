@@ -1,7 +1,7 @@
 [
   {
     "out": "images/funnels/funnels-list/page-overview.png",
-    "src": "source/raw/funnels/funnels-list/r2-01-page-overview.png",
+    "src": "source/raw/funnels/funnels-list/r3-01-page-overview.png",
     "args": [
       "--crop",
       "600,0,2512,920",

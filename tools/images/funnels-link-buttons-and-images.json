@@ -11,12 +11,12 @@
   },
   {
     "out": "images/funnels/link-buttons-and-images/destination-list.png",
-    "src": "source/raw/funnels/link-buttons-and-images/r2-02-destination-list.png",
+    "src": "source/raw/funnels/link-buttons-and-images/r3-02-destination-list.png",
     "args": [
       "--crop",
-      "950,978,1300,886",
+      "962,752,1276,897",
       "--ring",
-      "1002,1234,1196,624",
+      "1000,994,1200,628",
       "--width",
       "1560",
       "--radius",

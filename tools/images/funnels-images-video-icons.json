@@ -11,26 +11,26 @@
   },
   {
     "out": "images/funnels/images-video-icons/media-gallery-tabs.png",
-    "src": "source/raw/funnels/images-video-icons/02-media-gallery-tabs.png",
+    "src": "source/raw/funnels/images-video-icons/r3-02-media-gallery-tabs.png",
     "args": [
       "--crop",
-      "920,280,1340,1230",
+      "962,615,1276,1170",
       "--ring",
-      "976,420,458,96",
+      "988,725,448,86",
       "--width",
       "1500"
     ]
   },
   {
     "out": "images/funnels/images-video-icons/ai-image-tab.png",
-    "src": "source/raw/funnels/images-video-icons/03-ai-image-tab.png",
+    "src": "source/raw/funnels/images-video-icons/r3-03-ai-image-tab.png",
     "args": [
       "--crop",
-      "920,280,1360,820",
+      "962,615,1276,1170",
       "--ring",
-      "984,730,364,72",
+      "986,1032,340,72",
       "--ring",
-      "1922,718,292,100",
+      "1913,1018,301,100",
       "--width",
       "1500"
     ]

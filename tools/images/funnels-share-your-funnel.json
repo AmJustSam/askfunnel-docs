@@ -1,7 +1,7 @@
 [
   {
     "out": "images/funnels/share-your-funnel/view-funnel-icon.png",
-    "src": "source/raw/funnels/share-your-funnel/r2-01-funnels-list.png",
+    "src": "source/raw/funnels/share-your-funnel/r3-01-funnels-list.png",
     "args": [
       "--crop",
       "600,570,2512,306",
@@ -29,12 +29,12 @@
   },
   {
     "out": "images/funnels/share-your-funnel/row-menu.png",
-    "src": "source/raw/funnels/share-your-funnel/02-row-menu.png",
+    "src": "source/raw/funnels/share-your-funnel/r3-02-row-menu.png",
     "args": [
       "--crop",
-      "2320,415,830,590",
+      "2320,560,830,580",
       "--ring",
-      "2428,771,579,76",
+      "2428,921,580,80",
       "--width",
       "1470",
       "--radius",
