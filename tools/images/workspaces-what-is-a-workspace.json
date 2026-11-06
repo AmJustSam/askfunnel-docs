@@ -1,7 +1,7 @@
 [
   {
     "out": "images/workspaces/what-is-a-workspace/workspaces-table.png",
-    "src": "source/raw/workspaces/what-is-a-workspace/r2-01-workspaces-table.png",
+    "src": "source/raw/workspaces/what-is-a-workspace/r3-01-workspaces-table.png",
     "args": [
       "--crop",
       "600,1000,1760,660"
