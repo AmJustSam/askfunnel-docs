@@ -13,12 +13,12 @@
   },
   {
     "out": "images/billing/ai-credits/image-tab-cost.png",
-    "src": "source/raw/billing/ai-credits/02-image-tab-cost.png",
+    "src": "source/raw/billing/ai-credits/11-image-tab-cost.png",
     "args": [
       "--crop",
-      "950,304,1300,540",
+      "962,316,1276,570",
       "--ring",
-      "990,732,328,70",
+      "988,733,336,70",
       "--width",
       "1470",
       "--radius",

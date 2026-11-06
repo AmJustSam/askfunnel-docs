@@ -13,7 +13,7 @@
   },
   {
     "out": "images/analytics/funnel-analytics/kpi-cards.png",
-    "src": "source/raw/analytics/funnel-analytics/10-kpi-page.png",
+    "src": "source/raw/analytics/funnel-analytics/11-peakquiz-custom.png",
     "args": [
       "--crop",
       "560,140,2600,470"
