@@ -1,12 +1,12 @@
 [
   {
     "out": "images/messages/whatsapp-template/step-card.png",
-    "src": "source/raw/messages/whatsapp-flow-messages/01-whatsapp-step-top.png",
+    "src": "source/raw/messages/whatsapp-flow-messages/r2-01-whatsapp-step-top.png",
     "args": [
       "--crop",
       "1380,880,1200,820",
       "--ring",
-      "1743,924,182,60",
+      "1740,919,135,68",
       "--pad",
       "89"
     ]

@@ -1,24 +1,24 @@
 [
   {
     "out": "images/messages/team-alerts/automation-logic.png",
-    "src": "source/raw/messages/team-alerts/01-trigger-rule.png",
+    "src": "source/raw/messages/team-alerts/r2-01-trigger-rule.png",
     "args": [
       "--crop",
-      "953,424,1294,952",
+      "951,422,1298,956",
       "--ring",
-      "992,683,1216,244",
+      "988,680,1224,254",
       "--pad",
       "89"
     ]
   },
   {
     "out": "images/messages/team-alerts/workspace-members.png",
-    "src": "source/raw/messages/team-alerts/02-workspace-members.png",
+    "src": "source/raw/messages/team-alerts/r2-02-workspace-members.png",
     "args": [
       "--crop",
-      "1390,1175,1230,570",
+      "1390,845,1230,465",
       "--ring",
-      "1566,1240,988,92",
+      "1564,916,992,96",
       "--pad",
       "89"
     ]

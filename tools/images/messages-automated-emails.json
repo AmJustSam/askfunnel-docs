@@ -1,12 +1,12 @@
 [
  {
   "out": "images/messages/automated-emails/flow-editor.png",
-  "src": "source/raw/messages/automated-emails/01-flow-editor.png",
+  "src": "source/raw/messages/automated-emails/r3-01-flow-editor.png",
   "args": [
    "--crop",
-   "0,128,2620,1300",
+   "0,128,2620,1320",
    "--ring",
-   "16,470,726,76"
+   "6,355,746,90"
   ]
  },
  {
@@ -37,24 +37,24 @@
  },
  {
   "out": "images/messages/automated-emails/audience-menu.png",
-  "src": "source/raw/messages/automated-emails/05-audience-menu.png",
+  "src": "source/raw/messages/automated-emails/r2-05-audience-menu.png",
   "args": [
    "--crop",
-   "1400,1050,1200,600",
+   "1390,700,1220,640",
    "--ring",
-   "2430,1236,130,64",
+   "2430,932,130,64",
    "--pad",
    "89"
   ]
  },
  {
   "out": "images/messages/automated-emails/to-row-warning.png",
-  "src": "source/raw/messages/automated-emails/06-to-row-warning.png",
+  "src": "source/raw/messages/automated-emails/r2-06-to-row-warning.png",
   "args": [
    "--crop",
-   "1400,1040,1200,600",
+   "1390,1030,1220,545",
    "--ring",
-   "2312,1312,236,60",
+   "2312,1322,238,68",
    "--pad",
    "89"
   ]
@@ -73,12 +73,12 @@
  },
  {
   "out": "images/messages/automated-emails/file-block-settings.png",
-  "src": "source/raw/messages/automated-emails/04-file-block-settings.png",
+  "src": "source/raw/messages/automated-emails/r2-04-file-block-settings.png",
   "args": [
    "--crop",
-   "0,128,760,1090",
+   "0,128,760,736",
    "--ring",
-   "28,452,704,84",
+   "22,446,716,96",
    "--width",
    "1470"
   ]

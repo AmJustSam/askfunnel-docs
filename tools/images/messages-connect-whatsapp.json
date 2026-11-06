@@ -27,7 +27,7 @@
   },
   {
     "out": "images/messages/connect-whatsapp/connected.png",
-    "src": "source/raw/messages/connect-whatsapp/02-connected.png",
+    "src": "source/raw/messages/connect-whatsapp/r2-02-connected.png",
     "args": [
       "--crop",
       "590,130,1680,540",

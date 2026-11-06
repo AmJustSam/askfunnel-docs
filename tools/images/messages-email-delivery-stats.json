@@ -4,7 +4,7 @@
     "src": "source/raw/messages/email-delivery-stats/01-stats-line.png",
     "args": [
       "--crop",
-      "1380,1205,1200,265",
+      "1380,1296,1200,174",
       "--ring",
       "1406,1388,1140,64",
       "--pad",
