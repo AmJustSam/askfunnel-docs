@@ -1,26 +1,24 @@
 [
   {
     "out": "images/leads/delete-leads/bulk-delete.png",
-    "src": "source/raw/leads/delete-leads/01-bulk-bar.png",
+    "src": "source/raw/leads/delete-leads/r2-01b-bulk-bar-narrow.png",
     "args": [
       "--crop",
-      "2250,150,880,125",
+      "140,140,1420,135",
       "--ring",
-      "2900,170,175,76",
-      "--width",
-      "1200",
+      "1312,168,200,84",
       "--pad-y",
       "80"
     ]
   },
   {
     "out": "images/leads/delete-leads/delete-dialog.png",
-    "src": "source/raw/leads/delete-leads/02-delete-dialog.png",
+    "src": "source/raw/leads/delete-leads/r2-02-delete-dialog.png",
     "args": [
       "--crop",
       "1040,630,1120,540",
       "--ring",
-      "1900,1000,185,84",
+      "1902,994,180,96",
       "--radius",
       "22",
       "--width",

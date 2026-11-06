@@ -21,10 +21,12 @@
   },
   {
     "out": "images/leads/import-leads/review-import.png",
-    "src": "source/raw/leads/import-leads/02-review-import.png",
+    "src": "source/raw/leads/import-leads/r2-02-review-import.png",
     "args": [
       "--crop",
-      "760,410,1680,980"
+      "800,448,1600,904",
+      "--radius",
+      "32"
     ]
   }
 ]

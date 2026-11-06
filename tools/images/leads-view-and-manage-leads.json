@@ -1,20 +1,20 @@
 [
   {
     "out": "images/leads/view-and-manage-leads/open-funnel.png",
-    "src": "source/raw/leads/view-and-manage-leads/01-funnels-table.png",
+    "src": "source/raw/leads/view-and-manage-leads/r2-01-funnels-table.png",
     "args": [
       "--crop",
-      "560,150,2600,748",
+      "560,150,2600,755",
       "--ring",
-      "620,568,2470,184"
+      "612,712,2480,172"
     ]
   },
   {
     "out": "images/leads/view-and-manage-leads/leads-grid.png",
-    "src": "source/raw/leads/view-and-manage-leads/03-grid-wide.png",
+    "src": "source/raw/leads/view-and-manage-leads/r2-03-grid-wide.png",
     "args": [
       "--crop",
-      "600,150,2520,1546"
+      "600,150,2520,1544"
     ]
   }
 ]

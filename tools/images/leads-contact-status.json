@@ -23,10 +23,10 @@
   },
   {
     "out": "images/leads/contact-status/total-leads.png",
-    "src": "source/raw/leads/contact-status/03-total-leads.png",
+    "src": "source/raw/leads/contact-status/r2-03-total-leads.png",
     "args": [
       "--crop",
-      "2390,150,700,755",
+      "2430,150,640,752",
       "--width",
       "1470"
     ]

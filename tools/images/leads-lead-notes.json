@@ -1,10 +1,14 @@
 [
   {
     "out": "images/leads/lead-notes/notes-tab.png",
-    "src": "source/raw/leads/lead-notes/01-notes-tab.png",
+    "src": "source/raw/leads/lead-notes/r2-01-notes-tab.png",
     "args": [
       "--crop",
-      "1992,24,1176,1750",
+      "1996,28,1176,1810",
+      "--ring",
+      "2292,228,112,98",
+      "--radius",
+      "30",
       "--width",
       "1470"
     ]

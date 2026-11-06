@@ -1,10 +1,10 @@
 [
   {
     "out": "images/analytics/activity-log/timeline.png",
-    "src": "source/raw/analytics/activity-log/02-timeline.png",
+    "src": "source/raw/analytics/activity-log/r2-02-timeline.png",
     "args": [
       "--crop",
-      "600,130,1660,1312"
+      "590,1215,1670,1385"
     ]
   }
 ]

@@ -15,7 +15,7 @@
   },
   {
     "out": "images/leads/filter-by-date/filter-panel.png",
-    "src": "source/raw/leads/filter-by-date/02-filter-panel.png",
+    "src": "source/raw/leads/filter-by-date/r2-02-filter-panel.png",
     "args": [
       "--crop",
       "828,150,1344,495"

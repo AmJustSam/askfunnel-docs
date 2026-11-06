@@ -13,14 +13,12 @@
   },
   {
     "out": "images/leads/export-contacts/bulk-export.png",
-    "src": "source/raw/leads/export-contacts/02-bulk-bar.png",
+    "src": "source/raw/leads/export-contacts/r2-02-bulk-bar.png",
     "args": [
       "--crop",
-      "2250,150,880,125",
+      "140,140,1420,135",
       "--ring",
-      "2510,170,190,76",
-      "--width",
-      "1200",
+      "933,168,201,84",
       "--pad-y",
       "80"
     ]
