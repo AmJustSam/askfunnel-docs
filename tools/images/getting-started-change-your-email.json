@@ -1,14 +1,16 @@
 [
   {
     "out": "images/getting-started/change-your-email/profile-email.png",
-    "src": "source/raw/getting-started/change-your-email/01-profile-email.png",
+    "src": "source/raw/getting-started/change-your-email/02-profile-email.png",
     "args": [
       "--crop",
-      "930,872,1900,304",
+      "600,0,1700,1130",
       "--ring",
-      "952,930,1832,100",
+      "664,810,1520,96",
       "--ring",
-      "955,1084,212,76"
+      "664,960,240,85",
+      "--pad",
+      "70"
     ]
   }
 ]

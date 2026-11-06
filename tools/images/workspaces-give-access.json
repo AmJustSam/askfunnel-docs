@@ -1,14 +1,14 @@
 [
   {
-    "out": "images/workspaces/give-access/avatar-menu.png",
-    "src": "source/raw/workspaces/give-access/01-avatar-menu.png",
+    "out": "images/workspaces/give-access/account-menu.png",
+    "src": "source/raw/getting-started/sign-in/03-log-out-menu.png",
     "args": [
       "--crop",
-      "2556,0,620,950",
+      "0,880,622,920",
       "--ring",
-      "2555,516,593,88",
+      "30,1240,572,62",
       "--width",
-      "1100"
+      "1000"
     ]
   },
   {
@@ -16,9 +16,9 @@
     "src": "source/raw/workspaces/give-access/02-members-page.png",
     "args": [
       "--crop",
-      "900,440,1940,1030",
+      "600,0,2500,950",
       "--ring",
-      "2500,479,330,96"
+      "2754,6,343,97"
     ]
   },
   {
@@ -26,11 +26,25 @@
     "src": "source/raw/workspaces/give-access/03-invite-form.png",
     "args": [
       "--crop",
-      "1084,659,1032,882",
-      "--radius",
-      "24",
+      "1080,501,1040,798",
+      "--ring",
+      "1770,1139,312,110",
       "--width",
-      "1470"
+      "1470",
+      "--radius",
+      "22"
+    ]
+  },
+  {
+    "out": "images/workspaces/give-access/manage-access.png",
+    "src": "source/raw/workspaces/give-access/04-manage-access.png",
+    "args": [
+      "--crop",
+      "1080,657,1040,485",
+      "--width",
+      "1470",
+      "--radius",
+      "22"
     ]
   }
 ]

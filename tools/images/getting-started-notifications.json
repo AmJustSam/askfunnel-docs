@@ -1,0 +1,26 @@
+[
+  {
+    "out": "images/getting-started/notifications/bell.png",
+    "src": "source/raw/getting-started/dashboard-tour/01-home-sidebar.png",
+    "args": [
+      "--crop",
+      "0,1400,520,400",
+      "--ring",
+      "420,1706,68,68",
+      "--width",
+      "900"
+    ]
+  },
+  {
+    "out": "images/getting-started/notifications/notifications-page.png",
+    "src": "source/raw/getting-started/notifications/01-notifications-page.png",
+    "args": [
+      "--crop",
+      "600,100,1660,795",
+      "--ring",
+      "614,157,438,84",
+      "--ring",
+      "1890,162,342,74"
+    ]
+  }
+]

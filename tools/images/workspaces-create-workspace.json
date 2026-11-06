@@ -1,12 +1,14 @@
 [
   {
-    "out": "images/workspaces/create-workspace/create-button.png",
-    "src": "source/raw/workspaces/what-is-a-workspace/01-grid-2col.png",
+    "out": "images/workspaces/create-workspace/new-workspace-row.png",
+    "src": "source/raw/workspaces/switch-workspaces/01-switcher-open.png",
     "args": [
       "--crop",
-      "0,128,1600,910",
+      "0,0,622,800",
       "--ring",
-      "1198,166,372,96"
+      "20,664,590,82",
+      "--width",
+      "1000"
     ]
   },
   {
@@ -14,11 +16,13 @@
     "src": "source/raw/workspaces/create-workspace/03-create-dialog.png",
     "args": [
       "--crop",
-      "952,441,1296,918",
-      "--radius",
-      "24",
+      "930,450,1340,900",
       "--ring",
-      "1906,1221,300,84"
+      "1886,1182,326,98",
+      "--width",
+      "1470",
+      "--radius",
+      "24"
     ]
   }
 ]

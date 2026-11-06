@@ -4,11 +4,15 @@
     "src": "source/raw/getting-started/create-account/01-signup.png",
     "args": [
       "--crop",
-      "260,230,1080,1190",
+      "300,240,1000,930",
       "--ring",
-      "363,1073,872,108",
+      "363,757,872,96",
+      "--ring",
+      "363,890,872,110",
       "--width",
-      "1470"
+      "1470",
+      "--radius",
+      "20"
     ]
   },
   {
@@ -16,9 +20,11 @@
     "src": "source/raw/getting-started/create-account/02-check-email.png",
     "args": [
       "--crop",
-      "260,520,1080,620",
+      "300,240,1000,500",
       "--width",
-      "1470"
+      "1470",
+      "--radius",
+      "20"
     ]
   },
   {
@@ -26,13 +32,15 @@
     "src": "source/raw/getting-started/create-account/04-setup-location.png",
     "args": [
       "--crop",
-      "980,60,1240,720",
+      "960,60,1280,700",
       "--ring",
-      "1028,622,1144,96",
+      "1030,613,1140,98",
       "--width",
       "1470",
       "--pad-y",
-      "80"
+      "80",
+      "--radius",
+      "20"
     ]
   },
   {
@@ -40,33 +48,37 @@
     "src": "source/raw/getting-started/create-account/05-setup-workspace.png",
     "args": [
       "--crop",
-      "980,60,1240,780",
+      "960,60,1280,680",
       "--ring",
-      "1028,659,1144,100",
+      "1030,609,1140,98",
       "--width",
       "1470",
       "--pad-y",
-      "80"
+      "80",
+      "--radius",
+      "20"
     ]
   },
   {
     "out": "images/getting-started/create-account/choose-plan.png",
-    "src": "source/raw/getting-started/create-account/06-choose-plan.png",
+    "src": "source/raw/getting-started/create-account/08-choose-plan.png",
     "args": [
       "--crop",
-      "20,30,2360,1850",
+      "300,20,2600,1605",
       "--ring",
-      "674,1526,468,100"
+      "1170,1515,860,110"
     ]
   },
   {
     "out": "images/getting-started/create-account/trial-started.png",
-    "src": "source/raw/getting-started/create-account/07-trial-started.png",
+    "src": "source/raw/getting-started/create-account/09-trial-started.png",
     "args": [
       "--crop",
-      "0,0,2133,1230",
+      "0,1400,520,400",
       "--ring",
-      "1814,28,188,72"
+      "6,1442,498,247",
+      "--width",
+      "1000"
     ]
   }
 ]

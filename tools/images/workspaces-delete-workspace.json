@@ -1,26 +1,28 @@
 [
   {
-    "out": "images/workspaces/delete-workspace/card-menu.png",
-    "src": "source/raw/workspaces/delete-workspace/01-card-menu.png",
+    "out": "images/workspaces/delete-workspace/delete-section.png",
+    "src": "source/raw/workspaces/delete-workspace/03-delete-section.png",
     "args": [
       "--crop",
-      "1140,300,940,1040",
+      "600,1330,1660,330",
       "--ring",
-      "1361,1213,593,88",
+      "664,1486,324,98",
       "--width",
-      "1400"
+      "1800"
     ]
   },
   {
     "out": "images/workspaces/delete-workspace/confirm-window.png",
-    "src": "source/raw/workspaces/delete-workspace/02-confirm-window.png",
+    "src": "source/raw/workspaces/delete-workspace/04-confirm-window.png",
     "args": [
       "--crop",
-      "940,620,1320,560",
+      "1080,659,1040,482",
       "--ring",
-      "1773,934,309,96",
+      "1758,993,332,98",
       "--width",
-      "1500"
+      "1500",
+      "--radius",
+      "22"
     ]
   }
 ]

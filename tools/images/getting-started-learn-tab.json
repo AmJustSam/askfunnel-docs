@@ -4,25 +4,23 @@
     "src": "source/raw/getting-started/learn-tab/01-learn-button.png",
     "args": [
       "--crop",
-      "2300,0,900,160",
+      "0,0,640,520",
       "--ring",
-      "2646,20,193,87",
+      "6,350,497,92",
       "--width",
-      "1470",
-      "--radius",
-      "20"
+      "1000"
     ]
   },
   {
     "out": "images/getting-started/learn-tab/lesson-library.png",
-    "src": "source/raw/getting-started/learn-tab/02-lesson-library.png",
+    "src": "source/raw/getting-started/learn-tab/01-learn-button.png",
     "args": [
       "--crop",
-      "340,160,2520,1130",
+      "600,130,2500,770",
       "--ring",
-      "370,332,1182,102",
+      "615,151,1181,95",
       "--ring",
-      "2267,337,563,92"
+      "1794,151,738,95"
     ]
   },
   {
@@ -30,11 +28,11 @@
     "src": "source/raw/getting-started/learn-tab/03-lesson-page.png",
     "args": [
       "--crop",
-      "330,490,1920,1210",
+      "600,180,1900,1180",
       "--ring",
-      "372,525,1832,565",
+      "615,194,1868,566",
       "--ring",
-      "372,1122,1832,538"
+      "615,792,1868,540"
     ]
   }
 ]

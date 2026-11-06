@@ -4,11 +4,11 @@
     "src": "source/raw/getting-started/sign-in/01-login-page.png",
     "args": [
       "--crop",
-      "300,330,1000,1140",
+      "300,240,1000,910",
       "--ring",
-      "363,717,872,108",
+      "363,517,872,112",
       "--ring",
-      "363,1109,872,108",
+      "363,790,872,110",
       "--width",
       "1470",
       "--radius",
@@ -20,9 +20,9 @@
     "src": "source/raw/getting-started/sign-in/02-confirm-email.png",
     "args": [
       "--crop",
-      "1200,560,800,680",
+      "1161,241,878,682",
       "--ring",
-      "1243,986,713,206",
+      "1208,650,784,217",
       "--width",
       "1470",
       "--radius",
@@ -34,11 +34,11 @@
     "src": "source/raw/getting-started/sign-in/03-log-out-menu.png",
     "args": [
       "--crop",
-      "2240,0,960,1000",
+      "0,880,622,920",
       "--ring",
-      "2551,843,601,92",
+      "30,1604,572,76",
       "--width",
-      "1470"
+      "1000"
     ]
   }
 ]

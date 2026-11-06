@@ -1,0 +1,14 @@
+[
+  {
+    "out": "images/getting-started/your-profile/delete-account.png",
+    "src": "source/raw/getting-started/your-profile/01-delete-account.png",
+    "args": [
+      "--crop",
+      "600,1330,1660,330",
+      "--ring",
+      "664,1486,334,98",
+      "--width",
+      "1800"
+    ]
+  }
+]

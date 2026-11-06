@@ -1,22 +1,26 @@
 [
   {
-    "out": "images/workspaces/switch-workspaces/home-icon.png",
-    "src": "source/raw/workspaces/switch-workspaces/02-funnels-page.png",
+    "out": "images/workspaces/switch-workspaces/switcher-trigger.png",
+    "src": "source/raw/getting-started/dashboard-tour/01-home-sidebar.png",
     "args": [
       "--crop",
-      "0,0,1100,370",
+      "0,0,520,300",
       "--ring",
-      "38,21,84,84"
+      "6,14,434,109",
+      "--width",
+      "900"
     ]
   },
   {
-    "out": "images/workspaces/switch-workspaces/workspace-card.png",
-    "src": "source/raw/workspaces/what-is-a-workspace/01-grid-2col.png",
+    "out": "images/workspaces/switch-workspaces/switcher-list.png",
+    "src": "source/raw/workspaces/switch-workspaces/01-switcher-open.png",
     "args": [
       "--crop",
-      "0,290,1600,740",
+      "0,0,622,800",
       "--ring",
-      "31,303,754,715"
+      "22,562,590,88",
+      "--width",
+      "1000"
     ]
   }
 ]

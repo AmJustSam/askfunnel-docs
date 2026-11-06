@@ -1,0 +1,80 @@
+[
+  {
+    "out": "images/getting-started/dashboard-tour/sidebar-top.png",
+    "src": "source/raw/getting-started/dashboard-tour/01-home-sidebar.png",
+    "args": [
+      "--crop",
+      "0,0,520,520",
+      "--ring",
+      "6,14,434,109",
+      "--width",
+      "900"
+    ]
+  },
+  {
+    "out": "images/getting-started/dashboard-tour/settings-menu.png",
+    "src": "source/raw/getting-started/dashboard-tour/03-settings-menu.png",
+    "args": [
+      "--crop",
+      "0,0,520,620",
+      "--width",
+      "900"
+    ]
+  },
+  {
+    "out": "images/getting-started/dashboard-tour/sidebar-bottom.png",
+    "src": "source/raw/getting-started/dashboard-tour/01-home-sidebar.png",
+    "args": [
+      "--crop",
+      "0,1400,520,400",
+      "--ring",
+      "6,1452,498,227",
+      "--width",
+      "900"
+    ]
+  },
+  {
+    "out": "images/getting-started/dashboard-tour/plan-menu.png",
+    "src": "source/raw/getting-started/dashboard-tour/02-plan-menu.png",
+    "args": [
+      "--crop",
+      "0,720,700,1080",
+      "--width",
+      "1000"
+    ]
+  },
+  {
+    "out": "images/getting-started/dashboard-tour/account-menu.png",
+    "src": "source/raw/getting-started/sign-in/03-log-out-menu.png",
+    "args": [
+      "--crop",
+      "0,880,622,920",
+      "--width",
+      "1000"
+    ]
+  },
+  {
+    "out": "images/getting-started/dashboard-tour/phone-home.png",
+    "src": "source/raw/getting-started/dashboard-tour/10-phone-home.png",
+    "args": [
+      "--crop",
+      "0,0,1170,2532",
+      "--width",
+      "1320",
+      "--radius",
+      "40"
+    ]
+  },
+  {
+    "out": "images/getting-started/dashboard-tour/phone-menu.png",
+    "src": "source/raw/getting-started/dashboard-tour/11-phone-menu.png",
+    "args": [
+      "--crop",
+      "0,0,1170,2532",
+      "--width",
+      "1320",
+      "--radius",
+      "40"
+    ]
+  }
+]

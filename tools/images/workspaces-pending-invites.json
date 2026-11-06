@@ -1,36 +1,36 @@
 [
   {
     "out": "images/workspaces/pending-invites/pending-tab.png",
-    "src": "source/raw/workspaces/give-access/02-members-page.png",
+    "src": "source/raw/workspaces/pending-invites/02-pending-list.png",
     "args": [
       "--crop",
-      "900,440,1940,150",
+      "600,120,2500,560",
       "--ring",
-      "1121,489,301,76"
+      "856,154,325,80"
     ]
   },
   {
     "out": "images/workspaces/pending-invites/resend-and-cancel.png",
-    "src": "source/raw/workspaces/pending-invites/02-pending-list.png",
+    "src": "source/raw/workspaces/pending-invites/03-pending-menu.png",
     "args": [
       "--crop",
-      "900,440,1940,450",
+      "600,366,2500,362",
       "--ring",
-      "2445,746,352,82"
+      "2978,392,88,88"
     ]
   },
   {
     "out": "images/workspaces/pending-invites/cancel-dialog.png",
-    "src": "source/raw/workspaces/pending-invites/03-cancel-dialog.png",
+    "src": "source/raw/workspaces/pending-invites/04-cancel-dialog.png",
     "args": [
       "--crop",
-      "1080,720,1040,360",
+      "1040,690,1120,420",
       "--ring",
-      "1835,934,247,96",
-      "--radius",
-      "22",
+      "1825,933,257,98",
       "--width",
-      "1470"
+      "1470",
+      "--radius",
+      "22"
     ]
   }
 ]

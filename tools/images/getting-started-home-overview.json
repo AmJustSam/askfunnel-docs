@@ -1,0 +1,26 @@
+[
+  {
+    "out": "images/getting-started/home-overview/workspace-home.png",
+    "src": "source/raw/getting-started/dashboard-tour/01-home-sidebar.png",
+    "args": [
+      "--crop",
+      "0,0,3200,1800",
+      "--pad",
+      "100",
+      "--radius",
+      "30"
+    ]
+  },
+  {
+    "out": "images/getting-started/home-overview/all-workspaces.png",
+    "src": "source/raw/getting-started/home-overview/01-overview.png",
+    "args": [
+      "--crop",
+      "0,0,3200,1700",
+      "--pad",
+      "100",
+      "--radius",
+      "30"
+    ]
+  }
+]

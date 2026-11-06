@@ -10,37 +10,37 @@ An invitation stays pending until the person accepts it. From the **Pending invi
 **Before you start**, you need:
 
 - An invitation that has not been accepted yet. See [Invite a teammate or client](/workspaces/give-access).
-- To be the person who sent the invitation, or a Global Admin. Only they can resend or cancel it.
+- To be a Global Admin, or a Workspace Admin of the workspace the invitation is for. An invitation for a Global Admin can only be changed by a Global Admin.
 
 ## Important to note
 
 <Warning>
   - An invitation link works for 7 days. Resending sends a new link that works for 7 days from that moment, and the old link stops working.
-  - A role that uses a team seat reserves the seat while the invitation is pending. Cancelling frees it.
+  - A role that uses a team seat reserves the seat while the invitation is pending. Canceling frees it.
 </Warning>
 
 ## Manage a pending invite
 
 <Steps>
   <Step title="Open Pending invites">
-    1. Click your name at the bottom of the sidebar, then click **"Members"**.
-    2. Click the **Pending invites** tab. The number in brackets is how many invitations are waiting.
+    1. Click your name at the bottom of the sidebar, then click **"Members"**. On a phone, tap **"Menu"** at the bottom of the screen, then your name, then **"Members"**.
+    2. Click the **Pending invites** tab next to **Members**. The number in brackets is how many invitations are waiting. The tab only shows while there is at least one.
 
     Workspace Admins: open your workspace, click **Settings** in the sidebar, then **Members**, then **Pending invites**.
 
-    <img src="/images/workspaces/pending-invites/pending-tab.png" alt="The Members page with the Pending invites tab highlighted" width="2000" height="343" />
+    <img src="/images/workspaces/pending-invites/pending-tab.png" alt="The Members page with the Pending invites tab highlighted" width="2000" height="604" />
 
-    Each row shows the email, when it was invited and when it expires, the role and the workspace.
+    Each row shows the email, the role, the workspace and when it was invited. An invitation whose link has run out shows **Expired** instead of the date.
   </Step>
   <Step title="Resend or cancel">
-    Use the buttons in the **Actions** column:
+    Click the **...** menu at the end of the row:
 
-    - **Resend:** Click **"Resend"** to email a new link. You see a message such as "Invitation resent to sofia.alvarez@example.com."
-    - **Cancel:** Click **"Cancel"**. A window asks **Cancel invite to sofia.alvarez@example.com?** Click **"Cancel invite"** to confirm, or **"Keep invite"** to go back. You then see "Invitation to sofia.alvarez@example.com cancelled."
+    - **Resend invitation:** Emails a new link. You see a message such as "Invitation resent to sofia.alvarez@example.com."
+    - **Cancel invitation:** A window asks **Cancel invite?** and says the person can no longer join from this invitation and that you can re-invite them later. Click **"Cancel invite"** to confirm, or **"Keep invite"** to go back. You then see "Invitation to sofia.alvarez@example.com canceled."
 
-    <img src="/images/workspaces/pending-invites/resend-and-cancel.png" alt="The Resend and Cancel buttons in the Actions column, highlighted" width="2000" height="617" loading="lazy" />
+    <img src="/images/workspaces/pending-invites/resend-and-cancel.png" alt="The Resend invitation and Cancel invitation items in the menu at the end of a pending invite's row" width="2000" height="464" loading="lazy" />
 
-    <img src="/images/workspaces/pending-invites/cancel-dialog.png" alt="The Cancel invite window, which asks you to confirm before the invitation is cancelled" width="1470" height="540" loading="lazy" />
+    <img src="/images/workspaces/pending-invites/cancel-dialog.png" alt="The Cancel invite window, which asks you to confirm before the invitation is canceled" width="1470" height="600" loading="lazy" />
   </Step>
 </Steps>
 
@@ -54,13 +54,16 @@ An invitation stays pending until the person accepts it. From the **Pending invi
 
 <AccordionGroup>
   <Accordion title="Resend or Cancel shows an error">
-    Only the person who sent the invitation or a Global Admin can resend or cancel it. Ask one of them to do it.
+    Only a Global Admin, or a Workspace Admin of the workspace the invitation is for, can resend or cancel it. Ask one of them to do it.
   </Accordion>
   <Accordion title="My teammate says the link is not valid">
-    The invitation may have expired, been cancelled or already been accepted. Check the **Members** tab, and if they are not there, click **"Resend"** on the **Pending invites** tab.
+    The invitation may have expired, been canceled or already been accepted. Check the **Members** tab, and if they are not there, use **"Resend invitation"** on the **Pending invites** tab.
   </Accordion>
   <Accordion title="I see that I sent too many invites in the last hour">
-    AskFunnel limits how many invitations and resends you can send in an hour. Wait a little and try again.
+    The message says **You've sent too many invites in the last hour. Try again later.** AskFunnel limits how many invitations and resends you can send in an hour. Wait a little and try again.
+  </Accordion>
+  <Accordion title="I do not see a Pending invites tab">
+    The tab only shows while an invitation is waiting. If everyone you invited has accepted, you see only **Members**.
   </Accordion>
 </AccordionGroup>
 
