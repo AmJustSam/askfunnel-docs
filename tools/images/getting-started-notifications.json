@@ -13,10 +13,10 @@
   },
   {
     "out": "images/getting-started/notifications/notifications-page.png",
-    "src": "source/raw/getting-started/notifications/r2-notifications-page.png",
+    "src": "source/raw/getting-started/notifications/r2-notifications-page-b.png",
     "args": [
       "--crop",
-      "570,20,1702,984",
+      "570,20,1702,1586",
       "--ring",
       "614,157,436,84",
       "--ring",
@@ -32,7 +32,7 @@
     "src": "source/raw/getting-started/notifications/r2-bell-list.png",
     "args": [
       "--crop",
-      "513,647,791,970",
+      "513,647,791,842",
       "--ring",
       "528,776,425,80",
       "--width",
