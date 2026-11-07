@@ -11,10 +11,14 @@
  },
  {
   "out": "images/integrations/google-sheets/settings-dialog.png",
-  "src": "source/raw/integrations/google-sheets/r2-02-panel.png",
+  "src": "source/raw/integrations/google-sheets/r5-settings-dialog.png",
   "args": [
    "--crop",
-   "2224,16,960,1541",
+   "2224,16,960,1124",
+   "--ring",
+   "2264,412,880,137",
+   "--ring",
+   "2264,624,880,92",
    "--width",
    "1470",
    "--radius",
@@ -23,14 +27,18 @@
  },
  {
   "out": "images/integrations/google-sheets/test-row-added.png",
-  "src": "source/raw/integrations/google-sheets/03-test-row-added.png",
+  "src": "source/raw/integrations/google-sheets/r5-test-row-added.png",
   "args": [
    "--crop",
-   "954,341,1292,1118",
+   "2224,16,960,1124",
    "--ring",
-   "2030,1314,184,100",
-   "--pad",
-   "89"
+   "2538,864,606,94",
+   "--ring",
+   "2968,1022,176,94",
+   "--width",
+   "1470",
+   "--radius",
+   "30"
   ]
  },
  {
