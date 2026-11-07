@@ -1,38 +1,38 @@
 [
-  {
-    "out": "images/getting-started/learn-tab/learn-button.png",
-    "src": "source/raw/getting-started/learn-tab/01-learn-button.png",
-    "args": [
-      "--crop",
-      "0,0,640,520",
-      "--ring",
-      "6,350,497,92",
-      "--width",
-      "1000"
-    ]
-  },
-  {
-    "out": "images/getting-started/learn-tab/lesson-library.png",
-    "src": "source/raw/getting-started/learn-tab/01-learn-button.png",
-    "args": [
-      "--crop",
-      "600,130,2500,770",
-      "--ring",
-      "615,151,1181,95",
-      "--ring",
-      "1794,151,738,95"
-    ]
-  },
-  {
-    "out": "images/getting-started/learn-tab/lesson-page.png",
-    "src": "source/raw/getting-started/learn-tab/r4-03-lesson-page.png",
-    "args": [
-      "--crop",
-      "600,180,1900,1180",
-      "--ring",
-      "615,193,1858,568",
-      "--ring",
-      "615,791,1858,543"
-    ]
-  }
+ {
+  "out": "images/getting-started/learn-tab/learn-button.png",
+  "src": "source/raw/getting-started/learn-tab/01-learn-button.png",
+  "args": [
+   "--crop",
+   "0,0,640,520",
+   "--ring",
+   "6,350,497,92",
+   "--width",
+   "1000"
+  ]
+ },
+ {
+  "out": "images/getting-started/learn-tab/lesson-library.png",
+  "src": "source/raw/getting-started/learn-tab/r5-01-lesson-library.png",
+  "args": [
+   "--crop",
+   "600,130,2500,770",
+   "--ring",
+   "614,156,1185,84",
+   "--ring",
+   "1795,150,740,96"
+  ]
+ },
+ {
+  "out": "images/getting-started/learn-tab/lesson-page.png",
+  "src": "source/raw/getting-started/learn-tab/r4-03-lesson-page.png",
+  "args": [
+   "--crop",
+   "600,180,1900,1180",
+   "--ring",
+   "615,193,1858,568",
+   "--ring",
+   "615,791,1858,543"
+  ]
+ }
 ]
