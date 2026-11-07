@@ -15,12 +15,12 @@
   },
   {
     "out": "images/funnels/start-from-template/gallery.png",
-    "src": "source/raw/funnels/start-from-template/02-gallery.png",
+    "src": "source/raw/funnels/start-from-template/r4-02-gallery.png",
     "args": [
       "--crop",
-      "0,0,3200,1800",
+      "0,0,3200,1425",
       "--ring",
-      "2731,6,319,98",
+      "2729,6,323,98",
       "--ring",
       "638,290,516,556",
       "--pad",

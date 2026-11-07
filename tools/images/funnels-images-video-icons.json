@@ -37,12 +37,12 @@
   },
   {
     "out": "images/funnels/images-video-icons/image-controls.png",
-    "src": "source/raw/funnels/images-video-icons/04-image-controls.png",
+    "src": "source/raw/funnels/images-video-icons/r4-04-image-controls.png",
     "args": [
       "--crop",
-      "0,128,2460,1064",
+      "0,128,2560,1062",
       "--ring",
-      "14,399,602,112",
+      "22,403,714,104",
       "--ring",
       "22,1064,714,96"
     ]

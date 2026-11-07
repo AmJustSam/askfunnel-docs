@@ -1,22 +1,22 @@
 [
   {
     "out": "images/funnels/grid-layouts/two-columns.png",
-    "src": "source/raw/funnels/grid-layouts/04-two-columns-clean.png",
+    "src": "source/raw/funnels/grid-layouts/r4-04-two-columns.png",
     "args": [
       "--crop",
-      "958,252,2043,760",
+      "958,252,2043,790",
       "--radius",
       "28"
     ]
   },
   {
     "out": "images/funnels/grid-layouts/drag-add-column.png",
-    "src": "source/raw/funnels/grid-layouts/01-drag-add-column.png",
+    "src": "source/raw/funnels/grid-layouts/r4-01-drag-add-column.png",
     "args": [
       "--crop",
-      "944,168,2192,880",
+      "930,168,2206,890",
       "--ring",
-      "2902,606,206,58",
+      "2902,607,204,61",
       "--radius",
       "28"
     ]
