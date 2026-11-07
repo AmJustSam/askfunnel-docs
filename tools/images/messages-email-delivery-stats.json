@@ -13,7 +13,7 @@
   },
   {
     "out": "images/messages/email-delivery-stats/lead-messages.png",
-    "src": "source/raw/messages/email-delivery-stats/03-lead-messages.png",
+    "src": "source/raw/messages/email-delivery-stats/r2-sofia-open.png",
     "args": [
       "--crop",
       "1990,16,1190,640",
