@@ -35,8 +35,10 @@
  },
  {
   "out": "images/integrations/highlevel/contact-in-highlevel.png",
-  "src": "source/raw/integrations/highlevel/04-highlevel-contact.png",
+  "src": "source/raw/integrations/highlevel/r5-contact-in-highlevel.png",
   "args": [
+   "--crop",
+   "456,192,2648,1150",
    "--radius",
    "38"
   ]
