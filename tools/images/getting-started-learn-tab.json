@@ -25,14 +25,14 @@
   },
   {
     "out": "images/getting-started/learn-tab/lesson-page.png",
-    "src": "source/raw/getting-started/learn-tab/03-lesson-page.png",
+    "src": "source/raw/getting-started/learn-tab/r4-03-lesson-page.png",
     "args": [
       "--crop",
       "600,180,1900,1180",
       "--ring",
-      "615,194,1868,566",
+      "615,193,1858,568",
       "--ring",
-      "615,792,1868,540"
+      "615,791,1858,543"
     ]
   }
 ]
