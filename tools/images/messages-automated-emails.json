@@ -85,12 +85,12 @@
  },
  {
   "out": "images/messages/automated-emails/sequences-paused.png",
-  "src": "source/raw/messages/automated-emails/05-sequences-paused-paid.png",
+  "src": "source/raw/messages/automated-emails/r2-sequences-paused.png",
   "args": [
    "--crop",
-   "0,0,2304,620",
+   "0,0,3200,651",
    "--ring",
-   "1885,168,277,83"
+   "2770,168,286,83"
   ]
  },
  {
