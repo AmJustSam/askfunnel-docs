@@ -4,9 +4,9 @@
   "src": "source/raw/billing/discount-codes-and-vat/01-checkout-clean.png",
   "args": [
    "--crop",
-   "330,460,700,146",
+   "330,462,700,88",
    "--ring",
-   "336,470,680,128"
+   "336,478,680,66"
   ]
  }
 ]

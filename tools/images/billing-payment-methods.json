@@ -4,7 +4,7 @@
     "src": "source/raw/billing/payment-methods/04-checkout-card-clean.png",
     "args": [
       "--crop",
-      "330,60,700,412",
+      "330,60,700,328",
       "--ring",
       "366,132,630,76"
     ]
