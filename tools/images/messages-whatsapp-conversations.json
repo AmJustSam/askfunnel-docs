@@ -13,12 +13,12 @@
   },
   {
     "out": "images/messages/whatsapp-conversations/chat-header.png",
-    "src": "source/raw/messages/whatsapp-conversations/01-conversations.png",
+    "src": "source/raw/messages/whatsapp-conversations/r5-01-chat.png",
     "args": [
       "--crop",
-      "1190,0,1380,520",
+      "1186,0,1376,430",
       "--ring",
-      "2086,6,462,76",
+      "2082,2,466,84",
       "--pad",
       "89"
     ]

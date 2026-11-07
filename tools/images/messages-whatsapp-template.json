@@ -13,12 +13,12 @@
   },
   {
     "out": "images/messages/whatsapp-template/editor-end.png",
-    "src": "source/raw/messages/whatsapp-flow-messages/03-whatsapp-step-end.png",
+    "src": "source/raw/messages/whatsapp-flow-messages/r5-03-whatsapp-step-end.png",
     "args": [
       "--crop",
-      "1380,186,1200,1064",
+      "1380,170,1200,1330",
       "--ring",
-      "1712,194,392,76",
+      "1708,473,402,90",
       "--pad",
       "89"
     ]
