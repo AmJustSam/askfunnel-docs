@@ -1,14 +1,12 @@
 [
   {
     "out": "images/messages/whatsapp-conversations/conversations.png",
-    "src": "source/raw/messages/whatsapp-conversations/01-conversations.png",
+    "src": "source/raw/messages/whatsapp-conversations/r5-02-conversations.png",
     "args": [
       "--crop",
-      "0,0,2570,1800",
+      "514,0,2686,2000",
       "--ring",
-      "10,280,490,82",
-      "--ring",
-      "540,110,266,72"
+      "536,108,224,72"
     ]
   },
   {
