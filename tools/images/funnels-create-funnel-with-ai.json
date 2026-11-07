@@ -1,7 +1,7 @@
 [
   {
     "out": "images/funnels/create-funnel-with-ai/chooser.png",
-    "src": "source/raw/funnels/create-funnel-with-ai/01-chooser.png",
+    "src": "source/raw/funnels/create-funnel-with-ai/r5-01-chooser.png",
     "args": [
       "--crop",
       "1080,632,1040,536",
@@ -47,12 +47,12 @@
   },
   {
     "out": "images/funnels/create-funnel-with-ai/goal-step.png",
-    "src": "source/raw/funnels/create-funnel-with-ai/04-goal-step.png",
+    "src": "source/raw/funnels/create-funnel-with-ai/r5-04-goal-step.png",
     "args": [
       "--crop",
       "1080,200,1040,1024",
       "--ring",
-      "1668,1066,416,110",
+      "1724,1066,360,110",
       "--pad",
       "70",
       "--radius",

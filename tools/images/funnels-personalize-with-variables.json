@@ -1,26 +1,26 @@
 [
   {
     "out": "images/funnels/personalize-with-variables/variable-list.png",
-    "src": "source/raw/funnels/personalize-with-variables/01-variable-list.png",
+    "src": "source/raw/funnels/personalize-with-variables/r5-01-variable-list.png",
     "args": [
       "--crop",
-      "1330,200,1320,960",
+      "1130,548,1700,890",
       "--ring",
-      "1848,438,544,684",
+      "2090,756,652,676",
       "--width",
-      "1600"
+      "1800"
     ]
   },
   {
     "out": "images/funnels/personalize-with-variables/fallback-box.png",
-    "src": "source/raw/funnels/personalize-with-variables/02-fallback-box.png",
+    "src": "source/raw/funnels/personalize-with-variables/r5-02-fallback-box.png",
     "args": [
       "--crop",
-      "1330,260,1360,530",
+      "1130,548,1700,552",
       "--ring",
-      "1848,438,567,302",
+      "2084,750,571,306",
       "--width",
-      "1600"
+      "1800"
     ]
   }
 ]

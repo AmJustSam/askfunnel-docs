@@ -1,7 +1,7 @@
 [
   {
     "out": "images/funnels/start-from-template/chooser.png",
-    "src": "source/raw/funnels/start-from-template/01-chooser.png",
+    "src": "source/raw/funnels/start-from-template/r5-01-chooser.png",
     "args": [
       "--crop",
       "1080,632,1040,536",

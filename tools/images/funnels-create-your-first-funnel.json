@@ -1,7 +1,7 @@
 [
   {
     "out": "images/funnels/create-your-first-funnel/chooser.png",
-    "src": "source/raw/funnels/create-your-first-funnel/01-chooser.png",
+    "src": "source/raw/funnels/create-your-first-funnel/r5-01-chooser.png",
     "args": [
       "--crop",
       "1080,632,1040,536",

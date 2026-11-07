@@ -1,14 +1,14 @@
 [
   {
     "out": "images/funnels/brand-your-funnel/text-toolbar.png",
-    "src": "source/raw/funnels/brand-your-funnel/01-text-toolbar.png",
+    "src": "source/raw/funnels/brand-your-funnel/r5-01-text-toolbar.png",
     "args": [
       "--crop",
-      "1300,790,1360,250",
+      "1290,240,1370,236",
       "--ring",
-      "1585,851,140,64",
+      "1540,272,229,80",
       "--ring",
-      "1938,849,72,72",
+      "1971,276,72,72",
       "--width",
       "1470",
       "--radius",
