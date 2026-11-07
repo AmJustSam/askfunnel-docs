@@ -1,12 +1,16 @@
 [
  {
   "out": "images/billing/monthly-lead-limit/locked-banner.png",
-  "src": "source/raw/billing/monthly-lead-limit/10-locked-banner.png",
+  "src": "source/raw/billing/monthly-lead-limit/r5-locked-banner.png",
   "args": [
    "--crop",
-   "590,0,2540,420",
+   "600,100,2500,320",
    "--ring",
-   "612,150,2476,134"
+   "614,152,2478,132",
+   "--pad",
+   "90",
+   "--radius",
+   "20"
   ]
  },
  {
@@ -25,12 +29,12 @@
  },
  {
   "out": "images/billing/monthly-lead-limit/approaching-banner.png",
-  "src": "source/raw/billing/monthly-lead-limit/02-approaching-banner.png",
+  "src": "source/raw/billing/monthly-lead-limit/r5-approaching-banner.png",
   "args": [
    "--crop",
-   "0,0,1600,440",
+   "600,100,2500,320",
    "--ring",
-   "28,164,1544,146",
+   "614,152,2478,132",
    "--pad",
    "90",
    "--radius",
