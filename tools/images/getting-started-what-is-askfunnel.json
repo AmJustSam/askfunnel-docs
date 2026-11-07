@@ -6,7 +6,14 @@
   },
   {
     "out": "images/getting-started/what-is-askfunnel/funnel-lead-form.png",
-    "src": "source/raw/getting-started/what-is-askfunnel/02-funnel-lead-form.png",
-    "args": ["--crop", "100,0,1190,1220", "--width", "1470"]
+    "src": "source/raw/getting-started/what-is-askfunnel/b-lead-mobile.png",
+    "args": [
+      "--crop",
+      "1606,253,744,1456",
+      "--width",
+      "1000",
+      "--radius",
+      "24"
+    ]
   }
 ]

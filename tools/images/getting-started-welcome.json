@@ -1,7 +1,7 @@
 [
   {
     "out": "images/getting-started/welcome/hero-builder.png",
-    "src": "source/raw/getting-started/welcome/03-builder-welcome.png",
+    "src": "source/raw/getting-started/welcome/b-hero.png",
     "args": [
       "--crop",
       "0,0,3200,1800",
