@@ -16,7 +16,7 @@ Every person who completes your funnel becomes a lead. Each funnel has its own *
 <Warning>
   - Your view is saved per funnel, in this browser only. Filters, sorts, groups, hidden fields and row height are not shared with your team. To start over, click **View options**, then **"Reset view"**.
   - Leads over your plan limit are locked. If you go over your monthly lead limit, a banner above the table tells you how many leads are locked and has an **"Upgrade plan"** button. Locked leads do not appear in the table or in exports until you upgrade or add a leads add-on. Leads you import never count toward the limit and are never locked.
-  - The table loads 100 leads at a time as you scroll. In a funnel with more than 3,000 leads, search, filters, groups and exports cover the newest 3,000, and a notice under the toolbar says so, for example **Filters cover the newest 3,000 leads.**
+  - The table loads 100 leads at a time as you scroll. In a funnel with more than 3,000 leads, filters, groups and exports cover the newest 3,000, and a notice under the toolbar says so, for example **Filters cover the newest 3,000 leads.** Search looks through all your leads. If more than 3,000 match, the table shows the newest 3,000 and says **Your search matches more than 3,000 leads. These are the newest 3,000. Add a word to narrow it.**
 </Warning>
 
 ## Open your leads
@@ -49,7 +49,7 @@ Every question and form field in your funnel becomes a column, next to **Name**,
 
 ## Find the leads you need
 
-- **Search:** type in the **Search leads...** box. By default AskFunnel searches all fields. To search one field, click **All fields** and pick the field. Press **Esc** or click the clear icon to clear the search.
+- **Search:** type in the **Search leads...** box. Search finds words in names, email addresses, phone numbers and answers, and finds a phone number however you type it, for example 512 555 0190. Type at least the first 3 letters of a word. By default AskFunnel searches all of these fields. To search one field, click **All fields** and pick the field. Search does not look at **Status**, dates, **Score** or **Assigned To**. To find leads by those, click the last row of the **All fields** list, **To find by status, date or teammate, use Filter**, or use the filters below. See [Filter leads by date](/leads/filter-by-date) and [Track leads with statuses](/leads/contact-status). Press **Esc** or click the clear icon to clear the search.
 - **Filter:** click **Filter**, then **"Add filter"**. Choose a field, how to compare it and a value. Add more conditions and join them with **and** or **or**, or click **"Add filter group"** to combine conditions in a group. A number on the button shows how many conditions are active. To filter by date, see [Filter leads by date](/leads/filter-by-date).
 - **Filter by status:** click **Total leads** and tick the statuses you want. The menu also shows how many leads are in each status.
 - **Filter by teammate:** click the people icon (**Filter leads by assignee**) and pick **Unassigned** or one or more teammates. Click your avatar (**Filter for your leads**, also called **Me mode**) to show only the leads assigned to you. These controls appear once your funnel has its first lead.
@@ -62,11 +62,20 @@ Every question and form field in your funnel becomes a column, next to **Name**,
   <Accordion title="I can't see Leads, Analytics or Activity">
     Your role does not include lead data. Ask a Workspace Admin to give you the Contacts Manager role, or a Workspace Admin role if you also need to edit funnels.
   </Accordion>
-  <Accordion title="The table says No leads match your filters">
-    A filter or search is hiding every lead. Click **"Clear filters"** in the table, or open **Filter** and click **Clear all**.
+  <Accordion title="The table says No leads match your search or your filters">
+    A search or a filter is hiding every lead. If you only searched, the table says **No leads match your search**: click **"Clear search"**. Under it, a line says **To find by status, date or teammate, use Filter**: click **use Filter** to open the filters. If a filter is set, the table says **No leads match your filters**: click **"Clear filters"** in the table, or open **Filter** and click **Clear all**.
   </Accordion>
   <Accordion title="A lead I expect is missing">
-    Check for a number on the **Filter** button, a search in the search box, a status picked in **Total leads** or a teammate filter. If none apply, look for a banner about locked leads above the table.
+    Check for a number on the **Filter** button, a search in the search box, a status picked in **Total leads** or a teammate filter. If none apply, look for a banner about locked leads above the table. Search does not look at status, dates or teammates, so use **Filter** for those.
+  </Accordion>
+  <Accordion title="I searched for a status, a date or a teammate and found nothing">
+    Search looks at words in names, email addresses, phone numbers and answers. Use **Filter** for **Status**, dates and **Assigned To**, or click **Total leads** to pick a status and the people icon to pick a teammate. See [Filter leads by date](/leads/filter-by-date) and [Track leads with statuses](/leads/contact-status).
+  </Accordion>
+  <Accordion title="The table says Type at least 3 letters">
+    In a funnel with more than 3,000 leads, a word of one or two letters finds only whole words, so the table says, for example, **Type at least 3 letters to search all 5,004 leads.** Add letters to the word and the matches appear.
+  </Accordion>
+  <Accordion title="The table says Couldn't search your leads">
+    The search did not finish. Click **Try again**. If it keeps failing, email [support@askfunnel.com](mailto:support@askfunnel.com).
   </Accordion>
   <Accordion title="I can't edit a cell">
     Fields with a lock icon are managed by AskFunnel. Every other cell can be edited.
