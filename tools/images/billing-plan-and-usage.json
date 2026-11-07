@@ -51,22 +51,22 @@
   },
   {
     "out": "images/billing/plan-and-usage/usage-banner.png",
-    "src": "source/raw/billing/plan-and-usage/05-banner-paused.png",
+    "src": "source/raw/billing/plan-and-usage/22-usage-banner.png",
     "args": [
       "--crop",
-      "0,0,2304,295",
+      "540,10,2640,260",
       "--ring",
-      "1885,168,277,83"
+      "2768,150,290,90"
     ]
   },
   {
     "out": "images/billing/plan-and-usage/usage-dot.png",
-    "src": "source/raw/billing/plan-and-usage/04-usage-dot-grouped.png",
+    "src": "source/raw/billing/plan-and-usage/22-usage-dot.png",
     "args": [
       "--crop",
-      "2425,0,599,662",
+      "0,775,720,1025",
       "--ring",
-      "2785,15,142,59",
+      "6,1438,502,251",
       "--width",
       "1100"
     ]
