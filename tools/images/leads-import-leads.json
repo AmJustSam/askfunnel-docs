@@ -13,10 +13,12 @@
   },
   {
     "out": "images/leads/import-leads/map-fields.png",
-    "src": "source/raw/leads/import-leads/01-map-fields.png",
+    "src": "source/raw/leads/import-leads/r5-01a-map-fields-ai-visible.png",
     "args": [
       "--crop",
-      "760,300,1680,1200"
+      "800,374,1600,1052",
+      "--radius",
+      "32"
     ]
   },
   {
